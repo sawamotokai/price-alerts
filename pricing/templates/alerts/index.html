@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+{%block content%}
+<header class="mx-5 mt-2">
+    <h1>Index</h1>
+</header>
+<section class="mx-5">
+    <div class="list-group mb-3">
+        {%for alert in alerts%}
+        <div class="list-group-item">
+            <h4>{{alert.name}}</h4>
+            <p>
+                <a href="{{alert.item.url}}">{{alert.item._id}}</a>
+            </p>
+            <a class="btn btn-secondary" href= "{{ url_for('alerts.edit', alert_id=alert._id) }}">Edit</a>
+            <a class="btn btn-danger" href= "{{ url_for('alerts.delete_alert', alert_id=alert._id) }}">Delete</a>
+        </div>
+        {%endfor%}
+    </div>
+    <a class="btn btn-primary" href={{url_for('alerts.new_alert')}}>
+        Create New
+    </a>
+</section>
+
+{%endblock%}
