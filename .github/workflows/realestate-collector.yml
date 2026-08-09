@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/realestate-collector.yml'
       - 'realestate/collector_parts/**'
+      - 'realestate/enforce_freehold.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -45,7 +46,16 @@ jobs:
           REAL_ESTATE_MAX_MISSING_RUNS: '2'
         run: python realestate/collector.py
 
-      - name: Commit durable snapshot and history
+      - name: Verify land rights and publish freehold-only dashboard
+        env:
+          REAL_ESTATE_STRICT_FREEHOLD: '1'
+          REAL_ESTATE_RIGHTS_DELAY: '0.18'
+          REAL_ESTATE_RIGHTS_TIMEOUT: '18'
+          REAL_ESTATE_RIGHTS_CACHE_DAYS: '30'
+          REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '2'
+        run: python realestate/enforce_freehold.py
+
+      - name: Commit durable snapshot, rights cache, and history
         run: |
           rm -f realestate/collector.py
           git config user.name 'realestate-price-watch[bot]'
@@ -54,6 +64,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No data changes'
           else
-            git commit -m 'Capture real-estate price snapshot'
+            git commit -m 'Capture freehold real-estate price snapshot'
             git push
           fi
