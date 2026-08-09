@@ -3659,12 +3659,52 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024609/": {
+      "checked_at": "2026-08-09T10:49:39.619672+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024609/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024913/": {
+      "checked_at": "2026-08-09T10:49:39.615893+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024913/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024962/": {
+      "checked_at": "2026-08-09T10:49:39.616353+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024962/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024998/": {
       "checked_at": "2026-08-09T07:19:57.850399+00:00",
       "classifier_version": 2,
       "error": "HTTP 405",
       "evidence": null,
       "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024998/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130025025/": {
+      "checked_at": "2026-08-09T10:49:39.616622+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130025025/",
       "http_status": 405,
       "label": null,
       "status": "unknown"
@@ -5039,6 +5079,36 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/kodate/b-1169130024609/": {
+      "checked_at": "2026-08-09T10:49:39.638060+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1169130024609/",
+      "http_status": 200,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1169130024913/": {
+      "checked_at": "2026-08-09T10:49:39.617954+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1169130024913/",
+      "http_status": 200,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1169130024962/": {
+      "checked_at": "2026-08-09T10:49:39.638751+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1169130024962/",
+      "http_status": 200,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/kodate/b-1169130024998/": {
       "checked_at": "2026-08-09T07:19:51.023757+00:00",
       "classifier_version": 2,
@@ -5046,6 +5116,16 @@
       "evidence": null,
       "final_url": "https://www.homes.co.jp/kodate/b-1169130024998/",
       "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1169130025025/": {
+      "checked_at": "2026-08-09T10:49:39.636084+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1169130025025/",
+      "http_status": 200,
       "label": null,
       "status": "unknown"
     },
@@ -5950,5 +6030,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-08-09T07:20:03.907506+00:00"
+  "updated_at": "2026-08-09T10:49:40.913017+00:00"
 }

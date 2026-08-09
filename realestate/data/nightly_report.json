@@ -1,0 +1,23 @@
+{
+  "coverage": {
+    "HOME'S": true,
+    "SUUMO": true,
+    "fudousan.or.jp": false
+  },
+  "fudousan_japan_coverage": false,
+  "leasehold_excluded_count": 22,
+  "listing_ended_candidate_count": 0,
+  "new_count": 231,
+  "observed_at": "2026-08-09T10:49:41+00:00",
+  "price_changed_count": 0,
+  "price_count": 207,
+  "price_coverage_pct": 89.61,
+  "record_count": 231,
+  "source_counts": {
+    "HOME'S": 0,
+    "SUUMO": 231,
+    "fudousan.or.jp": 0
+  },
+  "unknown_right_excluded_count": 250,
+  "verified_freehold_count": 231
+}
