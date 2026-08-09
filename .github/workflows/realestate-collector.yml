@@ -5,7 +5,7 @@ on:
     branches: [master]
     paths:
       - '.github/workflows/realestate-collector.yml'
-      - 'realestate/collector.py.gz.b64'
+      - 'realestate/collector_parts/**'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
         run: python -m pip install -r realestate/requirements.txt
 
       - name: Decode collector
-        run: base64 --decode realestate/collector.py.gz.b64 | gzip --decompress > realestate/collector.py
+        run: cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > realestate/collector.py
 
       - name: Collect current listings and append first/daily price points
         env:
