@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: realestate-nightly-collector
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   collect:
@@ -69,5 +69,6 @@ jobs:
             echo 'No data changes'
           else
             git commit -m 'Capture freehold real-estate price snapshot'
-            git push
+            git pull --rebase origin master
+            git push origin HEAD:master
           fi
