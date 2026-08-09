@@ -63,16 +63,52 @@ jobs:
       - name: Keep dashboard UI patched
         run: python realestate/patch_dashboard_ui.py
 
-      - name: Commit durable snapshot, rights cache, history, normalized import, and dashboard
+      - name: Publish generated snapshot without rebase conflicts
+        shell: bash
         run: |
+          set -euo pipefail
           rm -f realestate/collector.py
+
+          snapshot_dir="$(mktemp -d)"
+          trap 'rm -rf "$snapshot_dir"' EXIT
+
+          # Preserve the completed collector output outside the worktree. A
+          # concurrent commit may move master while this job is collecting.
+          cp -a realestate/data "$snapshot_dir/data"
+          cp realestate/imports/latest.json "$snapshot_dir/latest.json"
+          cp realestate/dashboard/index.html "$snapshot_dir/index.html"
+
           git config user.name 'realestate-price-watch[bot]'
           git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
-          git add realestate/data realestate/imports/latest.json realestate/dashboard/index.html
-          if git diff --cached --quiet; then
-            echo 'No data changes'
-          else
+
+          # Rebase is unsuitable for generated JSON because both sides rewrite
+          # the same files. Start from the latest master, restore this run's
+          # complete output, and retry if another commit wins the push race.
+          for attempt in 1 2 3; do
+            echo "Publish attempt ${attempt}/3"
+            git fetch origin master
+            git reset --hard origin/master
+
+            rm -rf realestate/data
+            cp -a "$snapshot_dir/data" realestate/data
+            install -D "$snapshot_dir/latest.json" realestate/imports/latest.json
+            install -D "$snapshot_dir/index.html" realestate/dashboard/index.html
+
+            git add realestate/data realestate/imports/latest.json realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'No generated data changes'
+              exit 0
+            fi
+
             git commit -m 'Capture freehold real-estate price snapshot'
-            git pull --rebase origin master
-            git push origin HEAD:master
-          fi
+            if git push origin HEAD:master; then
+              echo 'Snapshot published successfully'
+              exit 0
+            fi
+
+            echo 'Master moved during publish; retrying from the new tip'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Failed to publish snapshot after 3 attempts' >&2
+          exit 1
