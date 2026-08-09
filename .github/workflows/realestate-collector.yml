@@ -7,6 +7,7 @@ on:
       - '.github/workflows/realestate-collector.yml'
       - 'realestate/collector_parts/**'
       - 'realestate/enforce_freehold_v2.py'
+      - 'realestate/export_latest.py'
       - 'realestate/patch_dashboard_ui.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
@@ -56,15 +57,18 @@ jobs:
           REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '2'
         run: python realestate/enforce_freehold_v2.py
 
+      - name: Export normalized nightly snapshot for ingest
+        run: python realestate/export_latest.py
+
       - name: Keep dashboard UI patched
         run: python realestate/patch_dashboard_ui.py
 
-      - name: Commit durable snapshot, rights cache, history, and dashboard
+      - name: Commit durable snapshot, rights cache, history, normalized import, and dashboard
         run: |
           rm -f realestate/collector.py
           git config user.name 'realestate-price-watch[bot]'
           git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
-          git add realestate/data realestate/dashboard/index.html
+          git add realestate/data realestate/imports/latest.json realestate/dashboard/index.html
           if git diff --cached --quiet; then
             echo 'No data changes'
           else
