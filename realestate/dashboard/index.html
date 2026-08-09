@@ -2,37 +2,134 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#f8fafc" />
 <title>品川区・目黒区 中古戸建 Price Watch</title>
 <style>
-:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111827;background:#f8fafc}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1440px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}.muted{color:#64748b}.grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(360px,1fr);gap:20px;margin-top:20px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;box-shadow:0 1px 2px rgba(15,23,42,.04)}.filters{padding:16px;display:flex;gap:8px;flex-wrap:wrap}.filters input,.filters select{border:1px solid #cbd5e1;border-radius:10px;padding:9px 10px;background:#fff}.tablewrap{overflow:auto;max-height:70vh}table{width:100%;border-collapse:collapse;min-width:920px}th,td{padding:11px 12px;border-top:1px solid #f1f5f9;text-align:left;font-size:13px}th{position:sticky;top:0;background:#f8fafc;z-index:1;color:#475569}tbody tr{cursor:pointer}tbody tr:hover{background:#f8fafc}.price{font-weight:700;white-space:nowrap}.badge{display:inline-flex;padding:3px 7px;border-radius:999px;background:#f1f5f9;font-size:11px}.detail{padding:18px;position:sticky;top:20px}.detail h2{margin:0 0 4px;font-size:20px}.kv{display:grid;grid-template-columns:110px 1fr;gap:8px;font-size:13px;margin:14px 0}.chart{width:100%;height:300px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin-top:8px}.empty{padding:40px;text-align:center;color:#94a3b8}.link{color:#2563eb;text-decoration:none}.link:hover{text-decoration:underline}.status{padding:10px 14px;border-radius:10px;background:#eff6ff;color:#1d4ed8;font-size:13px;margin-top:12px}@media(max-width:900px){.grid{grid-template-columns:1fr}.detail{position:static}.top{align-items:flex-start;flex-direction:column}}
+:root{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:#0f172a;background:#f8fafc;line-height:1.45;
+  --bg:#f8fafc;--card:#fff;--line:#e2e8f0;--muted:#64748b;--accent:#2563eb;
+  --accent-soft:#eff6ff;--danger:#dc2626;--radius:16px;
+}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);min-height:100vh}body.sheet-open{overflow:hidden}
+button,input,select{font:inherit}.wrap{max-width:1500px;margin:0 auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:flex-end;gap:18px}.title{margin:0;font-size:clamp(24px,3vw,36px);letter-spacing:-.035em}.muted{color:var(--muted)}.updated{font-size:13px;text-align:right}.status{padding:11px 14px;border-radius:12px;background:var(--accent-soft);color:#1d4ed8;font-size:13px;margin-top:14px;border:1px solid #dbeafe}.status.error{background:#fef2f2;color:#991b1b;border-color:#fecaca}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}.metric{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.metric-label{font-size:12px;color:var(--muted)}.metric-value{font-weight:800;font-size:22px;margin-top:2px;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(360px,1fr);gap:20px;margin-top:20px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.filters{padding:14px;display:grid;grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(130px,.7fr));gap:8px;border-bottom:1px solid var(--line)}.control{width:100%;min-width:0;border:1px solid #cbd5e1;border-radius:10px;padding:10px 11px;background:#fff;color:#0f172a;outline:none}.control:focus{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(59,130,246,.12)}
+.tablewrap{overflow:auto;max-height:calc(100vh - 265px)}table{width:100%;border-collapse:collapse;min-width:1030px}th,td{padding:11px 12px;border-top:1px solid #f1f5f9;text-align:left;font-size:13px;vertical-align:top}th{position:sticky;top:0;background:#f8fafc;z-index:2;color:#475569;white-space:nowrap}tbody tr{cursor:pointer}tbody tr:hover,tbody tr[aria-selected="true"]{background:#f8fafc}.name-cell{min-width:220px}.price{font-weight:800;white-space:nowrap}.badge{display:inline-flex;align-items:center;padding:3px 7px;border-radius:999px;background:#f1f5f9;font-size:11px;white-space:nowrap}.badge.fudousan{background:#fef3c7;color:#92400e}.link{color:var(--accent);text-decoration:none;font-weight:650}.link:hover{text-decoration:underline}.open-btn{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 10px;border-radius:9px;background:#eff6ff;color:#1d4ed8;text-decoration:none;font-weight:700;border:1px solid #dbeafe;white-space:nowrap}.open-btn:hover{background:#dbeafe}
+.mobile-list{display:none;padding:10px}.property-card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;margin-bottom:10px;cursor:pointer}.property-card:active{background:#f8fafc}.property-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.property-title{font-weight:750;font-size:15px;min-width:0}.property-price{font-weight:850;white-space:nowrap;font-size:16px}.property-address{font-size:12px;color:var(--muted);margin-top:4px}.property-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 10px;margin-top:11px;font-size:12px}.property-facts span{min-width:0}.property-actions{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:12px}.load-more{display:none;width:calc(100% - 20px);margin:0 10px 12px;padding:11px;border:1px solid #cbd5e1;border-radius:11px;background:#fff;font-weight:750;color:#334155}
+.detail{padding:18px;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto}.detail h2{margin:0 0 4px;font-size:20px;letter-spacing:-.02em}.detail-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.detail-close{display:none;border:0;background:#f1f5f9;border-radius:999px;width:36px;height:36px;font-size:22px;line-height:1;cursor:pointer}.kv{display:grid;grid-template-columns:112px minmax(0,1fr);gap:8px;font-size:13px;margin:16px 0}.kv>div:nth-child(odd){color:var(--muted)}.chart-wrap{overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff}.chart{display:block;width:100%;height:auto;min-height:280px}.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;margin-top:8px}.empty{padding:42px 20px;text-align:center;color:#94a3b8}.sheet-backdrop{display:none}
+@media(max-width:1100px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.detail{position:static;max-height:none}.tablewrap{max-height:none}}
+@media(max-width:760px){
+  .wrap{padding:14px 12px calc(24px + env(safe-area-inset-bottom))}.top{align-items:flex-start;flex-direction:column;gap:7px}.updated{text-align:left}.status{margin-top:12px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}.metric{padding:11px 12px}.metric-value{font-size:18px}.grid{display:block;margin-top:12px}.filters{position:sticky;top:0;z-index:4;grid-template-columns:1fr 1fr;padding:10px;background:rgba(255,255,255,.97);backdrop-filter:blur(10px)}.filters #q{grid-column:1/-1}.tablewrap{display:none}.mobile-list{display:block}.load-more{display:block}.detail{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:20;max-height:min(88vh,820px);overflow:auto;border-radius:22px 22px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .2s ease;box-shadow:0 -18px 60px rgba(15,23,42,.22)}.detail.open{transform:translateY(0)}.detail-close{display:inline-grid;place-items:center;flex:0 0 auto}.sheet-backdrop{display:block;position:fixed;inset:0;z-index:19;background:rgba(15,23,42,.42);opacity:0;pointer-events:none;transition:opacity .2s ease}.sheet-backdrop.open{opacity:1;pointer-events:auto}.chart{min-height:230px}.kv{grid-template-columns:96px minmax(0,1fr)}
+}
+@media(max-width:420px){.filters{grid-template-columns:1fr}.filters #q{grid-column:auto}.metrics{grid-template-columns:1fr 1fr}.property-card-head{display:block}.property-price{margin-top:6px}.property-facts{grid-template-columns:1fr}.title{font-size:26px}}
+@media(prefers-reduced-motion:reduce){.detail,.sheet-backdrop{transition:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><div><h1 style="margin:0">中古戸建 Price Watch</h1><div class="muted">品川区・目黒区 / 夜間バッチ収集 / 履歴永続化</div></div><div id="updated" class="muted"></div></div>
-  <div id="status" class="status">データ読込中…</div>
-  <div class="grid">
-    <div class="card">
-      <div class="filters"><input id="q" placeholder="住所・駅・物件名で検索"/><select id="ward"><option value="">全区</option><option>品川区</option><option>目黒区</option></select><select id="source"><option value="">全ソース</option><option>fudousan.or.jp</option><option>SUUMO</option><option>HOME'S</option></select><select id="sort"><option value="priceAsc">価格が安い順</option><option value="priceDesc">価格が高い順</option><option value="daysDesc">掲載日数が長い順</option></select></div>
+  <header class="top">
+    <div><h1 class="title">中古戸建 Price Watch</h1><div class="muted">品川区・目黒区 / 夜間バッチ収集 / 価格履歴を永続保存</div></div>
+    <div id="updated" class="updated muted"></div>
+  </header>
+  <div id="status" class="status" role="status">データ読込中…</div>
+  <section class="metrics" aria-label="集計">
+    <div class="metric"><div class="metric-label">表示中</div><div id="metricShown" class="metric-value">—</div></div>
+    <div class="metric"><div class="metric-label">掲載レコード</div><div id="metricTotal" class="metric-value">—</div></div>
+    <div class="metric"><div class="metric-label">価格取得率</div><div id="metricCoverage" class="metric-value">—</div></div>
+    <div class="metric"><div class="metric-label">価格変更</div><div id="metricChanged" class="metric-value">—</div></div>
+  </section>
+  <main class="grid">
+    <section class="card" aria-label="物件一覧">
+      <div class="filters">
+        <input class="control" id="q" type="search" inputmode="search" placeholder="住所・駅・物件名で検索" aria-label="検索" />
+        <select class="control" id="ward" aria-label="区"><option value="">全区</option><option>品川区</option><option>目黒区</option></select>
+        <select class="control" id="source" aria-label="ソース"><option value="">全ソース</option></select>
+        <select class="control" id="sort" aria-label="並び順"><option value="priceAsc">価格が安い順</option><option value="priceDesc">価格が高い順</option><option value="daysDesc">掲載日数が長い順</option><option value="newest">新着順</option></select>
+      </div>
       <div class="tablewrap"><table><thead><tr><th>区</th><th>物件</th><th>価格</th><th>土地</th><th>建物</th><th>築年</th><th>駅</th><th>日数</th><th>ソース</th><th>リンク</th></tr></thead><tbody id="rows"></tbody></table></div>
-    </div>
-    <div class="card detail" id="detail"><div class="empty">物件を選択すると価格推移を表示します</div></div>
-  </div>
+      <div id="mobileList" class="mobile-list"></div>
+      <button id="loadMore" class="load-more" type="button">さらに表示</button>
+    </section>
+    <aside class="card detail" id="detail" aria-live="polite"><div class="empty">物件を選択すると価格推移を表示します</div></aside>
+  </main>
 </div>
+<div id="sheetBackdrop" class="sheet-backdrop" aria-hidden="true"></div>
 <script>
-const DATA_URL='https://raw.githubusercontent.com/sawamotokai/price-alerts/master/realestate/data/current.json';
-const HISTORY_BASE='https://raw.githubusercontent.com/sawamotokai/price-alerts/master/realestate/data/history/';
-let items=[];
+'use strict';
+const params=new URLSearchParams(location.search);
+const DATA_URL=params.get('data')||'https://raw.githubusercontent.com/sawamotokai/price-alerts/master/realestate/data/dashboard.json';
+const PAGE_SIZE=50;
+let items=[];let visibleLimit=PAGE_SIZE;let selectedId=null;
 const $=id=>document.getElementById(id);
-function yen(v){return v==null?'—':Number(v).toLocaleString('ja-JP')+'万円'}
-function area(v){return v==null?'—':Number(v).toFixed(2)+'㎡'}
+const isMobile=()=>matchMedia('(max-width:760px)').matches;
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function filtered(){let a=[...items];const q=$('q').value.trim().toLowerCase(),w=$('ward').value,s=$('source').value;if(q)a=a.filter(x=>JSON.stringify(x).toLowerCase().includes(q));if(w)a=a.filter(x=>x.ward===w);if(s)a=a.filter(x=>x.source===s);const mode=$('sort').value;a.sort((x,y)=>mode==='priceDesc'?(y.price_man||0)-(x.price_man||0):mode==='daysDesc'?(y.listing_days||0)-(x.listing_days||0):(x.price_man??1e18)-(y.price_man??1e18));return a}
-function render(){const a=filtered();$('rows').innerHTML=a.map(x=>`<tr data-id="${esc(x.id)}"><td>${esc(x.ward)}</td><td><b>${esc(x.title||x.address||x.id)}</b><div class="muted">${esc(x.address||'')}</div></td><td class="price">${yen(x.price_man)}</td><td>${area(x.land_sqm)}</td><td>${area(x.building_sqm)}</td><td>${esc(x.built||'—')}</td><td>${esc(x.station||'—')}</td><td>${esc(x.listing_days??0)}日</td><td><span class="badge">${esc(x.source||'')}</span></td><td><a class="link" href="${esc(x.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">開く</a></td></tr>`).join('');document.querySelectorAll('tbody tr').forEach(tr=>tr.onclick=()=>show(tr.dataset.id));$('status').textContent=`${a.length.toLocaleString()}件表示 / ${items.length.toLocaleString()}件取得済み。表示時のスクレイピングは行っていません。`}
-async function show(id){const selected=items.find(x=>x.id===id);if(!selected)return;const d=$('detail');d.innerHTML=`<h2>${esc(selected.title||selected.address||selected.id)}</h2><div class="muted">${esc(selected.address||'')}</div><div class="kv"><div>現在価格</div><b>${yen(selected.price_man)}</b><div>観測開始</div><div>${esc(selected.first_seen||'—')}</div><div>掲載日数</div><div>${esc(selected.listing_days??0)}日</div><div>間取り</div><div>${esc(selected.layout||'—')}</div><div>ソース</div><div><a class="link" href="${esc(selected.url)}" target="_blank">${esc(selected.source||'物件ページ')}</a></div></div><h3>掲載価格の推移</h3><svg class="chart" id="chart" viewBox="0 0 640 300" preserveAspectRatio="none"></svg><div id="legend" class="legend"></div>`;try{const r=await fetch(HISTORY_BASE+encodeURIComponent(id)+'.json',{cache:'no-store'});const h=r.ok?await r.json():{series:{}};draw(h.series||{});}catch(e){draw({})}}
-function draw(series){const svg=$('chart'),leg=$('legend');if(!svg)return;const entries=Object.entries(series).filter(([,pts])=>Array.isArray(pts)&&pts.length);if(!entries.length){svg.innerHTML='<text x="320" y="150" text-anchor="middle" fill="#94a3b8" font-size="14">価格履歴はまだありません</text>';return}const all=entries.flatMap(([,p])=>p);const vals=all.map(p=>Number(p.price_man)).filter(Number.isFinite);const dates=[...new Set(all.map(p=>p.date))].sort();let min=Math.min(...vals),max=Math.max(...vals);if(min===max){min-=Math.max(100,min*.02);max+=Math.max(100,max*.02)}const pad={l:62,r:22,t:18,b:40},W=640,H=300,x=d=>pad.l+(Math.max(0,dates.indexOf(d)))*(W-pad.l-pad.r)/Math.max(1,dates.length-1),y=v=>pad.t+(max-v)*(H-pad.t-pad.b)/(max-min);let out='';for(let i=0;i<5;i++){const v=max-(max-min)*i/4,yy=y(v);out+=`<line x1="${pad.l}" y1="${yy}" x2="${W-pad.r}" y2="${yy}" stroke="#e2e8f0"/><text x="${pad.l-8}" y="${yy+4}" text-anchor="end" fill="#64748b" font-size="11">${Math.round(v).toLocaleString()}万</text>`}dates.forEach((dt,i)=>{if(i===0||i===dates.length-1||dates.length<6){const xx=x(dt);out+=`<text x="${xx}" y="${H-14}" text-anchor="middle" fill="#64748b" font-size="11">${dt.slice(5).replace('-','/')}</text>`}});const colors=['#2563eb','#16a34a','#dc2626'];entries.forEach(([name,pts],idx)=>{const p=[...pts].sort((a,b)=>a.date.localeCompare(b.date));const coords=p.map(z=>`${x(z.date)},${y(Number(z.price_man))}`).join(' ');out+=`<polyline points="${coords}" fill="none" stroke="${colors[idx%colors.length]}" stroke-width="3" stroke-linejoin="round"/>`;p.forEach(z=>out+=`<circle cx="${x(z.date)}" cy="${y(Number(z.price_man))}" r="4" fill="${colors[idx%colors.length]}"/>`)});svg.innerHTML=out;leg.innerHTML=entries.map(([n],i)=>`<span><b style="color:${colors[i%colors.length]}">●</b> ${esc(n)}</span>`).join('')}
-['q','ward','source','sort'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render));
-(async()=>{try{const r=await fetch(DATA_URL,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const data=await r.json();items=data.items||[];$('updated').textContent='最終更新: '+(data.observed_at||'—');render();if(items[0])show(items[0].id)}catch(e){$('status').textContent='データストアは初期化済みですが、まだ最初のスナップショットがありません。'}})();
+function sourceLabel(s){const v=String(s||'').toLowerCase();if(v==='suumo')return'SUUMO';if(v==='homes'||v==="home's")return"HOME'S";if(v.includes('fudousan'))return'不動産ジャパン';return s||'—'}
+function sourceClass(s){return String(s||'').toLowerCase().includes('fudousan')?'badge fudousan':'badge'}
+function yenFromYen(v){return v==null?'—':Math.round(Number(v)/10000).toLocaleString('ja-JP')+'万円'}
+function area(v){return v==null?'—':Number(v).toLocaleString('ja-JP',{maximumFractionDigits:2})+'㎡'}
+function dateOnly(v){return v?String(v).slice(0,10):'—'}
+function normalize(raw){
+  return {
+    ...raw,
+    id:raw.listing_id||raw.id,
+    propertyId:raw.property_id||raw.listing_id||raw.id,
+    source:String(raw.source||''),
+    priceYen:raw.price_yen==null?null:Number(raw.price_yen),
+    land:raw.land_area_sqm??raw.land_sqm??null,
+    building:raw.building_area_sqm??raw.building_sqm??null,
+    built:raw.built_year_month??raw.built??null,
+    station:raw.access??raw.station??null,
+    days:Number(raw.observed_days??raw.listing_days??0),
+    firstSeen:raw.first_seen??null,
+    history:Array.isArray(raw.price_history)?raw.price_history:[],
+  };
+}
+function filtered(){
+  let a=[...items];const q=$('q').value.trim().toLowerCase(),w=$('ward').value,s=$('source').value;
+  if(q)a=a.filter(x=>[x.title,x.address,x.station,x.layout,x.broker].some(v=>String(v||'').toLowerCase().includes(q)));
+  if(w)a=a.filter(x=>x.ward===w);if(s)a=a.filter(x=>x.source===s);
+  const mode=$('sort').value;a.sort((x,y)=>mode==='priceDesc'?(y.priceYen||0)-(x.priceYen||0):mode==='daysDesc'?y.days-x.days:mode==='newest'?String(y.firstSeen||'').localeCompare(String(x.firstSeen||'')):(x.priceYen??Number.MAX_SAFE_INTEGER)-(y.priceYen??Number.MAX_SAFE_INTEGER));return a;
+}
+function linkHtml(x,label='物件を開く'){return x.url?`<a class="open-btn" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${label}</a>`:'<span class="muted">リンクなし</span>'}
+function render(){
+  const a=filtered();const shown=isMobile()?a.slice(0,visibleLimit):a;
+  $('rows').innerHTML=a.map(x=>`<tr data-id="${esc(x.id)}" aria-selected="${selectedId===x.id}"><td>${esc(x.ward||'—')}</td><td class="name-cell"><b>${esc(x.title||x.address||x.id)}</b><div class="muted">${esc(x.address||'')}</div></td><td class="price">${yenFromYen(x.priceYen)}</td><td>${area(x.land)}</td><td>${area(x.building)}</td><td>${esc(x.built||'—')}</td><td>${esc(x.station||'—')}</td><td>${x.days}日</td><td><span class="${sourceClass(x.source)}">${esc(sourceLabel(x.source))}</span></td><td>${linkHtml(x,'開く')}</td></tr>`).join('');
+  $('mobileList').innerHTML=shown.map(x=>`<article class="property-card" data-id="${esc(x.id)}" tabindex="0" role="button" aria-label="${esc(x.title||x.address||'物件')}の詳細"><div class="property-card-head"><div class="property-title">${esc(x.title||x.address||x.id)}</div><div class="property-price">${yenFromYen(x.priceYen)}</div></div><div class="property-address">${esc(x.address||'住所情報なし')}</div><div class="property-facts"><span>土地 ${area(x.land)}</span><span>建物 ${area(x.building)}</span><span>${esc(x.layout||'間取り不明')}</span><span>${esc(x.built||'築年不明')}</span><span>${esc(x.station||'交通情報なし')}</span><span>${x.days}日掲載</span></div><div class="property-actions"><span class="${sourceClass(x.source)}">${esc(sourceLabel(x.source))}</span>${linkHtml(x)}</div></article>`).join('');
+  document.querySelectorAll('[data-id]').forEach(el=>{const open=()=>show(el.dataset.id);el.onclick=open;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}}});
+  $('loadMore').hidden=!isMobile()||shown.length>=a.length;
+  $('metricShown').textContent=a.length.toLocaleString('ja-JP');$('metricTotal').textContent=items.length.toLocaleString('ja-JP');
+  const priced=items.filter(x=>Number.isFinite(x.priceYen)).length;$('metricCoverage').textContent=items.length?Math.round(priced/items.length*100)+'%':'—';
+  $('status').textContent=`${a.length.toLocaleString('ja-JP')}件表示 / ${items.length.toLocaleString('ja-JP')}件取得済み。画面表示時のスクレイピングは行っていません。`;
+}
+function relatedSeries(selected){
+  const peers=items.filter(x=>x.propertyId===selected.propertyId&&x.history.length);
+  const seen={};return peers.map(x=>{const base=sourceLabel(x.source);seen[base]=(seen[base]||0)+1;const name=seen[base]>1?`${base} ${seen[base]}`:base;return [name,x.history.map(p=>({date:String(p[0]),priceMan:Number(p[1])/10000}))];});
+}
+function openSheet(){if(!isMobile())return;$('detail').classList.add('open');$('sheetBackdrop').classList.add('open');document.body.classList.add('sheet-open')}
+function closeSheet(){$('detail').classList.remove('open');$('sheetBackdrop').classList.remove('open');document.body.classList.remove('sheet-open')}
+function show(id){
+  const x=items.find(v=>v.id===id);if(!x)return;selectedId=id;
+  $('detail').innerHTML=`<div class="detail-head"><div><h2>${esc(x.title||x.address||x.id)}</h2><div class="muted">${esc(x.address||'')}</div></div><button class="detail-close" id="detailClose" type="button" aria-label="閉じる">×</button></div><div class="kv"><div>現在価格</div><div><b>${yenFromYen(x.priceYen)}</b></div><div>観測開始</div><div>${dateOnly(x.firstSeen)}</div><div>掲載日数</div><div>${x.days}日</div><div>土地 / 建物</div><div>${area(x.land)} / ${area(x.building)}</div><div>間取り / 築年</div><div>${esc(x.layout||'—')} / ${esc(x.built||'—')}</div><div>交通</div><div>${esc(x.station||'—')}</div><div>ソース</div><div><span class="${sourceClass(x.source)}">${esc(sourceLabel(x.source))}</span></div><div>元ページ</div><div>${linkHtml(x)}</div></div><h3>掲載価格の推移</h3><div class="chart-wrap"><svg class="chart" id="chart" viewBox="0 0 720 320" role="img" aria-label="価格推移グラフ"></svg></div><div id="legend" class="legend"></div>`;
+  const close=$('detailClose');if(close)close.onclick=closeSheet;draw(relatedSeries(x));openSheet();render();
+}
+function draw(entries){
+  const svg=$('chart'),leg=$('legend');if(!svg)return;
+  const valid=entries.filter(([,pts])=>Array.isArray(pts)&&pts.length&&pts.some(p=>Number.isFinite(p.priceMan)));
+  if(!valid.length){svg.innerHTML='<text x="360" y="160" text-anchor="middle" fill="#94a3b8" font-size="15">価格履歴はまだありません</text>';leg.innerHTML='';return}
+  const all=valid.flatMap(([,p])=>p).filter(p=>Number.isFinite(p.priceMan));const vals=all.map(p=>p.priceMan),dates=[...new Set(all.map(p=>p.date))].sort();let min=Math.min(...vals),max=Math.max(...vals);if(min===max){const margin=Math.max(100,min*.025);min-=margin;max+=margin}
+  const W=720,H=320,pad={l:76,r:24,t:22,b:44};const x=d=>pad.l+Math.max(0,dates.indexOf(d))*(W-pad.l-pad.r)/Math.max(1,dates.length-1),y=v=>pad.t+(max-v)*(H-pad.t-pad.b)/(max-min);let out='';
+  for(let i=0;i<5;i++){const v=max-(max-min)*i/4,yy=y(v);out+=`<line x1="${pad.l}" y1="${yy}" x2="${W-pad.r}" y2="${yy}" stroke="#e2e8f0"/><text x="${pad.l-9}" y="${yy+4}" text-anchor="end" fill="#64748b" font-size="11">${Math.round(v).toLocaleString('ja-JP')}万</text>`}
+  const tickIndexes=dates.length<=5?dates.map((_,i)=>i):[0,Math.floor((dates.length-1)/2),dates.length-1];tickIndexes.forEach(i=>{const d=dates[i];out+=`<text x="${x(d)}" y="${H-15}" text-anchor="middle" fill="#64748b" font-size="11">${esc(d.slice(5).replace('-','/'))}</text>`});
+  const colors=['#2563eb','#16a34a','#dc2626','#9333ea','#ea580c'];
+  valid.forEach(([name,pts],idx)=>{const p=[...pts].filter(z=>Number.isFinite(z.priceMan)).sort((a,b)=>a.date.localeCompare(b.date));const c=colors[idx%colors.length];if(p.length>1){out+=`<polyline points="${p.map(z=>`${x(z.date)},${y(z.priceMan)}`).join(' ')}" fill="none" stroke="${c}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>`}p.forEach(z=>{out+=`<circle cx="${x(z.date)}" cy="${y(z.priceMan)}" r="4.5" fill="${c}"><title>${esc(name)} ${esc(z.date)} ${Math.round(z.priceMan).toLocaleString('ja-JP')}万円</title></circle>`})});svg.innerHTML=out;leg.innerHTML=valid.map(([n],i)=>`<span><b style="color:${colors[i%colors.length]}">●</b> ${esc(n)}</span>`).join('');
+}
+function populateSources(){const sources=[...new Set(items.map(x=>x.source).filter(Boolean))].sort();$('source').innerHTML='<option value="">全ソース</option>'+sources.map(s=>`<option value="${esc(s)}">${esc(sourceLabel(s))}</option>`).join('')}
+['q','ward','source','sort'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',()=>{visibleLimit=PAGE_SIZE;render()}));
+$('loadMore').onclick=()=>{visibleLimit+=PAGE_SIZE;render()};$('sheetBackdrop').onclick=closeSheet;addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});addEventListener('resize',()=>{if(!isMobile())closeSheet();render()});
+(async()=>{try{const r=await fetch(DATA_URL,{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();const raw=Array.isArray(data.listings)?data.listings:Object.values(data.listings||{});items=raw.map(normalize).filter(x=>x.id&&x.active!==false&&!String(x.url||'').includes('/inquire/')&&String(x.title||'')!=='資料請求');populateSources();$('updated').textContent='最終更新: '+dateOnly(data.generated_at||data.latest_run?.completed_at);$('metricChanged').textContent=Number(data.latest_run?.metrics?.price_changed_count||0).toLocaleString('ja-JP');render();if(items[0]&&!isMobile())show(items[0].id)}catch(e){console.error(e);$('status').classList.add('error');$('status').textContent='データの読み込みに失敗しました。保存済みスナップショットの公開状態を確認してください。'}})();
 </script>
-</body></html>
+</body>
+</html>
