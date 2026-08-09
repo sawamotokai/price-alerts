@@ -1,17 +1,32 @@
 name: Real-estate snapshot ingest
+
 on:
   push:
     branches: [master]
     paths:
+      - '.github/workflows/realestate-ingest.yml'
+      - 'realestate/ingest_snapshot.py'
       - 'realestate/imports/latest.json'
+  workflow_run:
+    workflows: ['Real-estate nightly collector']
+    types: [completed]
   workflow_dispatch:
+
 permissions:
   contents: write
+
+concurrency:
+  group: realestate-snapshot-ingest
+  cancel-in-progress: true
+
 jobs:
   ingest:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: master
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -26,5 +41,6 @@ jobs:
             echo 'No data changes'
           else
             git commit -m 'Update real-estate price history'
-            git push
+            git pull --rebase origin master
+            git push origin HEAD:master
           fi
