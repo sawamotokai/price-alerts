@@ -7,6 +7,7 @@ on:
       - '.github/workflows/realestate-collector.yml'
       - 'realestate/collector_parts/**'
       - 'realestate/enforce_freehold.py'
+      - 'realestate/warm_land_rights_cache.py'
       - 'realestate/patch_dashboard_ui.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
@@ -47,10 +48,18 @@ jobs:
           REAL_ESTATE_MAX_MISSING_RUNS: '2'
         run: python realestate/collector.py
 
+      - name: Warm land-right classifications in parallel
+        env:
+          REAL_ESTATE_RIGHTS_WORKERS: '5'
+          REAL_ESTATE_RIGHTS_TIMEOUT: '18'
+          REAL_ESTATE_RIGHTS_CACHE_DAYS: '30'
+          REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '2'
+        run: python realestate/warm_land_rights_cache.py
+
       - name: Verify land rights and publish freehold-only dashboard
         env:
           REAL_ESTATE_STRICT_FREEHOLD: '1'
-          REAL_ESTATE_RIGHTS_DELAY: '0.18'
+          REAL_ESTATE_RIGHTS_DELAY: '0'
           REAL_ESTATE_RIGHTS_TIMEOUT: '18'
           REAL_ESTATE_RIGHTS_CACHE_DAYS: '30'
           REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '2'
