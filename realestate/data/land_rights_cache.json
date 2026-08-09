@@ -4149,6 +4149,16 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1463790002725/": {
+      "checked_at": "2026-08-09T11:02:16.257592+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1463790002725/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1463790002799/": {
       "checked_at": "2026-08-09T07:19:25.454840+00:00",
       "classifier_version": 2,
@@ -4795,6 +4805,16 @@
       "error": "HTTP 405",
       "evidence": null,
       "final_url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1463790002672/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/visit/input/kodate/b-1463790002725/": {
+      "checked_at": "2026-08-09T11:02:16.258934+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1463790002725/",
       "http_status": 405,
       "label": null,
       "status": "unknown"
@@ -5559,6 +5579,16 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/kodate/b-1463790002725/": {
+      "checked_at": "2026-08-09T11:02:16.257252+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1463790002725/",
+      "http_status": 200,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/kodate/b-1463790002799/": {
       "checked_at": "2026-08-09T07:19:17.272102+00:00",
       "classifier_version": 2,
@@ -6030,5 +6060,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-08-09T10:49:40.913017+00:00"
+  "updated_at": "2026-08-09T11:02:16.971455+00:00"
 }
