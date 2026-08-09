@@ -1,6 +1,6 @@
 {
-  "count": 234,
-  "generated_at": "2026-08-09T07:14:30.720579+00:00",
+  "count": 240,
+  "generated_at": "2026-08-09T07:15:35.107683+00:00",
   "items": [
     {
       "address": "東急東横線 祐天寺駅 徒歩2分 東京都目黒区五本木2丁目 建築年 (築年数) 2024年12月(築2年) 現況 居住中 主要採光面 東 掲載画像27枚 4日前 公開 閲覧済",
@@ -36,14 +36,14 @@
       "url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1400020009765/"
     },
     {
-      "address": "湘南新宿ライン宇須 西大井駅 徒歩10分 東京都品川区西大井4丁目7 建築年 (築年数) 2005年05月(築22年) 現況 居住中 主要採光面 - 掲載画像17枚",
+      "address": "東京都品川区西大井4丁目7",
       "evidence": "rights-label-not-found",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "057ac4b6646a8d80343f",
-      "property_id": "c06b33b9f888ef41c40a",
+      "property_id": "listing:057ac4b6646a8d80343f",
       "source": "homes",
-      "title": "中古一戸建て 品川区西大井4丁目 一戸建て",
+      "title": "品川区西大井4丁目 一戸建て",
       "url": "https://www.homes.co.jp/kodate/b-1463790002631/"
     },
     {
@@ -146,14 +146,14 @@
       "url": "https://www.homes.co.jp/kodate/b-35007300000132/"
     },
     {
-      "address": "東京都目黒区大岡山1丁目26",
+      "address": "東急目黒線 大岡山駅 徒歩10分 東京都目黒区大岡山1丁目26 建築年 (築年数) 2018年06月(築9年) 現況 空家 主要採光面 - 掲載画像15枚",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "11fab0701ffbd095c08a",
-      "property_id": "listing:11fab0701ffbd095c08a",
+      "property_id": "9ec1339f23da77dd9807",
       "source": "homes",
-      "title": "目黒区大岡山1丁目 一戸建て",
+      "title": "中古一戸建て 目黒区大岡山1丁目 一戸建て",
       "url": "https://www.homes.co.jp/kodate/b-1491230001620/"
     },
     {
@@ -245,6 +245,17 @@
       "url": "https://www.homes.co.jp/kodate/b-60000330230223/"
     },
     {
+      "address": "東急目黒線 西小山駅 徒歩5分 東京都目黒区洗足1丁目8-5 建築年 (築年数) 2023年11月(築3年) 現況 居住中 主要採光面 南東 掲載画像15枚",
+      "evidence": "rights-label-not-found",
+      "land_right": null,
+      "land_right_status": "unknown",
+      "listing_id": "214c9ad152fd0258c152",
+      "property_id": "0d2a1e15b45f4d597a5f",
+      "source": "homes",
+      "title": "中古一戸建て 目黒区洗足1丁目戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1322050000112/"
+    },
+    {
       "address": "東急東横線 祐天寺駅 徒歩4分 東京都目黒区祐天寺2丁目 建築年 (築年数) 2022年01月(築5年) 現況 居住中 主要採光面 東 掲載画像27枚",
       "evidence": "HTTP 405",
       "land_right": null,
@@ -267,12 +278,12 @@
       "url": "https://www.homes.co.jp/kodate/b-60000330230451/"
     },
     {
-      "address": "東京都品川区大井5丁目20",
+      "address": "湘南新宿ライン宇須 西大井駅 徒歩15分 東京都品川区大井5丁目20 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 - 掲載画像23枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "242bd26a90f61c2d8181",
-      "property_id": "listing:242bd26a90f61c2d8181",
+      "property_id": "a0f415bef8e9352af51a",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1463790002672/"
@@ -287,6 +298,17 @@
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-35007030000291/"
+    },
+    {
+      "address": "東京都品川区豊町1丁目",
+      "evidence": "HTTP 405",
+      "land_right": null,
+      "land_right_status": "unknown",
+      "listing_id": "259d5431e93111b685cd",
+      "property_id": "listing:259d5431e93111b685cd",
+      "source": "homes",
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1358090022160/"
     },
     {
       "address": "東急目黒線 西小山駅 徒歩7分 東京都品川区荏原6丁目 建築年 (築年数) 2003年01月(築24年) 現況 空家 主要採光面 - 掲載画像1枚",
@@ -487,15 +509,26 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-35007280000142/"
     },
     {
-      "address": "東京都品川区東五反田1丁目",
+      "address": "都営浅草線 高輪台駅 徒歩5分 東京都品川区東五反田1丁目 建築年 (築年数) 2005年11月(築21年) 現況 空家 主要採光面 南東 掲載画像19枚",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "381fb2a3d356702321e5",
-      "property_id": "listing:381fb2a3d356702321e5",
+      "property_id": "13d70cda3d7053d06c7b",
       "source": "homes",
-      "title": "品川区東五反田一丁目",
+      "title": "中古一戸建て 品川区東五反田一丁目",
       "url": "https://www.homes.co.jp/kodate/b-1514110000029/"
+    },
+    {
+      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2023年08月(築4年) 現況 居住中 主要採光面 - 掲載画像30枚",
+      "evidence": "HTTP 405",
+      "land_right": null,
+      "land_right_status": "unknown",
+      "listing_id": "38405d515608787c5bc0",
+      "property_id": "068b1778cff308a2cb97",
+      "source": "homes",
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1322050000112/"
     },
     {
       "address": "東急東横線 学芸大学駅 徒歩14分 東京都目黒区中町1丁目 建築年 (築年数) 2023年10月(築3年) 現況 空家 主要採光面 - 掲載画像23枚",
@@ -696,12 +729,12 @@
       "url": "https://www.homes.co.jp/kodate/b-1492270000018/"
     },
     {
-      "address": "東京都目黒区東が丘1丁目",
+      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2023年08月(築4年) 現況 居住中 主要採光面 - 掲載画像30枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "474f3d10fdb48f1c0b78",
-      "property_id": "listing:474f3d10fdb48f1c0b78",
+      "property_id": "068b1778cff308a2cb97",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-35007350000042/"
@@ -828,12 +861,12 @@
       "url": "https://www.homes.co.jp/kodate/b-1417040007295/"
     },
     {
-      "address": "湘南新宿ライン宇須 西大井駅 徒歩10分 東京都品川区西大井4丁目7 建築年 (築年数) 2005年05月(築22年) 現況 居住中 主要採光面 - 掲載画像17枚",
+      "address": "東京都品川区西大井4丁目7",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "505e3bf2668674975e69",
-      "property_id": "c06b33b9f888ef41c40a",
+      "property_id": "listing:505e3bf2668674975e69",
       "source": "homes",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1463790002631/"
@@ -960,14 +993,14 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1244810011176/"
     },
     {
-      "address": "東京都品川区大井5丁目20",
+      "address": "湘南新宿ライン宇須 西大井駅 徒歩15分 東京都品川区大井5丁目20 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 - 掲載画像23枚",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "5a45f53048547126dbbf",
-      "property_id": "listing:5a45f53048547126dbbf",
+      "property_id": "a0f415bef8e9352af51a",
       "source": "homes",
-      "title": "品川区大井5丁目 一戸建て",
+      "title": "中古一戸建て 品川区大井5丁目 一戸建て",
       "url": "https://www.homes.co.jp/kodate/b-1463790002672/"
     },
     {
@@ -1048,12 +1081,12 @@
       "url": "https://www.homes.co.jp/kodate/b-35006240000123/"
     },
     {
-      "address": "京急本線 立会川駅 徒歩13分 東京都品川区大井5丁目 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 南東 掲載画像21枚",
+      "address": "東京都品川区大井5丁目",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "64c3f8998b9d5b96138f",
-      "property_id": "bed39683e55fff4a846f",
+      "property_id": "listing:64c3f8998b9d5b96138f",
       "source": "homes",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-35005020002292/"
@@ -1092,12 +1125,12 @@
       "url": "https://www.homes.co.jp/kodate/b-1383890000181/"
     },
     {
-      "address": "東京都目黒区大岡山1丁目26",
+      "address": "東急目黒線 大岡山駅 徒歩10分 東京都目黒区大岡山1丁目26 建築年 (築年数) 2018年06月(築9年) 現況 空家 主要採光面 - 掲載画像15枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "6db6f9612014023674c5",
-      "property_id": "listing:6db6f9612014023674c5",
+      "property_id": "9ec1339f23da77dd9807",
       "source": "homes",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1491230001620/"
@@ -1356,12 +1389,12 @@
       "url": "https://www.homes.co.jp/kodate/b-1130750003162/"
     },
     {
-      "address": "京急本線 立会川駅 徒歩13分 東京都品川区大井5丁目 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 南東 掲載画像21枚",
+      "address": "東京都品川区大井5丁目",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "8ce78645d6c9c1423281",
-      "property_id": "bed39683e55fff4a846f",
+      "property_id": "listing:8ce78645d6c9c1423281",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-35005020002292/"
@@ -1444,34 +1477,34 @@
       "url": "https://www.homes.co.jp/kodate/b-1200350005681/"
     },
     {
-      "address": "京急本線 立会川駅 徒歩13分 東京都品川区大井5丁目 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 南東 掲載画像21枚",
+      "address": "東京都品川区大井5丁目",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "94df23ded0f36d61ed3b",
-      "property_id": "bed39683e55fff4a846f",
+      "property_id": "listing:94df23ded0f36d61ed3b",
       "source": "homes",
-      "title": "中古一戸建て 戸建 品川区大井5丁目",
+      "title": "戸建 品川区大井5丁目",
       "url": "https://www.homes.co.jp/kodate/b-35005020002292/"
     },
     {
-      "address": "東京都目黒区東が丘1丁目",
+      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2023年08月(築4年) 現況 居住中 主要採光面 - 掲載画像30枚",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "951c63fb02bbeef924e3",
-      "property_id": "listing:951c63fb02bbeef924e3",
+      "property_id": "068b1778cff308a2cb97",
       "source": "homes",
-      "title": "目黒区東が丘1丁目 中古戸建",
+      "title": "中古一戸建て 目黒区東が丘1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007350000042/"
     },
     {
-      "address": "東京都品川区大井5丁目20",
+      "address": "湘南新宿ライン宇須 西大井駅 徒歩15分 東京都品川区大井5丁目20 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 - 掲載画像23枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "95612015e8005bc8f289",
-      "property_id": "listing:95612015e8005bc8f289",
+      "property_id": "a0f415bef8e9352af51a",
       "source": "homes",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1463790002672/"
@@ -1488,12 +1521,12 @@
       "url": "https://www.homes.co.jp/kodate/b-14300020568/"
     },
     {
-      "address": "東京都品川区豊町1丁目",
+      "address": "都営浅草線 戸越駅 徒歩9分 東京都品川区豊町1丁目 建築年 (築年数) 1993年10月(築33年) 現況 空家 主要採光面 東 掲載画像30枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "9850b1810e1a83aef9d3",
-      "property_id": "listing:9850b1810e1a83aef9d3",
+      "property_id": "beb3eccf6ec244af80bb",
       "source": "homes",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/inquire/visit/input/kodate/b-1534560001396/"
@@ -1598,12 +1631,12 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1311760000702/"
     },
     {
-      "address": "東京都品川区豊町1丁目",
+      "address": "都営浅草線 戸越駅 徒歩9分 東京都品川区豊町1丁目 建築年 (築年数) 1993年10月(築33年) 現況 空家 主要採光面 東 掲載画像30枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "9e2cd3b60548bbe1915e",
-      "property_id": "listing:9e2cd3b60548bbe1915e",
+      "property_id": "beb3eccf6ec244af80bb",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1534560001396/"
@@ -1620,12 +1653,12 @@
       "url": "https://www.homes.co.jp/kodate/b-1562580000022/"
     },
     {
-      "address": "東京都品川区東五反田1丁目",
+      "address": "都営浅草線 高輪台駅 徒歩5分 東京都品川区東五反田1丁目 建築年 (築年数) 2005年11月(築21年) 現況 空家 主要採光面 南東 掲載画像19枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "9ee61eb7aebda495fdff",
-      "property_id": "listing:9ee61eb7aebda495fdff",
+      "property_id": "13d70cda3d7053d06c7b",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1514110000029/"
@@ -1664,15 +1697,26 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1569630000072/"
     },
     {
-      "address": "東京都目黒区中目黒1丁目",
+      "address": "東急東横線 代官山駅 徒歩5分 東京都目黒区中目黒1丁目 建築年 (築年数) 2025年11月(築1年) 現況 居住中 主要採光面 - 掲載画像30枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "a01eb87216e0493aad43",
-      "property_id": "listing:a01eb87216e0493aad43",
+      "property_id": "db0c95a149a13673048c",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1375350001711/"
+    },
+    {
+      "address": "東京都目黒区三田1丁目",
+      "evidence": "HTTP 405",
+      "land_right": null,
+      "land_right_status": "unknown",
+      "listing_id": "a022035ef35dd8232e17",
+      "property_id": "listing:a022035ef35dd8232e17",
+      "source": "homes",
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1265020006594/"
     },
     {
       "address": "東京都目黒区五本木2",
@@ -1774,14 +1818,14 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1012870000631/"
     },
     {
-      "address": "東京都品川区豊町1丁目",
+      "address": "都営浅草線 戸越駅 徒歩9分 東京都品川区豊町1丁目 建築年 (築年数) 1993年10月(築33年) 現況 空家 主要採光面 東 掲載画像30枚",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "af940461f238a0e79737",
-      "property_id": "listing:af940461f238a0e79737",
+      "property_id": "beb3eccf6ec244af80bb",
       "source": "homes",
-      "title": "品川区豊町1丁目 中古住宅",
+      "title": "中古一戸建て 品川区豊町1丁目 中古住宅",
       "url": "https://www.homes.co.jp/kodate/b-1534560001396/"
     },
     {
@@ -1928,14 +1972,14 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-35007090000101/"
     },
     {
-      "address": "東京都目黒区中目黒1丁目",
+      "address": "東急東横線 代官山駅 徒歩5分 東京都目黒区中目黒1丁目 建築年 (築年数) 2025年11月(築1年) 現況 居住中 主要採光面 - 掲載画像30枚",
       "evidence": "HTTP 202",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "b9584adc34bf3d37e12e",
-      "property_id": "listing:b9584adc34bf3d37e12e",
+      "property_id": "db0c95a149a13673048c",
       "source": "homes",
-      "title": "ー目黒区中目黒1丁目 3LDK 駅徒歩5分ー",
+      "title": "中古一戸建て ー目黒区中目黒1丁目 3LDK 駅徒歩5分ー",
       "url": "https://www.homes.co.jp/kodate/b-1375350001711/"
     },
     {
@@ -2214,6 +2258,28 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1063460028396/"
     },
     {
+      "address": "東京都目黒区三田1丁目",
+      "evidence": "rights-label-not-found",
+      "land_right": null,
+      "land_right_status": "unknown",
+      "listing_id": "d711cc330c39f07f2f6a",
+      "property_id": "listing:d711cc330c39f07f2f6a",
+      "source": "homes",
+      "title": "目黒区三田1丁目 中古一戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1265020006594/"
+    },
+    {
+      "address": "東京都品川区豊町1丁目",
+      "evidence": "rights-label-not-found",
+      "land_right": null,
+      "land_right_status": "unknown",
+      "listing_id": "d776b3262309c0d09982",
+      "property_id": "listing:d776b3262309c0d09982",
+      "source": "homes",
+      "title": "品川区豊町1丁目 中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1358090022160/"
+    },
+    {
       "address": "東急東横線 中目黒駅 徒歩5分 東京都目黒区東山1丁目7-6 建築年 (築年数) 2002年02月(築25年) 現況 居住中 主要採光面 南 掲載画像4枚",
       "evidence": "HTTP 405",
       "land_right": null,
@@ -2225,12 +2291,12 @@
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1417680000205/"
     },
     {
-      "address": "湘南新宿ライン宇須 西大井駅 徒歩10分 東京都品川区西大井4丁目7 建築年 (築年数) 2005年05月(築22年) 現況 居住中 主要採光面 - 掲載画像17枚",
+      "address": "東京都品川区西大井4丁目7",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "d7da0b20fd46c6b637f1",
-      "property_id": "c06b33b9f888ef41c40a",
+      "property_id": "listing:d7da0b20fd46c6b637f1",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1463790002631/"
@@ -2511,12 +2577,12 @@
       "url": "https://www.fudousan.or.jp/property/detail/"
     },
     {
-      "address": "東京都目黒区大岡山1丁目26",
+      "address": "東急目黒線 大岡山駅 徒歩10分 東京都目黒区大岡山1丁目26 建築年 (築年数) 2018年06月(築9年) 現況 空家 主要採光面 - 掲載画像15枚",
       "evidence": "HTTP 405",
       "land_right": null,
       "land_right_status": "unknown",
       "listing_id": "fbd5bdd68f563721d7b8",
-      "property_id": "listing:fbd5bdd68f563721d7b8",
+      "property_id": "9ec1339f23da77dd9807",
       "source": "homes",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1491230001620/"
