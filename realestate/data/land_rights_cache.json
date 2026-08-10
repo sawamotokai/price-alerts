@@ -3269,6 +3269,16 @@
       "label": "所有権",
       "status": "freehold"
     },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21384948/": {
+      "checked_at": "2026-08-10T03:15:56.418235+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント RC2階地下1階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21384948/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
     "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21387860/": {
       "checked_at": "2026-08-09T07:19:36.102880+00:00",
       "classifier_version": 2,
@@ -3415,6 +3425,16 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
       "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21464408/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21468267/": {
+      "checked_at": "2026-08-10T03:15:56.417622+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21468267/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -3975,6 +3995,16 @@
       "error": "HTTP 405",
       "evidence": null,
       "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1383890000181/",
+      "http_status": 405,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1390990000431/": {
+      "checked_at": "2026-08-10T03:15:56.417967+00:00",
+      "classifier_version": 2,
+      "error": "HTTP 405",
+      "evidence": null,
+      "final_url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1390990000431/",
       "http_status": 405,
       "label": null,
       "status": "unknown"
@@ -5419,6 +5449,16 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/kodate/b-1390990000431/": {
+      "checked_at": "2026-08-10T03:15:56.419598+00:00",
+      "classifier_version": 2,
+      "error": null,
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1390990000431/",
+      "http_status": 200,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/kodate/b-1400020009765/": {
       "checked_at": "2026-08-09T07:19:40.803407+00:00",
       "classifier_version": 2,
@@ -6060,5 +6100,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-08-09T11:02:16.971455+00:00"
+  "updated_at": "2026-08-10T03:15:57.340112+00:00"
 }
