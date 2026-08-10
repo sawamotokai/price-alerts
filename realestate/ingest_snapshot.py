@@ -17,6 +17,9 @@ CANONICAL_SOURCE = {
     'homes': "HOME'S",
     'fudousan_japan': 'fudousan.or.jp',
     'fudousan.or.jp': 'fudousan.or.jp',
+    'adcast': 'ADCAST',
+    'ad-cast.info': 'ADCAST',
+    'ADCAST': 'ADCAST',
     'SUUMO': 'SUUMO',
     "HOME'S": "HOME'S",
 }
@@ -24,6 +27,7 @@ INTERNAL_SOURCE = {
     'SUUMO': 'suumo',
     "HOME'S": 'homes',
     'fudousan.or.jp': 'fudousan_japan',
+    'ADCAST': 'adcast',
 }
 
 
@@ -136,6 +140,7 @@ def main():
         rec['layout'] = raw.get('layout') if raw.get('layout') is not None else rec.get('layout')
         rec['built_year_month'] = raw.get('built') if raw.get('built') is not None else rec.get('built_year_month')
         rec['access'] = raw.get('station') if raw.get('station') is not None else rec.get('access')
+        rec['property_type'] = raw.get('property_type') if raw.get('property_type') is not None else rec.get('property_type')
         rec['land_right_status'] = 'freehold'
         rec['land_right'] = rec.get('land_right') or '所有権'
         rec['active'] = True
@@ -202,6 +207,7 @@ def main():
                 'layout': rec.get('layout'),
                 'built': rec.get('built_year_month'),
                 'station': rec.get('access'),
+                'property_type': rec.get('property_type'),
                 'status': 'listing-ended',
                 'ended_on': observed_day,
                 'ended_observed_at': observed_at,
