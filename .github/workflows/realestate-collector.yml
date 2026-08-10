@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/realestate-collector.yml'
       - 'realestate/collector_parts/**'
+      - 'realestate/adcast_collector.py'
       - 'realestate/enforce_freehold_v2.py'
       - 'realestate/export_latest.py'
       - 'realestate/patch_dashboard_ui.py'
@@ -41,16 +42,23 @@ jobs:
       - name: Decode collector
         run: cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > realestate/collector.py
 
-      - name: Collect current listings and append first/daily price points
+      - name: Collect SUUMO and HOME'S current listings
         env:
           REAL_ESTATE_REQUEST_DELAY: '1.2'
           REAL_ESTATE_MAX_PAGES: '30'
           REAL_ESTATE_MAX_MISSING_RUNS: '2'
         run: python realestate/collector.py
 
-      - name: Verify land rights and publish freehold-only dashboard
+      - name: Collect public ADCAST land listings
         env:
-          REAL_ESTATE_STRICT_FREEHOLD: '1'
+          ADCAST_REQUEST_DELAY: '1.5'
+          ADCAST_MAX_PAGES: '20'
+          ADCAST_TIMEOUT: '25'
+        run: python realestate/adcast_collector.py
+
+      - name: Exclude confirmed leaseholds and classify unknown rights
+        env:
+          REAL_ESTATE_STRICT_FREEHOLD: '0'
           REAL_ESTATE_RIGHTS_WORKERS: '5'
           REAL_ESTATE_RIGHTS_TIMEOUT: '18'
           REAL_ESTATE_RIGHTS_CACHE_DAYS: '30'
@@ -59,6 +67,30 @@ jobs:
 
       - name: Export normalized nightly snapshot for ingest
         run: python realestate/export_latest.py
+
+      - name: Validate source coverage and real records
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+
+          path = Path('realestate/imports/latest.json')
+          snapshot = json.loads(path.read_text(encoding='utf-8'))
+          expected = {'SUUMO', "HOME'S", 'fudousan.or.jp', 'ADCAST'}
+          coverage = snapshot.get('coverage') or {}
+          if set(coverage) != expected:
+              raise SystemExit(f'coverage keys mismatch: {sorted(coverage)}')
+          items = snapshot.get('items') or []
+          for item in items:
+              if not item.get('source') or not item.get('url'):
+                  raise SystemExit(f'invalid non-record item: {item!r}')
+          counts = Counter(item['source'] for item in items)
+          for source, complete in coverage.items():
+              if complete and counts[source] == 0:
+                  raise SystemExit(f'{source} says complete but exported zero records')
+          print({'coverage': coverage, 'counts': dict(counts), 'total': len(items)})
+          PY
 
       - name: Keep dashboard UI patched
         run: python realestate/patch_dashboard_ui.py
@@ -81,9 +113,8 @@ jobs:
           git config user.name 'realestate-price-watch[bot]'
           git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
 
-          # Rebase is unsuitable for generated JSON because both sides rewrite
-          # the same files. Start from the latest master, restore this run's
-          # complete output, and retry if another commit wins the push race.
+          # Generated JSON is restored on top of the latest master so a moving
+          # branch cannot silently discard the completed snapshot.
           for attempt in 1 2 3; do
             echo "Publish attempt ${attempt}/3"
             git fetch origin master
@@ -100,7 +131,7 @@ jobs:
               exit 0
             fi
 
-            git commit -m 'Capture freehold real-estate price snapshot'
+            git commit -m 'Capture multi-source real-estate price snapshot'
             if git push origin HEAD:master; then
               echo 'Snapshot published successfully'
               exit 0
