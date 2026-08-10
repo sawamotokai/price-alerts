@@ -1,14 +1,14 @@
 {
   "coverage": true,
   "listing_ended_candidate_count": 0,
-  "new_count": 0,
-  "observed_at": "2026-08-10T04:03:48+00:00",
+  "new_count": 2,
+  "observed_at": "2026-08-10T10:21:56+00:00",
   "price_changed_count": 0,
-  "record_count": 67,
+  "record_count": 69,
   "wards": {
     "品川区": {
       "errors": [],
-      "expected_count": 36,
+      "expected_count": 38,
       "page_cap_reached": false,
       "pages_expected": 4,
       "pages_fetched": [
@@ -17,7 +17,7 @@
         3,
         4
       ],
-      "parsed_count": 36,
+      "parsed_count": 38,
       "success": true
     },
     "目黒区": {
