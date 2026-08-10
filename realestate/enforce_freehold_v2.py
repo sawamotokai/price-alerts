@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Classify land rights and publish a strict freehold-only dashboard (v2)."""
+"""Classify land rights and publish the non-leasehold dashboard (v3)."""
 from __future__ import annotations
 
 import json
@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -21,7 +22,7 @@ CACHE = DATA / "land_rights_cache.json"
 EXCLUDED = DATA / "excluded_leasehold.json"
 UNKNOWN = DATA / "unknown_land_rights.json"
 SCOPE_EXCLUDED = DATA / "excluded_out_of_scope.json"
-CLASSIFIER_VERSION = 2
+CLASSIFIER_VERSION = 3
 TARGET_WARDS = {"品川区", "目黒区"}
 
 LEASEHOLD_RE = re.compile(
@@ -100,8 +101,8 @@ def blocks_from_html(html: str) -> list[str]:
     lines = [" ".join(x.split()) for x in soup.get_text("\n", strip=True).splitlines()]
     for i, line in enumerate(lines):
         if any(key in line for key in RIGHT_LABELS):
-            blocks.append(" ".join(lines[i:i+3]))
-    return [b for b in dict.fromkeys(blocks) if b and not GENERIC_NOTE_RE.search(b)]
+            blocks.append(" ".join(lines[i:i + 3]))
+    return [block for block in dict.fromkeys(blocks) if block and not GENERIC_NOTE_RE.search(block)]
 
 
 def classify_html(html: str) -> tuple[str, str | None, str]:
@@ -133,13 +134,17 @@ def fresh(entry: dict[str, Any]) -> bool:
 def fetch_one(url: str) -> tuple[str, dict[str, Any]]:
     session = requests.Session()
     session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (compatible; personal-price-monitor/1.0; +https://github.com/sawamotokai/price-alerts)",
         "Accept-Language": "ja,en-US;q=0.8,en;q=0.6",
     })
     result: dict[str, Any] = {
         "classifier_version": CLASSIFIER_VERSION,
-        "status": "unknown", "label": None, "evidence": None,
-        "checked_at": now_iso(), "http_status": None, "error": None,
+        "status": "unknown",
+        "label": None,
+        "evidence": None,
+        "checked_at": now_iso(),
+        "http_status": None,
+        "error": None,
     }
     try:
         response = session.get(url, timeout=TIMEOUT, allow_redirects=True)
@@ -165,8 +170,48 @@ def in_scope(record: dict[str, Any]) -> bool:
     return True
 
 
+def canonical_dashboard_url(record: dict[str, Any]) -> str:
+    source = str(record.get("source") or "").lower()
+    raw_url = str(record.get("url") or "")
+    parsed = urlparse(raw_url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return ""
+    path_lower = parsed.path.lower()
+    if any(part in path_lower for part in ("/inquire/", "/inquiry/", "/contact/", "/request/")):
+        return ""
+    if str(record.get("title") or "").strip() == "資料請求":
+        return ""
+    if source == "adcast":
+        query = parse_qs(parsed.query, keep_blank_values=True)
+        k_number = (query.get("k_number") or [""])[0]
+        if "/sch/detail.php" not in path_lower or not k_number:
+            return ""
+        pairs: list[tuple[str, str]] = []
+        div = (query.get("div") or [""])[0]
+        if div:
+            pairs.append(("div", div))
+        pairs.append(("k_number", k_number))
+        return urlunparse(("https", "www.ad-cast.info", "/sch/detail.php", "", urlencode(pairs), ""))
+    return urlunparse((parsed.scheme, parsed.netloc.lower(), parsed.path.rstrip("/") or "/", "", "", ""))
+
+
+def record_rank(record: dict[str, Any]) -> tuple[int, str]:
+    fields = (
+        "title", "price_yen", "address", "land_area_sqm", "building_area_sqm",
+        "layout", "built_year_month", "access",
+    )
+    return (
+        sum(record.get(field) not in (None, "", []) for field in fields),
+        str(record.get("last_seen") or ""),
+    )
+
+
 def price_change(record: dict[str, Any]) -> int:
-    values = [int(p[1]) for p in record.get("price_history") or [] if isinstance(p, list) and len(p) > 1 and p[1]]
+    values = [
+        int(point[1])
+        for point in record.get("price_history") or []
+        if isinstance(point, list) and len(point) > 1 and point[1]
+    ]
     if values:
         return int(record.get("price_yen") or values[-1]) - values[0]
     return int(record.get("price_change_yen") or 0)
@@ -177,7 +222,7 @@ def main() -> None:
     dashboard = load(DASHBOARD, {"listings": []})
     listings = current.get("listings") or {}
     if isinstance(listings, list):
-        listings = {str(x.get("listing_id") or x.get("id")): x for x in listings}
+        listings = {str(item.get("listing_id") or item.get("id")): item for item in listings}
     cache_doc = load(CACHE, {"entries": {}})
     cache: dict[str, dict[str, Any]] = cache_doc.setdefault("entries", {})
 
@@ -196,13 +241,14 @@ def main() -> None:
     print(f"checking {len(pending)} land-right pages with {WORKERS} workers")
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         futures = [pool.submit(fetch_one, url) for url in pending]
-        for i, future in enumerate(as_completed(futures), start=1):
+        for index, future in enumerate(as_completed(futures), start=1):
             url, result = future.result()
             cache[url] = result
-            if i % 50 == 0 or i == len(futures):
-                print(f"land-right pages {i}/{len(futures)}")
+            if index % 50 == 0 or index == len(futures):
+                print(f"land-right pages {index}/{len(futures)}")
 
-    freehold_ids: set[str] = set()
+    included_ids: set[str] = set()
+    verified_freehold_ids: set[str] = set()
     leasehold: list[dict[str, Any]] = []
     unknown: list[dict[str, Any]] = []
     for lid in scope_ids:
@@ -216,23 +262,29 @@ def main() -> None:
         record["land_right_status"] = status
         record["land_right"] = label
         record["land_right_checked_at"] = now_iso()
-        audit = {k: record.get(k) for k in ("listing_id", "property_id", "source", "title", "address", "url")}
+        audit = {
+            key: record.get(key)
+            for key in ("listing_id", "property_id", "source", "title", "address", "url")
+        }
         audit.update(land_right_status=status, land_right=label, evidence=evidence)
         if status == "freehold":
-            freehold_ids.add(lid)
+            verified_freehold_ids.add(lid)
+            included_ids.add(lid)
         elif status == "leasehold":
             leasehold.append(audit)
         else:
             unknown.append(audit)
             if not STRICT:
-                freehold_ids.add(lid)
+                included_ids.add(lid)
 
     current["listings"] = listings
     current["freehold_filter"] = {
         "classifier_version": CLASSIFIER_VERSION,
         "strict": STRICT,
-        "verified_freehold_count": len(freehold_ids),
+        "included_nonleasehold_count": len(included_ids),
+        "verified_freehold_count": len(verified_freehold_ids),
         "leasehold_excluded_count": len(leasehold),
+        "unknown_included_count": len(unknown) if not STRICT else 0,
         "unknown_excluded_count": len(unknown) if STRICT else 0,
         "out_of_scope_excluded_count": len(out_of_scope),
         "classified_at": now_iso(),
@@ -240,30 +292,67 @@ def main() -> None:
     }
     save(CURRENT, current)
 
-    rows = dashboard.get("listings") or []
-    if isinstance(rows, dict):
-        rows = list(rows.values())
-    filtered = []
-    for row in rows:
-        lid = str(row.get("listing_id") or row.get("id") or "")
-        if lid in freehold_ids:
-            filtered.append(listings.get(lid, row))
+    # Rebuild the dashboard directly from current.json. Re-filtering the old
+    # dashboard silently dropped newly added sources such as ADCAST.
+    by_listing: dict[tuple[str, str], dict[str, Any]] = {}
+    for lid in included_ids:
+        record = listings[lid]
+        if record.get("active") is False:
+            continue
+        url = canonical_dashboard_url(record)
+        if not url:
+            continue
+        source = str(record.get("source") or "").lower()
+        key = (source, url)
+        candidate = dict(record)
+        candidate["url"] = url
+        previous = by_listing.get(key)
+        if previous is None or record_rank(candidate) > record_rank(previous):
+            by_listing[key] = candidate
+
+    filtered = sorted(
+        by_listing.values(),
+        key=lambda record: (
+            str(record.get("ward") or ""),
+            str(record.get("source") or ""),
+            int(record.get("price_yen") or 10**18),
+            str(record.get("url") or ""),
+        ),
+    )
+    dashboard["coverage"] = current.get("coverage") or {}
     dashboard["listings"] = filtered
     dashboard["freehold_filter"] = current["freehold_filter"]
     dashboard["generated_at"] = now_iso()
-    latest = dashboard.setdefault("latest_run", {})
-    metrics = latest.setdefault("metrics", {})
+    latest = dict(current.get("latest_run") or dashboard.get("latest_run") or {})
+    metrics = dict(latest.get("metrics") or {})
     metrics["active_count"] = len(filtered)
-    metrics["price_changed_count"] = sum(price_change(r) != 0 for r in filtered)
-    metrics["price_drop_count"] = sum(price_change(r) < 0 for r in filtered)
+    metrics["price_changed_count"] = sum(price_change(record) != 0 for record in filtered)
+    metrics["price_drop_count"] = sum(price_change(record) < 0 for record in filtered)
+    latest["metrics"] = metrics
+    dashboard["latest_run"] = latest
     save(DASHBOARD, dashboard)
-    save(EXCLUDED, {"generated_at": now_iso(), "count": len(leasehold), "items": leasehold})
-    save(UNKNOWN, {"generated_at": now_iso(), "strictly_excluded": STRICT, "count": len(unknown), "items": unknown})
-    save(SCOPE_EXCLUDED, {"generated_at": now_iso(), "count": len(out_of_scope), "items": out_of_scope})
+
+    generated_at = now_iso()
+    save(EXCLUDED, {"generated_at": generated_at, "count": len(leasehold), "items": leasehold})
+    save(UNKNOWN, {
+        "generated_at": generated_at,
+        "strictly_excluded": STRICT,
+        "count": len(unknown),
+        "items": unknown,
+    })
+    save(SCOPE_EXCLUDED, {"generated_at": generated_at, "count": len(out_of_scope), "items": out_of_scope})
     cache_doc["classifier_version"] = CLASSIFIER_VERSION
-    cache_doc["updated_at"] = now_iso()
+    cache_doc["updated_at"] = generated_at
     save(CACHE, cache_doc)
-    print(json.dumps({"raw": len(listings), "freehold": len(freehold_ids), "leasehold": len(leasehold), "unknown": len(unknown), "out_of_scope": len(out_of_scope)}, ensure_ascii=False))
+    print(json.dumps({
+        "raw": len(listings),
+        "dashboard": len(filtered),
+        "included_nonleasehold": len(included_ids),
+        "verified_freehold": len(verified_freehold_ids),
+        "leasehold": len(leasehold),
+        "unknown": len(unknown),
+        "out_of_scope": len(out_of_scope),
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":
