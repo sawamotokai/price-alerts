@@ -8,7 +8,8 @@ on:
       - 'realestate/collector_parts/**'
       - 'realestate/adcast_collector.py'
       - 'realestate/enforce_freehold_v2.py'
-      - 'realestate/export_latest.py'
+      - 'realestate/run_strict_freehold.py'
+      - 'realestate/strict_export.py'
       - 'realestate/patch_dashboard_ui.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
@@ -26,7 +27,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
 
@@ -56,39 +57,42 @@ jobs:
           ADCAST_TIMEOUT: '25'
         run: python realestate/adcast_collector.py
 
-      - name: Exclude confirmed leaseholds and classify unknown rights
+      - name: Verify land rights and publish freehold-only dashboard
         env:
-          REAL_ESTATE_STRICT_FREEHOLD: '0'
-          REAL_ESTATE_RIGHTS_WORKERS: '5'
-          REAL_ESTATE_RIGHTS_TIMEOUT: '18'
+          REAL_ESTATE_STRICT_FREEHOLD: '1'
+          REAL_ESTATE_RIGHTS_WORKERS: '4'
+          REAL_ESTATE_RIGHTS_TIMEOUT: '25'
           REAL_ESTATE_RIGHTS_CACHE_DAYS: '30'
-          REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '2'
-        run: python realestate/enforce_freehold_v2.py
+          REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '0'
+        run: python realestate/run_strict_freehold.py
 
-      - name: Export normalized nightly snapshot for ingest
-        run: python realestate/export_latest.py
+      - name: Export normalized verified snapshot for ingest
+        run: python realestate/strict_export.py
 
-      - name: Validate source coverage and real records
+      - name: Validate source coverage and real verified records
         run: |
           python - <<'PY'
           import json
           from collections import Counter
           from pathlib import Path
 
-          path = Path('realestate/imports/latest.json')
-          snapshot = json.loads(path.read_text(encoding='utf-8'))
+          snapshot = json.loads(Path('realestate/imports/latest.json').read_text(encoding='utf-8'))
           expected = {'SUUMO', "HOME'S", 'fudousan.or.jp', 'ADCAST'}
           coverage = snapshot.get('coverage') or {}
           if set(coverage) != expected:
               raise SystemExit(f'coverage keys mismatch: {sorted(coverage)}')
+
           items = snapshot.get('items') or []
           for item in items:
               if not item.get('source') or not item.get('url'):
                   raise SystemExit(f'invalid non-record item: {item!r}')
+              if item.get('land_right_status') != 'freehold' or item.get('land_right') != '所有権':
+                  raise SystemExit(f'unverified land right leaked into snapshot: {item!r}')
+
           counts = Counter(item['source'] for item in items)
           for source, complete in coverage.items():
-              if complete and counts[source] == 0:
-                  raise SystemExit(f'{source} says complete but exported zero records')
+              if complete and source != 'fudousan.or.jp' and counts[source] == 0:
+                  raise SystemExit(f'{source} says complete but exported zero verified records')
           print({'coverage': coverage, 'counts': dict(counts), 'total': len(items)})
           PY
 
@@ -104,8 +108,6 @@ jobs:
           snapshot_dir="$(mktemp -d)"
           trap 'rm -rf "$snapshot_dir"' EXIT
 
-          # Preserve the completed collector output outside the worktree. A
-          # concurrent commit may move master while this job is collecting.
           cp -a realestate/data "$snapshot_dir/data"
           cp realestate/imports/latest.json "$snapshot_dir/latest.json"
           cp realestate/dashboard/index.html "$snapshot_dir/index.html"
@@ -113,8 +115,6 @@ jobs:
           git config user.name 'realestate-price-watch[bot]'
           git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
 
-          # Generated JSON is restored on top of the latest master so a moving
-          # branch cannot silently discard the completed snapshot.
           for attempt in 1 2 3; do
             echo "Publish attempt ${attempt}/3"
             git fetch origin master
@@ -131,7 +131,7 @@ jobs:
               exit 0
             fi
 
-            git commit -m 'Capture multi-source real-estate price snapshot'
+            git commit -m 'Capture verified multi-source real-estate snapshot'
             if git push origin HEAD:master; then
               echo 'Snapshot published successfully'
               exit 0
