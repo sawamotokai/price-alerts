@@ -9,8 +9,10 @@ on:
       - 'realestate/adcast_collector.py'
       - 'realestate/enforce_freehold_v2.py'
       - 'realestate/run_strict_freehold.py'
+      - 'realestate/validate_price_changes.py'
       - 'realestate/strict_export.py'
       - 'realestate/patch_dashboard_ui.py'
+      - 'realestate/patch_v1_history.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -66,6 +68,12 @@ jobs:
           REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS: '0'
         run: python realestate/run_strict_freehold.py
 
+      - name: Quarantine unconfirmed extreme price changes
+        env:
+          REAL_ESTATE_MAX_UNCONFIRMED_PRICE_CHANGE_PCT: '0.35'
+          REAL_ESTATE_MIN_PRICE_REGIME_OBSERVATIONS: '2'
+        run: python realestate/validate_price_changes.py
+
       - name: Export normalized verified snapshot for ingest
         run: python realestate/strict_export.py
 
@@ -93,11 +101,20 @@ jobs:
           for source, complete in coverage.items():
               if complete and source != 'fudousan.or.jp' and counts[source] == 0:
                   raise SystemExit(f'{source} says complete but exported zero verified records')
-          print({'coverage': coverage, 'counts': dict(counts), 'total': len(items)})
+
+          anomalies = json.loads(Path('realestate/data/price_history_anomalies.json').read_text(encoding='utf-8'))
+          print({
+              'coverage': coverage,
+              'counts': dict(counts),
+              'total': len(items),
+              'quarantined_price_records': anomalies.get('records_with_quarantined_points'),
+          })
           PY
 
       - name: Keep dashboard UI patched
-        run: python realestate/patch_dashboard_ui.py
+        run: |
+          python realestate/patch_dashboard_ui.py
+          python realestate/patch_v1_history.py
 
       - name: Publish generated snapshot without rebase conflicts
         shell: bash
