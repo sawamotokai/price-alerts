@@ -1,0 +1,22 @@
+{
+  "active_verified_freehold_by_source": {
+    "ADCAST": 69,
+    "HOME'S": 16,
+    "SUUMO": 235,
+    "fudousan.or.jp": 0
+  },
+  "active_verified_freehold_count": 320,
+  "canonicalization": {
+    "canonical_listing_count": 565,
+    "canonicalized_group_count": 496,
+    "embedded_multi_day_count": 0,
+    "history_documents_loaded": 693,
+    "input_listing_count": 1154,
+    "merged_duplicate_count": 589
+  },
+  "generated_at": "2026-08-11T01:07:45+00:00",
+  "maximum_daily_point_count": 1,
+  "observed_at": "2026-08-10T11:21:14+00:00",
+  "records_with_two_or_more_daily_points": 0,
+  "samples": []
+}
