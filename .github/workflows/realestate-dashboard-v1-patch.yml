@@ -1,0 +1,59 @@
+name: Restore v1 real-estate dashboard UI
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/realestate-dashboard-v1-patch.yml'
+      - 'realestate/patch_v1_history.py'
+      - 'realestate/dashboard/index.html'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-dashboard-v1-patch
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preserve v1 UI and merge durable histories
+        run: python realestate/patch_v1_history.py
+      - name: Validate v1 features
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              '全物件の掲載価格推移',
+              'id="marketCanvas"',
+              'function drawMarketChart(scope)',
+              "const CURRENT_URL=",
+              'function drawDetail(h)',
+          ]
+          missing = [value for value in required if value not in text]
+          if missing:
+              raise SystemExit(f'missing v1 dashboard features: {missing}')
+          print('v1 dashboard appearance and chart features preserved')
+          PY
+      - name: Commit patched v1 dashboard
+        run: |
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+          git add realestate/dashboard/index.html
+          if git diff --cached --quiet; then
+            echo 'No v1 dashboard changes'
+          else
+            git commit -m 'Hydrate v1 all-property and detail price charts'
+            git pull --rebase origin master
+            git push origin HEAD:master
+          fi
