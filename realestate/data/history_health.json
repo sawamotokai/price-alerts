@@ -9,27 +9,27 @@
   "canonicalization": {
     "canonical_listing_count": 565,
     "canonicalized_group_count": 0,
-    "embedded_multi_day_count": 0,
+    "embedded_multi_day_count": 231,
     "history_documents_loaded": 522,
     "input_listing_count": 565,
     "merged_duplicate_count": 0
   },
-  "generated_at": "2026-08-11T01:11:15+00:00",
+  "generated_at": "2026-08-11T02:47:55+00:00",
   "history_repair": {
     "ambiguous_property_matches_skipped": 150,
     "direct_listing_matches": 0,
     "ledger_files": 1,
     "ledger_rows": 1175,
     "maximum_daily_point_count": 2,
-    "records_with_two_or_more_daily_points": 231,
-    "repaired_at": "2026-08-11T01:11:15+00:00",
-    "repaired_record_count": 241,
+    "records_with_two_or_more_daily_points": 232,
+    "repaired_at": "2026-08-11T02:47:55+00:00",
+    "repaired_record_count": 1,
     "unambiguous_property_matches": 172,
     "valid_ledger_rows": 1175
   },
   "maximum_daily_point_count": 2,
   "observed_at": "2026-08-10T11:21:14+00:00",
-  "records_with_two_or_more_daily_points": 231,
+  "records_with_two_or_more_daily_points": 232,
   "samples": [
     {
       "dates": [
