@@ -10,6 +10,7 @@ on:
       - 'realestate/enforce_freehold_v2.py'
       - 'realestate/run_strict_freehold.py'
       - 'realestate/validate_price_changes.py'
+      - 'realestate/canonicalize_listing_urls.py'
       - 'realestate/strict_export.py'
       - 'realestate/patch_dashboard_ui.py'
       - 'realestate/patch_v1_history.py'
@@ -77,10 +78,14 @@ jobs:
       - name: Export normalized verified snapshot for ingest
         run: python realestate/strict_export.py
 
+      - name: Canonicalize outbound listing links
+        run: python realestate/canonicalize_listing_urls.py
+
       - name: Validate source coverage and real verified records
         run: |
           python - <<'PY'
           import json
+          import re
           from collections import Counter
           from pathlib import Path
 
@@ -90,12 +95,15 @@ jobs:
           if set(coverage) != expected:
               raise SystemExit(f'coverage keys mismatch: {sorted(coverage)}')
 
+          suumo_url = re.compile(r'^https://suumo\.jp/chukoikkodate/tokyo/sc_(?:shinagawa|meguro)/nc_\d+/$')
           items = snapshot.get('items') or []
           for item in items:
               if not item.get('source') or not item.get('url'):
                   raise SystemExit(f'invalid non-record item: {item!r}')
               if item.get('land_right_status') != 'freehold' or item.get('land_right') != '所有権':
                   raise SystemExit(f'unverified land right leaked into snapshot: {item!r}')
+              if item.get('source') == 'SUUMO' and not suumo_url.fullmatch(str(item.get('url'))):
+                  raise SystemExit(f'non-canonical SUUMO detail URL: {item!r}')
 
           counts = Counter(item['source'] for item in items)
           for source, complete in coverage.items():
