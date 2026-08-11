@@ -26,25 +26,38 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Preserve v1 UI and merge durable histories
         run: python realestate/patch_v1_history.py
-      - name: Validate v1 features
+      - name: Validate v1 features and JavaScript syntax
         run: |
           python - <<'PY'
           from pathlib import Path
-          text = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          import re
+
+          path = Path('realestate/dashboard/index.html')
+          text = path.read_text(encoding='utf-8')
           required = [
               '全物件の掲載価格推移',
               'id="marketCanvas"',
               'function drawMarketChart(scope)',
               "const CURRENT_URL=",
               'function drawDetail(h)',
+              'function listingUrl(x)',
+              'https://suumo.jp/chukoikkodate/tokyo/sc_${scope}/nc_${id}/',
           ]
           missing = [value for value in required if value not in text]
           if missing:
               raise SystemExit(f'missing v1 dashboard features: {missing}')
-          print('v1 dashboard appearance and chart features preserved')
+          scripts = re.findall(r'<script[^>]*>(.*?)</script>', text, re.S | re.I)
+          if not scripts:
+              raise SystemExit('dashboard script not found')
+          Path('/tmp/dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
+          print('v1 dashboard appearance and canonical SUUMO links preserved')
           PY
+          node --check /tmp/dashboard.js
       - name: Commit patched v1 dashboard
         run: |
           git config user.name 'realestate-price-watch[bot]'
