@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/realestate-ingest.yml'
       - 'realestate/ingest_snapshot.py'
+      - 'realestate/repair_daily_history.py'
       - 'realestate/imports/latest.json'
   workflow_run:
     workflows: ['Real-estate nightly collector']
@@ -32,6 +33,24 @@ jobs:
           python-version: '3.12'
       - name: Merge latest snapshot into durable history
         run: python realestate/ingest_snapshot.py
+      - name: Repair canonical daily series from append-only ledger
+        run: python realestate/repair_daily_history.py
+      - name: Validate that multi-day observations form a series
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          health = json.loads(Path('realestate/data/history_health.json').read_text(encoding='utf-8'))
+          count = int(health.get('records_with_two_or_more_daily_points') or 0)
+          samples = health.get('samples') or []
+          if count <= 0 or not samples:
+              raise SystemExit('No repaired multi-day price series were found')
+          sample = samples[0]
+          if len(sample.get('dates') or []) < 2:
+              raise SystemExit(f'Invalid multi-day sample: {sample!r}')
+          print({'multi_day_records': count, 'sample': sample})
+          PY
       - name: Commit generated current/history data
         run: |
           git config user.name 'realestate-price-watch[bot]'
