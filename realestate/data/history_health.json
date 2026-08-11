@@ -8,15 +8,268 @@
   "active_verified_freehold_count": 320,
   "canonicalization": {
     "canonical_listing_count": 565,
-    "canonicalized_group_count": 496,
+    "canonicalized_group_count": 0,
     "embedded_multi_day_count": 0,
-    "history_documents_loaded": 693,
-    "input_listing_count": 1154,
-    "merged_duplicate_count": 589
+    "history_documents_loaded": 522,
+    "input_listing_count": 565,
+    "merged_duplicate_count": 0
   },
-  "generated_at": "2026-08-11T01:07:45+00:00",
-  "maximum_daily_point_count": 1,
+  "generated_at": "2026-08-11T01:11:15+00:00",
+  "history_repair": {
+    "ambiguous_property_matches_skipped": 150,
+    "direct_listing_matches": 0,
+    "ledger_files": 1,
+    "ledger_rows": 1175,
+    "maximum_daily_point_count": 2,
+    "records_with_two_or_more_daily_points": 231,
+    "repaired_at": "2026-08-11T01:11:15+00:00",
+    "repaired_record_count": 241,
+    "unambiguous_property_matches": 172,
+    "valid_ledger_rows": 1175
+  },
+  "maximum_daily_point_count": 2,
   "observed_at": "2026-08-10T11:21:14+00:00",
-  "records_with_two_or_more_daily_points": 0,
-  "samples": []
+  "records_with_two_or_more_daily_points": 231,
+  "samples": [
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "0042c6ddab38a2a1eee8",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "HOME'S",
+      "title": "中古一戸建て 都立大学駅7分「こだわりの注文住宅」",
+      "url": "https://www.homes.co.jp/kodate/b-1535080000602/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "009161a847aa81aa0d81",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "愛犬・愛猫と気兼ねなく♪縦空間を楽しむ都市型中古戸建の登場です♪",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20391355/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "00b9ab4c9b2a782fcdf0",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "東急目黒線「武蔵小山」駅徒歩7分の好立地/3LDK/ビルドインガレージ",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21390198/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "03f2778b9a4ddb551511",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "◎目黒通り沿いの閑静な住宅街◎◎渋谷・中目黒・自由が丘・横浜方面へアクセ",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21285566/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "040085148e986f16d41f",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "緑が丘1(都立大学駅) 1億3780万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20416722/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "0484c01a3c065c346b23",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "【VECS】大岡山駅徒歩8分♪築2018年・22帖LDKの4LDK邸宅",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20890768/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "061f78ecb60a60c3e889",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "東急ホームズ施工。2013年築の戸建。約12.5帖のロフト付き。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_72117167/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "06a57cd4391946a898ed",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "大岡山1(大岡山駅) 1億9800万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78849381/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "06b72d3fdb04a2ca25e3",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "原町2(洗足駅) 3980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78465110/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "06f280a9eb65b42f8d6f",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "山手線の内側近隣商業施設充実オススメの中古戸建です。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20110546/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "070d5739f6519563095f",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "■緑豊かな清水池公園に隣接した3LDK住戸",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20289435/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "070d5fcde76de5e972fb",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "碑文谷1(西小山駅) 1億980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20558710/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "0744af9241f8dfe41ae7",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "青葉台1(中目黒駅) 3億3800万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20438181/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "08d668bd53ce899e2666",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "HOME'S",
+      "title": "中古一戸建て 中目黒4丁目_中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1063460028450/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "0930e7d64fb8fcf31348",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "・目黒区鷹番一丁目・2016年5月築の注文住宅・土地130.17m2整形地",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20345037/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "09842a64e8e3e0612329",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "中目黒駅徒歩5分の好立地、南道路接道で日照良好、資産性にも優れた魅力の一邸",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20785105/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "09def792fd2c2f1bfa1b",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "荏原6(西小山駅) 1億3980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20394514/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "09e6405e726c574ac8b0",
+      "matched_by_property": true,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "東が丘1(駒沢大学駅) 2億1980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21462983/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "0b91fcf0720f76085c3a",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "仕様の良い「東急ホームズ」施工 室内大変キレイです 建築確認完了済証付き!",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_75413631/"
+    },
+    {
+      "dates": [
+        "2026-08-09",
+        "2026-08-10"
+      ],
+      "listing_id": "0ce0e95c05496033740b",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "東急東横線「都立大学」駅徒歩10分のリフォーム物件です。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20909238/"
+    }
+  ]
 }
