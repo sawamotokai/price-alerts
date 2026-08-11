@@ -7,6 +7,7 @@ on:
       - '.github/workflows/realestate-ingest.yml'
       - 'realestate/ingest_snapshot.py'
       - 'realestate/repair_daily_history.py'
+      - 'realestate/validate_price_changes.py'
       - 'realestate/imports/latest.json'
   workflow_run:
     workflows: ['Real-estate nightly collector']
@@ -35,7 +36,12 @@ jobs:
         run: python realestate/ingest_snapshot.py
       - name: Repair canonical daily series from append-only ledger
         run: python realestate/repair_daily_history.py
-      - name: Validate that multi-day observations form a series
+      - name: Quarantine unconfirmed extreme price changes
+        env:
+          REAL_ESTATE_MAX_UNCONFIRMED_PRICE_CHANGE_PCT: '0.35'
+          REAL_ESTATE_MIN_PRICE_REGIME_OBSERVATIONS: '2'
+        run: python realestate/validate_price_changes.py
+      - name: Validate durable and dashboard-safe price series
         run: |
           python - <<'PY'
           import json
@@ -45,11 +51,38 @@ jobs:
           count = int(health.get('records_with_two_or_more_daily_points') or 0)
           samples = health.get('samples') or []
           if count <= 0 or not samples:
-              raise SystemExit('No repaired multi-day price series were found')
+              raise SystemExit('No repaired multi-day raw price series were found')
           sample = samples[0]
           if len(sample.get('dates') or []) < 2:
               raise SystemExit(f'Invalid multi-day sample: {sample!r}')
-          print({'multi_day_records': count, 'sample': sample})
+
+          current = json.loads(Path('realestate/data/current.json').read_text(encoding='utf-8'))
+          rows = current.get('listings') or {}
+          rows = rows if isinstance(rows, list) else list(rows.values())
+          for record in rows:
+              validated = record.get('price_history_validated') or []
+              status = record.get('price_change_status')
+              if status == 'confirmed' and len(validated) < 2:
+                  raise SystemExit(f'confirmed price change lacks two points: {record.get("listing_id")}')
+              if status and status.startswith('quarantined') and int(record.get('price_change_yen_validated') or 0) != 0:
+                  raise SystemExit(f'quarantined change leaked into decision metric: {record.get("listing_id")}')
+
+          # Regression: SUUMO 21387860 has always shown 2,300万円 in the
+          # available detail-page observation. The legacy 8,980万円 point is a
+          # mismatched list-card observation and must never appear as a drop.
+          target = next((r for r in rows if '21387860' in str(r.get('url') or '')), None)
+          if target:
+              values = [int(point[1]) for point in target.get('price_history_validated') or []]
+              if values != [23_000_000]:
+                  raise SystemExit(f'false 8,980→2,300 drop was not quarantined: {target!r}')
+              if int(target.get('price_change_yen_validated') or 0) != 0:
+                  raise SystemExit('false SUUMO 21387860 price drop leaked into metrics')
+
+          print({
+              'raw_multi_day_records': count,
+              'quarantined_records': (current.get('price_history_validation') or {}).get('records_with_quarantined_points'),
+              'regression_target': target.get('listing_id') if target else None,
+          })
           PY
       - name: Commit generated current/history data
         run: |
@@ -59,7 +92,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No data changes'
           else
-            git commit -m 'Update real-estate price history'
+            git commit -m 'Update validated real-estate price history'
             git pull --rebase origin master
             git push origin HEAD:master
           fi
