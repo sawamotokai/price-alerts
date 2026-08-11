@@ -52,14 +52,31 @@ def canonical_source(value: Any) -> str:
     return SOURCE_MAP.get(str(value or "").strip().lower(), "")
 
 
-def changed(record: dict[str, Any]) -> bool:
-    values = []
-    for point in record.get("price_history") or []:
+def validated_values(record: dict[str, Any]) -> list[int]:
+    points = record.get("price_history_validated")
+    if not isinstance(points, list):
+        points = record.get("price_history") or []
+    values: list[int] = []
+    for point in points:
         if isinstance(point, list) and len(point) > 1 and isinstance(point[1], (int, float)):
             values.append(int(point[1]))
-        elif isinstance(point, dict) and isinstance(point.get("price_yen"), (int, float)):
-            values.append(int(point["price_yen"]))
-    return (len(values) > 1 and values[-1] != values[0]) or bool(record.get("price_change_yen"))
+        elif isinstance(point, dict):
+            value = point.get("price_yen")
+            if not isinstance(value, (int, float)) and isinstance(point.get("price_man"), (int, float)):
+                value = float(point["price_man"]) * 10000
+            if isinstance(value, (int, float)):
+                values.append(int(round(float(value))))
+    return values
+
+
+def changed(record: dict[str, Any]) -> bool:
+    status = str(record.get("price_change_status") or "")
+    if status.startswith("quarantined") or status in {"insufficient-history", "unchanged"}:
+        return False
+    if status == "confirmed":
+        return int(record.get("price_change_yen_validated") or 0) != 0
+    values = validated_values(record)
+    return len(values) > 1 and values[-1] != values[0]
 
 
 def main() -> None:
@@ -136,6 +153,7 @@ def main() -> None:
         for record in all_rows
     )
     meta = current.get("freehold_filter") or {}
+    validation = current.get("price_history_validation") or {}
     report = {
         "observed_at": observed_at,
         "coverage": coverage,
@@ -153,6 +171,8 @@ def main() -> None:
         "confirmed_leasehold_excluded_count": meta.get("leasehold_excluded_count", 0),
         "unknown_right_excluded_count": meta.get("unknown_excluded_count", 0),
         "out_of_scope_excluded_count": meta.get("out_of_scope_excluded_count", 0),
+        "price_history_quarantined_record_count": validation.get("records_with_quarantined_points", 0),
+        "price_history_quarantined_point_count": validation.get("quarantined_point_count", 0),
     }
     save(REPORT, report)
     print(json.dumps(report, ensure_ascii=False))
