@@ -1,6 +1,92 @@
 {
-  "generated_at": "2026-08-12T10:16:35+00:00",
+  "generated_at": "2026-08-12T10:18:07+00:00",
   "items": [
+    {
+      "address": null,
+      "current_price_yen": 828000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 452.74,
+          "boundary_new_price_yen": 828000000,
+          "boundary_old_price_yen": 149800000,
+          "date": "2026-08-10",
+          "price_yen": 149800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "6a734a6160cab680a267",
+      "property_id": "listing:b41c48a8467ad6eaecde",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 149800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 828000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "祐天寺1億4980万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21205324/",
+      "validated_points": [
+        {
+          "date": "2026-08-12",
+          "price_yen": 828000000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都品川区荏原6-2-3",
+      "current_price_yen": 740000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 429.33,
+          "boundary_new_price_yen": 740000000,
+          "boundary_old_price_yen": 139800000,
+          "date": "2026-08-09",
+          "price_yen": 139800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 429.33,
+          "boundary_new_price_yen": 740000000,
+          "boundary_old_price_yen": 139800000,
+          "date": "2026-08-10",
+          "price_yen": 139800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "208ec65866c9978b4db9",
+      "property_id": "fd013a426f13f951044c",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 740000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "西小山1億3980万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20535020/",
+      "validated_points": [
+        {
+          "date": "2026-08-12",
+          "price_yen": 740000000
+        }
+      ],
+      "ward": "品川区"
+    },
     {
       "address": "東京都目黒区青葉台3",
       "current_price_yen": 424000000,
@@ -24,6 +110,14 @@
         {
           "date": "2026-08-10",
           "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 424000000
         }
       ],
       "source": "SUUMO",
@@ -34,9 +128,54 @@
         {
           "date": "2026-08-10",
           "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 424000000
         }
       ],
       "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 198000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 228.9,
+          "boundary_new_price_yen": 198000000,
+          "boundary_old_price_yen": 60200000,
+          "date": "2026-08-10",
+          "price_yen": 60200000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "d24b75322710d52888c6",
+      "property_id": "listing:866d8daae61f61f07c4f",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 60200000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 198000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "南砂町1億9800万円・6LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20758842/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 198000000
+        }
+      ],
+      "ward": "品川区"
     },
     {
       "address": "東京都目黒区三田2",
@@ -61,6 +200,10 @@
         {
           "date": "2026-08-10",
           "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 398000000
         }
       ],
       "source": "SUUMO",
@@ -70,6 +213,10 @@
       "validated_points": [
         {
           "date": "2026-08-10",
+          "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-12",
           "price_yen": 398000000
         }
       ],
@@ -98,6 +245,10 @@
         {
           "date": "2026-08-10",
           "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 159000000
         }
       ],
       "source": "SUUMO",
@@ -108,9 +259,103 @@
         {
           "date": "2026-08-10",
           "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 159000000
         }
       ],
       "ward": "品川区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 139800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 132.23,
+          "boundary_new_price_yen": 139800000,
+          "boundary_old_price_yen": 60200000,
+          "date": "2026-08-10",
+          "price_yen": 60200000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "b73596dc9e774d5ab798",
+      "property_id": "listing:785398c246d7078623f3",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 60200000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 139800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "千歳船橋6780万円・4LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21411172/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 139800000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 328000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 118.96,
+          "boundary_new_price_yen": 328000000,
+          "boundary_old_price_yen": 149800000,
+          "date": "2026-08-10",
+          "price_yen": 149800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "7d0503e9e147e8900543",
+      "property_id": "listing:1d3ed9ae6ad0024134f3",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 149800000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 328000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 328000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "田園調布3億2800万円・4LDK 新着",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21474356/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 328000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 328000000
+        }
+      ],
+      "ward": "目黒区"
     },
     {
       "address": "東京都品川区南大井1",
@@ -126,7 +371,7 @@
         }
       ],
       "listing_id": "8567e9a4ec3f84d4f2b2",
-      "property_id": "0467d6e87ecccb6d6e63",
+      "property_id": "264b3ed62ae730a0c340",
       "raw_points": [
         {
           "date": "2026-08-09",
@@ -134,6 +379,10 @@
         },
         {
           "date": "2026-08-10",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-12",
           "price_yen": 23000000
         }
       ],
@@ -145,9 +394,177 @@
         {
           "date": "2026-08-10",
           "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 23000000
         }
       ],
       "ward": "品川区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 48000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 67.57,
+          "boundary_new_price_yen": 48000000,
+          "boundary_old_price_yen": 148000000,
+          "date": "2026-08-10",
+          "price_yen": 148000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "f61809522ffb0098ee2f",
+      "property_id": "listing:3aedfb2a80dfb60cffad",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 148000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 48000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 48000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "千歳烏山7799万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21121056/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 48000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 48000000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 268000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 67.5,
+          "boundary_new_price_yen": 268000000,
+          "boundary_old_price_yen": 160000000,
+          "date": "2026-08-10",
+          "price_yen": 160000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "da66216dade4f9aa25ea",
+      "property_id": "listing:558c748f227e10916c06",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 160000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 268000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "等々力1億6000万円・3LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20962038/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 268000000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 79000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 65.65,
+          "boundary_new_price_yen": 79000000,
+          "boundary_old_price_yen": 230000000,
+          "date": "2026-08-10",
+          "price_yen": 230000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "0d636ec8554bdb835ced",
+      "property_id": "listing:8f190ae99481d72dc4f7",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 230000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 79000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "千歳船橋6299万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21225972/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 79000000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 64800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 63.99,
+          "boundary_new_price_yen": 64800000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-10",
+          "price_yen": 179970000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "0e0a4e9c4e4353100ca9",
+      "property_id": "listing:9bfe653f1749b66da418",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 179970000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 64800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "千歳船橋6780万円・4LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21412552/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 64800000
+        }
+      ],
+      "ward": "目黒区"
     },
     {
       "address": "東京都目黒区中目黒4-11-6",
@@ -172,6 +589,14 @@
         {
           "date": "2026-08-10",
           "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 109800000
         }
       ],
       "source": "SUUMO",
@@ -182,6 +607,244 @@
         {
           "date": "2026-08-10",
           "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 109800000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 65800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 53.0,
+          "boundary_new_price_yen": 65800000,
+          "boundary_old_price_yen": 140000000,
+          "date": "2026-08-10",
+          "price_yen": 140000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "3332ec157db066afdc8a",
+      "property_id": "listing:9535e31e49db7aba8eb5",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 65800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "桜新町1億3480万円・2LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21315475/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 65800000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 138000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 52.41,
+          "boundary_new_price_yen": 138000000,
+          "boundary_old_price_yen": 290000000,
+          "date": "2026-08-10",
+          "price_yen": 290000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "c2ea2bced441cb9f1f53",
+      "property_id": "listing:bb6057bac2a64dc18561",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 290000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 138000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "初台7200万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21248140/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 138000000
+        }
+      ],
+      "ward": "品川区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 94900000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 46.22,
+          "boundary_new_price_yen": 94900000,
+          "boundary_old_price_yen": 64900000,
+          "date": "2026-08-10",
+          "price_yen": 64900000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "7430521ea51459adfcc0",
+      "property_id": "listing:62ec36c3e6be8ab2eefa",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 64900000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 94900000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "千歳烏山7799万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20426561/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 94900000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 64800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 45.91,
+          "boundary_new_price_yen": 64800000,
+          "boundary_old_price_yen": 119800000,
+          "date": "2026-08-10",
+          "price_yen": 119800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "a40ee13c0bd469eec1b9",
+      "property_id": "listing:5864a1f8c976ebaa4dd4",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 119800000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 64800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "芦花公園6480万円・4DK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21259355/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 64800000
+        }
+      ],
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 94990000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 44.36,
+          "boundary_new_price_yen": 94990000,
+          "boundary_old_price_yen": 65800000,
+          "date": "2026-08-10",
+          "price_yen": 65800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "0c956eac35aaabcd495f",
+      "property_id": "listing:fb246e0f3998e639a3e8",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 94990000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "亀戸8980万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21308601/",
+      "validated_points": [
+        {
+          "date": "2026-08-11",
+          "price_yen": 94990000
+        }
+      ],
+      "ward": "品川区"
+    },
+    {
+      "address": "東急東横線 学芸大学駅 徒歩11分 東京都目黒区中央町1丁目 建築年 (築年数) 2021年06月(築6年) 現況 居住中 主要採光面 - 掲載画像25枚",
+      "current_price_yen": 159800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 38.96,
+          "boundary_new_price_yen": 159800000,
+          "boundary_old_price_yen": 115000000,
+          "date": "2026-08-10",
+          "price_yen": 115000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "8df4c2aadadd56ccab78",
+      "property_id": "0c5c8438bd5a98eeac89",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 115000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 159800000
+        }
+      ],
+      "source": "HOME'S",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "中古一戸建て 目黒区中央町1丁目 中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-35007300000132/",
+      "validated_points": [
+        {
+          "date": "2026-08-12",
+          "price_yen": 159800000
         }
       ],
       "ward": "目黒区"
@@ -192,7 +855,7 @@
     "min_regime_observations": 2,
     "neighbour_similarity_pct": 0.12
   },
-  "quarantined_point_count": 5,
-  "record_count": 1200,
-  "records_with_quarantined_points": 5
+  "quarantined_point_count": 21,
+  "record_count": 623,
+  "records_with_quarantined_points": 20
 }
