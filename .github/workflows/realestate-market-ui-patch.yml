@@ -24,7 +24,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Patch latest dashboard and publish
+      - name: Patch latest dashboard, validate, and publish
         shell: bash
         run: |
           set -euo pipefail
@@ -36,10 +36,33 @@ jobs:
             git fetch origin master
             git reset --hard origin/master
             python realestate/patch_market_range_click.py
-            git add realestate/dashboard/index.html
 
+            python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'id="marketMinPrice"',
+              'id="marketMaxPrice"',
+              'id="marketPriceReset"',
+              'function nearestMarketPoint(',
+              "addEventListener('click',openMarketPoint)",
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing dashboard markers: {missing}')
+
+          scripts = re.findall(r'<script>(.*?)</script>', html, flags=re.S)
+          if not scripts:
+              raise SystemExit('no inline dashboard script found')
+          Path('/tmp/realestate-dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
+          PY
+            node --check /tmp/realestate-dashboard.js
+
+            git add realestate/dashboard/index.html
             if git diff --cached --quiet; then
-              echo 'Dashboard already contains the requested controls'
+              echo 'Dashboard already contains the requested controls and passed validation'
               exit 0
             fi
 
