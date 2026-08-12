@@ -727,6 +727,22 @@
       "ward": "品川区"
     },
     {
+      "address": "東急目黒線 洗足駅 徒歩3分 東京都品川区小山7丁目 建築年 (築年数) 2024年10月(築2年) 現況 居住中 主要採光面 西 掲載画像17枚",
+      "building_sqm": 95.84,
+      "built": "2024-10",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 98.0,
+      "layout": "3LDK",
+      "price_man": 17980.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-1130740003661/",
+      "ward": "品川区"
+    },
+    {
       "address": "JR京浜東北・根岸線 大森駅 徒歩13分 東京都品川区大井6丁目 建築年 (築年数) 2008年11月(築18年) 現況 居住中 主要採光面 - 掲載画像26枚",
       "building_sqm": 163.22,
       "built": "2008-11",
@@ -753,7 +769,7 @@
       "price_man": 37800.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
+      "station": "JR京浜東北・根岸線 大井町駅 徒歩16分 土地面積/間取り 132.23m2 6LDK",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/kodate/b-1463790002672/",
       "ward": "品川区"
@@ -2215,17 +2231,17 @@
       "ward": "品川区"
     },
     {
-      "address": null,
+      "address": "順(昇順)",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
-      "layout": null,
+      "layout": "6LLDDKK",
       "price_man": 29000.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": null,
+      "station": "東急目黒線「洗足」徒歩4分",
       "title": "赤坂2億9000万円・3LDDKK",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20906945/",
       "ward": "品川区"
@@ -2455,17 +2471,17 @@
       "ward": "品川区"
     },
     {
-      "address": null,
+      "address": "順(昇順)",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
-      "layout": null,
+      "layout": "6LLDDKK",
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
-      "station": null,
+      "station": "東急目黒線「洗足」徒歩4分",
       "title": "亀戸水神7780万円・4LDK+S(納戸) 価格更新",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21375745/",
       "ward": "品川区"
@@ -3124,6 +3140,22 @@
       "station": null,
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1130750003162/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
+      "building_sqm": 79.35,
+      "built": "2024-04",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 66.83,
+      "layout": "3LDK",
+      "price_man": 11500.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-1200350005659/",
       "ward": "目黒区"
     },
     {
@@ -5511,6 +5543,22 @@
       "ward": "目黒区"
     },
     {
+      "address": null,
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 34980.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": null,
+      "title": "千歳船橋1億4600万円・2LDK+2S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21093702/",
+      "ward": "目黒区"
+    },
+    {
       "address": "東京都目黒区三田2",
       "building_sqm": null,
       "built": "1999-05",
@@ -5879,22 +5927,6 @@
       "ward": "目黒区"
     },
     {
-      "address": null,
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": null,
-      "title": "千歳船橋1億4600万円・2LDK+2S(納戸)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21093702/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区三田2",
       "building_sqm": null,
       "built": "1999-05",
@@ -5959,5 +5991,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-12T11:10:52+00:00"
+  "observed_at": "2026-08-12T11:37:01+00:00"
 }
