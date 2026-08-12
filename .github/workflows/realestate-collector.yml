@@ -14,6 +14,7 @@ on:
       - 'realestate/strict_export.py'
       - 'realestate/patch_dashboard_ui.py'
       - 'realestate/patch_v1_history.py'
+      - 'realestate/patch_market_range_click.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -119,10 +120,33 @@ jobs:
           })
           PY
 
-      - name: Keep dashboard UI patched
+      - name: Keep dashboard UI patched and validated
         run: |
           python realestate/patch_dashboard_ui.py
           python realestate/patch_v1_history.py
+          python realestate/patch_market_range_click.py
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'id="marketMinPrice"',
+              'id="marketMaxPrice"',
+              'id="marketPriceReset"',
+              'function nearestMarketPoint(',
+              "addEventListener('click',openMarketPoint)",
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing dashboard interaction markers: {missing}')
+
+          scripts = re.findall(r'<script>(.*?)</script>', html, flags=re.S)
+          if not scripts:
+              raise SystemExit('no inline dashboard script found')
+          Path('/tmp/realestate-dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
+          PY
+          node --check /tmp/realestate-dashboard.js
 
       - name: Publish generated snapshot without rebase conflicts
         shell: bash
