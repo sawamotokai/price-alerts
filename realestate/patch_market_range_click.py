@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Idempotently add graph price-range controls and click-to-open details."""
+"""Idempotently add graph price-range controls and direct point-click details (v2)."""
 from pathlib import Path
 
 PATH = Path(__file__).resolve().parent / "dashboard" / "index.html"
@@ -77,13 +77,13 @@ if "function marketPriceRange()" not in s:
 
 if "function nearestMarketPoint(" not in s:
     click_helpers = (
-        "function nearestMarketPoint(e,maxDistance=32){let canvas=$('marketCanvas'),r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,best=null,bestD=Infinity;"
+        "function nearestMarketPoint(e,maxDistance=38){let canvas=$('marketCanvas'),r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,best=null,bestD=Infinity;"
         "for(let series of marketGeometry)for(let point of series.geom){let d=(point.px-px)**2+(point.py-py)**2;if(d<bestD){bestD=d;best={series,point}}}"
         "return best&&bestD<=maxDistance*maxDistance?best:null}\n"
-        "function openMarketPoint(e){let hit=nearestMarketPoint(e);if(!hit)return;$('marketTooltip').style.display='none';show(hit.series.item.id);"
+        "function openMarketPoint(e){let hit=nearestMarketPoint(e);if(!hit)return;e.preventDefault();$('marketTooltip').style.display='none';show(hit.series.item.id);"
         "if(!isMobile())requestAnimationFrame(()=>$('detail').scrollIntoView({behavior:'smooth',block:'start'}))}\n"
         "$('marketCanvas').addEventListener('click',openMarketPoint);"
-        "$('marketCanvas').addEventListener('pointermove',e=>{$('marketCanvas').style.cursor=nearestMarketPoint(e,18)?'pointer':'crosshair'});\n"
+        "$('marketCanvas').addEventListener('pointermove',e=>{$('marketCanvas').style.cursor=nearestMarketPoint(e,22)?'pointer':'crosshair'});\n"
     )
     replace_once("(async()=>{try{", click_helpers + "(async()=>{try{", "market point click handler")
 
