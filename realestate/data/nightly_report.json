@@ -9,22 +9,22 @@
     "fudousan.or.jp": false
   },
   "fudousan_japan_coverage": false,
-  "listing_ended_candidate_count": 22,
-  "new_count": 8,
-  "observed_at": "2026-08-12T10:11:10+00:00",
-  "out_of_scope_excluded_count": 71,
-  "price_changed_count": 0,
-  "price_count": 334,
-  "price_coverage_pct": 90.76,
-  "price_history_quarantined_point_count": 5,
-  "price_history_quarantined_record_count": 5,
-  "record_count": 368,
+  "listing_ended_candidate_count": 95,
+  "new_count": 259,
+  "observed_at": "2026-08-12T11:10:52+00:00",
+  "out_of_scope_excluded_count": 72,
+  "price_changed_count": 3,
+  "price_count": 349,
+  "price_coverage_pct": 93.82,
+  "price_history_quarantined_point_count": 21,
+  "price_history_quarantined_record_count": 20,
+  "record_count": 372,
   "source_counts": {
     "ADCAST": 69,
-    "HOME'S": 29,
+    "HOME'S": 33,
     "SUUMO": 270,
     "fudousan.or.jp": 0
   },
-  "unknown_right_excluded_count": 306,
-  "verified_freehold_count": 765
+  "unknown_right_excluded_count": 277,
+  "verified_freehold_count": 779
 }
