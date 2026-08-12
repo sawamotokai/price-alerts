@@ -1,92 +1,6 @@
 {
-  "generated_at": "2026-08-12T11:15:41+00:00",
+  "generated_at": "2026-08-12T11:15:56+00:00",
   "items": [
-    {
-      "address": null,
-      "current_price_yen": 828000000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 452.74,
-          "boundary_new_price_yen": 828000000,
-          "boundary_old_price_yen": 149800000,
-          "date": "2026-08-10",
-          "price_yen": 149800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "6a734a6160cab680a267",
-      "property_id": "listing:b41c48a8467ad6eaecde",
-      "raw_points": [
-        {
-          "date": "2026-08-10",
-          "price_yen": 149800000
-        },
-        {
-          "date": "2026-08-12",
-          "price_yen": 828000000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "祐天寺1億4980万円・3LDK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21205324/",
-      "validated_points": [
-        {
-          "date": "2026-08-12",
-          "price_yen": 828000000
-        }
-      ],
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都品川区荏原6-2-3",
-      "current_price_yen": 740000000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 429.33,
-          "boundary_new_price_yen": 740000000,
-          "boundary_old_price_yen": 139800000,
-          "date": "2026-08-09",
-          "price_yen": 139800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 429.33,
-          "boundary_new_price_yen": 740000000,
-          "boundary_old_price_yen": 139800000,
-          "date": "2026-08-10",
-          "price_yen": 139800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "208ec65866c9978b4db9",
-      "property_id": "fd013a426f13f951044c",
-      "raw_points": [
-        {
-          "date": "2026-08-09",
-          "price_yen": 139800000
-        },
-        {
-          "date": "2026-08-10",
-          "price_yen": 139800000
-        },
-        {
-          "date": "2026-08-12",
-          "price_yen": 740000000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "西小山1億3980万円・2LDK+S(納戸)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20535020/",
-      "validated_points": [
-        {
-          "date": "2026-08-12",
-          "price_yen": 740000000
-        }
-      ],
-      "ward": "品川区"
-    },
     {
       "address": "東京都目黒区青葉台3",
       "current_price_yen": 424000000,
@@ -141,7 +55,7 @@
       "ward": "目黒区"
     },
     {
-      "address": null,
+      "address": "順(昇順)",
       "current_price_yen": 198000000,
       "excluded_points": [
         {
@@ -154,7 +68,7 @@
         }
       ],
       "listing_id": "d24b75322710d52888c6",
-      "property_id": "listing:866d8daae61f61f07c4f",
+      "property_id": "215a0a252e861cd55c53",
       "raw_points": [
         {
           "date": "2026-08-10",
@@ -163,15 +77,23 @@
         {
           "date": "2026-08-11",
           "price_yen": 198000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 198000000
         }
       ],
       "source": "SUUMO",
       "status": "quarantined-unconfirmed-large-change",
-      "title": "南砂町1億9800万円・6LDK+S(納戸)",
+      "title": "南砂3(南砂町駅) 1億9800万円 1億9800万円 6LDK+S(納戸) 446.65m 2 (135.11坪)(登記) 1966年8月 東京都江東区南砂3 東京メトロ東西線 南砂町 徒歩8分",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20758842/",
       "validated_points": [
         {
           "date": "2026-08-11",
+          "price_yen": 198000000
+        },
+        {
+          "date": "2026-08-12",
           "price_yen": 198000000
         }
       ],
@@ -470,6 +392,10 @@
         {
           "date": "2026-08-11",
           "price_yen": 268000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 268000000
         }
       ],
       "source": "SUUMO",
@@ -479,6 +405,10 @@
       "validated_points": [
         {
           "date": "2026-08-11",
+          "price_yen": 268000000
+        },
+        {
+          "date": "2026-08-12",
           "price_yen": 268000000
         }
       ],
@@ -642,6 +572,10 @@
         {
           "date": "2026-08-11",
           "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 65800000
         }
       ],
       "source": "SUUMO",
@@ -651,6 +585,10 @@
       "validated_points": [
         {
           "date": "2026-08-11",
+          "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-12",
           "price_yen": 65800000
         }
       ],
@@ -798,6 +736,10 @@
         {
           "date": "2026-08-11",
           "price_yen": 94990000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 94990000
         }
       ],
       "source": "SUUMO",
@@ -807,6 +749,10 @@
       "validated_points": [
         {
           "date": "2026-08-11",
+          "price_yen": 94990000
+        },
+        {
+          "date": "2026-08-12",
           "price_yen": 94990000
         }
       ],
@@ -855,7 +801,7 @@
     "min_regime_observations": 2,
     "neighbour_similarity_pct": 0.12
   },
-  "quarantined_point_count": 21,
-  "record_count": 1186,
-  "records_with_quarantined_points": 20
+  "quarantined_point_count": 18,
+  "record_count": 634,
+  "records_with_quarantined_points": 18
 }
