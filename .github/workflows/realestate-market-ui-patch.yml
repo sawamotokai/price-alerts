@@ -1,0 +1,57 @@
+name: Real-estate market chart UI patch
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/patch_market_range_click.py'
+      - '.github/workflows/realestate-market-ui-patch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-market-ui-patch
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch latest dashboard and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "UI publish attempt ${attempt}/3"
+            git fetch origin master
+            git reset --hard origin/master
+            python realestate/patch_market_range_click.py
+            git add realestate/dashboard/index.html
+
+            if git diff --cached --quiet; then
+              echo 'Dashboard already contains the requested controls'
+              exit 0
+            fi
+
+            git commit -m 'Add market graph price range and point clicks'
+            if git push origin HEAD:master; then
+              echo 'Dashboard UI published successfully'
+              exit 0
+            fi
+
+            echo 'Master moved; retrying against the new tip'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Failed to publish dashboard UI after 3 attempts' >&2
+          exit 1
