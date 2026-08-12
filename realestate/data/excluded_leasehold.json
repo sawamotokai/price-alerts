@@ -1,128 +1,7 @@
 {
-  "count": 57,
-  "generated_at": "2026-08-11T11:10:15.527670+00:00",
+  "count": 58,
+  "generated_at": "2026-08-12T10:16:35.451090+00:00",
   "items": [
-    {
-      "address": "東京都品川区東大井1",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "7508c8fcda26d542f482",
-      "property_id": "3b57ccf7f21105eba39b",
-      "source": "suumo",
-      "title": "■大型車駐車可能■2SLDK→3SLDKへ変更可能(別途費用がかかります)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21290721/"
-    },
-    {
-      "address": "東京都目黒区五本木2",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存11年1ヶ月、借地期間残存11年1ヶ月、売買契約締結後、地主との面談、書類審査を経て新たに期間を定めた土地賃貸借契約を締結します。大規模増改築や新築には所定の新築更新料の支払いが必要です。建物の担保設定には地主の承諾が必要となり、所定の担保設定承諾料の支払いが必要です。借地料は販売開始時の金額であり、変動する場合があります 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "546bf513249437da659f",
-      "property_id": "f911794732334b177e1f",
-      "source": "suumo",
-      "title": "4SLDK♪家族が集まるラウンジ設計!カースペース2台駐車可能です。",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21090401/"
-    },
-    {
-      "address": "東京都目黒区自由が丘1",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存20年 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "ce989680ecdd7aa98320",
-      "property_id": "ff9e6886795b9dd6ac46",
-      "source": "suumo",
-      "title": "■自由が丘一丁目の高台に立地",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78804328/"
-    },
-    {
-      "address": "東京都目黒区鷹番3",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年、◆本物件の取引は借地権（賃借権）の権利譲渡取引です。（借地期限：譲渡時新規契約／非堅固20年・堅固30年）◆地主：祐天寺◆既存建物を建て替える際には、新築更新料がかかります。◆融資を利用する場合には、担保設定承諾料がかかり、金融機関が限られます。◆借地権譲渡には、地主による審査があり、期間を要します。◆地主による譲渡承諾取得後の売買取引となります。 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "bbdcb6a01daf7f13ca6b",
-      "property_id": "ede2efe3747440c866c3",
-      "source": "suumo",
-      "title": "鷹番3(学芸大学駅) 7890万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20416461/"
-    },
-    {
-      "address": "東京都品川区東中延2",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存27年8ヶ月 構造・工法 ヒント 木造3階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "9cb6c102d72d6feba456",
-      "property_id": "416ff02a398c617d7b8d",
-      "source": "suumo",
-      "title": "東中延2(中延駅) 7840万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20775863/"
-    },
-    {
-      "address": "JR山手線 五反田駅 徒歩9分 東京都品川区上大崎3丁目 建築年 (築年数) 2024年07月(築3年) 現況 居住中 主要採光面 東 掲載画像14枚",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "ee6f4cd69f2b6e7982af",
-      "property_id": "14aaf105496ae7a1cf5e",
-      "source": "homes",
-      "title": "中古一戸建て 上大崎の邸宅",
-      "url": "https://www.homes.co.jp/kodate/b-1200350005681/"
-    },
-    {
-      "address": "東京都目黒区八雲1",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存20年 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "73ecb2b7845c3dbe77d5",
-      "property_id": "5aaafee985fc3f43dca8",
-      "source": "suumo",
-      "title": "♪自宅+賃貸スペースで、好立地に住みながら資産形成♪",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21308947/"
-    },
-    {
-      "address": null,
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存6年 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "d41f07797866f312bbcb",
-      "property_id": "753a882cd1eecc93f2f2",
-      "source": "suumo",
-      "title": "木場1億3800万円・5DK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21346063/"
-    },
-    {
-      "address": "東急大井町線 戸越公園駅 徒歩4分 東京都品川区豊町4丁目 建築年 (築年数) 2008年08月(築19年) 現況 居住中 主要採光面 - 掲載画像7枚 2日前 価格更新 閲覧済",
-      "evidence": "record-field",
-      "land_right": "借地権",
-      "land_right_status": "leasehold",
-      "listing_id": "4c1fb88495b369da0f4a",
-      "property_id": "1fba6ae5668e6332b8e8",
-      "source": "homes",
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/kodate/b-1420270003046/"
-    },
-    {
-      "address": "東京都品川区東中延2",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "9977882a4c26409159a0",
-      "property_id": "416ff02a398c617d7b8d",
-      "source": "suumo",
-      "title": "東中延2(中延駅) 7840万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20775863/"
-    },
-    {
-      "address": null,
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存9年2ヶ月 構造・工法 ヒント 木造3階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "b86c4b93ddfa8a66edd1",
-      "property_id": "753a882cd1eecc93f2f2",
-      "source": "suumo",
-      "title": "初台7200万円・2LDK+S(納戸)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21248140/"
-    },
     {
       "address": "東京都目黒区五本木2",
       "evidence": "record-field",
@@ -135,15 +14,81 @@
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21090401/"
     },
     {
-      "address": null,
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存7年 構造・工法 ヒント 木造2階建",
+      "address": "東京都目黒区中目黒4",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存5年、譲渡承諾料、その他有り。借地期間、新規相談。(別途、費用有り）。 構造・工法 ヒント 木造2階建",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "b514c56030295a77eafd",
-      "property_id": "listing:b514c56030295a77eafd",
+      "listing_id": "4d23d2f50a3e605daf5c",
+      "property_id": "9e19a35c0fd430d02f2e",
       "source": "suumo",
-      "title": "南久が原2(鵜の木駅) 4676万円 4676万円 4LDK+S(納戸) 132.48m 2 (40.07坪) 1997年1月 東京都大田区南久が原2 東急多摩川線 鵜の木 徒歩6分",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21186976/"
+      "title": "中目黒4(中目黒駅) 8980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79141006/"
+    },
+    {
+      "address": "東京都目黒区原町2",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存15年8ヶ月 構造・工法 ヒント 木造1階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "5556d08adb190200200a",
+      "property_id": "68dea913da9a7cd35deb",
+      "source": "suumo",
+      "title": "原町2(洗足駅) 3980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78465110/"
+    },
+    {
+      "address": "東京都目黒区中目黒4",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "1520b75038cda3448c49",
+      "property_id": "4b79d3d3faf6b8b7c120",
+      "source": "suumo",
+      "title": "目黒区中目黒4丁目 南西向きLDK20帖◆支持中文 ◆English OK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21433952/"
+    },
+    {
+      "address": "東京都目黒区中目黒4",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "2ebaab6854cdad47748a",
+      "property_id": "9e19a35c0fd430d02f2e",
+      "source": "suumo",
+      "title": "目黒川の桜並木まで徒歩5分、四季を感じる住環境。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20559231/"
+    },
+    {
+      "address": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "c76da28089f754f14fe4",
+      "property_id": "listing:c76da28089f754f14fe4",
+      "source": "suumo",
+      "title": "都立大学1億2900万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21352440/"
+    },
+    {
+      "address": "JR山手線 五反田駅 徒歩9分 東京都品川区上大崎3丁目 建築年 (築年数) 2024年07月(築3年) 現況 居住中 主要採光面 東 掲載画像14枚",
+      "evidence": "土地権利 旧法賃借権",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "93a75b05e83162e0ec8b",
+      "property_id": "14aaf105496ae7a1cf5e",
+      "source": "homes",
+      "title": "中古一戸建て 上大崎の邸宅",
+      "url": "https://www.homes.co.jp/kodate/b-1200350005681/"
+    },
+    {
+      "address": "東急東横線 祐天寺駅 徒歩17分 東京都目黒区中目黒4丁目 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 南西 掲載画像16枚",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "08d668bd53ce899e2666",
+      "property_id": "3be20850fae1b834c7d6",
+      "source": "homes",
+      "title": "中古一戸建て 中目黒4丁目_中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1063460028450/"
     },
     {
       "address": "東京都品川区西五反田6",
@@ -157,6 +102,50 @@
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21434232/"
     },
     {
+      "address": "東京都品川区東中延2",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "9977882a4c26409159a0",
+      "property_id": "416ff02a398c617d7b8d",
+      "source": "suumo",
+      "title": "東中延2(中延駅) 7840万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20775863/"
+    },
+    {
+      "address": "東京都目黒区五本木2",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "0dee0ed5c7f5f02a4948",
+      "property_id": "579b55dddecfd001ebdf",
+      "source": "suumo",
+      "title": "◆東横線有丹治駅徒歩5分◆ファミリーラウンジ◆LDK20帖以上",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248681/"
+    },
+    {
+      "address": "東京都品川区上大崎3",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存18年9ヶ月、新法借地権契約満了期間2053年12月21日 構造・工法 ヒント 木造3階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "f434aa28638469ac409e",
+      "property_id": "c4f0e5dbc40c3840d630",
+      "source": "suumo",
+      "title": "2024年築・耐震等級3ZEH基準適合住宅ハイルーフ駐車可車庫・庭付き",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21273948/"
+    },
+    {
+      "address": null,
+      "evidence": "record-field",
+      "land_right": "定期借地権",
+      "land_right_status": "leasehold",
+      "listing_id": "87b425993deaf301c80e",
+      "property_id": "listing:569f8caccd91a2ec1fe5",
+      "source": "suumo",
+      "title": "学芸大学1億3500万円・3LDK+2S(納戸) 新着",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21416846/"
+    },
+    {
       "address": "東京都目黒区中目黒4",
       "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存5年、借地期間更新可能（別途更新料） 構造・工法 ヒント 木造2階建",
       "land_right": "賃借権",
@@ -166,6 +155,237 @@
       "source": "suumo",
       "title": "目黒川の桜並木まで徒歩5分、四季を感じる住環境。",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20559231/"
+    },
+    {
+      "address": "東京都目黒区南1",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "ebbe4b2e2dc078c81c88",
+      "property_id": "31363cc5a180c5412472",
+      "source": "suumo",
+      "title": "南1(洗足駅) 1億4800万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78920143/"
+    },
+    {
+      "address": "東京都目黒区大岡山1",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "615a07d8465b04410187",
+      "property_id": "d1a6373fe1ca5617c737",
+      "source": "suumo",
+      "title": "◆三井ホーム施工・高耐震2×4工法◆4SLDK・リビング吹抜で明るい室内",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20800341/"
+    },
+    {
+      "address": "東急大井町線 戸越公園駅 徒歩4分 東京都品川区豊町4丁目 建築年 (築年数) 2008年08月(築19年) 現況 居住中 主要採光面 - 掲載画像7枚 2日前 価格更新 閲覧済",
+      "evidence": "record-field",
+      "land_right": "借地権",
+      "land_right_status": "leasehold",
+      "listing_id": "4c1fb88495b369da0f4a",
+      "property_id": "1fba6ae5668e6332b8e8",
+      "source": "homes",
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-1420270003046/"
+    },
+    {
+      "address": "東急東横線 祐天寺駅 徒歩5分 東京都目黒区五本木2丁目 建築年 (築年数) 1997年12月(築29年) 現況 居住中 主要採光面 - 掲載画像15枚",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "7e4ad2aa284419f1c96a",
+      "property_id": "d9a005fbac73e77b4993",
+      "source": "homes",
+      "title": "中古一戸建て 目黒区五本木2丁目 戸建て",
+      "url": "https://www.homes.co.jp/kodate/b-1417040007290/"
+    },
+    {
+      "address": "東京都目黒区中目黒4",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "6a9081f2355554f1fdc0",
+      "property_id": "9e19a35c0fd430d02f2e",
+      "source": "suumo",
+      "title": "中目黒4(中目黒駅) 8980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79141006/"
+    },
+    {
+      "address": "東京都目黒区大岡山1",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、更新可能 構造・工法 ヒント 構造：木造 工法：2×4工法 地上階：2階",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "9d7700fc7b8a2bb910f0",
+      "property_id": "d1a6373fe1ca5617c737",
+      "source": "suumo",
+      "title": "◆三井ホーム施工・高耐震2×4工法◆4SLDK・リビング吹抜で明るい室内",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20800341/"
+    },
+    {
+      "address": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存17年 構造・工法 ヒント 木造3階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "993040f73833a69fb11b",
+      "property_id": "listing:993040f73833a69fb11b",
+      "source": "suumo",
+      "title": "戸越公園1億180万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21426098/"
+    },
+    {
+      "address": "東京都目黒区八雲1",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存20年 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "73ecb2b7845c3dbe77d5",
+      "property_id": "5aaafee985fc3f43dca8",
+      "source": "suumo",
+      "title": "♪自宅+賃貸スペースで、好立地に住みながら資産形成♪",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21308947/"
+    },
+    {
+      "address": "東京都目黒区鷹番3",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "9862fd6e886720d54f94",
+      "property_id": "ede2efe3747440c866c3",
+      "source": "suumo",
+      "title": "鷹番3(学芸大学駅) 7890万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20416461/"
+    },
+    {
+      "address": "東京都目黒区五本木2",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存10年11ヶ月、売買契約締結後、地主との面談、書類審査を経て新たに期間を定めた土地賃貸借契約を締結します／大規模増改築や新築には所定の新築更新料の支払いが必要です／建物の担保設定には地主の承諾が必要となり、所定の担保設定承諾料の支払いが必要です／借地料は販売開始時の金額であり、変動する場合があります 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "e5cecb3cc54448876fc5",
+      "property_id": "f911794732334b177e1f",
+      "source": "suumo",
+      "title": "≪当日内見予約可能≫ファミリーラウンジでゆったりくつろぐ",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21044269/"
+    },
+    {
+      "address": "東京都品川区東大井1",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "f1363f47b584f698119c",
+      "property_id": "3b57ccf7f21105eba39b",
+      "source": "suumo",
+      "title": "■大型車駐車可能■2SLDK→3SLDKへ変更可能(別途費用がかかります)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21290721/"
+    },
+    {
+      "address": "東京都目黒区八雲1",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "b80fdcbff416a3556baa",
+      "property_id": "5aaafee985fc3f43dca8",
+      "source": "suumo",
+      "title": "月25万の賃料収入×フルリノベ住宅|憧れの八雲で叶える賃貸併用♪",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21352440/"
+    },
+    {
+      "address": "東京都目黒区五本木2",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存10年10ヶ月 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "e43bd467e70d1962f676",
+      "property_id": "579b55dddecfd001ebdf",
+      "source": "suumo",
+      "title": "◆東横線有丹治駅徒歩5分◆ファミリーラウンジ◆LDK20帖以上",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248681/"
+    },
+    {
+      "address": "東京都目黒区南1",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "5a5f96d1aaf25a633342",
+      "property_id": "31363cc5a180c5412472",
+      "source": "suumo",
+      "title": "南1(洗足駅) 1億4800万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78920143/"
+    },
+    {
+      "address": "順(昇順)",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存27年8ヶ月 構造・工法 ヒント 木造3階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "9cb6c102d72d6feba456",
+      "property_id": "215a0a252e861cd55c53",
+      "source": "suumo",
+      "title": "東中延2(中延駅) 7840万円 7840万円 2LDK+S(納戸) 90.51m 2 (登記)、うち1階車庫6.14m 2 2022年6月 東京都品川区東中延2 東急大井町線 中延 徒歩1分",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20775863/"
+    },
+    {
+      "address": "東京都目黒区自由が丘1",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存20年 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "ce989680ecdd7aa98320",
+      "property_id": "ff9e6886795b9dd6ac46",
+      "source": "suumo",
+      "title": "■自由が丘一丁目の高台に立地",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78804328/"
+    },
+    {
+      "address": "東京都目黒区中目黒4",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存7年9ヶ月 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "8f29d004cbf5ea7a3f4f",
+      "property_id": "413cc800decc4c758f43",
+      "source": "suumo",
+      "title": "■建物180m2の2階建♪■南+東が抜けているため眺望、日当たり良好♪",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20798652/"
+    },
+    {
+      "address": "東急東横線 祐天寺駅 徒歩17分 東京都目黒区中目黒4丁目 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 南西 掲載画像16枚",
+      "evidence": "土地権利 旧法賃借権",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "31a5ccf93d23bdc065ce",
+      "property_id": "3be20850fae1b834c7d6",
+      "source": "homes",
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1063460028450/"
+    },
+    {
+      "address": "東京都品川区上大崎3",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "1c1e5f19cad79c60b316",
+      "property_id": "c4f0e5dbc40c3840d630",
+      "source": "suumo",
+      "title": "2024年築・耐震等級3ZEH基準適合住宅ハイルーフ駐車可車庫・庭付き",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21273948/"
+    },
+    {
+      "address": null,
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "6a734a6160cab680a267",
+      "property_id": "listing:b41c48a8467ad6eaecde",
+      "source": "suumo",
+      "title": "祐天寺1億4980万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21205324/"
+    },
+    {
+      "address": "東京都品川区西五反田6",
+      "evidence": "record-field",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "d53b99f2192bd91cab74",
+      "property_id": "6de6572d703e7de811db",
+      "source": "suumo",
+      "title": "浴室乾燥機や食洗機など設備充実。ルーフバルコニー付き中古戸建てです。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21434232/"
     },
     {
       "address": "東京都目黒区自由が丘1",
@@ -190,37 +410,37 @@
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20350210/"
     },
     {
+      "address": "東京都品川区豊町5",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存16年7ヶ月 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "90a863666be411de58ab",
+      "property_id": "13fa432574a91ed90983",
+      "source": "suumo",
+      "title": "豊町5(戸越公園駅) 7980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21063017/"
+    },
+    {
       "address": null,
-      "evidence": "土地の権利形態 ヒント 地上権（旧）、借地期間残存10ヶ月 構造・工法 ヒント 木造2階建",
-      "land_right": "地上権",
-      "land_right_status": "leasehold",
-      "listing_id": "d587cbd3de23a3c2775d",
-      "property_id": "f2f0b158c1bdd41e5c0d",
-      "source": "suumo",
-      "title": "池上6180万円・4LDK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21260950/"
-    },
-    {
-      "address": "東急東横線 祐天寺駅 徒歩5分 東京都目黒区五本木2丁目 建築年 (築年数) 1997年12月(築29年) 現況 居住中 主要採光面 - 掲載画像15枚",
-      "evidence": "record-field",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存9年2ヶ月 構造・工法 ヒント 木造3階建",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "7e4ad2aa284419f1c96a",
-      "property_id": "d9a005fbac73e77b4993",
+      "listing_id": "b41c48a8467ad6eaecde",
+      "property_id": "listing:b41c48a8467ad6eaecde",
+      "source": "suumo",
+      "title": "祐天寺1億4980万円・3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21205324/"
+    },
+    {
+      "address": "東京都品川区豊町4丁目",
+      "evidence": "record-text",
+      "land_right": "借地権",
+      "land_right_status": "leasehold",
+      "listing_id": "10717301397d610008f3",
+      "property_id": "listing:10717301397d610008f3",
       "source": "homes",
-      "title": "中古一戸建て 目黒区五本木2丁目 戸建て",
-      "url": "https://www.homes.co.jp/kodate/b-1417040007290/"
-    },
-    {
-      "address": "東京都品川区上大崎3",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存18年9ヶ月、新法借地権契約満了期間2053年12月21日 構造・工法 ヒント 木造3階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "f434aa28638469ac409e",
-      "property_id": "c4f0e5dbc40c3840d630",
-      "source": "suumo",
-      "title": "2024年築・耐震等級3ZEH基準適合住宅ハイルーフ駐車可車庫・庭付き",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21273948/"
+      "title": "品川区豊町4丁目借地権付戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1420270003046/"
     },
     {
       "address": "東京都目黒区五本木2",
@@ -234,136 +454,48 @@
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21044269/"
     },
     {
-      "address": "東京都目黒区大岡山1",
+      "address": "JR山手線 五反田駅 徒歩9分 東京都品川区上大崎3丁目 建築年 (築年数) 2024年07月(築3年) 現況 居住中 主要採光面 東 掲載画像14枚",
       "evidence": "record-field",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "615a07d8465b04410187",
-      "property_id": "d1a6373fe1ca5617c737",
-      "source": "suumo",
-      "title": "◆三井ホーム施工・高耐震2×4工法◆4SLDK・リビング吹抜で明るい室内",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20800341/"
-    },
-    {
-      "address": "東京都目黒区中目黒4",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存7年9ヶ月 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "8f29d004cbf5ea7a3f4f",
-      "property_id": "413cc800decc4c758f43",
-      "source": "suumo",
-      "title": "■建物180m2の2階建♪■南+東が抜けているため眺望、日当たり良好♪",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20798652/"
-    },
-    {
-      "address": "東京都目黒区五本木2",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存10年10ヶ月 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "e43bd467e70d1962f676",
-      "property_id": "579b55dddecfd001ebdf",
-      "source": "suumo",
-      "title": "◆東横線有丹治駅徒歩5分◆ファミリーラウンジ◆LDK20帖以上",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248681/"
-    },
-    {
-      "address": "東京都目黒区南1",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "ebbe4b2e2dc078c81c88",
-      "property_id": "31363cc5a180c5412472",
-      "source": "suumo",
-      "title": "南1(洗足駅) 1億4800万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78920143/"
-    },
-    {
-      "address": "東急東横線 祐天寺駅 徒歩17分 東京都目黒区中目黒4丁目 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 南西 掲載画像16枚",
-      "evidence": "土地権利 旧法賃借権",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "31a5ccf93d23bdc065ce",
-      "property_id": "3be20850fae1b834c7d6",
+      "listing_id": "ee6f4cd69f2b6e7982af",
+      "property_id": "14aaf105496ae7a1cf5e",
       "source": "homes",
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/inquire/bukken/kodate/b-1063460028450/"
-    },
-    {
-      "address": "東京都目黒区五本木2",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存10年11ヶ月、売買契約締結後、地主との面談、書類審査を経て新たに期間を定めた土地賃貸借契約を締結します／大規模増改築や新築には所定の新築更新料の支払いが必要です／建物の担保設定には地主の承諾が必要となり、所定の担保設定承諾料の支払いが必要です／借地料は販売開始時の金額であり、変動する場合があります 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "e5cecb3cc54448876fc5",
-      "property_id": "f911794732334b177e1f",
-      "source": "suumo",
-      "title": "≪当日内見予約可能≫ファミリーラウンジでゆったりくつろぐ",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21044269/"
-    },
-    {
-      "address": "東京都品川区豊町5",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存16年7ヶ月 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "90a863666be411de58ab",
-      "property_id": "13fa432574a91ed90983",
-      "source": "suumo",
-      "title": "豊町5(戸越公園駅) 7980万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21063017/"
-    },
-    {
-      "address": "東京都目黒区八雲1",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "b80fdcbff416a3556baa",
-      "property_id": "5aaafee985fc3f43dca8",
-      "source": "suumo",
-      "title": "月25万の賃料収入×フルリノベ住宅|憧れの八雲で叶える賃貸併用♪",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21352440/"
+      "title": "中古一戸建て 上大崎の邸宅",
+      "url": "https://www.homes.co.jp/kodate/b-1200350005681/"
     },
     {
       "address": null,
-      "evidence": "record-field",
-      "land_right": "定期借地権",
+      "evidence": "土地の権利形態 ヒント 地上権（旧）、借地期間残存10ヶ月 構造・工法 ヒント 木造2階建",
+      "land_right": "地上権",
       "land_right_status": "leasehold",
-      "listing_id": "87b425993deaf301c80e",
-      "property_id": "listing:569f8caccd91a2ec1fe5",
+      "listing_id": "d587cbd3de23a3c2775d",
+      "property_id": "f2f0b158c1bdd41e5c0d",
       "source": "suumo",
-      "title": "学芸大学1億3500万円・3LDK+2S(納戸) 新着",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21416846/"
+      "title": "池上6180万円・4LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21260950/"
     },
     {
       "address": "東京都目黒区中目黒4",
-      "evidence": "record-field",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存4年8ヶ月 構造・工法 ヒント 木造2階建",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "9304125f48aeeab2b632",
-      "property_id": "413cc800decc4c758f43",
+      "listing_id": "6586171c42d8ee9641ac",
+      "property_id": "4b79d3d3faf6b8b7c120",
       "source": "suumo",
-      "title": "■建物180m2の2階建♪■南+東が抜けているため眺望、日当たり良好♪",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20798652/"
+      "title": "目黒区中目黒4丁目 南西向きLDK20帖◆支持中文 ◆English OK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21433952/"
     },
     {
       "address": "東京都目黒区八雲1",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年 構造・工法 ヒント 木造2階建",
+      "evidence": "record-field",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "c76da28089f754f14fe4",
+      "listing_id": "596f3d790fa2b69bf8e4",
       "property_id": "5aaafee985fc3f43dca8",
       "source": "suumo",
-      "title": "月25万の賃料収入×フルリノベ住宅|憧れの八雲で叶える賃貸併用♪",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21352440/"
-    },
-    {
-      "address": "東京都品川区東大井1",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年 構造・工法 ヒント 木造3階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "f1363f47b584f698119c",
-      "property_id": "3b57ccf7f21105eba39b",
-      "source": "suumo",
-      "title": "■大型車駐車可能■2SLDK→3SLDKへ変更可能(別途費用がかかります)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21290721/"
+      "title": "♪自宅+賃貸スペースで、好立地に住みながら資産形成♪",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21308947/"
     },
     {
       "address": "東京都目黒区原町2",
@@ -381,187 +513,11 @@
       "evidence": "record-field",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "1520b75038cda3448c49",
-      "property_id": "4b79d3d3faf6b8b7c120",
+      "listing_id": "9304125f48aeeab2b632",
+      "property_id": "413cc800decc4c758f43",
       "source": "suumo",
-      "title": "目黒区中目黒4丁目 南西向きLDK20帖◆支持中文 ◆English OK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21433952/"
-    },
-    {
-      "address": "東急東横線 祐天寺駅 徒歩17分 東京都目黒区中目黒4丁目 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 南西 掲載画像16枚",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "08d668bd53ce899e2666",
-      "property_id": "3be20850fae1b834c7d6",
-      "source": "homes",
-      "title": "中古一戸建て 中目黒4丁目_中古戸建",
-      "url": "https://www.homes.co.jp/kodate/b-1063460028450/"
-    },
-    {
-      "address": "順(昇順)",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存17年 構造・工法 ヒント 木造3階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "993040f73833a69fb11b",
-      "property_id": "2ff068cb4f6cdd8a388a",
-      "source": "suumo",
-      "title": "戸越公園1億180万円・3LDK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21426098/"
-    },
-    {
-      "address": "東京都品川区西五反田6",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "d53b99f2192bd91cab74",
-      "property_id": "6de6572d703e7de811db",
-      "source": "suumo",
-      "title": "浴室乾燥機や食洗機など設備充実。ルーフバルコニー付き中古戸建てです。",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21434232/"
-    },
-    {
-      "address": "JR山手線 五反田駅 徒歩9分 東京都品川区上大崎3丁目 建築年 (築年数) 2024年07月(築3年) 現況 居住中 主要採光面 東 掲載画像14枚",
-      "evidence": "土地権利 旧法賃借権",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "93a75b05e83162e0ec8b",
-      "property_id": "14aaf105496ae7a1cf5e",
-      "source": "homes",
-      "title": "中古一戸建て 上大崎の邸宅",
-      "url": "https://www.homes.co.jp/kodate/b-1200350005681/"
-    },
-    {
-      "address": "東京都品川区豊町5",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "56b7e5c3c93875819206",
-      "property_id": "13fa432574a91ed90983",
-      "source": "suumo",
-      "title": "豊町5(戸越公園駅) 7980万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21063017/"
-    },
-    {
-      "address": "東京都目黒区中目黒4",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存4年8ヶ月 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "6586171c42d8ee9641ac",
-      "property_id": "4b79d3d3faf6b8b7c120",
-      "source": "suumo",
-      "title": "目黒区中目黒4丁目 南西向きLDK20帖◆支持中文 ◆English OK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21433952/"
-    },
-    {
-      "address": "東京都目黒区中町2",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存9年2ヶ月 構造・工法 ヒント 木造3階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "b41c48a8467ad6eaecde",
-      "property_id": "88fcbd865aa1610e6992",
-      "source": "suumo",
-      "title": "駅徒歩7分の好立地!隣地通路で開放感のある18帖超LDKの3LDK戸建!",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21205324/"
-    },
-    {
-      "address": "東京都目黒区鷹番3",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "9862fd6e886720d54f94",
-      "property_id": "ede2efe3747440c866c3",
-      "source": "suumo",
-      "title": "鷹番3(学芸大学駅) 7890万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20416461/"
-    },
-    {
-      "address": "東京都目黒区八雲1",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "596f3d790fa2b69bf8e4",
-      "property_id": "5aaafee985fc3f43dca8",
-      "source": "suumo",
-      "title": "♪自宅+賃貸スペースで、好立地に住みながら資産形成♪",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21308947/"
-    },
-    {
-      "address": "東京都目黒区五本木2",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "0dee0ed5c7f5f02a4948",
-      "property_id": "579b55dddecfd001ebdf",
-      "source": "suumo",
-      "title": "◆東横線有丹治駅徒歩5分◆ファミリーラウンジ◆LDK20帖以上",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248681/"
-    },
-    {
-      "address": null,
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "6a734a6160cab680a267",
-      "property_id": "listing:b41c48a8467ad6eaecde",
-      "source": "suumo",
-      "title": "祐天寺1億4980万円・3LDK",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21205324/"
-    },
-    {
-      "address": "東京都目黒区中目黒4",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "2ebaab6854cdad47748a",
-      "property_id": "9e19a35c0fd430d02f2e",
-      "source": "suumo",
-      "title": "目黒川の桜並木まで徒歩5分、四季を感じる住環境。",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20559231/"
-    },
-    {
-      "address": "東京都目黒区南1",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "5a5f96d1aaf25a633342",
-      "property_id": "31363cc5a180c5412472",
-      "source": "suumo",
-      "title": "南1(洗足駅) 1億4800万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78920143/"
-    },
-    {
-      "address": "東急大井町線 戸越公園駅 徒歩4分 東京都品川区豊町4丁目 建築年 (築年数) 2008年08月(築19年) 現況 居住中 主要採光面 - 掲載画像7枚 3日前 価格更新 閲覧済",
-      "evidence": "record-text",
-      "land_right": "借地権",
-      "land_right_status": "leasehold",
-      "listing_id": "10717301397d610008f3",
-      "property_id": "7c3806405abe8fd0ac0b",
-      "source": "homes",
-      "title": "中古一戸建て 品川区豊町4丁目借地権付戸建",
-      "url": "https://www.homes.co.jp/kodate/b-1420270003046/"
-    },
-    {
-      "address": "東京都品川区上大崎3",
-      "evidence": "record-field",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "1c1e5f19cad79c60b316",
-      "property_id": "c4f0e5dbc40c3840d630",
-      "source": "suumo",
-      "title": "2024年築・耐震等級3ZEH基準適合住宅ハイルーフ駐車可車庫・庭付き",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21273948/"
-    },
-    {
-      "address": null,
-      "evidence": "record-field",
-      "land_right": "定期借地権",
-      "land_right_status": "leasehold",
-      "listing_id": "cc4fd2e0557242d56d1b",
-      "property_id": "listing:84ff2898fa4f5690afd4",
-      "source": "suumo",
-      "title": "千歳船橋1億4600万円・2LDK+2S(納戸)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21093702/"
+      "title": "■建物180m2の2階建♪■南+東が抜けているため眺望、日当たり良好♪",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20798652/"
     },
     {
       "address": null,
@@ -575,37 +531,26 @@
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21426098/"
     },
     {
-      "address": "東京都目黒区大岡山1",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、更新可能 構造・工法 ヒント 構造：木造 工法：2×4工法 地上階：2階",
+      "address": "東京都品川区豊町5",
+      "evidence": "record-field",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "9d7700fc7b8a2bb910f0",
-      "property_id": "d1a6373fe1ca5617c737",
+      "listing_id": "56b7e5c3c93875819206",
+      "property_id": "13fa432574a91ed90983",
       "source": "suumo",
-      "title": "◆三井ホーム施工・高耐震2×4工法◆4SLDK・リビング吹抜で明るい室内",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20800341/"
+      "title": "豊町5(戸越公園駅) 7980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21063017/"
     },
     {
-      "address": "東京都目黒区原町2",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存15年8ヶ月 構造・工法 ヒント 木造1階建",
+      "address": "東京都目黒区鷹番3",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年、◆本物件の取引は借地権（賃借権）の権利譲渡取引です。（借地期限：譲渡時新規契約／非堅固20年・堅固30年）◆地主：祐天寺◆既存建物を建て替える際には、新築更新料がかかります。◆融資を利用する場合には、担保設定承諾料がかかり、金融機関が限られます。◆借地権譲渡には、地主による審査があり、期間を要します。◆地主による譲渡承諾取得後の売買取引となります。 構造・工法 ヒント 木造2階建",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "5556d08adb190200200a",
-      "property_id": "68dea913da9a7cd35deb",
+      "listing_id": "bbdcb6a01daf7f13ca6b",
+      "property_id": "ede2efe3747440c866c3",
       "source": "suumo",
-      "title": "原町2(洗足駅) 3980万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_78465110/"
-    },
-    {
-      "address": "東京都目黒区中目黒4",
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存5年、譲渡承諾料、その他有り。借地期間、新規相談。(別途、費用有り）。 構造・工法 ヒント 木造2階建",
-      "land_right": "賃借権",
-      "land_right_status": "leasehold",
-      "listing_id": "4d23d2f50a3e605daf5c",
-      "property_id": "9e19a35c0fd430d02f2e",
-      "source": "suumo",
-      "title": "中目黒4(中目黒駅) 8980万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79141006/"
+      "title": "鷹番3(学芸大学駅) 7890万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20416461/"
     },
     {
       "address": null,
@@ -619,15 +564,81 @@
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79050228/"
     },
     {
-      "address": "東京都目黒区中目黒4",
+      "address": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存9年2ヶ月 構造・工法 ヒント 木造3階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "b86c4b93ddfa8a66edd1",
+      "property_id": "753a882cd1eecc93f2f2",
+      "source": "suumo",
+      "title": "初台7200万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21248140/"
+    },
+    {
+      "address": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存7年 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "b514c56030295a77eafd",
+      "property_id": "listing:b514c56030295a77eafd",
+      "source": "suumo",
+      "title": "南久が原2(鵜の木駅) 4676万円 4676万円 4LDK+S(納戸) 132.48m 2 (40.07坪) 1997年1月 東京都大田区南久が原2 東急多摩川線 鵜の木 徒歩6分",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21186976/"
+    },
+    {
+      "address": null,
+      "evidence": "record-field",
+      "land_right": "定期借地権",
+      "land_right_status": "leasehold",
+      "listing_id": "cc4fd2e0557242d56d1b",
+      "property_id": "listing:84ff2898fa4f5690afd4",
+      "source": "suumo",
+      "title": "千歳船橋1億4600万円・2LDK+2S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21093702/"
+    },
+    {
+      "address": "東京都品川区東大井1",
       "evidence": "record-field",
       "land_right": "賃借権",
       "land_right_status": "leasehold",
-      "listing_id": "6a9081f2355554f1fdc0",
-      "property_id": "9e19a35c0fd430d02f2e",
+      "listing_id": "7508c8fcda26d542f482",
+      "property_id": "3b57ccf7f21105eba39b",
       "source": "suumo",
-      "title": "中目黒4(中目黒駅) 8980万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79141006/"
+      "title": "■大型車駐車可能■2SLDK→3SLDKへ変更可能(別途費用がかかります)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21290721/"
+    },
+    {
+      "address": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存9年2ヶ月 構造・工法 ヒント 木造3階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "bb6057bac2a64dc18561",
+      "property_id": "listing:bb6057bac2a64dc18561",
+      "source": "suumo",
+      "title": "初台7200万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21248140/"
+    },
+    {
+      "address": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存6年 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "d41f07797866f312bbcb",
+      "property_id": "753a882cd1eecc93f2f2",
+      "source": "suumo",
+      "title": "木場1億3800万円・5DK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21346063/"
+    },
+    {
+      "address": "東京都目黒区五本木2",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存11年1ヶ月、借地期間残存11年1ヶ月、売買契約締結後、地主との面談、書類審査を経て新たに期間を定めた土地賃貸借契約を締結します。大規模増改築や新築には所定の新築更新料の支払いが必要です。建物の担保設定には地主の承諾が必要となり、所定の担保設定承諾料の支払いが必要です。借地料は販売開始時の金額であり、変動する場合があります 構造・工法 ヒント 木造2階建",
+      "land_right": "賃借権",
+      "land_right_status": "leasehold",
+      "listing_id": "546bf513249437da659f",
+      "property_id": "f911794732334b177e1f",
+      "source": "suumo",
+      "title": "4SLDK♪家族が集まるラウンジ設計!カースペース2台駐車可能です。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21090401/"
     }
   ]
 }
