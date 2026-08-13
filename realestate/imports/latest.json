@@ -680,12 +680,12 @@
     },
     {
       "address": "東京都品川区東五反田1丁目",
-      "building_sqm": null,
-      "built": null,
+      "building_sqm": 83.23,
+      "built": "2005-11",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 60.02,
+      "layout": "1LDK",
       "price_man": 10300.0,
       "property_type": null,
       "source": "HOME'S",
@@ -708,6 +708,22 @@
       "station": null,
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1518310000480/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東急大井町線 旗の台駅 徒歩6分 東京都品川区旗の台1丁目 建築年 (築年数) 2001年12月(築25年) 現況 居住中 主要採光面 南 掲載画像14枚",
+      "building_sqm": 126.62,
+      "built": "2001-12",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 104.16,
+      "layout": "4LDK",
+      "price_man": 12000.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 品川区旗の台1丁目 戸建て",
+      "url": "https://www.homes.co.jp/kodate/b-1417040007295/",
       "ward": "品川区"
     },
     {
@@ -2295,6 +2311,22 @@
       "ward": "品川区"
     },
     {
+      "address": "東京都品川区上大崎1",
+      "building_sqm": null,
+      "built": "1997-06",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "4LDK+S(納戸)",
+      "price_man": 32800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR山手線「五反田」徒歩10分",
+      "title": "♪期間限定♪ご購入応援 半額キャンペーン実施中!◇五反田駅10分好立地◇",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20569220/",
+      "ward": "品川区"
+    },
+    {
       "address": "東京都品川区大崎4",
       "building_sqm": null,
       "built": "2008-08",
@@ -2420,22 +2452,6 @@
       "station": "JR山手線「五反田」徒歩8分",
       "title": "東五反田3(五反田駅) 6億8500万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21112454/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区上大崎1",
-      "building_sqm": null,
-      "built": "1997-06",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "4LDK+S(納戸)",
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR山手線「五反田」徒歩10分",
-      "title": "♪期間限定♪ご購入応援 半額キャンペーン実施中!◇五反田駅10分好立地◇",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20569220/",
       "ward": "品川区"
     },
     {
@@ -3255,6 +3271,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2023年08月(築4年) 現況 居住中 主要採光面 - 掲載画像30枚",
+      "building_sqm": 82.6,
+      "built": "2023-08",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 70.71,
+      "layout": "1SLDK",
+      "price_man": 13980.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 目黒区東が丘1丁目 中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-35007350000042/",
+      "ward": "目黒区"
+    },
+    {
       "address": "東急東横線 都立大学駅 徒歩7分 東京都目黒区中根1丁目 建築年 (築年数) 2022年05月(築5年) 現況 居住中 主要採光面 西 掲載画像22枚",
       "building_sqm": 84.86,
       "built": "2022-05",
@@ -3380,6 +3412,22 @@
       "station": null,
       "title": "中古一戸建て 上目黒2丁目 戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007200000063/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "JR山手線 目黒駅 徒歩8分 東京都目黒区下目黒2丁目21-8 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 北東 掲載画像9枚",
+      "building_sqm": 164.35,
+      "built": "2000-10",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 118.83,
+      "layout": "2DK",
+      "price_man": 26800.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 下目黒2丁目賃貸併用住宅",
+      "url": "https://www.homes.co.jp/kodate/b-1445580000246/",
       "ward": "目黒区"
     },
     {
@@ -6039,5 +6087,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-13T10:40:37+00:00"
+  "observed_at": "2026-08-13T11:11:14+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "adcast_count": 69,
   "adcast_coverage": true,
-  "confirmed_leasehold_excluded_count": 62,
+  "confirmed_leasehold_excluded_count": 63,
   "coverage": {
     "ADCAST": true,
     "HOME'S": true,
@@ -9,22 +9,22 @@
     "fudousan.or.jp": false
   },
   "fudousan_japan_coverage": false,
-  "listing_ended_candidate_count": 0,
-  "new_count": 262,
-  "observed_at": "2026-08-13T10:40:37+00:00",
-  "out_of_scope_excluded_count": 53,
-  "price_changed_count": 3,
-  "price_count": 356,
-  "price_coverage_pct": 94.43,
-  "price_history_quarantined_point_count": 18,
-  "price_history_quarantined_record_count": 18,
-  "record_count": 377,
+  "listing_ended_candidate_count": 54,
+  "new_count": 261,
+  "observed_at": "2026-08-13T11:11:14+00:00",
+  "out_of_scope_excluded_count": 68,
+  "price_changed_count": 5,
+  "price_count": 360,
+  "price_coverage_pct": 94.74,
+  "price_history_quarantined_point_count": 20,
+  "price_history_quarantined_record_count": 19,
+  "record_count": 380,
   "source_counts": {
     "ADCAST": 69,
-    "HOME'S": 38,
+    "HOME'S": 41,
     "SUUMO": 270,
     "fudousan.or.jp": 0
   },
-  "unknown_right_excluded_count": 261,
-  "verified_freehold_count": 810
+  "unknown_right_excluded_count": 263,
+  "verified_freehold_count": 819
 }
