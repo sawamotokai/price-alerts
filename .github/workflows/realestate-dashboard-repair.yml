@@ -1,0 +1,110 @@
+name: Real-estate dashboard render-function repair
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/patch_auth_account_isolation.py'
+      - '.github/workflows/realestate-dashboard-repair.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-dashboard-repair
+  cancel-in-progress: true
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore complete v1 dashboard and reapply current patches
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "Dashboard repair attempt ${attempt}/3"
+            git fetch origin master
+            git reset --hard origin/master
+
+            # 74dc2b4 is the last verified complete dashboard baseline: it
+            # contains render/show/chart functions, price-range controls and
+            # point-click navigation before auth was layered on top.
+            git show 74dc2b4:realestate/dashboard/index.html > realestate/dashboard/index.html
+
+            python realestate/patch_dashboard_ui.py
+            python realestate/patch_v1_history.py
+            python realestate/patch_market_range_click.py
+            python realestate/patch_auth_favorites.py
+            python realestate/patch_auth_account_isolation.py
+            python realestate/patch_resilient_data_loading.py
+
+            python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'function filtered()',
+              'function render()',
+              'function show(id)',
+              'function drawDetail(h)',
+              'function drawMarketChart(scope)',
+              'const renderWithoutFavorites=render;',
+              'DATA_LOADING_VERSION=2',
+              "GUEST_FAVORITES_KEY='realestate_guest_favorites_v2'",
+              'AUTH_FAVORITES_VERSION=2',
+              'id="googleSignIn"',
+              'id="marketFavoritesOnly"',
+              "authPromise=initAuth()",
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing repaired dashboard markers: {missing}')
+
+          # Guard the exact regression: the base functions must remain between
+          # auth helpers and the favorites wrappers.
+          normalize = html.index('function normalize(')
+          render = html.index('function render()')
+          wrappers = html.index('const renderWithoutFavorites=render;')
+          if not normalize < render < wrappers:
+              raise SystemExit(
+                  f'invalid dashboard function order: normalize={normalize}, '
+                  f'render={render}, wrappers={wrappers}'
+              )
+
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          scripts = [script for script in scripts if script.strip()]
+          if not scripts:
+              raise SystemExit('no inline dashboard scripts found')
+          Path('/tmp/realestate-dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
+          PY
+            node --check /tmp/realestate-dashboard.js
+
+            git add realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'Dashboard is already repaired'
+              exit 0
+            fi
+
+            git commit -m 'Restore dashboard render functions and resilient loading'
+            if git push origin HEAD:master; then
+              echo 'Dashboard repair published successfully'
+              exit 0
+            fi
+
+            echo 'Master moved during repair; retrying from latest tip'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Failed to publish dashboard repair after 3 attempts' >&2
+          exit 1
