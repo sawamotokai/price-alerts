@@ -17,6 +17,7 @@ on:
       - 'realestate/patch_market_range_click.py'
       - 'realestate/patch_auth_favorites.py'
       - 'realestate/patch_auth_account_isolation.py'
+      - 'realestate/patch_resilient_data_loading.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -125,7 +126,7 @@ jobs:
       - name: Keep dashboard UI patched and validated
         run: |
           python realestate/patch_dashboard_ui.py
-          if grep -q "const CURRENT_URL=" realestate/dashboard/index.html; then
+          if grep -Eq "const CURRENT_URL=|DATA_LOADING_VERSION=2" realestate/dashboard/index.html; then
             echo 'Validated-history loader is already present; preserving the current authenticated loader'
           else
             python realestate/patch_v1_history.py
@@ -133,13 +134,19 @@ jobs:
           python realestate/patch_market_range_click.py
           python realestate/patch_auth_favorites.py
           python realestate/patch_auth_account_isolation.py
+          python realestate/patch_resilient_data_loading.py
           python - <<'PY'
           from pathlib import Path
           import re
 
           html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
           required = [
-              'const CURRENT_URL=',
+              'DATA_LOADING_VERSION=2',
+              'const DATA_URLS=',
+              'const CURRENT_URLS=',
+              'function fetchJsonCandidate(',
+              'function fetchJsonFromMirrors(',
+              "authPromise=initAuth()",
               'id="marketMinPrice"',
               'id="marketMaxPrice"',
               'id="marketPriceReset"',
@@ -156,7 +163,7 @@ jobs:
               'function applySession(session,options={})',
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
-              'await initAuth();populateSources();',
+              'await authPromise;populateSources();',
           ]
           missing = [marker for marker in required if marker not in html]
           if missing:
@@ -215,4 +222,4 @@ jobs:
           echo 'Failed to publish snapshot after 3 attempts' >&2
           exit 1
 
-# Automation kick: 2026-08-14 account-isolated favorites fix
+# Automation kick: 2026-08-14 resilient data loading
