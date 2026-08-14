@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Upgrade dashboard auth to robust session handling and account-isolated favorites."""
+"""Upgrade dashboard auth to robust session handling and account-isolated favorites.
+
+The auth helper block is inserted immediately before the base `normalize`
+function.  Only that helper block may be replaced.  Using the favorites wrapper
+as the end marker also swallowed the dashboard's base render/chart functions,
+leaving the page stuck at "データ読込中…" with `render is not defined`.
+"""
 from pathlib import Path
 
 PATH = Path(__file__).resolve().parent / "dashboard" / "index.html"
@@ -51,11 +57,16 @@ function toggleFavoritesOnly(){favoritesOnly=!favoritesOnly;renderAuthState();dr
 function decorateFavoriteControls(){let header=document.querySelector('thead tr');if(header&&!header.querySelector('.favorite-cell')){let th=document.createElement('th');th.className='favorite-cell';th.textContent='★';header.prepend(th)}document.querySelectorAll('#rows tr[data-id]').forEach(row=>{if(row.querySelector('.favorite-cell'))return;let td=document.createElement('td');td.className='favorite-cell';td.append(buildFavoriteButton(row.dataset.id,'small'));row.prepend(td)});document.querySelectorAll('.property-card[data-id]').forEach(card=>{if(card.querySelector('[data-favorite-id]'))return;let head=card.querySelector('.property-card-head');if(head)head.append(buildFavoriteButton(card.dataset.id,'small'))});document.querySelectorAll('[data-drop-id]').forEach(card=>{if(card.querySelector('[data-favorite-id]'))return;let meta=card.querySelector('.drop-meta');if(meta)meta.prepend(buildFavoriteButton(card.dataset.dropId,'small'))});bindFavoriteButtons()}
 function decorateDetailFavorite(id){let head=$('detail')?.querySelector('.detail-head');if(!head||head.querySelector('[data-favorite-id]'))return;let close=head.querySelector('.detail-close'),actions=head.querySelector('.detail-actions');if(!actions){actions=document.createElement('div');actions.className='detail-actions';if(close)actions.append(close);head.append(actions)}actions.prepend(buildFavoriteButton(id));bindFavoriteButtons(head)}'''
 
+# The auth helper block ends immediately before the dashboard's base normalize
+# function.  Never use the favorites wrappers as an end marker: those wrappers
+# come after render/show/chart declarations and would delete them all.
 start = source.find("function loadGuestFavorites(){")
-end = source.find("const renderWithoutFavorites=render;", start)
+end = source.find("function normalize(", start)
 if start < 0 or end < 0:
     if "AUTH_FAVORITES_VERSION=2" not in source:
         raise SystemExit("Could not locate the existing auth helper block")
+    if start >= 0 and end < 0:
+        raise SystemExit("Base dashboard normalize/render functions are missing; restore the v1 dashboard before applying auth isolation")
 else:
     source = source[:start] + HELPERS + "\n" + source[end:]
 
