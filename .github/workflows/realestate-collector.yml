@@ -124,7 +124,11 @@ jobs:
       - name: Keep dashboard UI patched and validated
         run: |
           python realestate/patch_dashboard_ui.py
-          python realestate/patch_v1_history.py
+          if grep -q "const CURRENT_URL=" realestate/dashboard/index.html; then
+            echo 'Validated-history loader is already present; preserving the current authenticated loader'
+          else
+            python realestate/patch_v1_history.py
+          fi
           python realestate/patch_market_range_click.py
           python realestate/patch_auth_favorites.py
           python - <<'PY'
@@ -133,6 +137,7 @@ jobs:
 
           html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
           required = [
+              'const CURRENT_URL=',
               'id="marketMinPrice"',
               'id="marketMaxPrice"',
               'id="marketPriceReset"',
@@ -144,6 +149,7 @@ jobs:
               'realestate_guest_favorites_v1',
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
+              'await initAuth();populateSources();',
           ]
           missing = [marker for marker in required if marker not in html]
           if missing:
@@ -202,4 +208,4 @@ jobs:
           echo 'Failed to publish snapshot after 3 attempts' >&2
           exit 1
 
-# Automation kick: 2026-08-13 19:38 JST
+# Automation kick: 2026-08-14 auth/favorites validation fix
