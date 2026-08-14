@@ -54,27 +54,47 @@ jobs:
           page.on('pageerror', error => errors.push(`pageerror: ${error.message}`));
           page.on('requestfailed', request => errors.push(`requestfailed: ${request.url()} ${request.failure()?.errorText || ''}`));
           page.on('console', message => {
-            if (message.type() === 'error') errors.push(`console: ${message.text()}`);
+            if (['error', 'warning'].includes(message.type())) errors.push(`${message.type()}: ${message.text()}`);
           });
 
           await page.goto('http://127.0.0.1:8000/', { waitUntil: 'domcontentloaded', timeout: 30000 });
-          await page.waitForFunction(() => {
-            const text = document.querySelector('#status')?.textContent || '';
-            return text && !text.includes('読み込んでいます') && !text.includes('読込中');
-          }, { timeout: 35000 });
+          let waitError = null;
+          try {
+            await page.waitForFunction(() => {
+              const text = document.querySelector('#status')?.textContent || '';
+              return text && !text.includes('読み込んでいます') && !text.includes('読込中');
+            }, null, { timeout: 40000 });
+          } catch (error) {
+            waitError = error.message;
+          }
 
-          const status = await page.locator('#status').innerText();
-          const total = await page.locator('#metricTotal').innerText();
-          const shown = await page.locator('#metricShown').innerText();
-          const authMessage = await page.locator('#authMessage').innerText();
-          console.log(JSON.stringify({ status, total, shown, authMessage, errors }, null, 2));
+          const diagnostics = await page.evaluate(() => ({
+            readyState: document.readyState,
+            status: document.querySelector('#status')?.textContent || null,
+            total: document.querySelector('#metricTotal')?.textContent || null,
+            shown: document.querySelector('#metricShown')?.textContent || null,
+            authMessage: document.querySelector('#authMessage')?.textContent || null,
+            hasDataVersion: typeof DATA_LOADING_VERSION !== 'undefined',
+            hasFetchMirrors: typeof fetchJsonFromMirrors === 'function',
+            hasInitAuth: typeof initAuth === 'function',
+            hasSupabase: Boolean(window.supabase),
+            resources: performance.getEntriesByType('resource').map(entry => ({
+              name: entry.name,
+              duration: Math.round(entry.duration),
+              transferSize: entry.transferSize,
+            })).slice(-20),
+          }));
+          diagnostics.waitError = waitError;
+          diagnostics.errors = errors;
+          console.log(JSON.stringify(diagnostics, null, 2));
+          await page.screenshot({ path: '/tmp/dashboard-smoke.png', fullPage: true });
 
-          if (status.includes('失敗')) throw new Error(status);
-          if (!/\d/.test(total) || total === '0') throw new Error(`invalid listing total: ${total}`);
-          if (!/\d/.test(shown)) throw new Error(`invalid shown count: ${shown}`);
+          if (waitError) throw new Error(`dashboard stayed loading: ${waitError}`);
+          if ((diagnostics.status || '').includes('失敗')) throw new Error(diagnostics.status);
+          if (!/\d/.test(diagnostics.total || '') || diagnostics.total === '0') throw new Error(`invalid listing total: ${diagnostics.total}`);
+          if (!/\d/.test(diagnostics.shown || '')) throw new Error(`invalid shown count: ${diagnostics.shown}`);
           if (errors.some(line => line.startsWith('pageerror:'))) throw new Error(errors.join('\n'));
 
-          await page.screenshot({ path: '/tmp/dashboard-smoke.png', fullPage: true });
           await browser.close();
           JS
           node dashboard-smoke.mjs
