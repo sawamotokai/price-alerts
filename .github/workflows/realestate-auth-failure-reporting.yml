@@ -1,0 +1,77 @@
+name: Real-estate OAuth failure reporting UI patch
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/patch_auth_failure_reporting.py'
+      - '.github/workflows/realestate-auth-failure-reporting.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-auth-failure-reporting
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch current dashboard and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            git fetch origin master
+            git reset --hard origin/master
+            python realestate/patch_auth_failure_reporting.py
+
+            python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'AUTH_FAILURE_REPORTING_VERSION=1',
+              'function readOAuthCallbackError()',
+              'function guestFavoritesMessage()',
+              "oauthCallbackError=readOAuthCallbackError()",
+              'Google OAuthのClient Secretが無効か、Client IDと一致していません。',
+              'このブラウザだけに保存されています。',
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing OAuth failure reporting markers: {missing}')
+
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          Path('/tmp/realestate-dashboard.js').write_text(
+              '\n'.join(script for script in scripts if script.strip()),
+              encoding='utf-8',
+          )
+          PY
+            node --check /tmp/realestate-dashboard.js
+
+            git add realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'OAuth failure reporting is already present'
+              exit 0
+            fi
+
+            git commit -m 'Show Google OAuth failures and device-local favorites state'
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+
+          exit 1
