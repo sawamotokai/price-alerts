@@ -18,6 +18,7 @@ on:
       - 'realestate/patch_auth_favorites.py'
       - 'realestate/patch_auth_account_isolation.py'
       - 'realestate/patch_resilient_data_loading.py'
+      - 'realestate/patch_auth_data_race.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -135,18 +136,29 @@ jobs:
           python realestate/patch_auth_favorites.py
           python realestate/patch_auth_account_isolation.py
           python realestate/patch_resilient_data_loading.py
+          python realestate/patch_auth_data_race.py
           python - <<'PY'
           from pathlib import Path
           import re
 
           html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
           required = [
+              'function normalize(',
+              'function filtered()',
+              'function render()',
+              'function show(id)',
+              'function drawMarketChart(scope)',
+              'const renderWithoutFavorites=render;',
               'DATA_LOADING_VERSION=2',
               'const DATA_URLS=',
               'const CURRENT_URLS=',
               'function fetchJsonCandidate(',
               'function fetchJsonFromMirrors(',
               "authPromise=initAuth()",
+              'AUTH_DATA_SYNC_VERSION=1',
+              'dataInitialized=false',
+              'authInitialized&&dataInitialized',
+              'dataInitialized=true;await authPromise;populateSources();',
               'id="marketMinPrice"',
               'id="marketMaxPrice"',
               'id="marketPriceReset"',
@@ -163,11 +175,19 @@ jobs:
               'function applySession(session,options={})',
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
-              'await authPromise;populateSources();',
           ]
           missing = [marker for marker in required if marker not in html]
           if missing:
               raise SystemExit(f'missing dashboard interaction markers: {missing}')
+
+          normalize = html.index('function normalize(')
+          render = html.index('function render()')
+          wrappers = html.index('const renderWithoutFavorites=render;')
+          if not normalize < render < wrappers:
+              raise SystemExit(
+                  f'invalid dashboard function order: normalize={normalize}, '
+                  f'render={render}, wrappers={wrappers}'
+              )
 
           scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
           scripts = [script for script in scripts if script.strip()]
@@ -222,4 +242,4 @@ jobs:
           echo 'Failed to publish snapshot after 3 attempts' >&2
           exit 1
 
-# Automation kick: 2026-08-14 resilient data loading
+# Automation kick: 2026-08-14 auth/data readiness persistence
