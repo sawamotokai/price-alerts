@@ -15,6 +15,7 @@ on:
       - 'realestate/patch_dashboard_ui.py'
       - 'realestate/patch_v1_history.py'
       - 'realestate/patch_market_range_click.py'
+      - 'realestate/patch_auth_favorites.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -125,6 +126,7 @@ jobs:
           python realestate/patch_dashboard_ui.py
           python realestate/patch_v1_history.py
           python realestate/patch_market_range_click.py
+          python realestate/patch_auth_favorites.py
           python - <<'PY'
           from pathlib import Path
           import re
@@ -136,12 +138,19 @@ jobs:
               'id="marketPriceReset"',
               'function nearestMarketPoint(',
               "addEventListener('click',openMarketPoint)",
+              'id="googleSignIn"',
+              'id="signOut"',
+              'id="marketFavoritesOnly"',
+              'realestate_guest_favorites_v1',
+              "from('listing_favorites')",
+              'nswgzzvgmudtftvjogvt.supabase.co',
           ]
           missing = [marker for marker in required if marker not in html]
           if missing:
               raise SystemExit(f'missing dashboard interaction markers: {missing}')
 
-          scripts = re.findall(r'<script>(.*?)</script>', html, flags=re.S)
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          scripts = [script for script in scripts if script.strip()]
           if not scripts:
               raise SystemExit('no inline dashboard script found')
           Path('/tmp/realestate-dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
