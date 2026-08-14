@@ -1,0 +1,84 @@
+name: Real-estate resilient data loading UI patch
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/patch_resilient_data_loading.py'
+      - '.github/workflows/realestate-data-loading-ui-patch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-data-loading-ui-patch
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch latest dashboard, validate, and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "Data-loading UI publish attempt ${attempt}/3"
+            git fetch origin master
+            git reset --hard origin/master
+            python realestate/patch_resilient_data_loading.py
+
+            python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'DATA_LOADING_VERSION=2',
+              'const DATA_URLS=',
+              'const CURRENT_URLS=',
+              'function fetchJsonCandidate(',
+              'function fetchJsonFromMirrors(',
+              "authPromise=initAuth()",
+              "fetchJsonFromMirrors(DATA_URLS,'物件データ',true)",
+              "fetchJsonFromMirrors(CURRENT_URLS,'価格履歴',false)",
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing resilient data-loading markers: {missing}')
+
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          scripts = [script for script in scripts if script.strip()]
+          if not scripts:
+              raise SystemExit('no inline dashboard scripts found')
+          Path('/tmp/realestate-dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
+          PY
+            node --check /tmp/realestate-dashboard.js
+
+            git add realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'Dashboard already has resilient data loading and passed validation'
+              exit 0
+            fi
+
+            git commit -m 'Fix dashboard loading stalls with timed mirror fetches'
+            if git push origin HEAD:master; then
+              echo 'Resilient data-loading UI published successfully'
+              exit 0
+            fi
+
+            echo 'Master moved; retrying against the new tip'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Failed to publish resilient data-loading UI after 3 attempts' >&2
+          exit 1
