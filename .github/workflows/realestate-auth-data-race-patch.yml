@@ -1,0 +1,79 @@
+name: Real-estate auth/data readiness UI patch
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/patch_auth_data_race.py'
+      - '.github/workflows/realestate-auth-data-race-patch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-auth-data-race-patch
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch latest dashboard, validate, and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "Auth/data UI publish attempt ${attempt}/3"
+            git fetch origin master
+            git reset --hard origin/master
+            python realestate/patch_auth_data_race.py
+
+            python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'AUTH_DATA_SYNC_VERSION=1',
+              'dataInitialized=false',
+              'authInitialized&&dataInitialized',
+              'dataInitialized=true;await authPromise;populateSources();',
+              'function render()',
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing auth/data readiness markers: {missing}')
+
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          scripts = [script for script in scripts if script.strip()]
+          Path('/tmp/realestate-dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
+          PY
+            node --check /tmp/realestate-dashboard.js
+
+            git add realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'Dashboard already has auth/data readiness protection'
+              exit 0
+            fi
+
+            git commit -m 'Wait for listings before auth-triggered dashboard render'
+            if git push origin HEAD:master; then
+              echo 'Auth/data readiness UI published successfully'
+              exit 0
+            fi
+
+            echo 'Master moved; retrying against latest tip'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Failed to publish auth/data readiness UI after 3 attempts' >&2
+          exit 1
