@@ -75,6 +75,8 @@ jobs:
             shown: document.querySelector('#metricShown')?.textContent || null,
             authMessage: document.querySelector('#authMessage')?.textContent || null,
             hasDataVersion: typeof DATA_LOADING_VERSION !== 'undefined',
+            hasAuthDataSync: typeof AUTH_DATA_SYNC_VERSION !== 'undefined',
+            dataInitialized: typeof dataInitialized !== 'undefined' ? dataInitialized : null,
             hasFetchMirrors: typeof fetchJsonFromMirrors === 'function',
             hasInitAuth: typeof initAuth === 'function',
             hasRender: typeof render === 'function',
@@ -96,10 +98,11 @@ jobs:
           if (!/\d/.test(diagnostics.total || '') || diagnostics.total === '0') throw new Error(`invalid listing total: ${diagnostics.total}`);
           if (!/\d/.test(diagnostics.shown || '')) throw new Error(`invalid shown count: ${diagnostics.shown}`);
           if (!diagnostics.hasRender || !diagnostics.hasMarketChart) throw new Error('base dashboard functions are missing');
+          if (!diagnostics.hasAuthDataSync || !diagnostics.dataInitialized) throw new Error('auth/data readiness guard did not initialize');
           if (errors.some(line => line.startsWith('pageerror:'))) throw new Error(errors.join('\n'));
 
           await browser.close();
           JS
           node dashboard-smoke.mjs
 
-# Verification target: repaired dashboard with restored render functions
+# Verification target: repaired dashboard plus auth/data readiness guard
