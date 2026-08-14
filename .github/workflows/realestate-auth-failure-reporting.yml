@@ -4,6 +4,7 @@ on:
   push:
     branches: [master]
     paths:
+      - 'realestate/dashboard/index.html'
       - 'realestate/patch_auth_failure_reporting.py'
       - '.github/workflows/realestate-auth-failure-reporting.yml'
   workflow_dispatch:
