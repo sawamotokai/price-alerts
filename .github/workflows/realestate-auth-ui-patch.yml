@@ -1,0 +1,83 @@
+name: Real-estate auth and favorites UI patch
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/patch_auth_favorites.py'
+      - '.github/workflows/realestate-auth-ui-patch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-auth-ui-patch
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch latest dashboard, validate, and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            echo "Auth UI publish attempt ${attempt}/3"
+            git fetch origin master
+            git reset --hard origin/master
+            python realestate/patch_auth_favorites.py
+
+            python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'id="googleSignIn"',
+              'id="signOut"',
+              'id="marketFavoritesOnly"',
+              'realestate_guest_favorites_v1',
+              "from('listing_favorites')",
+              'nswgzzvgmudtftvjogvt.supabase.co',
+              'sb_publishable_ZcTEUk2Wj6Nq1dlFs5zU3g_FK08RoWc',
+          ]
+          missing = [marker for marker in required if marker not in html]
+          if missing:
+              raise SystemExit(f'missing auth/favorites markers: {missing}')
+
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          inline = [script for script in scripts if script.strip()]
+          if not inline:
+              raise SystemExit('no inline dashboard scripts found')
+          Path('/tmp/realestate-dashboard.js').write_text('\n'.join(inline), encoding='utf-8')
+          PY
+            node --check /tmp/realestate-dashboard.js
+
+            git add realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'Dashboard already contains authenticated favorites and passed validation'
+              exit 0
+            fi
+
+            git commit -m 'Add Google login and synchronized listing favorites'
+            if git push origin HEAD:master; then
+              echo 'Authenticated favorites UI published successfully'
+              exit 0
+            fi
+
+            echo 'Master moved; retrying against the new tip'
+            sleep $((attempt * 2))
+          done
+
+          echo 'Failed to publish authenticated favorites UI after 3 attempts' >&2
+          exit 1
