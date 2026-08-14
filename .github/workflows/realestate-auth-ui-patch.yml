@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - 'realestate/patch_auth_favorites.py'
+      - 'realestate/patch_auth_account_isolation.py'
       - '.github/workflows/realestate-auth-ui-patch.yml'
   workflow_dispatch:
 
@@ -36,6 +37,7 @@ jobs:
             git fetch origin master
             git reset --hard origin/master
             python realestate/patch_auth_favorites.py
+            python realestate/patch_auth_account_isolation.py
 
             python - <<'PY'
           from pathlib import Path
@@ -46,7 +48,12 @@ jobs:
               'id="googleSignIn"',
               'id="signOut"',
               'id="marketFavoritesOnly"',
-              'realestate_guest_favorites_v1',
+              "GUEST_FAVORITES_KEY='realestate_guest_favorites_v2'",
+              "LEGACY_FAVORITES_KEY='realestate_guest_favorites_v1'",
+              'AUTH_FAVORITES_VERSION=2',
+              "queryParams:{prompt:'select_account'}",
+              'function importLegacyFavorites()',
+              'function applySession(session,options={})',
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
               'sb_publishable_ZcTEUk2Wj6Nq1dlFs5zU3g_FK08RoWc',
@@ -65,13 +72,13 @@ jobs:
 
             git add realestate/dashboard/index.html
             if git diff --cached --quiet; then
-              echo 'Dashboard already contains authenticated favorites and passed validation'
+              echo 'Dashboard already contains account-isolated favorites and passed validation'
               exit 0
             fi
 
-            git commit -m 'Add Google login and synchronized listing favorites'
+            git commit -m 'Fix auth state and isolate favorites by account'
             if git push origin HEAD:master; then
-              echo 'Authenticated favorites UI published successfully'
+              echo 'Account-isolated favorites UI published successfully'
               exit 0
             fi
 
@@ -79,5 +86,5 @@ jobs:
             sleep $((attempt * 2))
           done
 
-          echo 'Failed to publish authenticated favorites UI after 3 attempts' >&2
+          echo 'Failed to publish account-isolated favorites UI after 3 attempts' >&2
           exit 1
