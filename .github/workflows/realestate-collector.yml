@@ -16,6 +16,7 @@ on:
       - 'realestate/patch_v1_history.py'
       - 'realestate/patch_market_range_click.py'
       - 'realestate/patch_auth_favorites.py'
+      - 'realestate/patch_auth_account_isolation.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -39,7 +40,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
+          cache: pip
           cache-dependency-path: realestate/requirements.txt
 
       - name: Install collector dependencies
@@ -131,6 +132,7 @@ jobs:
           fi
           python realestate/patch_market_range_click.py
           python realestate/patch_auth_favorites.py
+          python realestate/patch_auth_account_isolation.py
           python - <<'PY'
           from pathlib import Path
           import re
@@ -146,7 +148,12 @@ jobs:
               'id="googleSignIn"',
               'id="signOut"',
               'id="marketFavoritesOnly"',
-              'realestate_guest_favorites_v1',
+              "GUEST_FAVORITES_KEY='realestate_guest_favorites_v2'",
+              "LEGACY_FAVORITES_KEY='realestate_guest_favorites_v1'",
+              'AUTH_FAVORITES_VERSION=2',
+              "queryParams:{prompt:'select_account'}",
+              'function importLegacyFavorites()',
+              'function applySession(session,options={})',
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
               'await initAuth();populateSources();',
@@ -208,4 +215,4 @@ jobs:
           echo 'Failed to publish snapshot after 3 attempts' >&2
           exit 1
 
-# Automation kick: 2026-08-14 auth/favorites validation fix
+# Automation kick: 2026-08-14 account-isolated favorites fix
