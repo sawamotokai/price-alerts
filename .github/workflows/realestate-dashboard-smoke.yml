@@ -45,7 +45,7 @@ jobs:
 
       - name: Verify listings render instead of loading forever
         run: |
-          cat >/tmp/dashboard-smoke.mjs <<'JS'
+          cat >dashboard-smoke.mjs <<'JS'
           import { chromium } from 'playwright';
 
           const browser = await chromium.launch({ headless: true });
@@ -77,4 +77,4 @@ jobs:
           await page.screenshot({ path: '/tmp/dashboard-smoke.png', fullPage: true });
           await browser.close();
           JS
-          node /tmp/dashboard-smoke.mjs
+          node dashboard-smoke.mjs
