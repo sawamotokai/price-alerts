@@ -27,7 +27,9 @@ Supabase project: `house-tracker` (`nswgzzvgmudtftvjogvt`)
 
 4. In Supabase Dashboard → Authentication → Providers → Google, enable Google and paste the Client ID and Client Secret.
 5. In Supabase Dashboard → Authentication → URL Configuration:
-   - Site URL: `https://realestate-dashboard-sawamotokais-projects.vercel.app`
-   - Redirect URL: `https://realestate-dashboard-sawamotokais-projects.vercel.app/**`
+   - Site URL: `https://realestate-dashboard-sawamotokais-projects.vercel.app/`
+   - Redirect URL: `https://realestate-dashboard-sawamotokais-projects.vercel.app/`
+
+Use the exact production redirect above. Add wildcard preview URLs separately only when preview-deployment authentication is needed.
 
 After those settings are saved, reload the dashboard. The Google login button detects the enabled provider automatically.
