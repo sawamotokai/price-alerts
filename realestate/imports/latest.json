@@ -1127,17 +1127,17 @@
       "ward": "品川区"
     },
     {
-      "address": null,
+      "address": "順(昇順)",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
-      "layout": null,
+      "layout": "5LDK",
       "price_man": 6980.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": null,
+      "station": "都営浅草線「高輪台」徒歩5分",
       "title": "千鳥町6980万円・3LDK",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21417923/",
       "ward": "品川区"
@@ -2321,6 +2321,22 @@
       "price_man": 24980.0,
       "property_type": null,
       "source": "SUUMO",
+      "station": "JR山手線「五反田」徒歩10分",
+      "title": "♪期間限定♪ご購入応援 半額キャンペーン実施中!◇五反田駅10分好立地◇",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20569220/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区上大崎1",
+      "building_sqm": null,
+      "built": "1997-06",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "4LDK+S(納戸)",
+      "price_man": 24980.0,
+      "property_type": null,
+      "source": "SUUMO",
       "station": "都営浅草線「高輪台」徒歩7分",
       "title": "■南道路+西側通路の開放感♪■駐車スペース2台可能♪",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21150757/",
@@ -2372,22 +2388,6 @@
       "station": "東急目黒線「洗足」徒歩4分",
       "title": "赤坂2億9000万円・3LDDKK",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20906945/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区上大崎1",
-      "building_sqm": null,
-      "built": "1997-06",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "4LDK+S(納戸)",
-      "price_man": 32800.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR山手線「五反田」徒歩10分",
-      "title": "♪期間限定♪ご購入応援 半額キャンペーン実施中!◇五反田駅10分好立地◇",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20569220/",
       "ward": "品川区"
     },
     {
@@ -3412,6 +3412,22 @@
       "station": null,
       "title": "中古一戸建て 目黒区中央町1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007300000132/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東急東横線 祐天寺駅 徒歩9分 東京都目黒区上目黒4丁目 建築年 (築年数) 2018年05月(築9年) 現況 空家 主要採光面 北 掲載画像22枚 6日前 公開 閲覧済",
+      "building_sqm": 108.08,
+      "built": "2018-05",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 71.34,
+      "layout": "4LDK",
+      "price_man": 19000.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 目黒区上目黒4丁目 中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1169130025025/",
       "ward": "目黒区"
     },
     {
@@ -6215,5 +6231,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-14T10:41:31+00:00"
+  "observed_at": "2026-08-14T11:08:48+00:00"
 }
