@@ -52,3 +52,5 @@ function drawMarketChart(scope){
 
 PATH.write_text(s, encoding="utf-8")
 print("market point dots applied" if s != original else "market point dots already present")
+
+# Workflow trigger marker: 2026-08-15
