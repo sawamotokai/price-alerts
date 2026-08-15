@@ -1,0 +1,70 @@
+name: Real-estate market point dots
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'realestate/dashboard/index.html'
+      - 'realestate/patch_market_point_dots.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: realestate-market-point-dots
+  cancel-in-progress: true
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add persistent point markers and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'realestate-price-watch[bot]'
+          git config user.email 'realestate-price-watch[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            git fetch origin master
+            git reset --hard origin/master
+            python realestate/patch_market_point_dots.py
+
+            python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
+          required = [
+              'MARKET_POINT_DOTS_VERSION=1',
+              'function drawMarketChartBase(scope)',
+              'function decorateMarketPoints()',
+              'function drawMarketChart(scope)',
+              'ctx.arc(point.px,point.py,radius,0,Math.PI*2)',
+              "addEventListener('click',openMarketPoint)",
+          ]
+          missing = [x for x in required if x not in html]
+          if missing:
+              raise SystemExit(f'missing point-dot markers: {missing}')
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', html, flags=re.S)
+          Path('/tmp/dashboard.js').write_text('\n'.join(x for x in scripts if x.strip()), encoding='utf-8')
+          PY
+            node --check /tmp/dashboard.js
+
+            git add realestate/dashboard/index.html
+            if git diff --cached --quiet; then
+              echo 'Point dots already applied'
+              exit 0
+            fi
+            git commit -m 'Decorate market chart data points with circular markers'
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          exit 1
