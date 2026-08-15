@@ -674,7 +674,7 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
+      "title": "中古一戸建て 品川区西中延一丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007280000142/",
       "ward": "品川区"
     },
@@ -3159,6 +3159,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2000年01月(築27年) 現況 空家 主要採光面 - 掲載画像4枚",
+      "building_sqm": 86.94,
+      "built": "2000-01",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 57.61,
+      "layout": "3LDK",
+      "price_man": 9180.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 目黒区東が丘1丁目中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1102010000677/",
+      "ward": "目黒区"
+    },
+    {
       "address": "東急田園都市線 駒沢大学駅 徒歩10分 東京都目黒区東が丘1丁目 建築年 (築年数) 2000年05月(築27年) 現況 空家 主要採光面 南西 掲載画像19枚",
       "building_sqm": 84.27,
       "built": "2000-05",
@@ -3170,7 +3186,7 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
+      "title": "中古一戸建て 世田谷区東が丘1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-1497260000848/",
       "ward": "目黒区"
     },
@@ -3298,7 +3314,7 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
+      "title": "中古一戸建て 目黒区目黒本町4丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-1417040006947/",
       "ward": "目黒区"
     },
@@ -3522,7 +3538,7 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
+      "title": "中古一戸建て 目黒区緑が丘1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-1358090021095/",
       "ward": "目黒区"
     },
@@ -5022,6 +5038,22 @@
       "land_right_status": "freehold",
       "land_sqm": null,
       "layout": null,
+      "price_man": 18200.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": null,
+      "title": "恵比寿8900万円・2LDK 価格更新",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20828233/",
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 18500.0,
       "property_type": null,
       "source": "SUUMO",
@@ -6055,22 +6087,6 @@
       "ward": "目黒区"
     },
     {
-      "address": null,
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": null,
-      "title": "恵比寿8900万円・2LDK 価格更新",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20828233/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区三田2",
       "building_sqm": null,
       "built": "1999-05",
@@ -6247,5 +6263,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-15T10:29:00+00:00"
+  "observed_at": "2026-08-15T10:39:26+00:00"
 }
