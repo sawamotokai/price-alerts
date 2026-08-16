@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T10:43:58+00:00",
+  "generated_at": "2026-08-16T10:44:16+00:00",
   "items": [
     {
       "address": "東京都目黒区青葉台3",
@@ -44,6 +44,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 424000000
         }
       ],
       "source": "SUUMO",
@@ -73,6 +77,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 424000000
         }
       ],
@@ -186,6 +194,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 398000000
         }
       ],
       "source": "SUUMO",
@@ -211,6 +223,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 398000000
         }
       ],
@@ -255,6 +271,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 159000000
         }
       ],
       "source": "SUUMO",
@@ -280,6 +300,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 159000000
         }
       ],
@@ -324,6 +348,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 139800000
         }
       ],
       "source": "SUUMO",
@@ -349,6 +377,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 139800000
         }
       ],
@@ -393,6 +425,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 328000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 328000000
         }
       ],
       "source": "SUUMO",
@@ -419,94 +455,13 @@
         {
           "date": "2026-08-15",
           "price_yen": 328000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 328000000
         }
       ],
       "ward": "目黒区"
-    },
-    {
-      "address": "東京都品川区豊町5",
-      "current_price_yen": 101800000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 87.71,
-          "boundary_new_price_yen": 101800000,
-          "boundary_old_price_yen": 828000000,
-          "date": "2026-08-09",
-          "price_yen": 101800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 87.71,
-          "boundary_new_price_yen": 101800000,
-          "boundary_old_price_yen": 828000000,
-          "date": "2026-08-10",
-          "price_yen": 101800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 87.71,
-          "boundary_new_price_yen": 101800000,
-          "boundary_old_price_yen": 828000000,
-          "date": "2026-08-12",
-          "price_yen": 101800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 87.71,
-          "boundary_new_price_yen": 101800000,
-          "boundary_old_price_yen": 828000000,
-          "date": "2026-08-13",
-          "price_yen": 828000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 87.71,
-          "boundary_new_price_yen": 101800000,
-          "boundary_old_price_yen": 828000000,
-          "date": "2026-08-14",
-          "price_yen": 828000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "508a0fa3c0a311f1b400",
-      "property_id": "a317017d99411421c8f8",
-      "raw_points": [
-        {
-          "date": "2026-08-09",
-          "price_yen": 101800000
-        },
-        {
-          "date": "2026-08-10",
-          "price_yen": 101800000
-        },
-        {
-          "date": "2026-08-12",
-          "price_yen": 101800000
-        },
-        {
-          "date": "2026-08-13",
-          "price_yen": 828000000
-        },
-        {
-          "date": "2026-08-14",
-          "price_yen": 828000000
-        },
-        {
-          "date": "2026-08-15",
-          "price_yen": 101800000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "月コストは賃貸戸建以下│築浅戸建に住まう│豊葉の杜学園徒歩圏/LDK20帖",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21426098/",
-      "validated_points": [
-        {
-          "date": "2026-08-15",
-          "price_yen": 101800000
-        }
-      ],
-      "ward": "品川区"
     },
     {
       "address": "東京都品川区南大井1",
@@ -547,6 +502,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 23000000
         }
       ],
       "source": "SUUMO",
@@ -572,6 +531,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 23000000
         }
       ],
@@ -616,6 +579,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 48000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 48000000
         }
       ],
       "source": "SUUMO",
@@ -641,6 +608,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 48000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 48000000
         }
       ],
@@ -730,6 +701,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 79000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 79000000
         }
       ],
       "source": "SUUMO",
@@ -755,6 +730,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 79000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 79000000
         }
       ],
@@ -799,6 +778,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 64800000
         }
       ],
       "source": "SUUMO",
@@ -824,6 +807,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 64800000
         }
       ],
@@ -872,6 +859,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 109800000
         }
       ],
       "source": "SUUMO",
@@ -901,6 +892,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 109800000
         }
       ],
@@ -941,6 +936,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 65800000
         }
       ],
       "source": "SUUMO",
@@ -963,12 +962,16 @@
         {
           "date": "2026-08-15",
           "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 65800000
         }
       ],
       "ward": "目黒区"
     },
     {
-      "address": null,
+      "address": "順(昇順)",
       "current_price_yen": 138000000,
       "excluded_points": [
         {
@@ -981,7 +984,7 @@
         }
       ],
       "listing_id": "c2ea2bced441cb9f1f53",
-      "property_id": "listing:bb6057bac2a64dc18561",
+      "property_id": "37824ed8e4254237645a",
       "raw_points": [
         {
           "date": "2026-08-10",
@@ -997,6 +1000,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 138000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 138000000
         }
       ],
@@ -1015,6 +1022,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 138000000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 138000000
         }
       ],
@@ -1112,6 +1123,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 64800000
         }
       ],
       "source": "SUUMO",
@@ -1137,6 +1152,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-16",
           "price_yen": 64800000
         }
       ],
@@ -1230,6 +1249,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 159800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 159800000
         }
       ],
       "source": "HOME'S",
@@ -1252,6 +1275,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 159800000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 159800000
         }
       ],
       "ward": "目黒区"
@@ -1262,7 +1289,7 @@
     "min_regime_observations": 2,
     "neighbour_similarity_pct": 0.12
   },
-  "quarantined_point_count": 23,
-  "record_count": 1219,
-  "records_with_quarantined_points": 19
+  "quarantined_point_count": 18,
+  "record_count": 667,
+  "records_with_quarantined_points": 18
 }
