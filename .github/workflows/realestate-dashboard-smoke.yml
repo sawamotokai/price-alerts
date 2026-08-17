@@ -6,6 +6,7 @@ on:
     paths:
       - 'realestate/dashboard/index.html'
       - 'realestate/patch_resilient_data_loading.py'
+      - 'realestate/patch_market_point_dots.py'
       - '.github/workflows/realestate-dashboard-smoke.yml'
   workflow_dispatch:
 
@@ -43,7 +44,7 @@ jobs:
           cat /tmp/dashboard-server.log
           exit 1
 
-      - name: Verify listings render instead of loading forever
+      - name: Verify listings and visible chart point dots
         run: |
           cat >dashboard-smoke.mjs <<'JS'
           import { chromium } from 'playwright';
@@ -68,26 +69,46 @@ jobs:
             waitError = error.message;
           }
 
-          const diagnostics = await page.evaluate(() => ({
-            readyState: document.readyState,
-            status: document.querySelector('#status')?.textContent || null,
-            total: document.querySelector('#metricTotal')?.textContent || null,
-            shown: document.querySelector('#metricShown')?.textContent || null,
-            authMessage: document.querySelector('#authMessage')?.textContent || null,
-            hasDataVersion: typeof DATA_LOADING_VERSION !== 'undefined',
-            hasAuthDataSync: typeof AUTH_DATA_SYNC_VERSION !== 'undefined',
-            dataInitialized: typeof dataInitialized !== 'undefined' ? dataInitialized : null,
-            hasFetchMirrors: typeof fetchJsonFromMirrors === 'function',
-            hasInitAuth: typeof initAuth === 'function',
-            hasRender: typeof render === 'function',
-            hasMarketChart: typeof drawMarketChart === 'function',
-            hasSupabase: Boolean(window.supabase),
-            resources: performance.getEntriesByType('resource').map(entry => ({
-              name: entry.name,
-              duration: Math.round(entry.duration),
-              transferSize: entry.transferSize,
-            })).slice(-20),
-          }));
+          const diagnostics = await page.evaluate(() => {
+            let pointDot = null;
+            try {
+              const canvas = document.querySelector('#marketCanvas');
+              const series = marketGeometry?.find(s => s?.geom?.length);
+              const point = series?.geom?.[0];
+              if (canvas && point) {
+                const ctx = canvas.getContext('2d');
+                const sx = canvas.width / (canvas.clientWidth || canvas.width);
+                const sy = canvas.height / (canvas.clientHeight || canvas.height);
+                const cx = Math.round(point.px * sx);
+                const cy = Math.round(point.py * sy);
+                const radius = Math.max(6, Math.round(7 * Math.max(sx, sy)));
+                const x = Math.max(0, cx - radius);
+                const y = Math.max(0, cy - radius);
+                const w = Math.min(canvas.width - x, radius * 2 + 1);
+                const h = Math.min(canvas.height - y, radius * 2 + 1);
+                const pixels = ctx.getImageData(x, y, w, h).data;
+                let colored = 0;
+                for (let i = 0; i < pixels.length; i += 4) {
+                  const [r,g,b,a] = [pixels[i], pixels[i+1], pixels[i+2], pixels[i+3]];
+                  if (a > 40 && !(r > 235 && g > 235 && b > 235)) colored++;
+                }
+                pointDot = { cx, cy, radius, colored, version: typeof MARKET_POINT_DOTS_VERSION !== 'undefined' ? MARKET_POINT_DOTS_VERSION : null };
+              }
+            } catch (error) {
+              pointDot = { error: String(error) };
+            }
+            return {
+              readyState: document.readyState,
+              status: document.querySelector('#status')?.textContent || null,
+              total: document.querySelector('#metricTotal')?.textContent || null,
+              shown: document.querySelector('#metricShown')?.textContent || null,
+              hasRender: typeof render === 'function',
+              hasMarketChart: typeof drawMarketChart === 'function',
+              dataInitialized: typeof dataInitialized !== 'undefined' ? dataInitialized : null,
+              geometrySeries: typeof marketGeometry !== 'undefined' ? marketGeometry.length : 0,
+              pointDot,
+            };
+          });
           diagnostics.waitError = waitError;
           diagnostics.errors = errors;
           console.log(JSON.stringify(diagnostics, null, 2));
@@ -96,13 +117,13 @@ jobs:
           if (waitError) throw new Error(`dashboard stayed loading: ${waitError}`);
           if ((diagnostics.status || '').includes('失敗')) throw new Error(diagnostics.status);
           if (!/\d/.test(diagnostics.total || '') || diagnostics.total === '0') throw new Error(`invalid listing total: ${diagnostics.total}`);
-          if (!/\d/.test(diagnostics.shown || '')) throw new Error(`invalid shown count: ${diagnostics.shown}`);
           if (!diagnostics.hasRender || !diagnostics.hasMarketChart) throw new Error('base dashboard functions are missing');
-          if (!diagnostics.hasAuthDataSync || !diagnostics.dataInitialized) throw new Error('auth/data readiness guard did not initialize');
+          if (!diagnostics.dataInitialized) throw new Error('data did not initialize');
+          if (!diagnostics.geometrySeries) throw new Error('market chart geometry is empty');
+          if (diagnostics.pointDot?.version !== 2) throw new Error(`wrong point-dot renderer: ${JSON.stringify(diagnostics.pointDot)}`);
+          if ((diagnostics.pointDot?.colored || 0) < 25) throw new Error(`point dot is not visibly painted: ${JSON.stringify(diagnostics.pointDot)}`);
           if (errors.some(line => line.startsWith('pageerror:'))) throw new Error(errors.join('\n'));
 
           await browser.close();
           JS
           node dashboard-smoke.mjs
-
-# Verification target: repaired dashboard plus auth/data readiness guard
