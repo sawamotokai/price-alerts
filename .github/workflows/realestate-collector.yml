@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/realestate-collector.yml'
       - 'realestate/collector_parts/**'
+      - 'realestate/patch_add_ota_scope.py'
       - 'realestate/adcast_collector.py'
       - 'realestate/enforce_freehold_v2.py'
       - 'realestate/run_strict_freehold.py'
@@ -19,6 +20,9 @@ on:
       - 'realestate/patch_auth_account_isolation.py'
       - 'realestate/patch_resilient_data_loading.py'
       - 'realestate/patch_auth_data_race.py'
+      - 'realestate/patch_auth_failure_reporting.py'
+      - 'realestate/patch_market_point_dots.py'
+      - 'realestate/patch_ota_ui.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -35,7 +39,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
 
@@ -48,20 +52,23 @@ jobs:
       - name: Install collector dependencies
         run: python -m pip install -r realestate/requirements.txt
 
-      - name: Decode collector
-        run: cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > realestate/collector.py
+      - name: Decode collector and expand Ota/land scope
+        run: |
+          cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > realestate/collector.py
+          python realestate/patch_add_ota_scope.py realestate/collector.py
+          python -m py_compile realestate/collector.py realestate/adcast_collector.py realestate/enforce_freehold_v2.py
 
       - name: Collect SUUMO and HOME'S current listings
         env:
           REAL_ESTATE_REQUEST_DELAY: '1.2'
-          REAL_ESTATE_MAX_PAGES: '30'
+          REAL_ESTATE_MAX_PAGES: '40'
           REAL_ESTATE_MAX_MISSING_RUNS: '2'
         run: python realestate/collector.py
 
       - name: Collect public ADCAST land listings
         env:
           ADCAST_REQUEST_DELAY: '1.5'
-          ADCAST_MAX_PAGES: '20'
+          ADCAST_MAX_PAGES: '30'
           ADCAST_TIMEOUT: '25'
         run: python realestate/adcast_collector.py
 
@@ -100,7 +107,7 @@ jobs:
           if set(coverage) != expected:
               raise SystemExit(f'coverage keys mismatch: {sorted(coverage)}')
 
-          suumo_url = re.compile(r'^https://suumo\.jp/chukoikkodate/tokyo/sc_(?:shinagawa|meguro)/nc_\d+/$')
+          suumo_url = re.compile(r'^https://suumo\.jp/(?:chukoikkodate|tochi)/tokyo/sc_(?:shinagawa|meguro|ota)/nc_\d+(?:/tenpo)?/$')
           items = snapshot.get('items') or []
           for item in items:
               if not item.get('source') or not item.get('url'):
@@ -109,6 +116,9 @@ jobs:
                   raise SystemExit(f'unverified land right leaked into snapshot: {item!r}')
               if item.get('source') == 'SUUMO' and not suumo_url.fullmatch(str(item.get('url'))):
                   raise SystemExit(f'non-canonical SUUMO detail URL: {item!r}')
+              ward = item.get('ward')
+              if ward not in {'品川区', '目黒区', '大田区'}:
+                  raise SystemExit(f'out-of-scope ward leaked into snapshot: {item!r}')
 
           counts = Counter(item['source'] for item in items)
           for source, complete in coverage.items():
@@ -119,6 +129,7 @@ jobs:
           print({
               'coverage': coverage,
               'counts': dict(counts),
+              'ward_counts': dict(Counter(item.get('ward') for item in items)),
               'total': len(items),
               'quarantined_price_records': anomalies.get('records_with_quarantined_points'),
           })
@@ -137,12 +148,17 @@ jobs:
           python realestate/patch_auth_account_isolation.py
           python realestate/patch_resilient_data_loading.py
           python realestate/patch_auth_data_race.py
+          python realestate/patch_auth_failure_reporting.py
+          python realestate/patch_market_point_dots.py
+          python realestate/patch_ota_ui.py
           python - <<'PY'
           from pathlib import Path
           import re
 
           html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
           required = [
+              '品川区・目黒区・大田区 / 所有権',
+              '<option>大田区</option>',
               'function normalize(',
               'function filtered()',
               'function render()',
@@ -175,6 +191,7 @@ jobs:
               'function applySession(session,options={})',
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
+              'MARKET_POINT_DOTS_VERSION=2',
           ]
           missing = [marker for marker in required if marker not in html]
           if missing:
@@ -229,7 +246,7 @@ jobs:
               exit 0
             fi
 
-            git commit -m 'Capture verified multi-source real-estate snapshot'
+            git commit -m 'Capture verified three-ward real-estate snapshot'
             if git push origin HEAD:master; then
               echo 'Snapshot published successfully'
               exit 0
@@ -241,5 +258,3 @@ jobs:
 
           echo 'Failed to publish snapshot after 3 attempts' >&2
           exit 1
-
-# Automation kick: 2026-08-14 auth/data readiness persistence
