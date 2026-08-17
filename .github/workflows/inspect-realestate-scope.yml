@@ -19,9 +19,11 @@ jobs:
         shell: bash
         run: |
           cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > /tmp/collector.py
-          echo '=== collector scope ==='
-          grep -nE 'shinagawa|meguro|品川区|目黒区|chukoikkodate|tochi|homes|WARD|ward' /tmp/collector.py | head -220 || true
+          echo '=== collector config ==='
+          sed -n '50,90p' /tmp/collector.py
+          echo '=== collector parser ==='
+          sed -n '330,485p' /tmp/collector.py
           echo '=== ADCAST scope ==='
-          grep -nE 'shinagawa|meguro|品川区|目黒区|city_cd|ward' realestate/adcast_collector.py | head -160 || true
+          sed -n '20,45p' realestate/adcast_collector.py
           echo '=== freehold scope ==='
           grep -nE 'TARGET_WARDS|sc_shinagawa|sc_meguro' realestate/enforce_freehold_v2.py || true
