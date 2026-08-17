@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T01:22:01+00:00",
+  "generated_at": "2026-08-17T01:22:18+00:00",
   "items": [
     {
       "address": "東京都目黒区青葉台3",
@@ -48,6 +48,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 424000000
         }
       ],
       "source": "SUUMO",
@@ -81,6 +85,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 424000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 424000000
         }
       ],
@@ -125,6 +133,10 @@
         {
           "date": "2026-08-15",
           "price_yen": 198000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 198000000
         }
       ],
       "source": "SUUMO",
@@ -150,6 +162,10 @@
         },
         {
           "date": "2026-08-15",
+          "price_yen": 198000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 198000000
         }
       ],
@@ -198,6 +214,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 398000000
         }
       ],
       "source": "SUUMO",
@@ -227,6 +247,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 398000000
         }
       ],
@@ -275,6 +299,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 159000000
         }
       ],
       "source": "SUUMO",
@@ -304,6 +332,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 159000000
         }
       ],
@@ -352,6 +384,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 139800000
         }
       ],
       "source": "SUUMO",
@@ -382,9 +418,50 @@
         {
           "date": "2026-08-16",
           "price_yen": 139800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 139800000
         }
       ],
       "ward": "目黒区"
+    },
+    {
+      "address": "東京都大田区田園調布4",
+      "current_price_yen": 328000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 118.96,
+          "boundary_new_price_yen": 328000000,
+          "boundary_old_price_yen": 149800000,
+          "date": "2026-08-10",
+          "price_yen": 149800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "03e3186a6c6789b4748f",
+      "property_id": "f50ec92ad80156e1c97a",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 149800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 328000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "旭化成ホームズ施工住宅!「田園調布」駅徒歩8分×181m2超の注文住宅邸宅",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21474356/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 328000000
+        }
+      ],
+      "ward": "大田区"
     },
     {
       "address": null,
@@ -429,6 +506,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 328000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 328000000
         }
       ],
       "source": "SUUMO",
@@ -459,9 +540,87 @@
         {
           "date": "2026-08-16",
           "price_yen": 328000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 328000000
         }
       ],
       "ward": "目黒区"
+    },
+    {
+      "address": "東京都大田区池上6",
+      "current_price_yen": 61800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 91.15,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 698000000,
+          "date": "2026-08-10",
+          "price_yen": 698000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "d587cbd3de23a3c2775d",
+      "property_id": "009f3299ecc08969fe5f",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 698000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 61800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "「池上」駅徒歩約5分!建物106.69平米LDK18.1帖♪4部屋+車庫",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21260950/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 61800000
+        }
+      ],
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区東雪谷1",
+      "current_price_yen": 108000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 84.53,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 698000000,
+          "date": "2026-08-10",
+          "price_yen": 698000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "c7676c7f4937e7dacfec",
+      "property_id": "3cf28ae526c107cf1d21",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 698000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 108000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "■建物面積130m2超■池上線「洗足池」駅徒歩4分■平置き駐車場、屋上有",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20615752/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 108000000
+        }
+      ],
+      "ward": "大田区"
     },
     {
       "address": "東京都品川区南大井1",
@@ -506,6 +665,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 23000000
         }
       ],
       "source": "SUUMO",
@@ -535,6 +698,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 23000000
         }
       ],
@@ -583,6 +750,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 48000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 48000000
         }
       ],
       "source": "SUUMO",
@@ -612,6 +783,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 48000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 48000000
         }
       ],
@@ -782,6 +957,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 64800000
         }
       ],
       "source": "SUUMO",
@@ -811,6 +990,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 64800000
         }
       ],
@@ -863,6 +1046,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 109800000
         }
       ],
       "source": "SUUMO",
@@ -897,9 +1084,50 @@
         {
           "date": "2026-08-16",
           "price_yen": 109800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 109800000
         }
       ],
       "ward": "目黒区"
+    },
+    {
+      "address": "東京都大田区西嶺町",
+      "current_price_yen": 114800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 60.41,
+          "boundary_new_price_yen": 114800000,
+          "boundary_old_price_yen": 290000000,
+          "date": "2026-08-10",
+          "price_yen": 290000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "0603d963ffedfe9bd1b5",
+      "property_id": "69ce9ee55076576e0637",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 290000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 114800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "西嶺町・築浅2階建、前面6m超の開放整形地。3駅利用可能な寛ぎの3LDK",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21402576/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 114800000
+        }
+      ],
+      "ward": "大田区"
     },
     {
       "address": null,
@@ -940,6 +1168,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 65800000
         }
       ],
       "source": "SUUMO",
@@ -965,6 +1197,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 65800000
         }
       ],
@@ -1127,6 +1363,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 64800000
         }
       ],
       "source": "SUUMO",
@@ -1156,6 +1396,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 64800000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 64800000
         }
       ],
@@ -1192,6 +1436,10 @@
         {
           "date": "2026-08-14",
           "price_yen": 94990000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 94990000
         }
       ],
       "source": "SUUMO",
@@ -1210,9 +1458,50 @@
         {
           "date": "2026-08-14",
           "price_yen": 94990000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 94990000
         }
       ],
       "ward": "品川区"
+    },
+    {
+      "address": "東京都大田区久が原2",
+      "current_price_yen": 83900000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 43.31,
+          "boundary_new_price_yen": 83900000,
+          "boundary_old_price_yen": 148000000,
+          "date": "2026-08-10",
+          "price_yen": 148000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "61c9c420d4bf6c91934d",
+      "property_id": "44ad84bbf8c503d085cd",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 148000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 83900000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "駅徒歩13分!新橋まで20分!南向きLDKx広々玄関xバルコニーx駐車場付",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20777710/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 83900000
+        }
+      ],
+      "ward": "大田区"
     },
     {
       "address": "東急東横線 学芸大学駅 徒歩11分 東京都目黒区中央町1丁目 建築年 (築年数) 2021年06月(築6年) 現況 居住中 主要採光面 - 掲載画像25枚",
@@ -1253,6 +1542,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 159800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 159800000
         }
       ],
       "source": "HOME'S",
@@ -1279,9 +1572,50 @@
         {
           "date": "2026-08-16",
           "price_yen": 159800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 159800000
         }
       ],
       "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "current_price_yen": 147000000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 36.09,
+          "boundary_new_price_yen": 147000000,
+          "boundary_old_price_yen": 230000000,
+          "date": "2026-08-10",
+          "price_yen": 230000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "e5124a2141441a985201",
+      "property_id": "listing:c7bf82d7da8c4267ad88",
+      "raw_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 230000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 147000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "京急蒲田8010万円・2LDK+S(納戸)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21395289/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 147000000
+        }
+      ],
+      "ward": "大田区"
     }
   ],
   "policy": {
@@ -1289,7 +1623,7 @@
     "min_regime_observations": 2,
     "neighbour_similarity_pct": 0.12
   },
-  "quarantined_point_count": 18,
-  "record_count": 2701,
-  "records_with_quarantined_points": 18
+  "quarantined_point_count": 24,
+  "record_count": 2091,
+  "records_with_quarantined_points": 24
 }
