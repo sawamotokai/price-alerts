@@ -73,7 +73,7 @@ function colorFor(id,alpha=.26){let h=0;for(let i=0;i<String(id).length;i++)h=(h
 function marketHistory(x){let m=new Map();for(let p of x.history||[]){if(Array.isArray(p)&&p[0]&&p[1]!=null)m.set(String(p[0]),Number(p[1])/10000)}if(!m.size&&x.priceYen!=null)m.set(dateOnly(x.firstSeen),x.priceYen/10000);return[...m.entries()].filter(([d,v])=>d&&d!=='—'&&Number.isFinite(v)).map(([date,price])=>({date,price})).sort((a,b)=>a.date.localeCompare(b.date))}
 function marketPriceRange(){let minRaw=$('marketMinPrice').value.trim(),maxRaw=$('marketMaxPrice').value.trim(),min=minRaw===''?null:Number(minRaw),max=maxRaw===''?null:Number(maxRaw);if(Number.isFinite(min)&&Number.isFinite(max)&&min>max){let t=min;min=max;max=t}return{min:Number.isFinite(min)?min:null,max:Number.isFinite(max)?max:null}}
 function marketRangeIncludes(x,range){let history=marketHistory(x),current=x.priceYen!=null?Number(x.priceYen)/10000:(history.length?history.at(-1).price:null);if(!Number.isFinite(current))return false;return(range.min==null||current>=range.min)&&(range.max==null||current<=range.max)}
-function drawMarketChart(scope){let canvas=$('marketCanvas'),tip=$('marketTooltip'),ctx=canvas.getContext('2d'),rect=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(rect.width*dpr));canvas.height=Math.max(1,Math.round(rect.height*dpr));ctx.setTransform(dpr,0,0,dpr,0,0);let W=rect.width,H=rect.height,L=isMobile()?48:64,R=18,T=18,B=34,range=marketPriceRange(),series=scope.filter(x=>marketRangeIncludes(x,range)).map(x=>({x,pts:marketHistory(x)})).filter(s=>s.pts.length);let dates=[...new Set(series.flatMap(s=>s.pts.map(p=>p.date)))].sort(),vals=series.flatMap(s=>s.pts.map(p=>p.price)).filter(Number.isFinite);ctx.clearRect(0,0,W,H);marketGeometry=[];let rangeText=range.min!=null||range.max!=null?`（現在価格 ${range.min==null?'下限なし':Math.round(range.min).toLocaleString('ja-JP')+'万'}〜${range.max==null?'上限なし':Math.round(range.max).toLocaleString('ja-JP')+'万'}）`:'';$('marketCount').textContent=`${series.length.toLocaleString('ja-JP')}物件を描画${rangeText}`;if(!series.length||!dates.length||!vals.length){ctx.fillStyle='#94a3b8';ctx.font='13px system-ui';ctx.textAlign='center';ctx.fillText('描画できる価格履歴がありません',W/2,H/2);return}let scale=$('marketScale').value,min=Math.min(...vals),max=Math.max(...vals);if(min===max){min*=.97;max*=1.03}if(scale==='log'){min=Math.max(min,1)}let tx=d=>L+dates.indexOf(d)*(W-L-R)/Math.max(1,dates.length-1),ty=v=>{if(scale==='log'){let a=Math.log(min),b=Math.log(max);return T+(b-Math.log(Math.max(v,min)))*(H-T-B)/(b-a||1)}return T+(max-v)*(H-T-B)/(max-min||1)};ctx.strokeStyle='#e2e8f0';ctx.fillStyle='#64748b';ctx.lineWidth=1;ctx.font='11px system-ui';ctx.textAlign='right';for(let i=0;i<5;i++){let f=i/4,v=scale==='log'?Math.exp(Math.log(max)*(1-f)+Math.log(min)*f):max-(max-min)*f,y=ty(v);ctx.beginPath();ctx.moveTo(L,y);ctx.lineTo(W-R,y);ctx.stroke();ctx.fillText(Math.round(v).toLocaleString()+'万',L-6,y+4)}ctx.textAlign='center';let ticks=dates.length<6?dates:[dates[0],dates[Math.floor((dates.length-1)/2)],dates.at(-1)];ticks.forEach(d=>ctx.fillText(d.slice(5).replace('-','/'),tx(d),H-12));series.forEach(s=>{let geom=s.pts.map(p=>({px:tx(p.date),py:ty(p.price),p}));ctx.strokeStyle=colorFor(s.x.id,series.length>250?.17:.28);ctx.fillStyle=colorFor(s.x.id,.5);ctx.lineWidth=1.15;if(geom.length>1){ctx.beginPath();ctx.moveTo(geom[0].px,geom[0].py);for(let i=1;i<geom.length;i++)ctx.lineTo(geom[i].px,geom[i].py);ctx.stroke()}else{ctx.beginPath();ctx.arc(geom[0].px,geom[0].py,1.5,0,Math.PI*2);ctx.fill()}marketGeometry.push({item:s.x,geom})});function pointer(e){let r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,best=null,bestD=Infinity;for(let s of marketGeometry)for(let g of s.geom){let d=(g.px-px)**2+(g.py-py)**2;if(d<bestD){bestD=d;best={s,g}}}if(!best||bestD>900){tip.style.display='none';return}let item=best.s.item,p=best.g.p;tip.innerHTML=`<b>${esc(item.title||item.address||item.id)}</b><br>${esc(p.date)} · ${Math.round(p.price).toLocaleString()}万円<br>${esc(sourceLabel(item.source))}`;tip.style.display='block';let left=Math.min(W-tip.offsetWidth-8,Math.max(8,px+12)),top=Math.min(H-tip.offsetHeight-8,Math.max(8,py+12));tip.style.left=left+'px';tip.style.top=top+'px'}canvas.onpointermove=pointer;canvas.onpointerdown=pointer;canvas.onpointerleave=()=>tip.style.display='none'}
+function drawMarketChartBase(scope){let canvas=$('marketCanvas'),tip=$('marketTooltip'),ctx=canvas.getContext('2d'),rect=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(rect.width*dpr));canvas.height=Math.max(1,Math.round(rect.height*dpr));ctx.setTransform(dpr,0,0,dpr,0,0);let W=rect.width,H=rect.height,L=isMobile()?48:64,R=18,T=18,B=34,range=marketPriceRange(),series=scope.filter(x=>marketRangeIncludes(x,range)).map(x=>({x,pts:marketHistory(x)})).filter(s=>s.pts.length);let dates=[...new Set(series.flatMap(s=>s.pts.map(p=>p.date)))].sort(),vals=series.flatMap(s=>s.pts.map(p=>p.price)).filter(Number.isFinite);ctx.clearRect(0,0,W,H);marketGeometry=[];let rangeText=range.min!=null||range.max!=null?`（現在価格 ${range.min==null?'下限なし':Math.round(range.min).toLocaleString('ja-JP')+'万'}〜${range.max==null?'上限なし':Math.round(range.max).toLocaleString('ja-JP')+'万'}）`:'';$('marketCount').textContent=`${series.length.toLocaleString('ja-JP')}物件を描画${rangeText}`;if(!series.length||!dates.length||!vals.length){ctx.fillStyle='#94a3b8';ctx.font='13px system-ui';ctx.textAlign='center';ctx.fillText('描画できる価格履歴がありません',W/2,H/2);return}let scale=$('marketScale').value,min=Math.min(...vals),max=Math.max(...vals);if(min===max){min*=.97;max*=1.03}if(scale==='log'){min=Math.max(min,1)}let tx=d=>L+dates.indexOf(d)*(W-L-R)/Math.max(1,dates.length-1),ty=v=>{if(scale==='log'){let a=Math.log(min),b=Math.log(max);return T+(b-Math.log(Math.max(v,min)))*(H-T-B)/(b-a||1)}return T+(max-v)*(H-T-B)/(max-min||1)};ctx.strokeStyle='#e2e8f0';ctx.fillStyle='#64748b';ctx.lineWidth=1;ctx.font='11px system-ui';ctx.textAlign='right';for(let i=0;i<5;i++){let f=i/4,v=scale==='log'?Math.exp(Math.log(max)*(1-f)+Math.log(min)*f):max-(max-min)*f,y=ty(v);ctx.beginPath();ctx.moveTo(L,y);ctx.lineTo(W-R,y);ctx.stroke();ctx.fillText(Math.round(v).toLocaleString()+'万',L-6,y+4)}ctx.textAlign='center';let ticks=dates.length<6?dates:[dates[0],dates[Math.floor((dates.length-1)/2)],dates.at(-1)];ticks.forEach(d=>ctx.fillText(d.slice(5).replace('-','/'),tx(d),H-12));series.forEach(s=>{let geom=s.pts.map(p=>({px:tx(p.date),py:ty(p.price),p}));ctx.strokeStyle=colorFor(s.x.id,series.length>250?.17:.28);ctx.fillStyle=colorFor(s.x.id,.5);ctx.lineWidth=1.15;if(geom.length>1){ctx.beginPath();ctx.moveTo(geom[0].px,geom[0].py);for(let i=1;i<geom.length;i++)ctx.lineTo(geom[i].px,geom[i].py);ctx.stroke()}else{ctx.beginPath();ctx.arc(geom[0].px,geom[0].py,1.5,0,Math.PI*2);ctx.fill()}marketGeometry.push({item:s.x,geom})});function pointer(e){let r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,best=null,bestD=Infinity;for(let s of marketGeometry)for(let g of s.geom){let d=(g.px-px)**2+(g.py-py)**2;if(d<bestD){bestD=d;best={s,g}}}if(!best||bestD>900){tip.style.display='none';return}let item=best.s.item,p=best.g.p;tip.innerHTML=`<b>${esc(item.title||item.address||item.id)}</b><br>${esc(p.date)} · ${Math.round(p.price).toLocaleString()}万円<br>${esc(sourceLabel(item.source))}`;tip.style.display='block';let left=Math.min(W-tip.offsetWidth-8,Math.max(8,px+12)),top=Math.min(H-tip.offsetHeight-8,Math.max(8,py+12));tip.style.left=left+'px';tip.style.top=top+'px'}canvas.onpointermove=pointer;canvas.onpointerdown=pointer;canvas.onpointerleave=()=>tip.style.display='none'}
 const renderWithoutFavorites=render;render=function(){renderWithoutFavorites();decorateFavoriteControls();renderAuthState()};
 const showWithoutFavorites=show;show=function(id){showWithoutFavorites(id);decorateDetailFavorite(id)};
 const drawMarketChartWithoutFavorites=drawMarketChart;drawMarketChart=function(scope){return drawMarketChartWithoutFavorites(favoritesOnly?scope.filter(x=>isFavorite(x.id)):scope)};
@@ -83,6 +83,50 @@ function populateSources(){let ss=[...new Set(items.map(x=>x.source).filter(Bool
 function dataUrlWithVersion(url){let separator=url.includes('?')?'&':'?';return url+separator+'v='+Math.floor(Date.now()/300000)}
 async function fetchJsonCandidate(url,timeoutMs=12000){let controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);try{let response=await fetch(dataUrlWithVersion(url),{cache:'no-store',signal:controller.signal,headers:{accept:'application/json'}});if(!response.ok)throw new Error(`HTTP ${response.status} ${url}`);return await response.json()}finally{clearTimeout(timer)}}
 async function fetchJsonFromMirrors(urls,label,required=true){try{return await Promise.any(urls.map(url=>fetchJsonCandidate(url)))}catch(error){let reasons=error&&Array.isArray(error.errors)?error.errors.map(value=>value?.name==='AbortError'?'timeout':String(value?.message||value)).join(' / '):String(error?.message||error);if(required)throw new Error(`${label}を取得できませんでした: ${reasons}`);console.warn(`${label}は取得できなかったため省略します`,reasons);return{}}}
+const MARKET_POINT_DOTS_VERSION=2;
+function decorateMarketPoints(){
+  const canvas=$('marketCanvas');
+  if(!canvas||!marketGeometry?.length)return;
+  const ctx=canvas.getContext('2d');
+  if(!ctx)return;
+
+  // marketGeometry is stored in CSS-pixel coordinates. Canvas backing pixels
+  // are devicePixelRatio-scaled, so explicitly restore that mapping here.
+  const cssWidth=canvas.clientWidth||canvas.getBoundingClientRect().width||canvas.width;
+  const cssHeight=canvas.clientHeight||canvas.getBoundingClientRect().height||canvas.height;
+  const scaleX=cssWidth?canvas.width/cssWidth:1;
+  const scaleY=cssHeight?canvas.height/cssHeight:1;
+  const radius=isMobile()?5.2:4.4;
+
+  ctx.save();
+  ctx.setTransform(scaleX,0,0,scaleY,0,0);
+  for(const series of marketGeometry){
+    const id=series?.item?.id??'';
+    const fill=typeof colorFor==='function'?colorFor(id,.98):'#2563eb';
+    for(const point of series.geom||[]){
+      if(!Number.isFinite(point.px)||!Number.isFinite(point.py))continue;
+
+      // White halo makes the point visible even when many horizontal lines overlap.
+      ctx.beginPath();
+      ctx.arc(point.px,point.py,radius+1.7,0,Math.PI*2);
+      ctx.fillStyle='rgba(255,255,255,.98)';
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(point.px,point.py,radius,0,Math.PI*2);
+      ctx.fillStyle=fill;
+      ctx.fill();
+      ctx.lineWidth=1.15;
+      ctx.strokeStyle='rgba(15,23,42,.32)';
+      ctx.stroke();
+    }
+  }
+  ctx.restore();
+}
+function drawMarketChart(scope){
+  drawMarketChartBase(scope);
+  decorateMarketPoints();
+}
 function nearestMarketPoint(e,maxDistance=32){let canvas=$('marketCanvas'),r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,best=null,bestD=Infinity;for(let series of marketGeometry)for(let point of series.geom){let d=(point.px-px)**2+(point.py-py)**2;if(d<bestD){bestD=d;best={series,point}}}return best&&bestD<=maxDistance*maxDistance?best:null}
 function openMarketPoint(e){let hit=nearestMarketPoint(e);if(!hit)return;$('marketTooltip').style.display='none';show(hit.series.item.id);if(!isMobile())requestAnimationFrame(()=>$('detail').scrollIntoView({behavior:'smooth',block:'start'}))}
 $('marketCanvas').addEventListener('click',openMarketPoint);$('marketCanvas').addEventListener('pointermove',e=>{$('marketCanvas').style.cursor=nearestMarketPoint(e,18)?'pointer':'crosshair'});
