@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Canonicalize outbound listing URLs before export and dashboard publication.
-
-SUUMO detail pages require their canonical trailing-slash URL. This script
-normalizes persisted records without fetching any listing page.
-"""
+"""Canonicalize outbound listing URLs before export and dashboard publication."""
 from __future__ import annotations
 
 import json
@@ -18,11 +14,12 @@ DASHBOARD = ROOT / "data" / "dashboard.json"
 LATEST = ROOT / "imports" / "latest.json"
 
 SUUMO_RE = re.compile(
-    r"/chukoikkodate/tokyo/sc_(shinagawa|meguro)/nc_(\d+)/?",
+    r"/(chukoikkodate|tochi)/tokyo/sc_(shinagawa|meguro|ota)/nc_(\d+)(?:/tenpo)?/?",
     re.IGNORECASE,
 )
-SUUMO_ID_RE = re.compile(r"/nc_(\d+)/?", re.IGNORECASE)
+SUUMO_ID_RE = re.compile(r"/nc_(\d+)(?:/tenpo)?/?", re.IGNORECASE)
 HOMES_RE = re.compile(r"/kodate/(b-[^/?#]+)/?", re.IGNORECASE)
+WARD_SCOPE = {"品川区": "shinagawa", "目黒区": "meguro", "大田区": "ota"}
 
 
 def load(path: Path, default: Any) -> Any:
@@ -66,14 +63,17 @@ def canonical_url(source: Any, raw: Any, ward: Any = None) -> str:
     if name == "SUUMO":
         match = SUUMO_RE.search(path)
         if match:
-            scope, listing_number = match.groups()
+            category, scope, listing_number = match.groups()
         else:
             id_match = SUUMO_ID_RE.search(path)
             if not id_match:
                 return value
             listing_number = id_match.group(1)
-            scope = "meguro" if str(ward or "") == "目黒区" else "shinagawa"
-        return f"https://suumo.jp/chukoikkodate/tokyo/sc_{scope.lower()}/nc_{listing_number}/"
+            scope = WARD_SCOPE.get(str(ward or ""), "")
+            if not scope:
+                return value
+            category = "tochi" if "/tochi/" in path.lower() else "chukoikkodate"
+        return f"https://suumo.jp/{category.lower()}/tokyo/sc_{scope.lower()}/nc_{listing_number}/"
 
     if name == "HOME'S":
         match = HOMES_RE.search(path)
@@ -111,22 +111,18 @@ def update_records(records: Any) -> int:
 
 def main() -> None:
     counts: dict[str, int] = {}
-
     current = load(CURRENT, None)
     if isinstance(current, dict):
         counts["current"] = update_records(current.get("listings"))
         save(CURRENT, current)
-
     dashboard = load(DASHBOARD, None)
     if isinstance(dashboard, dict):
         counts["dashboard"] = update_records(dashboard.get("listings"))
         save(DASHBOARD, dashboard)
-
     latest = load(LATEST, None)
     if isinstance(latest, dict):
         counts["latest"] = update_records(latest.get("items"))
         save(LATEST, latest)
-
     print(json.dumps({"canonicalized_urls": counts}, ensure_ascii=False))
 
 
