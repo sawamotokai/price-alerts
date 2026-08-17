@@ -6,6 +6,7 @@ on:
     paths:
       - 'realestate/dashboard/index.html'
       - 'realestate/patch_market_point_dots.py'
+      - '.github/workflows/realestate-market-point-dots.yml'
   workflow_dispatch:
 
 permissions:
@@ -41,10 +42,11 @@ jobs:
           import re
           html = Path('realestate/dashboard/index.html').read_text(encoding='utf-8')
           required = [
-              'MARKET_POINT_DOTS_VERSION=1',
+              'MARKET_POINT_DOTS_VERSION=2',
               'function drawMarketChartBase(scope)',
               'function decorateMarketPoints()',
               'function drawMarketChart(scope)',
+              'ctx.setTransform(scaleX,0,0,scaleY,0,0)',
               'ctx.arc(point.px,point.py,radius,0,Math.PI*2)',
               "addEventListener('click',openMarketPoint)",
           ]
@@ -61,7 +63,7 @@ jobs:
               echo 'Point dots already applied'
               exit 0
             fi
-            git commit -m 'Decorate market chart data points with circular markers'
+            git commit -m 'Render visible circular markers on market data points'
             if git push origin HEAD:master; then
               exit 0
             fi
