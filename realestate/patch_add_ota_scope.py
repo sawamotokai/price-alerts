@@ -77,6 +77,10 @@ s = replace_required(
     'if source == "suumo" and not any(token in url for token in ("/sc_shinagawa/", "/sc_meguro/", "/sc_ota/")):',
     "freehold SUUMO URL scope",
 )
+# Initial three-ward backfill can require hundreds of rights checks. Use more
+# bounded parallelism; timeouts remain conservative and unknown results stay excluded.
+s = re.sub(r'^WORKERS\s*=.*$', 'WORKERS = 8', s, flags=re.M)
+s = re.sub(r'^TIMEOUT\s*=.*$', 'TIMEOUT = 15.0', s, flags=re.M)
 freehold.write_text(s, encoding="utf-8")
 
 print("Ota + SUUMO land runtime scope patch applied")
