@@ -8,6 +8,7 @@ on:
       - 'realestate/collector_parts/**'
       - 'realestate/patch_add_ota_scope.py'
       - 'realestate/adcast_collector.py'
+      - 'realestate/adcast_supplemental_collector.py'
       - 'realestate/enforce_freehold_v2.py'
       - 'realestate/run_strict_freehold.py'
       - 'realestate/validate_price_changes.py'
@@ -39,7 +40,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 80
     steps:
       - uses: actions/checkout@v4
 
@@ -56,7 +57,7 @@ jobs:
         run: |
           cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > realestate/collector.py
           python realestate/patch_add_ota_scope.py realestate/collector.py
-          python -m py_compile realestate/collector.py realestate/adcast_collector.py realestate/enforce_freehold_v2.py
+          python -m py_compile realestate/collector.py realestate/adcast_collector.py realestate/adcast_supplemental_collector.py realestate/enforce_freehold_v2.py
 
       - name: Collect SUUMO and HOME'S current listings
         env:
@@ -71,6 +72,13 @@ jobs:
           ADCAST_MAX_PAGES: '30'
           ADCAST_TIMEOUT: '25'
         run: python realestate/adcast_collector.py
+
+      - name: Supplement ADCAST from public recommendation indexes
+        env:
+          ADCAST_REQUEST_DELAY: '1.5'
+          ADCAST_SUPPLEMENTAL_MAX_PAGES: '40'
+          ADCAST_TIMEOUT: '25'
+        run: python realestate/adcast_supplemental_collector.py
 
       - name: Verify land rights and publish freehold-only dashboard
         env:
@@ -125,12 +133,26 @@ jobs:
               if complete and source != 'fudousan.or.jp' and counts[source] == 0:
                   raise SystemExit(f'{source} says complete but exported zero verified records')
 
+          adcast_report = json.loads(Path('realestate/data/adcast_report.json').read_text(encoding='utf-8'))
+          supplemental = adcast_report.get('supplemental') or {}
+          discovered_sanno = supplemental.get('sanno1_urls') or []
+          published_sanno = [
+              item for item in items
+              if item.get('ward') == '大田区'
+              and ('山王１' in str(item.get('address') or '') or '山王1' in str(item.get('address') or ''))
+          ]
+          if discovered_sanno and not published_sanno:
+              raise SystemExit(f'public Sanno 1 listings were discovered but none reached the verified snapshot: {discovered_sanno}')
+
           anomalies = json.loads(Path('realestate/data/price_history_anomalies.json').read_text(encoding='utf-8'))
           print({
               'coverage': coverage,
               'counts': dict(counts),
               'ward_counts': dict(Counter(item.get('ward') for item in items)),
               'total': len(items),
+              'adcast_supplemental_public': supplemental.get('record_count'),
+              'sanno1_discovered': discovered_sanno,
+              'sanno1_published_count': len(published_sanno),
               'quarantined_price_records': anomalies.get('records_with_quarantined_points'),
           })
           PY
