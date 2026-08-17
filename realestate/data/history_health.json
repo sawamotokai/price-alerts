@@ -2,33 +2,33 @@
   "active_verified_freehold_by_source": {
     "ADCAST": 70,
     "HOME'S": 51,
-    "SUUMO": 796,
+    "SUUMO": 803,
     "fudousan.or.jp": 0
   },
-  "active_verified_freehold_count": 917,
+  "active_verified_freehold_count": 924,
   "canonicalization": {
-    "canonical_listing_count": 2142,
-    "canonicalized_group_count": 1759,
+    "canonical_listing_count": 2193,
+    "canonicalized_group_count": 1756,
     "embedded_multi_day_count": 610,
-    "history_documents_loaded": 2210,
-    "input_listing_count": 4069,
-    "merged_duplicate_count": 1927
+    "history_documents_loaded": 2266,
+    "input_listing_count": 4110,
+    "merged_duplicate_count": 1917
   },
-  "generated_at": "2026-08-17T01:30:48+00:00",
+  "generated_at": "2026-08-17T10:28:59+00:00",
   "history_repair": {
-    "ambiguous_property_matches_skipped": 270,
+    "ambiguous_property_matches_skipped": 287,
     "direct_listing_matches": 0,
     "ledger_files": 1,
-    "ledger_rows": 6376,
+    "ledger_rows": 6416,
     "maximum_daily_point_count": 9,
     "records_with_two_or_more_daily_points": 610,
-    "repaired_at": "2026-08-17T01:30:48+00:00",
-    "repaired_record_count": 22,
-    "unambiguous_property_matches": 422,
-    "valid_ledger_rows": 6376
+    "repaired_at": "2026-08-17T10:28:59+00:00",
+    "repaired_record_count": 18,
+    "unambiguous_property_matches": 420,
+    "valid_ledger_rows": 6416
   },
   "maximum_daily_point_count": 9,
-  "observed_at": "2026-08-17T01:26:27+00:00",
+  "observed_at": "2026-08-17T10:24:04+00:00",
   "records_with_two_or_more_daily_points": 610,
   "samples": [
     {
@@ -136,7 +136,7 @@
         "2026-08-17"
       ],
       "listing_id": "0112fd3645b385ac7593",
-      "matched_by_property": true,
+      "matched_by_property": false,
       "point_count": 9,
       "source": "SUUMO",
       "title": "【お盆期間中のご相談も大歓迎♪先行内覧予約受付中♪】中目黒に構える築浅邸宅",
@@ -153,7 +153,7 @@
       "matched_by_property": false,
       "point_count": 4,
       "source": "SUUMO",
-      "title": "【お盆期間中も通常営業】◆吹抜けの有るLDK◆床暖房有り",
+      "title": "◆充実の室内設備◆吹抜けの有るLDK◆床暖房有り",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21492480/"
     },
     {
