@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T01:30:33+00:00",
+  "generated_at": "2026-08-17T01:30:49+00:00",
   "items": [
     {
       "address": "東京都目黒区青葉台3",
@@ -880,6 +880,10 @@
         {
           "date": "2026-08-16",
           "price_yen": 79000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 79000000
         }
       ],
       "source": "SUUMO",
@@ -909,6 +913,10 @@
         },
         {
           "date": "2026-08-16",
+          "price_yen": 79000000
+        },
+        {
+          "date": "2026-08-17",
           "price_yen": 79000000
         }
       ],
@@ -1579,43 +1587,6 @@
         }
       ],
       "ward": "目黒区"
-    },
-    {
-      "address": null,
-      "current_price_yen": 147000000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 36.09,
-          "boundary_new_price_yen": 147000000,
-          "boundary_old_price_yen": 230000000,
-          "date": "2026-08-10",
-          "price_yen": 230000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "e5124a2141441a985201",
-      "property_id": "listing:c7bf82d7da8c4267ad88",
-      "raw_points": [
-        {
-          "date": "2026-08-10",
-          "price_yen": 230000000
-        },
-        {
-          "date": "2026-08-17",
-          "price_yen": 147000000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "京急蒲田8010万円・2LDK+S(納戸)",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21395289/",
-      "validated_points": [
-        {
-          "date": "2026-08-17",
-          "price_yen": 147000000
-        }
-      ],
-      "ward": "大田区"
     }
   ],
   "policy": {
@@ -1623,7 +1594,7 @@
     "min_regime_observations": 2,
     "neighbour_similarity_pct": 0.12
   },
-  "quarantined_point_count": 24,
-  "record_count": 4069,
-  "records_with_quarantined_points": 24
+  "quarantined_point_count": 23,
+  "record_count": 2142,
+  "records_with_quarantined_points": 23
 }
