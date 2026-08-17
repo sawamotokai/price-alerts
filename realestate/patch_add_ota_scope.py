@@ -83,4 +83,5 @@ s = re.sub(r'^WORKERS\s*=.*$', 'WORKERS = 8', s, flags=re.M)
 s = re.sub(r'^TIMEOUT\s*=.*$', 'TIMEOUT = 15.0', s, flags=re.M)
 freehold.write_text(s, encoding="utf-8")
 
+# Manual run trigger: 2026-08-17 JST.
 print("Ota + SUUMO land runtime scope patch applied")
