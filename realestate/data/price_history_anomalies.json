@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T02:00:22+00:00",
+  "generated_at": "2026-08-17T02:00:40+00:00",
   "items": [
     {
       "address": "東京都目黒区青葉台3",
@@ -1414,7 +1414,7 @@
       "ward": "目黒区"
     },
     {
-      "address": null,
+      "address": "順(昇順)",
       "current_price_yen": 94990000,
       "excluded_points": [
         {
@@ -1427,7 +1427,7 @@
         }
       ],
       "listing_id": "0c956eac35aaabcd495f",
-      "property_id": "listing:fb246e0f3998e639a3e8",
+      "property_id": "37824ed8e4254237645a",
       "raw_points": [
         {
           "date": "2026-08-10",
@@ -1595,6 +1595,6 @@
     "neighbour_similarity_pct": 0.12
   },
   "quarantined_point_count": 23,
-  "record_count": 4122,
+  "record_count": 2173,
   "records_with_quarantined_points": 23
 }
