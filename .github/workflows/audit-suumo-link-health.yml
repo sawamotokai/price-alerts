@@ -8,7 +8,7 @@ on:
       - '.github/workflows/audit-suumo-link-health.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
@@ -18,12 +18,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests beautifulsoup4 lxml
+      - run: pip install requests
       - name: Audit current SUUMO links and target
         shell: bash
         run: |
           python - <<'PY'
-          import json, random, re, requests, time
+          import json, random, requests, time
           from pathlib import Path
           from collections import defaultdict
 
@@ -36,24 +36,31 @@ jobs:
           def check(url):
               try:
                   resp=session.get(url,timeout=15,allow_redirects=True)
-                  text=resp.text[:200000]
+                  text=resp.text[:250000]
                   dead=('お探しのページは見つかりません' in text or '掲載終了' in text or '物件が見つかりません' in text)
-                  return resp.status_code, resp.url, dead, len(resp.text)
+                  return {'status':resp.status_code,'final_url':resp.url,'dead_marker':dead,'bytes':len(resp.content)}
               except Exception as e:
-                  return 'ERR', type(e).__name__+':'+str(e), None, 0
-          print('TARGET',target,check(target))
-          print('TARGET_TENPO',target.rstrip('/')+'/tenpo/',check(target.rstrip('/')+'/tenpo/'))
+                  return {'status':'ERR','error':type(e).__name__+':'+str(e)}
+          report={'target':{'url':target,'plain':check(target),'tenpo':check(target.rstrip('/')+'/tenpo/')},'wards':{}}
           random.seed(42)
           for ward,items in sorted(by.items()):
-              sample=items[:10] + random.sample(items, min(10,len(items)))
+              sample=items[:15] + random.sample(items,min(15,len(items)))
               seen=set(); sample=[x for x in sample if not (x['url'] in seen or seen.add(x['url']))]
-              print('\nWARD',ward,'count',len(items),'sample',len(sample))
-              ok=dead=other=0
+              results=[]
               for r in sample:
-                  result=check(r['url']); print(result[0],result[2],r['url'],'->',result[1])
-                  if result[0]==200 and not result[2]: ok+=1
-                  elif result[2] or result[0] in (404,410): dead+=1
-                  else: other+=1
-                  time.sleep(.15)
-              print('SUMMARY',ward,{'ok':ok,'dead':dead,'other':other})
+                  result=check(r['url']); results.append({'url':r['url'],'title':r.get('title'),'result':result}); time.sleep(.1)
+              ok=sum(x['result'].get('status')==200 and not x['result'].get('dead_marker') for x in results)
+              dead=sum(x['result'].get('status') in (404,410) or x['result'].get('dead_marker') for x in results)
+              report['wards'][ward]={'total_current':len(items),'sample_size':len(results),'ok':ok,'dead':dead,'other':len(results)-ok-dead,'results':results}
+          out=Path('realestate/data/suumo_link_audit.json'); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({k:{kk:v for kk,v in val.items() if kk!='results'} for k,val in report['wards'].items()},ensure_ascii=False))
+          print('target',report['target'])
           PY
+      - name: Commit audit report
+        run: |
+          git config user.name 'suumo-link-audit[bot]'
+          git config user.email 'suumo-link-audit[bot]@users.noreply.github.com'
+          git add realestate/data/suumo_link_audit.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Audit current SUUMO link health'
+          git push
