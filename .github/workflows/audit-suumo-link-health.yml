@@ -1,0 +1,59 @@
+name: Audit SUUMO link health
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/audit-suumo-link-health.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 lxml
+      - name: Audit current SUUMO links and target
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, random, re, requests, time
+          from pathlib import Path
+          from collections import defaultdict
+
+          rows=json.loads(Path('realestate/imports/latest.json').read_text())['items']
+          suumo=[r for r in rows if r.get('source')=='SUUMO']
+          by=defaultdict(list)
+          for r in suumo: by[r.get('ward')].append(r)
+          target='https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/'
+          session=requests.Session(); session.headers['User-Agent']='Mozilla/5.0'
+          def check(url):
+              try:
+                  resp=session.get(url,timeout=15,allow_redirects=True)
+                  text=resp.text[:200000]
+                  dead=('お探しのページは見つかりません' in text or '掲載終了' in text or '物件が見つかりません' in text)
+                  return resp.status_code, resp.url, dead, len(resp.text)
+              except Exception as e:
+                  return 'ERR', type(e).__name__+':'+str(e), None, 0
+          print('TARGET',target,check(target))
+          print('TARGET_TENPO',target.rstrip('/')+'/tenpo/',check(target.rstrip('/')+'/tenpo/'))
+          random.seed(42)
+          for ward,items in sorted(by.items()):
+              sample=items[:10] + random.sample(items, min(10,len(items)))
+              seen=set(); sample=[x for x in sample if not (x['url'] in seen or seen.add(x['url']))]
+              print('\nWARD',ward,'count',len(items),'sample',len(sample))
+              ok=dead=other=0
+              for r in sample:
+                  result=check(r['url']); print(result[0],result[2],r['url'],'->',result[1])
+                  if result[0]==200 and not result[2]: ok+=1
+                  elif result[2] or result[0] in (404,410): dead+=1
+                  else: other+=1
+                  time.sleep(.15)
+              print('SUMMARY',ward,{'ok':ok,'dead':dead,'other':other})
+          PY
