@@ -34,6 +34,10 @@ s = replace_required(
     "HOME'S Ota config",
 )
 s = s.replace('東京都(?:品川区|目黒区)', '東京都(?:品川区|目黒区|大田区)')
+# With complete per-ward/category crawling, one missed successful crawl is
+# enough to remove a stale listing from the public dashboard. Failed/partial
+# crawls are already marked incomplete and must not deactivate records.
+s = re.sub(r'^MAX_MISSING_RUNS\s*=.*$', 'MAX_MISSING_RUNS = 1', s, flags=re.M)
 
 # SUUMO result pages contain recommendation cards for other wards. The old
 # parser accepted every matching /nc_/ link and assigned the current ward,
@@ -105,4 +109,4 @@ s = re.sub(r'^WORKERS\s*=.*$', 'WORKERS = 8', s, flags=re.M)
 s = re.sub(r'^TIMEOUT\s*=.*$', 'TIMEOUT = 15.0', s, flags=re.M)
 freehold.write_text(s, encoding="utf-8")
 
-print("Ota + SUUMO land runtime scope patch applied with strict ward validation")
+print("Ota + SUUMO land runtime scope patch applied with strict ward validation and one-run stale removal")
