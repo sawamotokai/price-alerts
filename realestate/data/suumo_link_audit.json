@@ -1,0 +1,926 @@
+{
+  "target": {
+    "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/",
+    "plain": {
+      "status": 404,
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/",
+      "dead_marker": false,
+      "bytes": 36856
+    },
+    "tenpo": {
+      "status": 404,
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/tenpo/",
+      "dead_marker": false,
+      "bytes": 37029
+    }
+  },
+  "wards": {
+    "品川区": {
+      "total_current": 344,
+      "sample_size": 29,
+      "ok": 27,
+      "dead": 2,
+      "other": 0,
+      "results": [
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21308267/",
+          "title": "荏原4(武蔵小山駅) 2180万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21308267/",
+            "dead_marker": false,
+            "bytes": 184255
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21387860/",
+          "title": "■鉄骨造・3LDK+納戸■ルーフバルコニー付き♪■南4.6m公道面",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21387860/",
+            "dead_marker": false,
+            "bytes": 225010
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21457418/",
+          "title": "南側道路に面し、陽当り良好。屋上付きの中古戸建です。",
+          "result": {
+            "status": 404,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21457418/",
+            "dead_marker": false,
+            "bytes": 36950
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21483930/",
+          "title": "南大井1(立会川駅) 2300万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21483930/",
+            "dead_marker": false,
+            "bytes": 193203
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21058021/",
+          "title": "中延2(荏原中延駅) 2980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21058021/",
+            "dead_marker": false,
+            "bytes": 156988
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_79065077/",
+          "title": "世田谷1(世田谷駅) 3260万円 3260万円 3DK 40.82m 2 (12.34坪)(登記) 1983年1月 東京都世田谷区世田谷1 東急世田谷線 世田谷 徒歩7分",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_79065077/",
+            "dead_marker": false,
+            "bytes": 180745
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21484422/",
+          "title": "北品川2(新馬場駅) 3500万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21484422/",
+            "dead_marker": false,
+            "bytes": 167932
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_79083808/",
+          "title": "大井7(大森駅) 3780万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_79083808/",
+            "dead_marker": false,
+            "bytes": 194904
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21474713/",
+          "title": "◆目黒線「西小山」駅徒歩10分◆建物面積約50m2◆約6帖のルーフバルコニー",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21474713/",
+            "dead_marker": false,
+            "bytes": 211292
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21379635/",
+          "title": "豊町2(下神明駅) 4500万円",
+          "result": {
+            "status": 404,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21379635/",
+            "dead_marker": false,
+            "bytes": 36814
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21216918/",
+          "title": "小山2(武蔵小山駅) 4980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21216918/",
+            "dead_marker": false,
+            "bytes": 211676
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21292344/",
+          "title": "東急大井町線下神明駅徒歩5分、戸越公園駅徒歩7分/リフォームR8.7済",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21292344/",
+            "dead_marker": false,
+            "bytes": 164520
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21429969/",
+          "title": "『馬込駅徒歩7分』15帖超LDK+3部屋プラン対応・スーパー徒歩10分圏内♪",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21429969/",
+            "dead_marker": false,
+            "bytes": 280888
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21479474/",
+          "title": "◇想定利回り4.37%◇現在賃貸中のため、すぐに家賃収入が見込めます!",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21479474/",
+            "dead_marker": false,
+            "bytes": 182325
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20934288/",
+          "title": "■洗練された上質な空間Luxsisシリーズ■",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20934288/",
+            "dead_marker": false,
+            "bytes": 174223
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21174347/",
+          "title": "【「限定公開」武蔵小山駅徒歩2分、整形地、南東側道路面す】◆「パルム商店",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21174347/",
+            "dead_marker": false,
+            "bytes": 296379
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/",
+          "title": "【建築条件なし】品川区東大井・「大井町」駅徒歩圏内で叶える自由設計の住まい",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/",
+            "dead_marker": false,
+            "bytes": 367367
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20743058/",
+          "title": "上大崎3(目黒駅) 1億2000万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20743058/",
+            "dead_marker": false,
+            "bytes": 185047
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_79109850/",
+          "title": "■花房山の高台♪■西側隣地より高台のため日当たり眺望良好♪",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_79109850/",
+            "dead_marker": false,
+            "bytes": 324147
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21458080/",
+          "title": "大井6(大森駅) 1億980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21458080/",
+            "dead_marker": false,
+            "bytes": 179975
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21327173/",
+          "title": "♪現在民泊運営中♪詳細はお問い合わせください!品川駅 電車で6分の好立地",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21327173/",
+            "dead_marker": false,
+            "bytes": 191663
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21025576/",
+          "title": "■ 品川駅へ直通5分の好アクセス!蘇峰公園至近の閑静な住宅街に誕生する売地",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21025576/",
+            "dead_marker": false,
+            "bytes": 365199
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20918565/",
+          "title": "小山台1(武蔵小山駅) 1億8800万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20918565/",
+            "dead_marker": false,
+            "bytes": 190422
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21427037/",
+          "title": "■ 【品川区中延4丁目】駅徒歩4分の利便性。約19坪の建築条件なし売地",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21427037/",
+            "dead_marker": false,
+            "bytes": 288213
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21150757/",
+          "title": "■南道路+西側通路の開放感♪■駐車スペース2台可能♪",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21150757/",
+            "dead_marker": false,
+            "bytes": 295750
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21191888/",
+          "title": "ゆったり約41坪の注文住宅/参考プラン5LDK&駐車場/林試の森公園歩1分",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21191888/",
+            "dead_marker": false,
+            "bytes": 238381
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21486870/",
+          "title": "☆総額6980万円~ (土地+建物)☆フリープラン対応住宅☆",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21486870/",
+            "dead_marker": false,
+            "bytes": 173839
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20935078/",
+          "title": "■洗練された上質な空間Luxsisシリーズ■明るく開放感溢れる設計",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20935078/",
+            "dead_marker": false,
+            "bytes": 242114
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78847621/",
+          "title": "◆◇新馬場駅徒歩5分♪大崎駅・大井町駅も徒歩圏の立地♪◇◆",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78847621/",
+            "dead_marker": false,
+            "bytes": 330620
+          }
+        }
+      ]
+    },
+    "大田区": {
+      "total_current": 644,
+      "sample_size": 29,
+      "ok": 29,
+      "dead": 0,
+      "other": 0,
+      "results": [
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20625578/",
+          "title": "駅徒歩4分の好立地!コンパクトながら機能的な間取りで、仕事も趣味も充実!",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20625578/",
+            "dead_marker": false,
+            "bytes": 209500
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_78122893/",
+          "title": "本羽田1(糀谷駅) 1480万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_78122893/",
+            "dead_marker": false,
+            "bytes": 215018
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20850677/",
+          "title": "【実需・投資用どちらもご検討可能】お好みのリフォームをしていただけます♪",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20850677/",
+            "dead_marker": false,
+            "bytes": 236854
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_72091169/",
+          "title": "大森西1(大森町駅) 1680万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_72091169/",
+            "dead_marker": false,
+            "bytes": 185929
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21401438/",
+          "title": "馬込駅徒歩6分!更地渡し、再建築可能!低層住居専用地域で叶える理想。",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21401438/",
+            "dead_marker": false,
+            "bytes": 330920
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20253891/",
+          "title": "【4DK】4路線2駅利用可の好立地!収納に大活躍の8帖小屋裏収納付き!",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20253891/",
+            "dead_marker": false,
+            "bytes": 243849
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21160957/",
+          "title": "京急線糀谷駅 徒歩6分!萩中商店街近くの閑静な住宅地です♪",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21160957/",
+            "dead_marker": false,
+            "bytes": 173425
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20748431/",
+          "title": "南馬込2 2780万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20748431/",
+            "dead_marker": false,
+            "bytes": 179102
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21323167/",
+          "title": "荏原中延5億5000万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21323167/",
+            "dead_marker": false,
+            "bytes": 181761
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21154873/",
+          "title": "♪外壁や室内のカラーセレクトが可能です!♪参考総額4980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21154873/",
+            "dead_marker": false,
+            "bytes": 174765
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_78219179/",
+          "title": "蒲田2(梅屋敷駅) 2880万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_78219179/",
+            "dead_marker": false,
+            "bytes": 157395
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20721171/",
+          "title": "建築条件無し!自由にマイホーム建築いただけます。",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20721171/",
+            "dead_marker": false,
+            "bytes": 165055
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21362173/",
+          "title": "中央3 2980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21362173/",
+            "dead_marker": false,
+            "bytes": 177105
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21284786/",
+          "title": "京急本線「梅屋敷」駅徒歩13分、北西角地に位置する開放感あふれる戸建住宅。",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21284786/",
+            "dead_marker": false,
+            "bytes": 201475
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21332299/",
+          "title": "山王2(大森駅) 3080万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21332299/",
+            "dead_marker": false,
+            "bytes": 192264
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21479417/",
+          "title": "≪現地見学予約受付中♪≫◆建築条件なし×更地渡し×3駅2路線利用可能◆",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21479417/",
+            "dead_marker": false,
+            "bytes": 185044
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20834889/",
+          "title": "歴史ある山王の邸宅地で、上質な暮らしをデザインする。",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20834889/",
+            "dead_marker": false,
+            "bytes": 186897
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21001861/",
+          "title": "◆ADCAST◆大型サイズ物件です♪西馬込駅10分×建物面積194m2!!",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21001861/",
+            "dead_marker": false,
+            "bytes": 308671
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_74456635/",
+          "title": "西馬込2(西馬込駅) 5億6000万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_74456635/",
+            "dead_marker": false,
+            "bytes": 191608
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20529042/",
+          "title": "鵜の木2(鵜の木駅) 3750万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20529042/",
+            "dead_marker": false,
+            "bytes": 192870
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21042599/",
+          "title": "■洗練された上質な空間Luxsisシリーズ■明るく開放感溢れる設計",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21042599/",
+            "dead_marker": false,
+            "bytes": 199062
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20875730/",
+          "title": "陽当り良好、駅まで平坦、閑静な住宅地、総合病院 徒歩10分以内、",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20875730/",
+            "dead_marker": false,
+            "bytes": 189664
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21323353/",
+          "title": "山王3(大森駅) 2億1800万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21323353/",
+            "dead_marker": false,
+            "bytes": 206309
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21297366/",
+          "title": "【建築条件なし角地】170m2以上の建築が可能~理想を叶える邸宅地~",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21297366/",
+            "dead_marker": false,
+            "bytes": 216526
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21501382/",
+          "title": "~城南エリアの高台に佇む都心へのアクセスと静けさを両立した街並み~",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21501382/",
+            "dead_marker": false,
+            "bytes": 336993
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21481745/",
+          "title": "【 大田区西糀谷1丁目 】店舗付き住宅~鉄骨造~ルーフバルコニー付き",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21481745/",
+            "dead_marker": false,
+            "bytes": 199244
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_76775566/",
+          "title": "◆長期優良認定住宅◇ソーラーパネル設置済◆全室フローリング、床暖房完備",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_76775566/",
+            "dead_marker": false,
+            "bytes": 318831
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21502274/",
+          "title": "◆2路線3駅利用可能◆建物参考プラン有◆角地含む車庫付全4棟◆周辺施設充実",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21502274/",
+            "dead_marker": false,
+            "bytes": 401419
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_78542137/",
+          "title": "南馬込2(大森駅) 6280万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_78542137/",
+            "dead_marker": false,
+            "bytes": 184906
+          }
+        }
+      ]
+    },
+    "目黒区": {
+      "total_current": 469,
+      "sample_size": 30,
+      "ok": 27,
+      "dead": 3,
+      "other": 0,
+      "results": [
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20796928/",
+          "title": "【洗足駅徒歩7分×3駅利用可】自由設計!建ぺい80%・容積300%の角地!",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20796928/",
+            "dead_marker": false,
+            "bytes": 232531
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21427437/",
+          "title": "中央町1(学芸大学駅) 3100万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21427437/",
+            "dead_marker": false,
+            "bytes": 200550
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20849948/",
+          "title": "千歳烏山6999万円・4DK",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20849948/",
+            "dead_marker": false,
+            "bytes": 214493
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21121056/",
+          "title": "千歳烏山7799万円・3LDK",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21121056/",
+            "dead_marker": false,
+            "bytes": 226551
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79208832/",
+          "title": "明大前4800万円・6DK",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79208832/",
+            "dead_marker": false,
+            "bytes": 213398
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21227785/",
+          "title": "【お盆期間中も通常営業】◆吹抜けの有るLDK◆床暖房有り",
+          "result": {
+            "status": 404,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21227785/",
+            "dead_marker": false,
+            "bytes": 36854
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21492480/",
+          "title": "◆充実の室内設備◆吹抜けの有るLDK◆床暖房有り",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21492480/",
+            "dead_marker": false,
+            "bytes": 211142
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21259355/",
+          "title": "芦花公園6480万円・4DK",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21259355/",
+            "dead_marker": false,
+            "bytes": 229752
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21412552/",
+          "title": "千歳船橋6780万円・4LDK",
+          "result": {
+            "status": 404,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21412552/",
+            "dead_marker": false,
+            "bytes": 36854
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21389068/",
+          "title": "― 都立大学駅徒歩4分! × 多彩な暮らしに応える6LDK ―",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21389068/",
+            "dead_marker": false,
+            "bytes": 235304
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21413349/",
+          "title": "千歳船橋6780万円・4LDK",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21413349/",
+            "dead_marker": false,
+            "bytes": 227628
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20391355/",
+          "title": "愛犬・愛猫と気兼ねなく♪縦空間を楽しむ都市型中古戸建の登場です♪",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20391355/",
+            "dead_marker": false,
+            "bytes": 288089
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20444216/",
+          "title": "洗足1(西小山駅) 6980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20444216/",
+            "dead_marker": false,
+            "bytes": 196031
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20650099/",
+          "title": "洗足1(西小山駅) 6980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20650099/",
+            "dead_marker": false,
+            "bytes": 200357
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20787551/",
+          "title": "洗足1(西小山駅) 6980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20787551/",
+            "dead_marker": false,
+            "bytes": 198094
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_75554067/",
+          "title": "専属ドライバー付き経営者の為のレジデンシャルオフィス【大型車4台駐車可能】",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_75554067/",
+            "dead_marker": false,
+            "bytes": 199284
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21093956/",
+          "title": "<目黒3丁目の閑静な住宅街>土地面積115.70m2。建築条件ございません!",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21093956/",
+            "dead_marker": false,
+            "bytes": 160584
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21492662/",
+          "title": "◆更地渡し◆建築条件無し◆閑静な住宅街",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21492662/",
+            "dead_marker": false,
+            "bytes": 249308
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20878081/",
+          "title": "建築条件なしの売地。お好きなハウスメーカーで建築が可能です。",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20878081/",
+            "dead_marker": false,
+            "bytes": 281007
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21017102/",
+          "title": "尾山台2億6800万円・4LDK",
+          "result": {
+            "status": 404,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21017102/",
+            "dead_marker": false,
+            "bytes": 36854
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21476082/",
+          "title": "【東横線急行停車駅学芸大学駅8分】◆建築条件無 整形地◆祐天寺駅9分",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21476082/",
+            "dead_marker": false,
+            "bytes": 257905
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21166415/",
+          "title": "◆祐天寺駅5分!子育てにも暮らしにも優しい、五本木の落ち着いた住環境。◆",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21166415/",
+            "dead_marker": false,
+            "bytes": 173794
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21408909/",
+          "title": "【本日のご案内可能です】営業時間 8時~23時 時間柔軟に対応いたします。",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21408909/",
+            "dead_marker": false,
+            "bytes": 205098
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20483256/",
+          "title": "下目黒4(不動前駅) 9580万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20483256/",
+            "dead_marker": false,
+            "bytes": 192090
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21408801/",
+          "title": "【空室】【即日内覧可能】令和5年築、ロフト付き3LDK",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21408801/",
+            "dead_marker": false,
+            "bytes": 210793
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21376334/",
+          "title": "尾山台1億480万円・4LDK+S(納戸)",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21376334/",
+            "dead_marker": false,
+            "bytes": 205179
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21492550/",
+          "title": "◆駐車スペースあり◆リノベーション予定♪◆南西側道路4m",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21492550/",
+            "dead_marker": false,
+            "bytes": 287079
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21029294/",
+          "title": "上目黒5(祐天寺駅) 1億7900万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21029294/",
+            "dead_marker": false,
+            "bytes": 199439
+          }
+        },
+        {
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248683/",
+          "title": "【弊社限定、「中目黒」徒歩10分、敷地80坪以上、南東道路】◆大型5LDK+庭+シ",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248683/",
+            "dead_marker": false,
+            "bytes": 187716
+          }
+        },
+        {
+          "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21000423/",
+          "title": "中目黒3(中目黒駅) 1億7780万円~1億7980万円",
+          "result": {
+            "status": 200,
+            "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21000423/",
+            "dead_marker": false,
+            "bytes": 173218
+          }
+        }
+      ]
+    }
+  }
+}
