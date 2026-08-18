@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Canonicalize outbound listing URLs before export and dashboard publication."""
+"""Canonicalize outbound listing URLs before export and dashboard publication.
+
+SUUMO detail paths are opaque. Preserve the exact path captured from the
+listing index; only remove query strings/fragments and normalize host/scheme.
+Reconstructing a path from ward/category/listing id can create dead links.
+"""
 from __future__ import annotations
 
 import json
@@ -13,15 +18,7 @@ CURRENT = ROOT / "data" / "current.json"
 DASHBOARD = ROOT / "data" / "dashboard.json"
 LATEST = ROOT / "imports" / "latest.json"
 
-# Important: some SUUMO records use a distinct /tenpo/ detail endpoint.
-# Removing that suffix can turn a valid listing into a dead link, so preserve it.
-SUUMO_RE = re.compile(
-    r"/(chukoikkodate|tochi)/tokyo/sc_(shinagawa|meguro|ota)/nc_(\d+)(/tenpo)?/?",
-    re.IGNORECASE,
-)
-SUUMO_ID_RE = re.compile(r"/nc_(\d+)(/tenpo)?/?", re.IGNORECASE)
 HOMES_RE = re.compile(r"/kodate/(b-[^/?#]+)/?", re.IGNORECASE)
-WARD_SCOPE = {"品川区": "shinagawa", "目黒区": "meguro", "大田区": "ota"}
 
 
 def load(path: Path, default: Any) -> Any:
@@ -61,23 +58,13 @@ def canonical_url(source: Any, raw: Any, ward: Any = None) -> str:
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
         return value
 
-    path = re.sub(r"/{2,}", "/", parsed.path or "/")
+    # SUUMO paths must be treated as opaque. The index href is authoritative.
+    # Do not add/remove /tenpo/, change category, ward slug, or rebuild from nc id.
     if name == "SUUMO":
-        match = SUUMO_RE.search(path)
-        if match:
-            category, scope, listing_number, tenpo = match.groups()
-        else:
-            id_match = SUUMO_ID_RE.search(path)
-            if not id_match:
-                return value
-            listing_number, tenpo = id_match.groups()
-            scope = WARD_SCOPE.get(str(ward or ""), "")
-            if not scope:
-                return value
-            category = "tochi" if "/tochi/" in path.lower() else "chukoikkodate"
-        suffix = "/tenpo" if tenpo else ""
-        return f"https://suumo.jp/{category.lower()}/tokyo/sc_{scope.lower()}/nc_{listing_number}{suffix}/"
+        path = re.sub(r"/{2,}", "/", parsed.path or "/")
+        return urlunparse(("https", "suumo.jp", path, "", "", ""))
 
+    path = re.sub(r"/{2,}", "/", parsed.path or "/")
     if name == "HOME'S":
         match = HOMES_RE.search(path)
         if match:
