@@ -14,6 +14,7 @@ DASHBOARD = DATA / "dashboard.json"
 LATEST = ROOT / "imports" / "latest.json"
 REPORT = DATA / "nightly_report.json"
 SOURCES = ("SUUMO", "HOME'S", "fudousan.or.jp", "ADCAST")
+TARGET_WARDS = ("品川区", "目黒区", "大田区")
 SOURCE_MAP = {
     "suumo": "SUUMO",
     "homes": "HOME'S",
@@ -102,6 +103,8 @@ def main() -> None:
 
     items = []
     counts = {name: 0 for name in SOURCES}
+    ward_counts = {ward: 0 for ward in TARGET_WARDS}
+    source_ward_counts = {source: {ward: 0 for ward in TARGET_WARDS} for source in SOURCES}
     price_count = new_count = changed_count = 0
     seen = set()
     for record in rows:
@@ -114,10 +117,11 @@ def main() -> None:
         seen.add((source, url))
         price_yen = record.get("price_yen")
         price_man = round(float(price_yen) / 10000, 4) if isinstance(price_yen, (int, float)) else None
+        ward = record.get("ward")
         items.append({
             "source": source,
             "url": url,
-            "ward": record.get("ward"),
+            "ward": ward,
             "title": record.get("title"),
             "price_man": price_man,
             "address": record.get("address"),
@@ -131,6 +135,9 @@ def main() -> None:
             "land_right": "所有権",
         })
         counts[source] += 1
+        if ward in ward_counts:
+            ward_counts[ward] += 1
+            source_ward_counts[source][ward] += 1
         price_count += price_man is not None
         new_count += str(record.get("first_seen") or "")[:10] == observed_day
         changed_count += changed(record)
@@ -158,6 +165,8 @@ def main() -> None:
         "observed_at": observed_at,
         "coverage": coverage,
         "source_counts": counts,
+        "ward_counts": ward_counts,
+        "source_ward_counts": source_ward_counts,
         "record_count": len(items),
         "price_count": price_count,
         "price_coverage_pct": round(price_count * 100 / len(items), 2) if items else 0,
