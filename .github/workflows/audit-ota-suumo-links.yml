@@ -1,0 +1,35 @@
+name: Audit Ota SUUMO links
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/audit-ota-suumo-links.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print Ota SUUMO records
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for fn in ['realestate/data/current.json','realestate/data/dashboard.json','realestate/imports/latest.json']:
+            print('===', fn, '===')
+            try:
+              d=json.loads(Path(fn).read_text())
+            except Exception as e:
+              print('ERR',e); continue
+            rows=d.get('listings') or d.get('items') or []
+            if isinstance(rows,dict): rows=list(rows.values())
+            out=[r for r in rows if r.get('ward')=='大田区' and str(r.get('source','')).lower() in ('suumo','suumo_land')]
+            print('count',len(out))
+            for r in out[:30]:
+              print(json.dumps({k:r.get(k) for k in ['source','property_type','title','address','url','source_listing_id','listing_id']},ensure_ascii=False))
+          PY
