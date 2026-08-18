@@ -34,6 +34,30 @@ s = replace_required(
     "HOME'S Ota config",
 )
 s = s.replace('東京都(?:品川区|目黒区)', '東京都(?:品川区|目黒区|大田区)')
+
+# SUUMO result pages contain recommendation cards for other wards. The old
+# parser accepted every matching /nc_/ link and assigned the current ward,
+# which polluted the dashboard. Require the parsed physical address to match
+# the ward currently being crawled. If the address cannot be parsed, skip it
+# rather than publishing a potentially wrong/dead record.
+old_listing_parse = '''        listing = parse_common_fields(source, match.group(1), absolute, ward, anchor)
+        # Require a real individual URL and at least one useful attribute.
+        if not any((listing.title, listing.price_yen, listing.address)):
+            continue
+        by_url[absolute] = listing
+'''
+new_listing_parse = '''        listing = parse_common_fields(source, match.group(1), absolute, ward, anchor)
+        # Require a real individual URL and at least one useful attribute.
+        if not any((listing.title, listing.price_yen, listing.address)):
+            continue
+        # SUUMO pages include cross-ward recommendation cards. Never infer the
+        # ward from the index page; the listing's own parsed address must match.
+        if source == "suumo" and (not listing.address or ward not in listing.address):
+            continue
+        by_url[absolute] = listing
+'''
+s = replace_required(s, old_listing_parse, new_listing_parse, "SUUMO physical ward validation")
+
 old_loop = '''    for ward, base_url in SOURCE_CONFIGS[source]["wards"].items():
         pages, coverage = crawl_index_pages(fetcher, base_url, source)
         ward_listings: dict[str, Listing] = {}
@@ -77,11 +101,8 @@ s = replace_required(
     'if source == "suumo" and not any(token in url for token in ("/sc_shinagawa/", "/sc_meguro/", "/sc_ota/")):',
     "freehold SUUMO URL scope",
 )
-# Initial three-ward backfill can require hundreds of rights checks. Use more
-# bounded parallelism; timeouts remain conservative and unknown results stay excluded.
 s = re.sub(r'^WORKERS\s*=.*$', 'WORKERS = 8', s, flags=re.M)
 s = re.sub(r'^TIMEOUT\s*=.*$', 'TIMEOUT = 15.0', s, flags=re.M)
 freehold.write_text(s, encoding="utf-8")
 
-# Manual run trigger: 2026-08-17 JST.
-print("Ota + SUUMO land runtime scope patch applied")
+print("Ota + SUUMO land runtime scope patch applied with strict ward validation")
