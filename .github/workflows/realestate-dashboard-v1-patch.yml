@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/realestate-dashboard-v1-patch.yml'
       - 'realestate/patch_v1_history.py'
+      - 'realestate/patch_preserve_listing_urls.py'
       - 'realestate/dashboard/index.html'
   workflow_dispatch:
 
@@ -30,11 +31,14 @@ jobs:
         with:
           node-version: '22'
       - name: Preserve v1 UI and merge durable histories
-        run: python realestate/patch_v1_history.py
-      - name: Validate v1 features and JavaScript syntax
+        run: |
+          python realestate/patch_v1_history.py
+          python realestate/patch_preserve_listing_urls.py
+      - name: Validate v1 features, exact links and JavaScript syntax
         run: |
           python - <<'PY'
           from pathlib import Path
+          import json
           import re
 
           path = Path('realestate/dashboard/index.html')
@@ -46,16 +50,42 @@ jobs:
               "const CURRENT_URL=",
               'function drawDetail(h)',
               'function listingUrl(x)',
-              'https://suumo.jp/chukoikkodate/tokyo/sc_${scope}/nc_${id}/',
+              'const LISTING_URL_PRESERVATION_VERSION=1;',
+              "u.pathname=(u.pathname.replace(/\\/+$/,'')||'/')+'/'",
           ]
           missing = [value for value in required if value not in text]
           if missing:
               raise SystemExit(f'missing v1 dashboard features: {missing}')
+          forbidden = [
+              'https://suumo.jp/chukoikkodate/tokyo/sc_${scope}/nc_${id}/',
+              "x.ward==='目黒区'?'meguro':'shinagawa'",
+          ]
+          leaked = [value for value in forbidden if value in text]
+          if leaked:
+              raise SystemExit(f'dashboard still reconstructs SUUMO URLs: {leaked}')
+
+          snapshot = json.loads(Path('realestate/imports/latest.json').read_text(encoding='utf-8'))
+          rows = snapshot.get('items') or []
+          by_id = {
+              match.group(1): row
+              for row in rows
+              if row.get('source') == 'SUUMO'
+              and (match := re.search(r'/nc_(\d+)', str(row.get('url') or '')))
+          }
+          expected = {
+              '21402366': '/tochi/tokyo/sc_shinagawa/nc_21402366/',
+              '21475604': '/tochi/tokyo/sc_ota/nc_21475604',
+          }
+          for listing_id, fragment in expected.items():
+              row = by_id.get(listing_id)
+              if row and fragment not in str(row.get('url') or ''):
+                  raise SystemExit(f'wrong stored SUUMO URL for {listing_id}: {row.get("url")}')
+
           scripts = re.findall(r'<script[^>]*>(.*?)</script>', text, re.S | re.I)
           if not scripts:
               raise SystemExit('dashboard script not found')
           Path('/tmp/dashboard.js').write_text('\n'.join(scripts), encoding='utf-8')
-          print('v1 dashboard appearance and canonical SUUMO links preserved')
+          print('v1 dashboard preserves exact stored listing URLs')
           PY
           node --check /tmp/dashboard.js
       - name: Commit patched v1 dashboard
@@ -66,7 +96,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No v1 dashboard changes'
           else
-            git commit -m 'Hydrate v1 all-property and detail price charts'
+            git commit -m 'Preserve exact SUUMO property links in dashboard'
             git pull --rebase origin master
             git push origin HEAD:master
           fi
