@@ -1,0 +1,51 @@
+name: Check exact SUUMO URL variants
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/check-suumo-targets.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Check variants
+        run: |
+          python - <<'PY'
+          import json, requests
+          from pathlib import Path
+          urls=[
+            'https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21402366/',
+            'https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/',
+            'https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21475604/',
+            'https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/',
+            'https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/tenpo/',
+          ]
+          s=requests.Session();s.headers['User-Agent']='Mozilla/5.0'
+          out={}
+          for url in urls:
+            try:
+              r=s.get(url,timeout=20,allow_redirects=True)
+              out[url]={'status':r.status_code,'final_url':r.url,'bytes':len(r.content)}
+            except Exception as e:
+              out[url]={'error':type(e).__name__+': '+str(e)}
+          Path('realestate/data/suumo_target_variants.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(out,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit report
+        run: |
+          git config user.name 'suumo-target-check[bot]'
+          git config user.email 'suumo-target-check[bot]@users.noreply.github.com'
+          git add realestate/data/suumo_target_variants.json
+          git commit -m 'Check exact SUUMO URL variants'
+          git push
