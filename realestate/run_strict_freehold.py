@@ -16,7 +16,8 @@ verifier.CLASSIFIER_VERSION = 4
 verifier.STRICT = True
 # Unknown rights remain excluded from the dashboard, but do not refetch the same
 # unresolved page every night. New/unseen listings are still checked immediately.
-verifier.UNKNOWN_DAYS = max(0, int(os.getenv("REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS", "2")))
+# Keep at least a two-day retry interval even if an older workflow still passes 0.
+verifier.UNKNOWN_DAYS = max(2, int(os.getenv("REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS", "2")))
 verifier.TIMEOUT = max(verifier.TIMEOUT, 25.0)
 
 _original_canonical = verifier.canonical_dashboard_url
