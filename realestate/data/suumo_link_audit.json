@@ -1,25 +1,36 @@
 {
-  "target": {
-    "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/",
-    "plain": {
+  "targets": {
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21402366/": {
       "status": 404,
-      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21402366/",
       "dead_marker": false,
-      "bytes": 36856
+      "bytes": 36950
     },
-    "tenpo": {
-      "status": 404,
-      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/tenpo/",
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/": {
+      "status": 200,
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/",
       "dead_marker": false,
-      "bytes": 37029
+      "bytes": 367367
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21475604/": {
+      "status": 404,
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21475604/",
+      "dead_marker": false,
+      "bytes": 36950
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/tenpo/": {
+      "status": 200,
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/tenpo/",
+      "dead_marker": false,
+      "bytes": 142023
     }
   },
   "wards": {
     "品川区": {
       "total_current": 344,
       "sample_size": 29,
-      "ok": 27,
-      "dead": 2,
+      "ok": 28,
+      "dead": 1,
       "other": 0,
       "results": [
         {
@@ -59,7 +70,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21483930/",
             "dead_marker": false,
-            "bytes": 193203
+            "bytes": 193161
           }
         },
         {
@@ -89,7 +100,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21484422/",
             "dead_marker": false,
-            "bytes": 167932
+            "bytes": 167891
           }
         },
         {
@@ -116,10 +127,10 @@
           "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21379635/",
           "title": "豊町2(下神明駅) 4500万円",
           "result": {
-            "status": 404,
+            "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21379635/",
             "dead_marker": false,
-            "bytes": 36814
+            "bytes": 179628
           }
         },
         {
@@ -179,7 +190,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21174347/",
             "dead_marker": false,
-            "bytes": 296379
+            "bytes": 296380
           }
         },
         {
@@ -219,7 +230,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21458080/",
             "dead_marker": false,
-            "bytes": 179975
+            "bytes": 179976
           }
         },
         {
@@ -239,7 +250,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21025576/",
             "dead_marker": false,
-            "bytes": 365199
+            "bytes": 365200
           }
         },
         {
@@ -289,7 +300,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21486870/",
             "dead_marker": false,
-            "bytes": 173839
+            "bytes": 173797
           }
         },
         {
@@ -299,7 +310,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20935078/",
             "dead_marker": false,
-            "bytes": 242114
+            "bytes": 285597
           }
         },
         {
@@ -338,7 +349,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_78122893/",
             "dead_marker": false,
-            "bytes": 215018
+            "bytes": 215017
           }
         },
         {
@@ -368,7 +379,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21401438/",
             "dead_marker": false,
-            "bytes": 330920
+            "bytes": 330921
           }
         },
         {
@@ -488,7 +499,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20834889/",
             "dead_marker": false,
-            "bytes": 186897
+            "bytes": 186896
           }
         },
         {
@@ -518,7 +529,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20529042/",
             "dead_marker": false,
-            "bytes": 192870
+            "bytes": 192871
           }
         },
         {
@@ -528,7 +539,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21042599/",
             "dead_marker": false,
-            "bytes": 199062
+            "bytes": 199063
           }
         },
         {
@@ -568,7 +579,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21501382/",
             "dead_marker": false,
-            "bytes": 336993
+            "bytes": 336992
           }
         },
         {
@@ -608,7 +619,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_78542137/",
             "dead_marker": false,
-            "bytes": 184906
+            "bytes": 184907
           }
         }
       ]
@@ -627,7 +638,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20796928/",
             "dead_marker": false,
-            "bytes": 232531
+            "bytes": 232491
           }
         },
         {
@@ -667,7 +678,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_79208832/",
             "dead_marker": false,
-            "bytes": 213398
+            "bytes": 213399
           }
         },
         {
@@ -717,7 +728,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21389068/",
             "dead_marker": false,
-            "bytes": 235304
+            "bytes": 235303
           }
         },
         {
@@ -727,7 +738,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21413349/",
             "dead_marker": false,
-            "bytes": 227628
+            "bytes": 227627
           }
         },
         {
@@ -747,7 +758,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20444216/",
             "dead_marker": false,
-            "bytes": 196031
+            "bytes": 196032
           }
         },
         {
@@ -757,7 +768,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20650099/",
             "dead_marker": false,
-            "bytes": 200357
+            "bytes": 200358
           }
         },
         {
@@ -817,7 +828,7 @@
             "status": 404,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21017102/",
             "dead_marker": false,
-            "bytes": 36854
+            "bytes": 36856
           }
         },
         {
@@ -837,7 +848,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21166415/",
             "dead_marker": false,
-            "bytes": 173794
+            "bytes": 173793
           }
         },
         {
@@ -857,7 +868,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20483256/",
             "dead_marker": false,
-            "bytes": 192090
+            "bytes": 192091
           }
         },
         {
@@ -877,7 +888,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21376334/",
             "dead_marker": false,
-            "bytes": 205179
+            "bytes": 205178
           }
         },
         {
@@ -907,7 +918,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21248683/",
             "dead_marker": false,
-            "bytes": 187716
+            "bytes": 187717
           }
         },
         {
@@ -917,7 +928,7 @@
             "status": 200,
             "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21000423/",
             "dead_marker": false,
-            "bytes": 173218
+            "bytes": 183060
           }
         }
       ]
