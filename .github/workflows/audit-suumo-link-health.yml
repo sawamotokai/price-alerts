@@ -19,7 +19,31 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests
-      - name: Audit current SUUMO links and target
+      - name: Inspect current records and decoded collector identity logic
+        shell: bash
+        run: |
+          cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > /tmp/collector.py
+          echo '=== Listing identity and persistence ==='
+          sed -n '85,165p' /tmp/collector.py
+          sed -n '470,570p' /tmp/collector.py
+          sed -n '610,735p' /tmp/collector.py
+          echo '=== target IDs across current/dashboard/latest ==='
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          ids=('21402366','21475604')
+          for path in ('realestate/data/current.json','realestate/data/dashboard.json','realestate/imports/latest.json'):
+              doc=json.loads(Path(path).read_text())
+              rows=doc.get('items') or doc.get('listings') or []
+              if isinstance(rows,dict): rows=list(rows.values())
+              print('\nFILE',path,'rows',len(rows))
+              for target in ids:
+                  matches=[r for r in rows if target in str(r.get('url') or '') or target==str(r.get('source_listing_id') or '')]
+                  print('ID',target,'matches',len(matches))
+                  for r in matches:
+                      print(json.dumps({k:r.get(k) for k in ('listing_id','source_listing_id','property_id','source','ward','title','address','price_yen','price_man','land_area_sqm','land_sqm','building_area_sqm','building_sqm','layout','built_year_month','built','url','active','missing_runs')},ensure_ascii=False))
+          PY
+      - name: Audit current SUUMO links and targets
         shell: bash
         run: |
           python - <<'PY'
@@ -31,7 +55,12 @@ jobs:
           suumo=[r for r in rows if r.get('source')=='SUUMO']
           by=defaultdict(list)
           for r in suumo: by[r.get('ward')].append(r)
-          target='https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20926853/'
+          targets=[
+            'https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21402366/',
+            'https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/',
+            'https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21475604/',
+            'https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/tenpo/',
+          ]
           session=requests.Session(); session.headers['User-Agent']='Mozilla/5.0'
           def check(url):
               try:
@@ -41,7 +70,7 @@ jobs:
                   return {'status':resp.status_code,'final_url':resp.url,'dead_marker':dead,'bytes':len(resp.content)}
               except Exception as e:
                   return {'status':'ERR','error':type(e).__name__+':'+str(e)}
-          report={'target':{'url':target,'plain':check(target),'tenpo':check(target.rstrip('/')+'/tenpo/')},'wards':{}}
+          report={'targets':{url:check(url) for url in targets},'wards':{}}
           random.seed(42)
           for ward,items in sorted(by.items()):
               sample=items[:15] + random.sample(items,min(15,len(items)))
@@ -54,7 +83,7 @@ jobs:
               report['wards'][ward]={'total_current':len(items),'sample_size':len(results),'ok':ok,'dead':dead,'other':len(results)-ok-dead,'results':results}
           out=Path('realestate/data/suumo_link_audit.json'); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
           print(json.dumps({k:{kk:v for kk,v in val.items() if kk!='results'} for k,val in report['wards'].items()},ensure_ascii=False))
-          print('target',report['target'])
+          print('targets',json.dumps(report['targets'],ensure_ascii=False))
           PY
       - name: Commit audit report
         run: |
