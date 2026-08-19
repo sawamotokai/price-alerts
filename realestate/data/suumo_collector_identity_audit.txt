@@ -1,0 +1,328 @@
+=== Listing identity and persistence ===
+    "築年月",
+    "築年数",
+    "構造",
+    "階数",
+    "物件名",
+    "資料請求",
+    "詳細を見る",
+]
+
+
+@dataclasses.dataclass(slots=True)
+class Listing:
+    source: str
+    source_listing_id: str
+    url: str
+    ward: str
+    title: str | None = None
+    price_yen: int | None = None
+    price_text: str | None = None
+    address: str | None = None
+    access: str | None = None
+    land_area_sqm: float | None = None
+    building_area_sqm: float | None = None
+    layout: str | None = None
+    built_year_month: str | None = None
+    broker: str | None = None
+
+    @property
+    def listing_id(self) -> str:
+        raw = f"{self.source}|{canonical_url(self.url)}"
+        return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:20]
+
+    @property
+    def property_id(self) -> str:
+        parts = [
+            normalize_for_key(self.address or ""),
+            round_key(self.land_area_sqm),
+            round_key(self.building_area_sqm),
+            normalize_for_key(self.built_year_month or ""),
+            normalize_for_key(self.layout or ""),
+        ]
+        meaningful = [p for p in parts if p]
+        if len(meaningful) < 2:
+            return f"listing:{self.listing_id}"
+        return hashlib.sha1("|".join(parts).encode("utf-8")).hexdigest()[:20]
+
+    def as_state(self) -> dict[str, Any]:
+        return {
+            "listing_id": self.listing_id,
+            "property_id": self.property_id,
+            "source": self.source,
+            "source_listing_id": self.source_listing_id,
+            "url": canonical_url(self.url),
+            "ward": self.ward,
+            "title": self.title,
+            "price_yen": self.price_yen,
+            "price_text": self.price_text,
+            "address": self.address,
+            "access": self.access,
+            "land_area_sqm": self.land_area_sqm,
+            "building_area_sqm": self.building_area_sqm,
+            "layout": self.layout,
+            "built_year_month": self.built_year_month,
+            "broker": self.broker,
+        }
+
+
+def canonical_url(url: str) -> str:
+    parsed = urlparse(url)
+    return urlunparse((parsed.scheme or "https", parsed.netloc.lower(), parsed.path, "", "", ""))
+
+
+def navigation_url(url: str) -> str:
+    """Normalize a crawl URL while preserving pagination query parameters."""
+    parsed = urlparse(url)
+    return urlunparse((parsed.scheme or "https", parsed.netloc.lower(), parsed.path, "", parsed.query, ""))
+
+
+def normalize_text(value: str | None) -> str:
+    if not value:
+        return ""
+    success = all(item.get("success") for item in ward_coverage.values())
+    return list(all_listings.values()), {
+        "source": source,
+        "success": success,
+        "wards": ward_coverage,
+        "listing_rows": len(all_listings),
+        "price_rows": sum(item.price_yen is not None for item in all_listings.values()),
+    }
+
+
+def collect_fudousan_import() -> tuple[list[Listing], dict[str, Any]]:
+    path = IMPORTS_DIR / "fudousan_japan.json"
+    if not path.exists():
+        return [], {
+            "source": "fudousan_japan",
+            "success": True,
+            "listing_rows": 0,
+            "price_rows": 0,
+            "coverage_note": "No official/manual import file present; full coverage not guaranteed.",
+        }
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        rows = payload.get("listings", []) if isinstance(payload, dict) else payload
+        listings: list[Listing] = []
+        for row in rows:
+            url = str(row.get("url") or "").strip()
+            if not url:
+                continue
+            source_id = str(row.get("source_listing_id") or hashlib.sha1(url.encode()).hexdigest()[:12])
+            listings.append(
+                Listing(
+                    source="fudousan_japan",
+                    source_listing_id=source_id,
+                    url=url,
+                    ward=str(row.get("ward") or ""),
+                    title=row.get("title"),
+                    price_yen=row.get("price_yen") or parse_price_yen(row.get("price_text")),
+                    price_text=row.get("price_text"),
+                    address=row.get("address"),
+                    access=row.get("access"),
+                    land_area_sqm=row.get("land_area_sqm"),
+                    building_area_sqm=row.get("building_area_sqm"),
+                    layout=row.get("layout"),
+                    built_year_month=row.get("built_year_month"),
+                    broker=row.get("broker"),
+                )
+            )
+        return listings, {
+            "source": "fudousan_japan",
+            "success": True,
+            "listing_rows": len(listings),
+            "price_rows": sum(item.price_yen is not None for item in listings),
+            "coverage_note": "Imported from official/manual feed; full-site coverage not guaranteed.",
+        }
+    except Exception as exc:
+        return [], {
+            "source": "fudousan_japan",
+            "success": False,
+            "listing_rows": 0,
+            "price_rows": 0,
+            "errors": [f"{type(exc).__name__}: {exc}"],
+        }
+
+
+def load_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+
+
+def write_json(path: Path, value: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    temporary.replace(path)
+
+
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    records = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            records.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return records
+
+
+def write_jsonl(path: Path, records: Iterable[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [json.dumps(item, ensure_ascii=False, sort_keys=True) for item in records]
+    content = "\n".join(lines) + ("\n" if lines else "")
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(content, encoding="utf-8")
+    temporary.replace(path)
+                    "date": OBSERVED_DATE,
+                    "observed_at": NOW.isoformat(),
+                    "listing_id": listing_id,
+                    "property_id": listing.property_id,
+                    "source": listing.source,
+                    "price_yen": listing.price_yen,
+                }
+            )
+
+    ended_count = 0
+    for listing_id, old in previous.items():
+        source = old.get("source")
+        if not source or not old.get("active", True):
+            continue
+        source_ok = bool(coverage.get(source, {}).get("success"))
+        if not source_ok or listing_id in seen_by_source.get(source, set()):
+            continue
+        missing_runs = int(old.get("missing_runs", 0)) + 1
+        updated = dict(old)
+        updated["missing_runs"] = missing_runs
+        if missing_runs >= MAX_MISSING_RUNS:
+            updated["active"] = False
+            updated["ended_at"] = NOW.isoformat()
+            ended_count += 1
+        current[listing_id] = updated
+
+    next_state = {
+        "schema_version": 2,
+        "updated_at": NOW.isoformat(),
+        "observed_date": OBSERVED_DATE,
+        "listings": current,
+        "coverage": coverage,
+    }
+    metrics = {
+        "new_count": new_count,
+        "price_changed_count": changed_count,
+        "ended_count": ended_count,
+        "active_count": sum(1 for row in current.values() if row.get("active")),
+        "total_known_count": len(current),
+    }
+    return next_state, observations, metrics
+
+
+def merge_month_observations(observations: list[dict[str, Any]]) -> None:
+    path = HISTORY_DIR / f"{MONTH_KEY}.jsonl"
+    existing = load_jsonl(path)
+    by_key = {(row.get("date"), row.get("listing_id")): row for row in existing}
+    for row in observations:
+        by_key[(row["date"], row["listing_id"])] = row
+    ordered = sorted(by_key.values(), key=lambda row: (row.get("date", ""), row.get("listing_id", "")))
+    write_jsonl(path, ordered)
+
+
+def append_run(run: dict[str, Any]) -> None:
+    path = RUNS_DIR / f"{MONTH_KEY}.jsonl"
+    rows = load_jsonl(path)
+    rows.append(run)
+    rows = sorted(rows, key=lambda row: row.get("started_at", ""))
+    write_jsonl(path, rows)
+
+
+def export_dashboard(state: dict[str, Any], latest_run: dict[str, Any]) -> None:
+    history_by_listing: dict[str, list[list[Any]]] = defaultdict(list)
+    for path in sorted(HISTORY_DIR.glob("*.jsonl")):
+        for row in load_jsonl(path):
+            listing_id = row.get("listing_id")
+            if not listing_id or row.get("price_yen") is None:
+                continue
+            history_by_listing[listing_id].append([row.get("date"), row.get("price_yen")])
+
+    listings: list[dict[str, Any]] = []
+    for listing_id, row in state.get("listings", {}).items():
+        item = dict(row)
+        history = sorted(history_by_listing.get(listing_id, []), key=lambda point: point[0] or "")
+        # Deduplicate any duplicate dates from older schemas.
+        compact = {point[0]: point[1] for point in history if point[0]}
+        item["price_history"] = [[day, compact[day]] for day in sorted(compact)]
+        first_price = item["price_history"][0][1] if item["price_history"] else None
+        current_price = item.get("price_yen")
+        if first_price and current_price is not None:
+            item["price_change_yen"] = current_price - first_price
+            item["price_change_pct"] = round((current_price - first_price) / first_price * 100, 2)
+        else:
+            item["price_change_yen"] = None
+            item["price_change_pct"] = None
+        try:
+            first_seen_date = dt.datetime.fromisoformat(item["first_seen"]).date()
+            item["observed_days"] = (NOW.date() - first_seen_date).days + 1
+        except Exception:
+            item["observed_days"] = None
+        listings.append(item)
+
+    listings.sort(
+        key=lambda item: (
+            not bool(item.get("active")),
+            item.get("ward") or "",
+            item.get("price_yen") is None,
+            item.get("price_yen") or 0,
+        )
+    )
+    active = [item for item in listings if item.get("active")]
+    summary = {
+        "active_listings": len(active),
+        "all_known_listings": len(listings),
+        "active_by_source": dict(sorted(_count_by(active, "source").items())),
+        "active_by_ward": dict(sorted(_count_by(active, "ward").items())),
+        "priced_active_listings": sum(item.get("price_yen") is not None for item in active),
+        "price_coverage_pct": round(
+            100 * sum(item.get("price_yen") is not None for item in active) / len(active), 1
+        )
+        if active
+        else 0.0,
+        "latest_new_count": latest_run.get("metrics", {}).get("new_count", 0),
+        "latest_price_changed_count": latest_run.get("metrics", {}).get("price_changed_count", 0),
+        "latest_ended_count": latest_run.get("metrics", {}).get("ended_count", 0),
+    }
+    dashboard = {
+        "schema_version": 2,
+        "generated_at": NOW.isoformat(),
+        "observed_date": OBSERVED_DATE,
+        "summary": summary,
+        "coverage": state.get("coverage", {}),
+        "latest_run": latest_run,
+        "listings": listings,
+    }
+    write_json(DASHBOARD_PATH, dashboard)
+=== target IDs across current/dashboard/latest ===
+
+FILE realestate/data/current.json rows 2252
+ID 21402366 matches 1
+{"listing_id": "cfe2b075ed19f49b44f5", "source_listing_id": "21402366", "property_id": "listing:6052825fc79b5798ca55", "source": "suumo", "ward": "品川区", "title": "【建築条件なし】品川区東大井・「大井町」駅徒歩圏内で叶える自由設計の住まい", "address": "東京都品川区東大井3", "price_yen": 85800000, "price_man": null, "land_area_sqm": null, "land_sqm": null, "building_area_sqm": null, "building_sqm": null, "layout": null, "built_year_month": null, "built": null, "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/", "active": true, "missing_runs": 0}
+ID 21475604 matches 1
+{"listing_id": "6a04cc0ca1a5cadda01f", "source_listing_id": "21475604", "property_id": "listing:cce8376ec4ca0196663c", "source": "suumo", "ward": "大田区", "title": "現地案内会開催中◆建築条件なし!◆低層エリアの閑静な住宅地◆当日ご案内も可", "address": "東京都大田区山王1", "price_yen": 85000000, "price_man": null, "land_area_sqm": null, "land_sqm": null, "building_area_sqm": null, "building_sqm": null, "layout": null, "built_year_month": null, "built": null, "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/", "active": true, "missing_runs": 0}
+
+FILE realestate/data/dashboard.json rows 1633
+ID 21402366 matches 1
+{"listing_id": "6052825fc79b5798ca55", "source_listing_id": "21402366", "property_id": "listing:6052825fc79b5798ca55", "source": "suumo", "ward": "品川区", "title": "【建築条件なし】品川区東大井・「大井町」駅徒歩圏内で叶える自由設計の住まい", "address": "東京都品川区東大井3", "price_yen": 85800000, "price_man": null, "land_area_sqm": null, "land_sqm": null, "building_area_sqm": null, "building_sqm": null, "layout": null, "built_year_month": null, "built": null, "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/", "active": true, "missing_runs": 0}
+ID 21475604 matches 1
+{"listing_id": "cce8376ec4ca0196663c", "source_listing_id": "21475604", "property_id": "listing:cce8376ec4ca0196663c", "source": "suumo", "ward": "大田区", "title": "現地案内会開催中◆建築条件なし!◆低層エリアの閑静な住宅地◆当日ご案内も可", "address": "東京都大田区山王1", "price_yen": 85000000, "price_man": null, "land_area_sqm": null, "land_sqm": null, "building_area_sqm": null, "building_sqm": null, "layout": null, "built_year_month": null, "built": null, "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/", "active": true, "missing_runs": 0}
+
+FILE realestate/imports/latest.json rows 1633
+ID 21402366 matches 1
+{"listing_id": null, "source_listing_id": null, "property_id": null, "source": "SUUMO", "ward": "品川区", "title": "【建築条件なし】品川区東大井・「大井町」駅徒歩圏内で叶える自由設計の住まい", "address": "東京都品川区東大井3", "price_yen": null, "price_man": 8580.0, "land_area_sqm": null, "land_sqm": null, "building_area_sqm": null, "building_sqm": null, "layout": null, "built_year_month": null, "built": null, "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21402366/", "active": null, "missing_runs": null}
+ID 21475604 matches 1
+{"listing_id": null, "source_listing_id": null, "property_id": null, "source": "SUUMO", "ward": "大田区", "title": "現地案内会開催中◆建築条件なし!◆低層エリアの閑静な住宅地◆当日ご案内も可", "address": "東京都大田区山王1", "price_yen": null, "price_man": 8500.0, "land_area_sqm": null, "land_sqm": null, "building_area_sqm": null, "building_sqm": null, "layout": null, "built_year_month": null, "built": null, "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21475604/", "active": null, "missing_runs": null}
