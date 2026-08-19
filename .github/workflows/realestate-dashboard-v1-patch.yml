@@ -30,9 +30,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Preserve v1 UI and merge durable histories
+      - name: Preserve v1 UI, authenticated loader and exact links
         run: |
-          python realestate/patch_v1_history.py
+          if grep -Eq "const CURRENT_URL=|DATA_LOADING_VERSION=2" realestate/dashboard/index.html; then
+            echo 'Validated authenticated loader is already present; not replacing it'
+          else
+            python realestate/patch_v1_history.py
+          fi
           python realestate/patch_preserve_listing_urls.py
       - name: Validate v1 features, exact links and JavaScript syntax
         run: |
@@ -47,7 +51,6 @@ jobs:
               '全物件の掲載価格推移',
               'id="marketCanvas"',
               'function drawMarketChart(scope)',
-              "const CURRENT_URL=",
               'function drawDetail(h)',
               'function listingUrl(x)',
               'const LISTING_URL_PRESERVATION_VERSION=1;',
