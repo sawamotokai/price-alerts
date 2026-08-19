@@ -2,6 +2,7 @@
 """Run the land-right verifier in strict mode with HOME'S URL fixes."""
 from __future__ import annotations
 
+import os
 import re
 import time
 from urllib.parse import urlparse
@@ -13,7 +14,9 @@ import enforce_freehold_v2 as verifier
 # Bump the cache version so previously cached HTTP 202/405 results are retried.
 verifier.CLASSIFIER_VERSION = 4
 verifier.STRICT = True
-verifier.UNKNOWN_DAYS = 0
+# Unknown rights remain excluded from the dashboard, but do not refetch the same
+# unresolved page every night. New/unseen listings are still checked immediately.
+verifier.UNKNOWN_DAYS = max(0, int(os.getenv("REAL_ESTATE_RIGHTS_UNKNOWN_RETRY_DAYS", "2")))
 verifier.TIMEOUT = max(verifier.TIMEOUT, 25.0)
 
 _original_canonical = verifier.canonical_dashboard_url
