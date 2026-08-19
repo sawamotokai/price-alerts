@@ -1,0 +1,53 @@
+name: Inspect SUUMO collector identity
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/inspect-suumo-collector.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Persist diagnostics
+        shell: bash
+        run: |
+          cat realestate/collector_parts/part*.b64 | base64 --decode | gzip --decompress > /tmp/collector.py
+          report=realestate/data/suumo_collector_identity_audit.txt
+          {
+            echo '=== Collector lines 85-165 ==='
+            sed -n '85,165p' /tmp/collector.py
+            echo '=== Collector lines 470-570 ==='
+            sed -n '470,570p' /tmp/collector.py
+            echo '=== Collector lines 610-735 ==='
+            sed -n '610,735p' /tmp/collector.py
+            echo '=== Target IDs ==='
+          } > "$report"
+          python - <<'PY' >> "$report"
+          import json
+          from pathlib import Path
+          ids=('21402366','21475604')
+          for path in ('realestate/data/current.json','realestate/data/dashboard.json','realestate/imports/latest.json'):
+              doc=json.loads(Path(path).read_text())
+              rows=doc.get('items') or doc.get('listings') or []
+              if isinstance(rows,dict): rows=list(rows.values())
+              print('\nFILE',path,'rows',len(rows))
+              for target in ids:
+                  matches=[r for r in rows if target in str(r.get('url') or '') or target==str(r.get('source_listing_id') or '')]
+                  print('ID',target,'matches',len(matches))
+                  for r in matches:
+                      print(json.dumps({k:r.get(k) for k in ('listing_id','source_listing_id','property_id','source','ward','title','address','price_yen','price_man','land_area_sqm','land_sqm','building_area_sqm','building_sqm','layout','built_year_month','built','url','active','missing_runs')},ensure_ascii=False))
+          PY
+      - name: Commit diagnostics
+        run: |
+          git config user.name 'suumo-inspect[bot]'
+          git config user.email 'suumo-inspect[bot]@users.noreply.github.com'
+          git add realestate/data/suumo_collector_identity_audit.txt
+          git commit -m 'Persist SUUMO collector identity diagnostics'
+          git push
