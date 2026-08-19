@@ -24,6 +24,7 @@ on:
       - 'realestate/patch_auth_failure_reporting.py'
       - 'realestate/patch_market_point_dots.py'
       - 'realestate/patch_ota_ui.py'
+      - 'realestate/patch_preserve_listing_urls.py'
       - 'realestate/requirements.txt'
       - 'realestate/imports/fudousan_japan.json'
   workflow_dispatch:
@@ -144,6 +145,24 @@ jobs:
           if discovered_sanno and not published_sanno:
               raise SystemExit(f'public Sanno 1 listings were discovered but none reached the verified snapshot: {discovered_sanno}')
 
+          # Regression checks for land records that were previously rewritten as
+          # dead /chukoikkodate/ links by the browser UI.
+          by_nc = {}
+          for item in items:
+              if item.get('source') != 'SUUMO':
+                  continue
+              match = re.search(r'/nc_(\d+)', str(item.get('url') or ''))
+              if match:
+                  by_nc[match.group(1)] = item
+          expected_urls = {
+              '21402366': '/tochi/tokyo/sc_shinagawa/nc_21402366/',
+              '21475604': '/tochi/tokyo/sc_ota/nc_21475604',
+          }
+          for nc_id, fragment in expected_urls.items():
+              item = by_nc.get(nc_id)
+              if item and fragment not in str(item.get('url') or ''):
+                  raise SystemExit(f'wrong stored SUUMO URL for {nc_id}: {item.get("url")}')
+
           anomalies = json.loads(Path('realestate/data/price_history_anomalies.json').read_text(encoding='utf-8'))
           print({
               'coverage': coverage,
@@ -173,6 +192,7 @@ jobs:
           python realestate/patch_auth_failure_reporting.py
           python realestate/patch_market_point_dots.py
           python realestate/patch_ota_ui.py
+          python realestate/patch_preserve_listing_urls.py
           python - <<'PY'
           from pathlib import Path
           import re
@@ -214,10 +234,19 @@ jobs:
               "from('listing_favorites')",
               'nswgzzvgmudtftvjogvt.supabase.co',
               'MARKET_POINT_DOTS_VERSION=2',
+              'const LISTING_URL_PRESERVATION_VERSION=1;',
           ]
           missing = [marker for marker in required if marker not in html]
           if missing:
               raise SystemExit(f'missing dashboard interaction markers: {missing}')
+
+          forbidden = [
+              'https://suumo.jp/chukoikkodate/tokyo/sc_${scope}/nc_${id}/',
+              "x.ward==='目黒区'?'meguro':'shinagawa'",
+          ]
+          leaked = [marker for marker in forbidden if marker in html]
+          if leaked:
+              raise SystemExit(f'dashboard still reconstructs SUUMO URLs: {leaked}')
 
           normalize = html.index('function normalize(')
           render = html.index('function render()')
