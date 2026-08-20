@@ -14,6 +14,9 @@ import enforce_freehold_v2 as verifier
 # Bump the cache version so previously cached HTTP 202/405 results are retried.
 verifier.CLASSIFIER_VERSION = 4
 verifier.STRICT = True
+# The base verifier predates the Ota expansion; keep the runtime scope aligned
+# with the collector and dashboard so Ota/Sanno records are not discarded.
+verifier.TARGET_WARDS = {"品川区", "目黒区", "大田区"}
 # Unknown rights remain excluded from the dashboard, but do not refetch the same
 # unresolved page every night. New/unseen listings are still checked immediately.
 # Keep at least a two-day retry interval even if an older workflow still passes 0.
@@ -22,6 +25,22 @@ verifier.TIMEOUT = max(verifier.TIMEOUT, 25.0)
 
 _original_canonical = verifier.canonical_dashboard_url
 _original_rank = verifier.record_rank
+
+
+def in_scope(record):
+    ward = str(record.get("ward") or "")
+    if ward not in verifier.TARGET_WARDS:
+        return False
+    source = str(record.get("source") or "").lower()
+    if source != "suumo":
+        return True
+    url = str(record.get("url") or "")
+    expected_scope = {
+        "品川区": "/sc_shinagawa/",
+        "目黒区": "/sc_meguro/",
+        "大田区": "/sc_ota/",
+    }[ward]
+    return expected_scope in url
 
 
 def homes_detail_url(url: str) -> str:
@@ -92,6 +111,7 @@ def fetch_one(original_url: str):
     return original_url, result
 
 
+verifier.in_scope = in_scope
 verifier.canonical_dashboard_url = canonical_dashboard_url
 verifier.record_rank = record_rank
 verifier.fetch_one = fetch_one
