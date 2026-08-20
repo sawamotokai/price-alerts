@@ -145,8 +145,6 @@ jobs:
           if discovered_sanno and not published_sanno:
               raise SystemExit(f'public Sanno 1 listings were discovered but none reached the verified snapshot: {discovered_sanno}')
 
-          # Regression checks for land records that were previously rewritten as
-          # dead /chukoikkodate/ links by the browser UI.
           by_nc = {}
           for item in items:
               if item.get('source') != 'SUUMO':
@@ -309,3 +307,5 @@ jobs:
 
           echo 'Failed to publish snapshot after 3 attempts' >&2
           exit 1
+
+# run-marker: 2026-08-20T19:50:35+09:00
