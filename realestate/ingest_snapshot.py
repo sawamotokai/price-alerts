@@ -39,7 +39,7 @@ INTERNAL_SOURCE = {
 LEASEHOLD_RE = re.compile(r"定期借地権|普通借地権|旧法借地権|新法借地権|借地権|地上権|賃借権|転借権|底地")
 FREEHOLD_RE = re.compile(r"所有権")
 HOMES_ID_RE = re.compile(r"/kodate/(b-[^/?#]+)", re.IGNORECASE)
-TARGET_WARDS = {"品川区", "目黒区"}
+TARGET_WARDS = {"品川区", "目黒区", "大田区"}
 
 
 def load_json(path: Path, default: Any) -> Any:
@@ -105,7 +105,15 @@ def canonical_url(source: str, value: Any) -> str:
 
 
 def listing_id(source: str, url: str) -> str:
-    return hashlib.sha1(f"{source}|{url}".encode()).hexdigest()[:20]
+    """Hash the collector's internal source token plus canonical URL.
+
+    Snapshots use presentation names such as ``SUUMO`` while the collector uses
+    ``suumo``. Hashing the presentation name produced a second ID for the same
+    URL after ingest, causing false new/ended churn on the next crawl.
+    """
+    canonical = canonical_source(source)
+    identity_source = INTERNAL_SOURCE.get(canonical, str(source or "").strip().lower())
+    return hashlib.sha1(f"{identity_source}|{url}".encode()).hexdigest()[:20]
 
 
 def property_id(item: dict[str, Any]) -> str:
@@ -350,158 +358,119 @@ def write_health(listings: dict[str, dict[str, Any]], observed_at: str, migratio
 
 
 def main() -> None:
-    snapshot = load_json(IMPORT, None)
-    if not snapshot:
-        raise SystemExit("missing imports/latest.json")
-    observed_at = snapshot.get("observed_at") or datetime.now().astimezone().isoformat(timespec="seconds")
+    snapshot = load_json(IMPORT, {})
+    observed_at = str(snapshot.get("observed_at") or datetime.now().astimezone().isoformat(timespec="seconds"))
     observed_day = day(observed_at)
     coverage = snapshot.get("coverage") or {}
-    incoming = snapshot.get("items") or []
+    items = snapshot.get("items") or []
 
-    current = load_json(CURRENT, {"coverage": {}, "listings": {}})
-    listings, migration = merge_existing_listings(current.get("listings") or {})
+    current_doc = load_json(CURRENT, {"listings": {}, "coverage": {}})
+    current, migration = merge_existing_listings(current_doc.get("listings") or {})
 
-    by_key = {
-        (canonical_source(record.get("source")), canonical_url(canonical_source(record.get("source")), record.get("url"))): (lid, record)
-        for lid, record in listings.items()
-        if record.get("url")
-    }
-    incoming_keys: set[tuple[str, str]] = set()
-    touched_ids: set[str] = set()
-
-    for raw in incoming:
-        if not isinstance(raw, dict):
-            continue
+    seen_by_source: dict[str, set[str]] = {source: set() for source in INTERNAL_SOURCE}
+    snapshot_ids: set[str] = set()
+    for raw in items:
         source = canonical_source(raw.get("source"))
+        if source not in INTERNAL_SOURCE:
+            continue
+        if raw.get("ward") not in TARGET_WARDS:
+            continue
         url = canonical_url(source, raw.get("url"))
-        if source not in INTERNAL_SOURCE or not url:
+        if not url:
             continue
-        key = (source, url)
-        incoming_keys.add(key)
-        old_pair = by_key.get(key)
-        if old_pair:
-            lid, record = old_pair
-        else:
-            lid = listing_id(source, url)
-            record = {
-                "listing_id": lid,
-                "property_id": property_id(raw),
-                "source": INTERNAL_SOURCE[source],
-                "url": url,
-                "first_seen": observed_at,
-                "price_history": [],
-            }
-            listings[lid] = record
-            by_key[key] = (lid, record)
-
-        touched_ids.add(lid)
-        record["listing_id"] = lid
-        record["property_id"] = record.get("property_id") or property_id(raw)
-        record["source"] = INTERNAL_SOURCE[source]
-        record["url"] = url
-        record["ward"] = raw.get("ward") if raw.get("ward") is not None else record.get("ward")
-        record["title"] = raw.get("title") if raw.get("title") is not None else record.get("title")
-        record["address"] = raw.get("address") if raw.get("address") is not None else record.get("address")
-        record["land_area_sqm"] = raw.get("land_sqm") if raw.get("land_sqm") is not None else record.get("land_area_sqm")
-        record["building_area_sqm"] = raw.get("building_sqm") if raw.get("building_sqm") is not None else record.get("building_area_sqm")
-        record["layout"] = raw.get("layout") if raw.get("layout") is not None else record.get("layout")
-        record["built_year_month"] = raw.get("built") if raw.get("built") is not None else record.get("built_year_month")
-        record["access"] = raw.get("station") if raw.get("station") is not None else record.get("access")
-        record["property_type"] = raw.get("property_type") if raw.get("property_type") is not None else record.get("property_type")
-        right_status, right_label = normalized_right(raw, record)
-        record["land_right_status"] = right_status
-        record["land_right"] = right_label
-        record["active"] = True
-        record["ended_at"] = None
-        record["missing_runs"] = 0
-        record["first_seen"] = record.get("first_seen") or observed_at
-        record["last_seen"] = observed_at
-
+        lid = listing_id(source, url)
+        snapshot_ids.add(lid)
+        seen_by_source[source].add(lid)
+        record = current.get(lid, {})
+        previous_price = record.get("price_yen")
         price_man = raw.get("price_man")
-        if isinstance(price_man, (int, float)):
-            price_yen = int(round(float(price_man) * 10000))
-            record["price_yen"] = price_yen
-            record["price_text"] = f"{float(price_man):g}万円"
-            points = [point for point in history_points(record) if point[0] != observed_day]
-            points.append([observed_day, price_yen])
-            points.sort(key=lambda point: point[0])
-            record["price_history"] = points
-            record["price_change_yen"] = price_yen - int(points[0][1]) if points else 0
+        price_yen = int(round(float(price_man) * 10000)) if isinstance(price_man, (int, float)) else previous_price
+        status, label = normalized_right(raw, record)
+        points = {point[0]: int(point[1]) for point in history_points(record)}
+        if price_yen is not None:
+            points[observed_day] = int(price_yen)
+        first_seen = record.get("first_seen") or observed_at
+        property_value = record.get("property_id") or property_id(raw)
+        record.update({
+            "listing_id": lid,
+            "property_id": property_value,
+            "source": INTERNAL_SOURCE[source],
+            "source_listing_id": record.get("source_listing_id") or raw.get("source_listing_id"),
+            "url": url,
+            "ward": raw.get("ward"),
+            "title": raw.get("title"),
+            "price_yen": price_yen,
+            "price_text": f"{float(price_man):g}万円" if isinstance(price_man, (int, float)) else record.get("price_text"),
+            "address": raw.get("address"),
+            "access": raw.get("station"),
+            "land_area_sqm": raw.get("land_sqm"),
+            "building_area_sqm": raw.get("building_sqm"),
+            "layout": raw.get("layout"),
+            "built_year_month": raw.get("built"),
+            "first_seen": first_seen,
+            "last_seen": observed_at,
+            "active": True,
+            "ended_at": None,
+            "missing_runs": 0,
+            "land_right_status": status,
+            "land_right": label,
+            "price_history": [[point_day, value] for point_day, value in sorted(points.items())],
+        })
+        if record["price_history"] and price_yen is not None:
+            record["price_change_yen"] = int(price_yen) - int(record["price_history"][0][1])
+        current[lid] = record
 
-            history_path = HISTORY / f"{lid}.json"
-            history = load_json(history_path, {"id": lid, "property_id": record["property_id"], "series": {}})
-            history["id"] = lid
-            history["property_id"] = record["property_id"]
-            series = history.setdefault("series", {})
-            old_points = [
-                point for point in series.get(source, [])
-                if isinstance(point, dict) and str(point.get("date") or "")[:10] != observed_day
-            ]
-            old_points.append({"date": observed_day, "price_man": float(price_man)})
-            old_points.sort(key=lambda point: point.get("date", ""))
-            series[source] = old_points
-            history["updated_at"] = observed_at
-            dump_json(history_path, history)
+        history_document, _loaded = merge_history_documents(
+            lid,
+            str(property_value),
+            source,
+            [lid],
+            record["price_history"],
+        )
+        if history_document["series"]:
+            dump_json(HISTORY / f"{lid}.json", history_document)
 
-    ended = load_json(ENDED, {"items": []})
-    ended_items = ended.get("items", [])
-    ended_keys = {(item.get("source"), item.get("url"), item.get("ended_on")) for item in ended_items}
-    ended_this_run = 0
-
-    for lid, record in listings.items():
-        if lid in touched_ids or record.get("active") is False:
-            continue
-        if str(record.get("land_right_status") or "").lower() == "leasehold":
+    for lid, record in current.items():
+        if record.get("active") is False:
             continue
         source = canonical_source(record.get("source"))
-        if not bool(coverage.get(source, False)):
+        if source not in INTERNAL_SOURCE:
             continue
-        key = (source, canonical_url(source, record.get("url")))
-        if key in incoming_keys:
+        if coverage.get(source) is not True:
+            continue
+        if lid in seen_by_source[source]:
             continue
         record["active"] = False
         record["ended_at"] = observed_at
         record["missing_runs"] = 0
-        ended_key = (source, record.get("url"), observed_day)
-        if ended_key not in ended_keys:
-            ended_item = {
-                "id": lid,
-                "property_id": record.get("property_id"),
-                "source": source,
-                "url": record.get("url"),
-                "ward": record.get("ward"),
-                "title": record.get("title"),
-                "price_man": (float(record.get("price_yen")) / 10000) if isinstance(record.get("price_yen"), (int, float)) else None,
-                "address": record.get("address"),
-                "land_sqm": record.get("land_area_sqm"),
-                "building_sqm": record.get("building_area_sqm"),
-                "layout": record.get("layout"),
-                "built": record.get("built_year_month"),
-                "station": record.get("access"),
-                "property_type": record.get("property_type"),
-                "land_right_status": record.get("land_right_status"),
-                "land_right": record.get("land_right"),
-                "status": "listing-ended",
-                "ended_on": observed_day,
-                "ended_observed_at": observed_at,
-            }
-            ended_items.append(ended_item)
-            ended_keys.add(ended_key)
-            ended_this_run += 1
 
-    current["listings"] = listings
-    current["ingest_snapshot"] = {
-        "observed_at": observed_at,
-        "coverage": coverage,
-        "incoming_count": len(incoming),
-        "ended_this_run": ended_this_run,
-        "canonicalization": migration,
-        "ingested_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+    current_doc["listings"] = current
+    current_doc["coverage"] = {
+        INTERNAL_SOURCE[source]: {
+            "success": bool(coverage.get(source)),
+            "source": INTERNAL_SOURCE[source],
+            "coverage_note": "Imported from validated nightly snapshot",
+        }
+        for source in INTERNAL_SOURCE
     }
-    dump_json(CURRENT, current)
-    dump_json(ENDED, {"updated_at": observed_at, "items": ended_items})
-    write_health(listings, observed_at, migration)
-    print(json.dumps(current["ingest_snapshot"], ensure_ascii=False))
+    current_doc["updated_at"] = observed_at
+    current_doc["observed_date"] = observed_day
+    current_doc.setdefault("latest_run", {})["completed_at"] = observed_at
+    current_doc["ingest_migration"] = migration
+    dump_json(CURRENT, current_doc)
+
+    ended_rows = [dict(record) for record in current.values() if record.get("active") is False]
+    ended_rows.sort(key=lambda record: str(record.get("ended_at") or ""), reverse=True)
+    dump_json(ENDED, {"generated_at": datetime.now().astimezone().isoformat(timespec="seconds"), "listings": ended_rows})
+    write_health(current, observed_at, migration)
+    print(json.dumps({
+        "observed_at": observed_at,
+        "snapshot_items": len(items),
+        "snapshot_ids": len(snapshot_ids),
+        "current_records": len(current),
+        "active_records": sum(record.get("active") is not False for record in current.values()),
+        "migration": migration,
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":
