@@ -44,13 +44,20 @@ s = re.sub(r'^MAX_MISSING_RUNS\s*=.*$', 'MAX_MISSING_RUNS = 1', s, flags=re.M)
 # which polluted the dashboard. Require the parsed physical address to match
 # the ward currently being crawled. If the address cannot be parsed, skip it
 # rather than publishing a potentially wrong/dead record.
+#
+# Treat a missing trailing slash as the same stable SUUMO detail URL. Older
+# persisted records use the slash form, while current index hrefs can omit it.
+# Normalizing only this delimiter preserves the opaque category/ward/tenpo path
+# and prevents false new/ended churn without reconstructing listing URLs.
 old_listing_parse = '''        listing = parse_common_fields(source, match.group(1), absolute, ward, anchor)
         # Require a real individual URL and at least one useful attribute.
         if not any((listing.title, listing.price_yen, listing.address)):
             continue
         by_url[absolute] = listing
 '''
-new_listing_parse = '''        listing = parse_common_fields(source, match.group(1), absolute, ward, anchor)
+new_listing_parse = '''        if source == "suumo":
+            absolute = absolute.rstrip("/") + "/"
+        listing = parse_common_fields(source, match.group(1), absolute, ward, anchor)
         # Require a real individual URL and at least one useful attribute.
         if not any((listing.title, listing.price_yen, listing.address)):
             continue
@@ -60,7 +67,7 @@ new_listing_parse = '''        listing = parse_common_fields(source, match.group
             continue
         by_url[absolute] = listing
 '''
-s = replace_required(s, old_listing_parse, new_listing_parse, "SUUMO physical ward validation")
+s = replace_required(s, old_listing_parse, new_listing_parse, "SUUMO stable URL and physical ward validation")
 
 old_loop = '''    for ward, base_url in SOURCE_CONFIGS[source]["wards"].items():
         pages, coverage = crawl_index_pages(fetcher, base_url, source)
@@ -109,4 +116,4 @@ s = re.sub(r'^WORKERS\s*=.*$', 'WORKERS = 8', s, flags=re.M)
 s = re.sub(r'^TIMEOUT\s*=.*$', 'TIMEOUT = 15.0', s, flags=re.M)
 freehold.write_text(s, encoding="utf-8")
 
-print("Ota + SUUMO land runtime scope patch applied with strict ward validation and one-run stale removal")
+print("Ota + SUUMO land runtime scope patch applied with stable SUUMO URLs, strict ward validation and one-run stale removal")
