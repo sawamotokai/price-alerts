@@ -8,6 +8,7 @@ on:
       - 'realestate/ingest_snapshot.py'
       - 'realestate/repair_daily_history.py'
       - 'realestate/validate_price_changes.py'
+      - 'realestate/enforce_quarantined_price_metrics.py'
       - 'realestate/imports/latest.json'
   workflow_run:
     workflows: ['Real-estate nightly collector']
@@ -41,6 +42,8 @@ jobs:
           REAL_ESTATE_MAX_UNCONFIRMED_PRICE_CHANGE_PCT: '0.35'
           REAL_ESTATE_MIN_PRICE_REGIME_OBSERVATIONS: '2'
         run: python realestate/validate_price_changes.py
+      - name: Keep quarantined price changes out of decision metrics
+        run: python realestate/enforce_quarantined_price_metrics.py
       - name: Validate durable and dashboard-safe price series
         run: |
           python - <<'PY'
