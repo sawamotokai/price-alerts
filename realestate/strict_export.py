@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -24,6 +25,10 @@ SOURCE_MAP = {
     "adcast": "ADCAST",
     "ad-cast.info": "ADCAST",
 }
+SUUMO_DETAIL_RE = re.compile(
+    r"^https://suumo\.jp/(?:chukoikkodate|tochi)/tokyo/"
+    r"sc_(?:shinagawa|meguro|ota)/nc_\d+(?:/tenpo)?/?$"
+)
 
 
 def load(path: Path, default: Any) -> Any:
@@ -51,6 +56,14 @@ def complete(value: Any) -> bool:
 
 def canonical_source(value: Any) -> str:
     return SOURCE_MAP.get(str(value or "").strip().lower(), "")
+
+
+def exported_url(source: str, raw: Any) -> str:
+    """Keep source identity stable while making exported SUUMO detail URLs canonical."""
+    url = str(raw or "").strip()
+    if source == "SUUMO" and SUUMO_DETAIL_RE.fullmatch(url):
+        return url.rstrip("/") + "/"
+    return url
 
 
 def validated_values(record: dict[str, Any]) -> list[int]:
@@ -111,10 +124,11 @@ def main() -> None:
         if record.get("active") is False or record.get("land_right_status") != "freehold":
             continue
         source = canonical_source(record.get("source"))
-        url = str(record.get("url") or "")
-        if not source or not url or (source, url) in seen:
+        raw_url = str(record.get("url") or "")
+        if not source or not raw_url or (source, raw_url) in seen:
             continue
-        seen.add((source, url))
+        seen.add((source, raw_url))
+        url = exported_url(source, raw_url)
         price_yen = record.get("price_yen")
         price_man = round(float(price_yen) / 10000, 4) if isinstance(price_yen, (int, float)) else None
         ward = record.get("ward")
