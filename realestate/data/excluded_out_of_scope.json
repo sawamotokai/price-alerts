@@ -1,345 +1,7 @@
 {
-  "count": 24,
-  "generated_at": "2026-08-22T11:10:29.238036+00:00",
+  "count": 5,
+  "generated_at": "2026-08-23T10:43:32.612421+00:00",
   "items": [
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.422857+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "234df9262bc91f229912",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": 167200000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          42800000
-        ],
-        [
-          "2026-08-18",
-          210000000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          210000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "21000万円",
-      "price_yen": 210000000,
-      "property_id": "listing:a3a56f452de8b85f4efc",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21215777",
-      "title": "戸越銀座1億3800万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21215777/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.432295+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "27086317a85b90556595",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": 54800000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          95000000
-        ],
-        [
-          "2026-08-18",
-          149800000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          149800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "14980万円",
-      "price_yen": 149800000,
-      "property_id": "listing:0ff09100108d7820eafa",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21008692",
-      "title": "戸越公園1億2000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21008692/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.432320+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "38b15a8e876179817ddb",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": -143000000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          225000000
-        ],
-        [
-          "2026-08-18",
-          82000000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          82000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "8200万円",
-      "price_yen": 82000000,
-      "property_id": "listing:c1ff618fd96ae89bd06a",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "20730867",
-      "title": "立会川2億2500万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20730867/",
-      "ward": "大田区"
-    },
-    {
-      "access": "東急東横線「中目黒」徒歩10分",
-      "active": false,
-      "address": "順(昇順)",
-      "broker": "(株)アップタウン自由が丘店",
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.433198+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "38ed56c602e4247aff5a",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          168000000
-        ],
-        [
-          "2026-08-18",
-          168000000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          168000000
-        ],
-        [
-          "2026-08-18",
-          168000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "が安い順",
-      "price_yen": 168000000,
-      "property_id": "listing:557b81097973429691f6",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "20745629",
-      "title": "目黒1億1000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20745629/",
-      "ward": "目黒区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.420387+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "3b60e1aea5849ec6de72",
-      "missing_runs": 1,
-      "price_change_status": "confirmed",
-      "price_change_yen": 10500000,
-      "price_change_yen_validated": 10500000,
-      "price_history": [
-        [
-          "2026-08-17",
-          74300000
-        ],
-        [
-          "2026-08-18",
-          84800000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          74300000
-        ],
-        [
-          "2026-08-18",
-          84800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "8480万円",
-      "price_yen": 84800000,
-      "property_id": "listing:84a1b15c78243a2ab9fe",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "77838990",
-      "title": "大崎9980万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_77838990/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.425118+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "449403fede5cd5a1af7e",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": -148300000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          185000000
-        ],
-        [
-          "2026-08-18",
-          36700000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          36700000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "3670万円",
-      "price_yen": 36700000,
-      "property_id": "listing:eadacb70e8f2325a94d2",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21011452",
-      "title": "目黒1億7500万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21011452/",
-      "ward": "大田区"
-    },
     {
       "access": null,
       "active": false,
@@ -355,7 +17,7 @@
       "land_right_status": "freehold",
       "last_seen": "2026-08-18T05:11:11+00:00",
       "layout": null,
-      "listing_id": "5cbbb230297af54ce41e",
+      "listing_id": "0f091f0cfcb5ff1c9925",
       "missing_runs": 1,
       "price_change_status": "confirmed",
       "price_change_yen": 7000000,
@@ -386,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
+        "validated_at": "2026-08-22T11:18:17+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -398,174 +60,6 @@
       "title": "祐天寺3億9800万円 新着",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21484850/",
       "ward": "大田区"
-    },
-    {
-      "access": "東急東横線「中目黒」徒歩10分",
-      "active": false,
-      "address": "順(昇順)",
-      "broker": "(株)目黒営業センター",
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "賃借権",
-      "land_right_checked_at": "2026-08-18T05:15:36.427408+00:00",
-      "land_right_status": "leasehold",
-      "last_seen": "2026-08-18T14:07:59.027165+09:00",
-      "layout": null,
-      "listing_id": "6e4731b36aeae76b47a4",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          145000000
-        ],
-        [
-          "2026-08-18",
-          145000000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          145000000
-        ],
-        [
-          "2026-08-18",
-          145000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "が安い順",
-      "price_yen": 145000000,
-      "property_id": "listing:362d6685da9efb277bd3",
-      "source": "suumo",
-      "source_listing_id": "21235318",
-      "title": "旗の台1億6000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21235318/",
-      "ward": "目黒区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.417738+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "6ec05c1557ab7ba2145a",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": -113200000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          210000000
-        ],
-        [
-          "2026-08-18",
-          96800000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          96800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "9680万円",
-      "price_yen": 96800000,
-      "property_id": "listing:ee5b493208e0f12ac349",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "20916807",
-      "title": "学芸大学1億550万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20916807/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.420293+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "72f1b62d7451005652da",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": -85800000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          173800000
-        ],
-        [
-          "2026-08-18",
-          88000000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          88000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "8800万円",
-      "price_yen": 88000000,
-      "property_id": "listing:fde5f8666f7187cd1e74",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21474562",
-      "title": "大崎広小路8980万円 建築条件付土地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21474562/",
-      "ward": "目黒区"
     },
     {
       "access": null,
@@ -582,7 +76,7 @@
       "land_right_status": "freehold",
       "last_seen": "2026-08-18T05:11:11+00:00",
       "layout": null,
-      "listing_id": "838d1c7e7009aa95f2dd",
+      "listing_id": "9334d80e8cd1cffb23d3",
       "missing_runs": 1,
       "price_change_status": "quarantined-unconfirmed-large-change",
       "price_change_yen": 190200000,
@@ -609,7 +103,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
+        "validated_at": "2026-08-22T11:18:17+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -633,479 +127,11 @@
       "first_seen": "2026-08-17T10:12:37.218834+09:00",
       "land_area_sqm": null,
       "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.424056+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "8712db3b937cc9089ed6",
-      "missing_runs": 1,
-      "price_change_status": "confirmed",
-      "price_change_yen": -18000000,
-      "price_change_yen_validated": -18000000,
-      "price_history": [
-        [
-          "2026-08-17",
-          114800000
-        ],
-        [
-          "2026-08-18",
-          96800000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          114800000
-        ],
-        [
-          "2026-08-18",
-          96800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "9680万円",
-      "price_yen": 96800000,
-      "property_id": "listing:ee490a4ff2bddc1010b1",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21483109",
-      "title": "大岡山9680万円 新着 建築条件付土地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21483109/",
-      "ward": "大田区"
-    },
-    {
-      "access": "東急東横線「田園調布」徒歩12分",
-      "active": false,
-      "address": "順(昇順)",
-      "broker": "(株)エスケーホームプロパティ",
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.432750+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "890844e3c082f29632fb",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          185000000
-        ],
-        [
-          "2026-08-18",
-          185000000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          185000000
-        ],
-        [
-          "2026-08-18",
-          185000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "が安い順",
-      "price_yen": 185000000,
-      "property_id": "listing:de88f56f08f7f144b252",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21269457",
-      "title": "不動前1億2980万円 建築条件付土地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21269457/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.425841+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "89ae7e624bc20c6bbffe",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          39800000
-        ],
-        [
-          "2026-08-18",
-          39800000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          39800000
-        ],
-        [
-          "2026-08-18",
-          39800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "3980万円",
-      "price_yen": 39800000,
-      "property_id": "listing:449333f61ea157c6b339",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21442008",
-      "title": "都立大学3億9200万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21442008/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.432457+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "b35e1efb241e34000a96",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": -182200000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          210000000
-        ],
-        [
-          "2026-08-18",
-          27800000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          27800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "2780万円",
-      "price_yen": 27800000,
-      "property_id": "listing:216e5b558c8d960f6896",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21323167",
-      "title": "荏原中延5億5000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21323167/",
-      "ward": "大田区"
-    },
-    {
-      "access": "東急東横線「中目黒」徒歩10分",
-      "active": false,
-      "address": "順(昇順)",
-      "broker": "(株)目黒営業センター",
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.426525+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "b5de0e5c0fd3c92a3a88",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          139800000
-        ],
-        [
-          "2026-08-18",
-          139800000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          139800000
-        ],
-        [
-          "2026-08-18",
-          139800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "13980万円",
-      "price_yen": 139800000,
-      "property_id": "listing:8d7ef207f159838a472f",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "78381738",
-      "title": "武蔵小山1億4980万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78381738/",
-      "ward": "目黒区"
-    },
-    {
-      "access": "東急東横線「中目黒」徒歩10分",
-      "active": false,
-      "address": "順(昇順)",
-      "broker": "(株)アップタウン自由が丘店",
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.428187+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "b75062d0687a2be2c06e",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          88000000
-        ],
-        [
-          "2026-08-18",
-          88000000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          88000000
-        ],
-        [
-          "2026-08-18",
-          88000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "8800万円",
-      "price_yen": 88000000,
-      "property_id": "listing:d23b5a29dfa2862f5863",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "78678747",
-      "title": "中延1億3980万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78678747/",
-      "ward": "目黒区"
-    },
-    {
-      "access": "東急東横線「中目黒」徒歩10分",
-      "active": false,
-      "address": "順(昇順)",
-      "broker": "(株)アップタウン自由が丘店",
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.423986+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "bac6e0757502c127d764",
-      "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          115800000
-        ],
-        [
-          "2026-08-18",
-          115800000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          115800000
-        ],
-        [
-          "2026-08-18",
-          115800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "11580万円",
-      "price_yen": 115800000,
-      "property_id": "listing:92ee290b6af22bd00791",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "20764365",
-      "title": "目黒1億2000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20764365/",
-      "ward": "目黒区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.420419+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "bcdb3311c58f4ae459ef",
-      "missing_runs": 1,
-      "price_change_status": "confirmed",
-      "price_change_yen": -17000000,
-      "price_change_yen_validated": -17000000,
-      "price_history": [
-        [
-          "2026-08-17",
-          665000000
-        ],
-        [
-          "2026-08-18",
-          648000000
-        ]
-      ],
-      "price_history_anomaly_count": 0,
-      "price_history_validated": [
-        [
-          "2026-08-17",
-          665000000
-        ],
-        [
-          "2026-08-18",
-          648000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 0,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
-      },
-      "price_text": "64800万円",
-      "price_yen": 648000000,
-      "property_id": "listing:7e7d79c039809cb40912",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "78131521",
-      "title": "学芸大学6億4800万円 建築条件付土地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_78131521/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
       "land_right_checked_at": "2026-08-18T05:15:36.417555+00:00",
       "land_right_status": "freehold",
       "last_seen": "2026-08-18T05:11:11+00:00",
       "layout": null,
-      "listing_id": "bdab1bf4dbc2d127868c",
+      "listing_id": "a267a27a01869bf283f1",
       "missing_runs": 1,
       "price_change_status": "unchanged",
       "price_change_yen": 0,
@@ -1136,7 +162,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
+        "validated_at": "2026-08-22T11:18:17+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -1160,121 +186,11 @@
       "first_seen": "2026-08-17T10:12:37.218834+09:00",
       "land_area_sqm": null,
       "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.431265+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "c620170002f66b933250",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": 298200000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          49800000
-        ],
-        [
-          "2026-08-18",
-          348000000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          348000000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "34800万円",
-      "price_yen": 348000000,
-      "property_id": "listing:26a33abc949759e50aca",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21088727",
-      "title": "目黒1億1000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21088727/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.420438+00:00",
-      "land_right_status": "freehold",
-      "last_seen": "2026-08-18T05:11:11+00:00",
-      "layout": null,
-      "listing_id": "cfcd6e3654666e6978c9",
-      "missing_runs": 1,
-      "price_change_status": "quarantined-unconfirmed-large-change",
-      "price_change_yen": -85200000,
-      "price_change_yen_validated": 0,
-      "price_history": [
-        [
-          "2026-08-17",
-          145000000
-        ],
-        [
-          "2026-08-18",
-          59800000
-        ]
-      ],
-      "price_history_anomaly_count": 1,
-      "price_history_validated": [
-        [
-          "2026-08-18",
-          59800000
-        ]
-      ],
-      "price_history_validation": {
-        "anomaly_count": 1,
-        "max_unconfirmed_change_pct": 0.35,
-        "min_regime_observations": 2,
-        "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 1
-      },
-      "price_text": "5980万円",
-      "price_yen": 59800000,
-      "property_id": "listing:90f97296f5773822c953",
-      "property_type": null,
-      "source": "suumo",
-      "source_listing_id": "21415979",
-      "title": "不動前1億2980万円 建築条件付土地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21415979/",
-      "ward": "大田区"
-    },
-    {
-      "access": null,
-      "active": false,
-      "address": null,
-      "broker": null,
-      "building_area_sqm": null,
-      "built_year_month": null,
-      "ended_at": "2026-08-22T20:02:07.246926+09:00",
-      "first_seen": "2026-08-17T10:12:37.218834+09:00",
-      "land_area_sqm": null,
-      "land_right": "所有権",
       "land_right_checked_at": "2026-08-18T05:15:36.426200+00:00",
       "land_right_status": "freehold",
       "last_seen": "2026-08-18T05:11:11+00:00",
       "layout": null,
-      "listing_id": "dc34272de30e7b2bfe0d",
+      "listing_id": "f85d89819daef796bb31",
       "missing_runs": 1,
       "price_change_status": "confirmed",
       "price_change_yen": -3100000,
@@ -1305,7 +221,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
+        "validated_at": "2026-08-22T11:18:17+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -1329,53 +245,49 @@
       "first_seen": "2026-08-17T10:12:37.218834+09:00",
       "land_area_sqm": null,
       "land_right": "所有権",
-      "land_right_checked_at": "2026-08-18T05:15:36.420374+00:00",
+      "land_right_checked_at": "2026-08-18T05:15:36.420293+00:00",
       "land_right_status": "freehold",
       "last_seen": "2026-08-18T05:11:11+00:00",
       "layout": null,
-      "listing_id": "f32f7e3fc76bf71f7522",
+      "listing_id": "fde5f8666f7187cd1e74",
       "missing_runs": 1,
-      "price_change_status": "unchanged",
-      "price_change_yen": 0,
+      "price_change_status": "quarantined-unconfirmed-large-change",
+      "price_change_yen": -85800000,
       "price_change_yen_validated": 0,
       "price_history": [
         [
           "2026-08-17",
-          69800000
+          173800000
         ],
         [
           "2026-08-18",
-          69800000
+          88000000
         ]
       ],
-      "price_history_anomaly_count": 0,
+      "price_history_anomaly_count": 1,
       "price_history_validated": [
         [
-          "2026-08-17",
-          69800000
-        ],
-        [
           "2026-08-18",
-          69800000
+          88000000
         ]
       ],
       "price_history_validation": {
-        "anomaly_count": 0,
+        "anomaly_count": 1,
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-18T05:15:54+00:00",
-        "validated_point_count": 2
+        "validated_at": "2026-08-22T11:18:17+00:00",
+        "validated_point_count": 1
       },
-      "price_text": "6980万円",
-      "price_yen": 69800000,
-      "property_id": "listing:b4bd5f34b28313cb0237",
+      "price_text": "8800万円",
+      "price_yen": 88000000,
+      "property_id": "listing:fde5f8666f7187cd1e74",
       "property_type": null,
       "source": "suumo",
-      "source_listing_id": "21417927",
-      "title": "荏原町6980万円 建築条件付土地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21417927/",
-      "ward": "大田区"
+      "source_listing_id": "21474562",
+      "title": "大崎広小路8980万円 建築条件付土地",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21474562/",
+      "ward": "目黒区"
     }
   ]
 }
