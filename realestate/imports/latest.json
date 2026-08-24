@@ -743,22 +743,6 @@
       "ward": "品川区"
     },
     {
-      "address": "京急本線 立会川駅 徒歩11分 東京都品川区大井6丁目14-11 建築年 (築年数) 2004年10月(築22年) 現況 空家 主要採光面 南 掲載画像17枚",
-      "building_sqm": 79.28,
-      "built": "2004-10",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 66.17,
-      "layout": "3LDK",
-      "price_man": 10980.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/kodate/b-1518310000480/",
-      "ward": "品川区"
-    },
-    {
       "address": "東急大井町線 旗の台駅 徒歩6分 東京都品川区旗の台1丁目 建築年 (築年数) 2001年12月(築25年) 現況 居住中 主要採光面 南 掲載画像14枚",
       "building_sqm": 126.62,
       "built": "2001-12",
@@ -823,17 +807,17 @@
       "ward": "品川区"
     },
     {
-      "address": "東急目黒線 洗足駅 徒歩3分 東京都品川区小山7丁目 建築年 (築年数) 2024年10月(築2年) 現況 居住中 主要採光面 西 掲載画像17枚",
-      "building_sqm": 95.84,
-      "built": "2024-10",
+      "address": "東京都品川区小山7丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 98.0,
-      "layout": "3LDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 17980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
+      "station": "東急目黒線 洗足駅 徒歩3分 土地面積/間取り 98m2 3LDK",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1130740003661/",
       "ward": "品川区"
@@ -903,35 +887,19 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区大井5丁目",
-      "building_sqm": null,
-      "built": null,
+      "address": "京急本線 立会川駅 徒歩13分 東京都品川区大井5丁目 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 南東 掲載画像21枚",
+      "building_sqm": 227.5,
+      "built": "2017-11",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 132.23,
+      "layout": "5LDK",
       "price_man": 37800.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "JR京浜東北・根岸線 大井町駅 徒歩14分 土地面積/間取り 132.23m2 5LDK",
-      "title": "戸建 品川区大井5丁目",
-      "url": "https://www.homes.co.jp/kodate/b-35005020002292/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東急目黒線 洗足駅 徒歩5分 東京都品川区小山7丁目 建築年 (築年数) 1997年06月(築30年) 現況 居住中 主要採光面 - 掲載画像27枚",
-      "building_sqm": 491.82,
-      "built": "1997-06",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 356.3,
-      "layout": "3LDK",
-      "price_man": 90000.0,
-      "property_type": null,
-      "source": "HOME'S",
       "station": null,
-      "title": "中古一戸建て 小山七丁目戸建",
-      "url": "https://www.homes.co.jp/kodate/b-37052900000184/",
+      "title": "中古一戸建て 戸建 品川区大井5丁目",
+      "url": "https://www.homes.co.jp/kodate/b-35005020002292/",
       "ward": "品川区"
     },
     {
@@ -1138,7 +1106,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "JR横須賀線「西大井」徒歩10分",
-      "title": "■洗練された上質な空間Luxsisシリーズ■",
+      "title": "西大井5(西大井駅) 5490万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20934288/",
       "ward": "品川区"
     },
@@ -1271,19 +1239,19 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区小山4",
+      "address": "東京都品川区大井5",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
       "layout": null,
-      "price_man": 6480.0,
+      "price_man": 6780.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急目黒線「武蔵小山」徒歩4分",
-      "title": "小山4(武蔵小山駅) 6480万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78229550/",
+      "station": "湘南新宿ライン宇須「西大井」徒歩10分",
+      "title": "■建築条件なし!ハウスメーカーご紹介可能です ■更地渡し ■角地",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21543768/",
       "ward": "品川区"
     },
     {
@@ -1300,22 +1268,6 @@
       "station": "東急目黒線「西小山」徒歩4分",
       "title": "小山6(西小山駅) 6880万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78395174/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区東五反田3",
-      "building_sqm": null,
-      "built": "1991-03",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "4LDK",
-      "price_man": 6980.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "都営浅草線「高輪台」徒歩5分",
-      "title": "東五反田3(高輪台駅) 6980万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21464408/",
       "ward": "品川区"
     },
     {
@@ -1426,24 +1378,8 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急池上線「荏原中延」徒歩6分",
-      "title": "3駅3路線利用可。品川区中延、駅6分の資産性ある角地",
+      "title": "北東角地・容積率184%で建物面積25坪+ルーフバルコニーが狙える土地",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21168006/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区東大井3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 7430.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR京浜東北線「大井町」徒歩13分",
-      "title": "東大井3(大井町駅) 7430万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20875555/",
       "ward": "品川区"
     },
     {
@@ -1459,7 +1395,7 @@
       "source": "SUUMO",
       "station": "京急本線「立会川」徒歩3分",
       "title": "☆京急「立会川」駅3分|品川区東大井の建築条件付売地☆",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21520981/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21542773/",
       "ward": "品川区"
     },
     {
@@ -1506,7 +1442,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "都営浅草線「馬込」徒歩6分",
-      "title": "JR線を含む5路線3駅利用可能な立地、南西側4.5m公道に面する宅地分譲",
+      "title": "5路線3駅を生活圏として使い分けられる便利立地、広々南西4.5m公道面",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20373557/",
       "ward": "品川区"
     },
@@ -1620,6 +1556,22 @@
       "station": "京急本線「新馬場」徒歩5分",
       "title": "◆◇新馬場駅徒歩5分♪大崎駅・大井町駅も徒歩圏の立地♪◇◆",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78847621/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区西大井1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 7990.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR横須賀線「西大井」徒歩7分",
+      "title": "落ち着きのある閑静な住環境で始める、寛ぎの暮らし!理想のマイホームを",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21541776/",
       "ward": "品川区"
     },
     {
@@ -2231,6 +2183,22 @@
       "ward": "品川区"
     },
     {
+      "address": "東京都品川区西中延1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 9880.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急池上線「荏原中延」徒歩7分",
+      "title": "■全2区画|総額13480万円~ 都心への軽快なアクセスを叶える邸宅",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21536033/",
+      "ward": "品川区"
+    },
+    {
       "address": "東京都品川区東品川1",
       "building_sqm": null,
       "built": "2019-01",
@@ -2322,12 +2290,12 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急池上線「大崎広小路」徒歩10分",
-      "title": "建築条件なしのため自由なプランで建築可能!2沿線2駅利用可能な宅地です。",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20709231/",
+      "title": "大崎3(大崎広小路駅) 9980万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21282692/",
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区大崎3",
+      "address": "東京都品川区小山6",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -2337,9 +2305,9 @@
       "price_man": 9980.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急池上線「大崎広小路」徒歩10分",
-      "title": "大崎3(大崎広小路駅) 9980万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21282692/",
+      "station": "東急目黒線「西小山」徒歩1分",
+      "title": "◆東急目黒線西小山駅徒歩30秒の売地です!空渡し!",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_77652745/",
       "ward": "品川区"
     },
     {
@@ -2567,6 +2535,22 @@
       "ward": "品川区"
     },
     {
+      "address": "東京都品川区豊町2",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 10780.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急大井町線「下神明」徒歩5分",
+      "title": "《現地見学予約受付中♪》◇南向き×整形地×『下神明』駅徒歩5分◇",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21479142/",
+      "ward": "品川区"
+    },
+    {
       "address": "東京都品川区平塚3",
       "building_sqm": null,
       "built": "2012-11",
@@ -2692,22 +2676,6 @@
       "station": "都営三田線「目黒」徒歩8分",
       "title": "「目黒」駅徒歩約7分土地88.52平米(26.77坪)第三日野小学校",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20745629/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区上大崎3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 11000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR山手線「目黒」徒歩7分",
-      "title": "上大崎3(目黒駅) 1億1000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20751952/",
       "ward": "品川区"
     },
     {
@@ -2882,6 +2850,38 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "JR山手線「目黒」徒歩7分",
+      "title": "上大崎3(目黒駅) 1億1000万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21546183/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区上大崎3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 11000.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "都営三田線「目黒」徒歩7分",
+      "title": "上大崎3(目黒駅) 1億1000万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21547714/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区上大崎3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 11000.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR山手線「目黒」徒歩7分",
       "title": "■花房山の高台♪■西側隣地より高台のため日当たり眺望良好♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_79109850/",
       "ward": "品川区"
@@ -2900,22 +2900,6 @@
       "station": "東急大井町線「荏原町」徒歩6分",
       "title": "西中延3(荏原町駅) 1億1100万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20033682/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区東中延1",
-      "building_sqm": null,
-      "built": "2014-07",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "2LDK+2S(納戸)",
-      "price_man": 11380.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急池上線「荏原中延」徒歩4分",
-      "title": "東中延1(荏原中延駅) 1億1380万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20989171/",
       "ward": "品川区"
     },
     {
@@ -3092,22 +3076,6 @@
       "station": "東急大井町線「旗の台」徒歩6分",
       "title": "品川区旗の台1丁目戸建 高台立地 ◆支持中文 ◆English OK",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21434043/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区上大崎3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 12000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR山手線「目黒」徒歩7分",
-      "title": "上大崎3(目黒駅) 1億2000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20743058/",
       "ward": "品川区"
     },
     {
@@ -3367,6 +3335,22 @@
       "ward": "品川区"
     },
     {
+      "address": "東京都品川区大崎3-12-35",
+      "building_sqm": null,
+      "built": "2010-11",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "2LDK+2S(納戸)",
+      "price_man": 12800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR山手線「大崎」徒歩8分",
+      "title": "大崎3(大崎駅) 1億2800万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21173826/",
+      "ward": "品川区"
+    },
+    {
       "address": "東京都品川区荏原6",
       "building_sqm": null,
       "built": "2003-09",
@@ -3396,6 +3380,22 @@
       "station": "東急目黒線「西小山」徒歩6分",
       "title": "荏原6(西小山駅) 1億2800万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21537762/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区荏原6",
+      "building_sqm": null,
+      "built": "2003-09",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "2LDK+S(納戸)",
+      "price_man": 12800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急目黒線「西小山」徒歩6分",
+      "title": "荏原6(西小山駅) 1億2800万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21542612/",
       "ward": "品川区"
     },
     {
@@ -3524,6 +3524,22 @@
       "station": "東急池上線「荏原中延」徒歩3分",
       "title": "東中延2(荏原中延駅) 1億2800万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21530980/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区旗の台2",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 12800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急大井町線「旗の台」徒歩4分",
+      "title": "旗の台2(旗の台駅) 1億2800万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21543095/",
       "ward": "品川区"
     },
     {
@@ -3684,22 +3700,6 @@
       "station": "都営浅草線「中延」徒歩3分",
       "title": "建築条件がなく自由な設計が可能。2沿線2駅が徒歩4分で利用可能な宅地です。",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20669107/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区上大崎3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 13500.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR山手線「目黒」徒歩7分",
-      "title": "“目黒”を日常に。山手線徒歩7分、品川区上大崎の邸宅地。",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20863072/",
       "ward": "品川区"
     },
     {
@@ -4276,22 +4276,6 @@
       "station": "東急大井町線「下神明」徒歩7分",
       "title": "西品川2(下神明駅) 1億4990万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20779876/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区小山台2",
-      "building_sqm": null,
-      "built": "1989-03",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "3LDK",
-      "price_man": 15000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「武蔵小山」徒歩11分",
-      "title": "■2016年スケルトンリノベーション実施!拘りの邸宅■南東角地■RC造",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20677719/",
       "ward": "品川区"
     },
     {
@@ -5159,22 +5143,6 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区小山2",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 22000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「武蔵小山」徒歩6分",
-      "title": "◆東急目黒線 武蔵小山駅 徒歩5分◆品川区小山2土地◆4階建てプランあり◆",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_78966296/",
-      "ward": "品川区"
-    },
-    {
       "address": "東京都品川区東大井3",
       "building_sqm": null,
       "built": null,
@@ -5207,22 +5175,6 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区東大井3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 22500.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「立会川」徒歩3分",
-      "title": "■「立会川」駅徒歩3分・「大井町」駅徒歩13分□建築条件なし・整形地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_77028977/",
-      "ward": "品川区"
-    },
-    {
       "address": "東京都品川区南品川6",
       "building_sqm": null,
       "built": "2014-09",
@@ -5252,6 +5204,22 @@
       "station": "東急大井町線「中延」徒歩5分",
       "title": "品川区中延6丁目・中延駅より徒歩5分の約70坪土地",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20800134/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区中延6",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 78.59,
+      "layout": null,
+      "price_man": 24000.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急大井町線「中延」徒歩5分",
+      "title": "■洗練された上質な空間Luxsisシリーズ■明るく開放感溢れる設計",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21051972/",
       "ward": "品川区"
     },
     {
@@ -5364,38 +5332,6 @@
       "station": "都営浅草線「高輪台」徒歩7分",
       "title": "■南道路+西側通路の開放感♪■駐車スペース2台可能♪",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21150757/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区旗の台6",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 25000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「洗足」徒歩7分",
-      "title": "■洗練された上質な空間Luxsisシリーズ■",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21051640/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区旗の台6",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 25000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「洗足」徒歩7分",
-      "title": "戸越2(戸越駅) 販売価格未定",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21051972/",
       "ward": "品川区"
     },
     {
@@ -6039,6 +5975,54 @@
       "ward": "品川区"
     },
     {
+      "address": "東京都品川区大崎3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急池上線「大崎広小路」徒歩10分",
+      "title": "建築条件なしのため自由なプランで建築可能!2沿線2駅利用可能な宅地です。",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20709231/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区上大崎3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR山手線「目黒」徒歩7分",
+      "title": "上大崎3(目黒駅) 1億1000万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20743058/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区上大崎3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR山手線「目黒」徒歩7分",
+      "title": "“目黒”を日常に。山手線徒歩7分、品川区上大崎の邸宅地。",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_20863072/",
+      "ward": "品川区"
+    },
+    {
       "address": "東京都品川区北品川2",
       "building_sqm": null,
       "built": null,
@@ -6100,6 +6084,22 @@
       "station": "JR山手線「目黒」徒歩7分",
       "title": "上大崎3(目黒駅) 1億1000万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21046511/",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区戸越2",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "都営浅草線「戸越」徒歩4分",
+      "title": "戸越2(戸越駅) 販売価格未定",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21051640/",
       "ward": "品川区"
     },
     {
@@ -6183,7 +6183,7 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区大井7",
+      "address": "東京都品川区大井5",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -6193,7 +6193,7 @@
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
-      "station": "JR京浜東北線「大森」徒歩12分",
+      "station": "JR横須賀線「西大井」徒歩9分",
       "title": "◆弊社売主◆プラン変更可◆乾太くん×床暖房等のゆとりをプラスする都市型住宅",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21407570/",
       "ward": "品川区"
@@ -6215,7 +6215,7 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区上大崎1",
+      "address": "東京都品川区大井7",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -6225,25 +6225,9 @@
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東京メトロ南北線「白金台」徒歩8分",
+      "station": "JR京浜東北線「大森」徒歩12分",
       "title": "◆先行公開情報◆区割りのご相談も可能です◆詳細お気軽にご相談ください",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21448585/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区北品川2",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「新馬場」徒歩4分",
-      "title": "北品川2(新馬場駅) 1億5000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21461871/",
       "ward": "品川区"
     },
     {
@@ -7287,6 +7271,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区中馬込3",
+      "building_sqm": null,
+      "built": "1927-01",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "2LDK",
+      "price_man": 2780.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "都営浅草線「西馬込」徒歩10分",
+      "title": "中馬込3(西馬込駅) 2780万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21542615/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区南馬込2",
       "building_sqm": null,
       "built": null,
@@ -7524,6 +7524,22 @@
       "station": "東急多摩川線「武蔵新田」徒歩7分",
       "title": "下丸子1(武蔵新田駅) 3680万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20911932/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区下丸子1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 3680.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急多摩川線「武蔵新田」徒歩5分",
+      "title": "◇土地価格3680万円+建物参考価格2000万円参考総額5680万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21544004/",
       "ward": "大田区"
     },
     {
@@ -7831,6 +7847,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区蒲田2",
+      "building_sqm": null,
+      "built": "1999-03",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "4DK",
+      "price_man": 4480.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "京急本線「梅屋敷」徒歩2分",
+      "title": "京急線「梅屋敷」駅徒歩2分!駅近の利便性と4部屋+カースペースを備えた中古戸",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21542700/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区西糀谷2",
       "building_sqm": null,
       "built": null,
@@ -8119,6 +8151,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区羽田2",
+      "building_sqm": null,
+      "built": "2006-02",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "4LDK",
+      "price_man": 5000.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "京急空港線「穴守稲荷」徒歩8分",
+      "title": "羽田2(穴守稲荷駅) 5000万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21545849/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区中央4",
       "building_sqm": null,
       "built": null,
@@ -8148,38 +8196,6 @@
       "station": "東急大井町線「旗の台」徒歩8分",
       "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20029699/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区東六郷3",
-      "building_sqm": null,
-      "built": "2015-01",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "1LDK+2S(納戸)",
-      "price_man": 5100.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「六郷土手」徒歩5分",
-      "title": "【 大田区東六郷3丁目 中古戸建 】―駅徒歩5分♪カースペース付き邸宅―",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20972054/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区東六郷3",
-      "building_sqm": null,
-      "built": "2015-01",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "1LDK+2S(納戸)",
-      "price_man": 5100.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「六郷土手」徒歩5分",
-      "title": "2015年築■車庫付き■京急本線「六郷土手」駅 徒歩5分",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20977002/",
       "ward": "大田区"
     },
     {
@@ -8274,7 +8290,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急多摩川線「矢口渡」徒歩9分",
-      "title": "矢口渡駅徒歩9分・建築条件なし",
+      "title": "多摩川2(矢口渡駅) 5280万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21389725/",
       "ward": "大田区"
     },
@@ -8420,6 +8436,22 @@
       "station": "東急多摩川線「矢口渡」徒歩10分",
       "title": "◆緑豊かな住宅地◆お好きなハウスメーカーで建築可◆建物参考プランあり",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21535588/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区多摩川2",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 5280.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急多摩川線「矢口渡」徒歩9分",
+      "title": "☆自由設計で叶える住まいづくり!矢口渡駅徒歩9分・建築条件なし全2区画☆",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542781/",
       "ward": "大田区"
     },
     {
@@ -8707,7 +8739,7 @@
       "source": "SUUMO",
       "station": "京急本線「六郷土手」徒歩8分",
       "title": "【現地販売会開催中】◆六郷土手駅徒歩6分の立地◆建物参考プランあり",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21503358/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542126/",
       "ward": "大田区"
     },
     {
@@ -8723,7 +8755,7 @@
       "source": "SUUMO",
       "station": "京急本線「雑色」徒歩12分",
       "title": "【現地販売会開催中】◆耐震等級3取得予定◇延床面積約100m2以上",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21503114/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21541860/",
       "ward": "大田区"
     },
     {
@@ -8775,19 +8807,19 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区中央6",
+      "address": "東京都大田区中馬込1",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
       "layout": null,
-      "price_man": 5770.0,
+      "price_man": 5680.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急池上線「池上」徒歩13分",
-      "title": "【建築条件付き角地】大田区中央の好立地~3階建てで叶える理想の都市型邸宅~",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21298195/",
+      "station": "都営浅草線「西馬込」徒歩12分",
+      "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21543753/",
       "ward": "大田区"
     },
     {
@@ -9012,22 +9044,6 @@
       "station": "京急本線「大森町」徒歩8分",
       "title": "■京急線『大森町』駅徒歩8分■東南側の公道幅員6.7m!陽当たり良好!",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21181198/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区池上8",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 5980.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急池上線「池上」徒歩9分",
-      "title": "池上駅徒歩10分以内、商店街至近",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21334471/",
       "ward": "大田区"
     },
     {
@@ -9282,7 +9298,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "京急本線「梅屋敷」徒歩10分",
-      "title": "8/22(土)23(日)現地販売会開催!角地・日照良好カースペース付戸建!",
+      "title": "8/29(土)30(日)現地販売会開催!角地・日照良好カースペース付戸建!",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21315787/",
       "ward": "大田区"
     },
@@ -9345,22 +9361,6 @@
       "price_man": 5997.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "京急本線「京急蒲田」徒歩13分",
-      "title": "☆小学校徒歩1分。リフォームでで甦る、緑道さんぽの角地の家☆",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21520960/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区北糀谷2",
-      "building_sqm": null,
-      "built": "1997-07",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "3LDK",
-      "price_man": 5997.0,
-      "property_type": null,
-      "source": "SUUMO",
       "station": "京急本線「梅屋敷」徒歩10分",
       "title": "北糀谷2(梅屋敷駅) 5997万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21521146/",
@@ -9380,6 +9380,22 @@
       "station": "京急本線「梅屋敷」徒歩10分",
       "title": "角地×3LDKでゆったり暮らせるファミリー向けリノベーション物件",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21526353/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区北糀谷2",
+      "building_sqm": null,
+      "built": "1997-07",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "3LDK",
+      "price_man": 5997.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "京急本線「京急蒲田」徒歩13分",
+      "title": "☆小学校徒歩1分。リフォームでで甦る、緑道さんぽの角地の家☆",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21542702/",
       "ward": "大田区"
     },
     {
@@ -9428,6 +9444,22 @@
       "station": "京急本線「平和島」徒歩10分",
       "title": "大森東2(平和島駅) 6100万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20814543/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区中央6",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 6160.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急池上線「池上」徒歩13分",
+      "title": "【最終1区画の角地物件!!】~3階建てで叶える理想の都市型邸宅~",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21298195/",
       "ward": "大田区"
     },
     {
@@ -9559,6 +9591,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区大森中3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 6280.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "京急本線「梅屋敷」徒歩9分",
+      "title": "大森中3(梅屋敷駅) 6280万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21487368/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区田園調布本町",
       "building_sqm": null,
       "built": null,
@@ -9634,22 +9682,6 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "都営浅草線「西馬込」徒歩13分",
-      "title": "南馬込3(西馬込駅) 6380万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21489770/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区南馬込3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 6380.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "都営浅草線「西馬込」徒歩13分",
       "title": "◆ADCAST♪◆土地面積83平米超! 所有権×土地83.57m2!",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21490302/",
       "ward": "大田区"
@@ -9666,7 +9698,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "都営浅草線「西馬込」徒歩13分",
-      "title": "【現地とモデルハウスを同時にご案内】22(土)・23(日)当日予約可♪",
+      "title": "【当日予約OK・本日見学可能】29(土)・30(日)現地集合・平日も可",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21493913/",
       "ward": "大田区"
     },
@@ -9684,22 +9716,6 @@
       "station": "都営浅草線「西馬込」徒歩13分",
       "title": "建築条件が無く、お好きなハウスメーカーで建築可能な売地のご紹介です。",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21494178/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区南馬込3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 80.0,
-      "layout": null,
-      "price_man": 6380.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "都営浅草線「西馬込」徒歩13分",
-      "title": "閑静な住宅街の高台に位置する広々間口の土地~土地売り10月上旬まで~",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21501411/",
       "ward": "大田区"
     },
     {
@@ -9764,6 +9780,38 @@
       "station": "都営浅草線「西馬込」徒歩13分",
       "title": "【本日立地ご確認いただけます!】お好きなハウスメーカーで建築いただけます",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21539650/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区南馬込3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 6380.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "都営浅草線「西馬込」徒歩13分",
+      "title": "南馬込3(西馬込駅) 6380万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21546320/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区南馬込3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 80.0,
+      "layout": null,
+      "price_man": 6380.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "都営浅草線「西馬込」徒歩13分",
+      "title": "閑静な住宅街の高台に位置する広々間口の土地~土地売り10月上旬まで~",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21547911/",
       "ward": "大田区"
     },
     {
@@ -10263,22 +10311,6 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区大森東1-8-17",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 6880.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「平和島」徒歩5分",
-      "title": "陽当り良好、駅まで平坦、閑静な住宅地、整形地、建物プラン例有り",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20901967/",
-      "ward": "大田区"
-    },
-    {
       "address": "東京都大田区久が原6",
       "building_sqm": null,
       "built": null,
@@ -10292,22 +10324,6 @@
       "station": "東急池上線「千鳥町」徒歩5分",
       "title": "◆東急リバブル◆千鳥町駅徒歩5分!暖かな陽光に恵まれた南向き、条件付き売地",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21225608/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区池上8",
-      "building_sqm": null,
-      "built": "1998-12",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "4LDK",
-      "price_man": 6980.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急池上線「池上」徒歩9分",
-      "title": "東急池上線「池上」駅 徒歩9分■南向き2階建て4LDK■車庫付き",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20731596/",
       "ward": "大田区"
     },
     {
@@ -10802,24 +10818,8 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "京急本線「雑色」徒歩9分",
-      "title": "【現地販売会】◆ルーフバルコニー◆全室6帖超◆内外装リフォーム◆オール電化",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21535107/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区西六郷2",
-      "building_sqm": null,
-      "built": "2007-06",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "1LDK+2S(納戸)",
-      "price_man": 7480.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「雑色」徒歩9分",
       "title": "☆太陽光+オール電化。リフォーム工事中で光熱費も安心の再生住宅☆",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21535348/",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21542708/",
       "ward": "大田区"
     },
     {
@@ -10871,22 +10871,6 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区上池台1",
-      "building_sqm": null,
-      "built": "1990-12",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "2DK",
-      "price_man": 7490.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急池上線「長原」徒歩1分",
-      "title": "上池台1(長原駅) 7490万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21016418/",
-      "ward": "大田区"
-    },
-    {
       "address": "東京都大田区東雪谷3",
       "building_sqm": null,
       "built": null,
@@ -10916,22 +10900,6 @@
       "station": "都営浅草線「馬込」徒歩6分",
       "title": "東馬込1(馬込駅) 7590万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21405264/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区西六郷2",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 7680.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "京急本線「雑色」徒歩8分",
-      "title": "西六郷2(雑色駅) 7680万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21381060/",
       "ward": "大田区"
     },
     {
@@ -11143,22 +11111,6 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区中央5",
-      "building_sqm": null,
-      "built": "2011-06",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "3LDK+S(納戸)",
-      "price_man": 7980.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "都営浅草線「西馬込」徒歩13分",
-      "title": "~穏やかな街並みに佇むゆとりある邸宅~~梅田小学校まで約700M~",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21501374/",
-      "ward": "大田区"
-    },
-    {
       "address": "東京都大田区池上7",
       "building_sqm": null,
       "built": "2024-08",
@@ -11172,6 +11124,22 @@
       "station": "東急多摩川線「矢口渡」徒歩8分",
       "title": "◆築2年!池上駅徒歩圏!利便性と住環境を兼ね備えた、綺麗な室内の3LDK◆",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21505971/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区中央5",
+      "building_sqm": null,
+      "built": "2011-06",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "3LDK+S(納戸)",
+      "price_man": 7980.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "都営浅草線「西馬込」徒歩13分",
+      "title": "~穏やかな街並みに佇むゆとりある邸宅~~梅田小学校まで約700M~",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21545928/",
       "ward": "大田区"
     },
     {
@@ -11298,7 +11266,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急多摩川線「鵜の木」徒歩3分",
-      "title": "【現地とモデルハウスを同時にご案内】22(土)・23(日)当日予約可♪",
+      "title": "【現地とモデルハウスを同時にご案内】29(土)・30(日)当日予約可♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21128398/",
       "ward": "大田区"
     },
@@ -11656,7 +11624,7 @@
     },
     {
       "address": "東京都大田区久が原2",
-      "building_sqm": null,
+      "building_sqm": 108.81,
       "built": "2014-12",
       "land_right": "所有権",
       "land_right_status": "freehold",
@@ -11666,7 +11634,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "都営浅草線「西馬込」徒歩13分",
-      "title": "【当日予約OK・本日見学可能】22(土)・23(日)現地集合・平日も可",
+      "title": "【当日予約OK・本日見学可能】29(土)・30(日)現地集合・平日も可",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21526260/",
       "ward": "大田区"
     },
@@ -11748,6 +11716,22 @@
       "station": "東急池上線「池上」徒歩6分",
       "title": "池上4(池上駅) 8480万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21375694/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区大森西6",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 8499.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "京急本線「梅屋敷」徒歩3分",
+      "title": "【現地販売会開催中】◆梅屋敷駅徒歩3分◆建物プランあり◆土地27坪超♪",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21541682/",
       "ward": "大田区"
     },
     {
@@ -11986,22 +11970,6 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "JR京浜東北線「大森」徒歩10分",
-      "title": "◆ADCAST◆建物参考プランあり!価格改定!山王1丁目!大森駅10分!",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20968593/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区山王1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 8780.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR京浜東北線「大森」徒歩10分",
       "title": "【総額で比較!】同じ物件でも当社なら購入諸費用を削減!",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21517055/",
       "ward": "大田区"
@@ -12163,7 +12131,7 @@
       "source": "SUUMO",
       "station": "東急池上線「御嶽山」徒歩6分",
       "title": "【現地販売会開催中】◆間口10.25m開放感有◆建物参考プラン20帖超LDK",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21503865/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542765/",
       "ward": "大田区"
     },
     {
@@ -12381,22 +12349,6 @@
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
-      "layout": "3LDK",
-      "price_man": 9499.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急多摩川線「沼部」徒歩6分",
-      "title": "築浅物件!3駅4路線利用可能の好立地!高級住宅街が点在する街並み",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20089456/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区田園調布本町",
-      "building_sqm": null,
-      "built": "2021-12",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
       "layout": "1LDK+2S(納戸)",
       "price_man": 9499.0,
       "property_type": null,
@@ -12547,7 +12499,7 @@
       "source": "SUUMO",
       "station": "東急池上線「千鳥町」徒歩6分",
       "title": "◆千鳥町駅徒歩6分◆建築参考プラン有◆吹抜LDK21帖超◆車庫付き3LDK",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21503700/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542427/",
       "ward": "大田区"
     },
     {
@@ -12913,22 +12865,6 @@
       "price_man": 10380.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急池上線「長原」徒歩2分",
-      "title": "上池台1(長原駅) 1億380万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21411901/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区上池台1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 10380.0,
-      "property_type": null,
-      "source": "SUUMO",
       "station": "東急大井町線「旗の台」徒歩8分",
       "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21427762/",
@@ -13108,22 +13044,6 @@
       "station": "JR京浜東北線「大森」徒歩9分",
       "title": "◆◇大田区山王2丁目×駅チカ好立地×限定2区画◇◆~建築条件付き売地~",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20864045/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区石川町2",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 10680.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急池上線「石川台」徒歩6分",
-      "title": "石川町2(石川台駅) 1億680万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20884002/",
       "ward": "大田区"
     },
     {
@@ -13491,7 +13411,7 @@
       "source": "SUUMO",
       "station": "京急空港線「大鳥居」徒歩17分",
       "title": "◆土地面積45坪◆幅員6.3m公道に11m接道◆車庫や作業場・工場利用に",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21503555/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542281/",
       "ward": "大田区"
     },
     {
@@ -13522,8 +13442,8 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急池上線「久が原」徒歩9分",
-      "title": "◆久が原駅徒歩9分◆並列2台駐車可能なゆったりとした敷地39坪",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21504038/",
+      "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21524881/",
       "ward": "大田区"
     },
     {
@@ -13538,24 +13458,8 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急池上線「久が原」徒歩9分",
-      "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21524881/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区中央6",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 11930.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急池上線「池上」徒歩13分",
-      "title": "【建築条件なし角地】170m2以上の建築が可能~理想を叶える邸宅地~",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21297366/",
+      "title": "◆久が原駅徒歩9分◆並列2台駐車可能なゆったりとした敷地39坪",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542909/",
       "ward": "大田区"
     },
     {
@@ -13703,6 +13607,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区東雪谷2",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 12100.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急池上線「石川台」徒歩4分",
+      "title": "東雪谷2(石川台駅) 1億2100万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21543662/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区田園調布1-25-6",
       "building_sqm": null,
       "built": null,
@@ -13767,19 +13687,19 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区東嶺町",
+      "address": "東京都大田区東雪谷2",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
       "layout": null,
-      "price_man": 12500.0,
+      "price_man": 12600.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急池上線「御嶽山」徒歩5分",
-      "title": "即日ご案内可能!【駅徒歩5分】陽当たりと開放感を享受する邸宅地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21525499/",
+      "station": "東急池上線「石川台」徒歩4分",
+      "title": "東雪谷2(石川台駅) 1億2600万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21543661/",
       "ward": "大田区"
     },
     {
@@ -15378,22 +15298,6 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "JR京浜東北線「大森」徒歩7分",
-      "title": "山王3(大森駅) 2億1800万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21054413/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区山王3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 21800.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "JR京浜東北線「大森」徒歩7分",
       "title": "商業地域内の土地約50坪が誕生!接道8.7m×前面道路14m超の解放感!",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21060729/",
       "ward": "大田区"
@@ -15508,6 +15412,22 @@
       "station": "JR京浜東北線「大森」徒歩7分",
       "title": "3方向角部屋!山王3丁目アドレス限定1区画販売",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21526750/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区山王3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 21800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR京浜東北線「大森」徒歩7分",
+      "title": "山王3(大森駅) 2億1800万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21546712/",
       "ward": "大田区"
     },
     {
@@ -16311,6 +16231,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区南千束1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 38880.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急大井町線「北千束」徒歩8分",
+      "title": "南千束1(北千束駅) 3億8880万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21542608/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区田園調布2",
       "building_sqm": null,
       "built": "2020-12",
@@ -16324,6 +16260,22 @@
       "station": "東急東横線「田園調布」徒歩4分",
       "title": "田園調布2(田園調布駅) 4億2500万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20401020/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区田園調布4",
+      "building_sqm": null,
+      "built": "2001-12",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "3LDK+S(納戸)",
+      "price_man": 49800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「田園調布」徒歩11分",
+      "title": "【フルリノベ済】洗練の住空間。当社売主のためコスト抑えられます!",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20198400/",
       "ward": "大田区"
     },
     {
@@ -16407,22 +16359,6 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区田園調布4",
-      "building_sqm": null,
-      "built": "2001-12",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "3LDK+S(納戸)",
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「田園調布」徒歩11分",
-      "title": "【フルリノベ済】洗練の住空間。当社売主のためコスト抑えられます!",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20198400/",
-      "ward": "大田区"
-    },
-    {
       "address": "東京都大田区久が原4",
       "building_sqm": null,
       "built": "2002-09",
@@ -16436,6 +16372,22 @@
       "station": "東急池上線「久が原」徒歩13分",
       "title": "久が原4(久が原駅) 1億5800万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20602019/",
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区上池台1",
+      "building_sqm": null,
+      "built": "1990-12",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "2DK",
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急池上線「長原」徒歩1分",
+      "title": "上池台1(長原駅) 6980万円",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21016418/",
       "ward": "大田区"
     },
     {
@@ -16567,6 +16519,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都大田区山王1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR京浜東北線「大森」徒歩10分",
+      "title": "◆ADCAST◆建物参考プランあり!価格改定!山王1丁目!大森駅10分!",
+      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_20968593/",
+      "ward": "大田区"
+    },
+    {
       "address": "東京都大田区田園調布3",
       "building_sqm": null,
       "built": null,
@@ -16599,7 +16567,7 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区東雪谷5",
+      "address": "東京都大田区東雪谷1",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -16609,7 +16577,7 @@
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急池上線「石川台」徒歩12分",
+      "station": "東急池上線「洗足池」徒歩7分",
       "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21051875/",
       "ward": "大田区"
@@ -16797,7 +16765,7 @@
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": null,
-      "layout": "プランを無料で作成します!お好きな時期にお好みのビルダーで建築可!",
+      "layout": null,
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
@@ -16900,22 +16868,6 @@
       "station": "JR京浜東北線「蒲田」徒歩8分",
       "title": "【弊社限定物件♪蒲田駅徒歩8分】3LDK・土地建物総額7000万円台!",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21516917/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東京都大田区中馬込1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "都営浅草線「西馬込」徒歩12分",
-      "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
-      "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21524326/",
       "ward": "大田区"
     },
     {
@@ -17351,22 +17303,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区碑文谷６丁目",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 147.41,
-      "layout": null,
-      "price_man": 32800.0,
-      "property_type": "land",
-      "source": "ADCAST",
-      "station": "学芸大学駅 徒歩5分",
-      "title": "詳細を見る 詳細",
-      "url": "https://www.ad-cast.info/sch/detail.php?div=001&k_number=adc0015084",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区青葉台１丁目",
       "building_sqm": null,
       "built": null,
@@ -17539,6 +17475,22 @@
       "source": "HOME'S",
       "station": null,
       "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-1063460028396/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
+      "building_sqm": 79.35,
+      "built": "2024-04",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 66.83,
+      "layout": "3LDK",
+      "price_man": 11500.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1130750003162/",
       "ward": "目黒区"
     },
@@ -17604,6 +17556,22 @@
       "station": null,
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-14300020500/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
+      "building_sqm": 79.35,
+      "built": "2024-04",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 66.83,
+      "layout": "3LDK",
+      "price_man": 11500.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "見学予約",
+      "url": "https://www.homes.co.jp/kodate/b-1491230001620/",
       "ward": "目黒区"
     },
     {
@@ -17735,22 +17703,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区大岡山1丁目26",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 19800.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": "東急目黒線 大岡山駅 徒歩10分 土地面積/間取り 180.49m2 4LDK",
-      "title": "見学予約",
-      "url": "https://www.homes.co.jp/kodate/b-1491230001620/",
-      "ward": "目黒区"
-    },
-    {
       "address": "JR山手線 目黒駅 徒歩8分 東京都目黒区下目黒2丁目21-8 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 北東 掲載画像9枚",
       "building_sqm": 164.35,
       "built": "2000-10",
@@ -17799,7 +17751,7 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京メトロ日比谷線 中目黒駅 徒歩5分 東京都目黒区青葉台1丁目 建築年 (築年数) 2001年10月(築25年) 現況 居住中 主要採光面 - 掲載画像2枚 1日前 価格更新 閲覧済",
+      "address": "東京メトロ日比谷線 中目黒駅 徒歩5分 東京都目黒区青葉台1丁目 建築年 (築年数) 2001年10月(築25年) 現況 居住中 主要採光面 - 掲載画像2枚 2日前 価格更新 閲覧済",
       "building_sqm": 82.33,
       "built": "2001-10",
       "land_right": "所有権",
@@ -18212,22 +18164,6 @@
       "station": "東急東横線「中目黒」徒歩11分",
       "title": "■中目黒徒歩11分。穏やかな街で理想の住まいを描く。",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21423394/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区東山1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 8800.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「中目黒」徒歩11分",
-      "title": "≪現地見学予約受付中♪≫■整形地×建築条件なし×「中目黒」駅徒歩11分■",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21479453/",
       "ward": "目黒区"
     },
     {
@@ -18771,7 +18707,7 @@
       "source": "SUUMO",
       "station": "東急東横線「学芸大学」徒歩14分",
       "title": "◆◇今すぐ知りたい!にお応えします◇◆どこよりもスピーディーかつ正確に♪",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21501554/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21547748/",
       "ward": "目黒区"
     },
     {
@@ -18948,22 +18884,6 @@
       "station": "東急東横線「都立大学」徒歩7分",
       "title": "柿の木坂1(都立大学駅) 1億1500万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_78243297/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区中央町1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 11700.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「学芸大学」徒歩10分",
-      "title": "中央町1(学芸大学駅) 1億1700万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21472325/",
       "ward": "目黒区"
     },
     {
@@ -19171,7 +19091,7 @@
       "source": "SUUMO",
       "station": "東急東横線「祐天寺」徒歩10分",
       "title": "◇東横線「祐天寺」駅10分◇22帖3LDK車庫付き建築可能の整形地有り",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21055145/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21541671/",
       "ward": "目黒区"
     },
     {
@@ -19303,22 +19223,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区緑が丘3",
-      "building_sqm": null,
-      "built": "2001-01",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "4LDK+S(納戸)",
-      "price_man": 13500.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急大井町線「緑が丘」徒歩5分",
-      "title": "緑が丘3(緑が丘駅) 1億3500万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_77104789/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区緑が丘1",
       "building_sqm": null,
       "built": "2004-07",
@@ -19363,7 +19267,7 @@
       "source": "SUUMO",
       "station": "東急目黒線「武蔵小山」徒歩14分",
       "title": "下目黒5(武蔵小山駅) 1億3900万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21086954/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21545416/",
       "ward": "目黒区"
     },
     {
@@ -19559,22 +19463,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区祐天寺1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 14500.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「祐天寺」徒歩6分",
-      "title": "◎価格変更◎陽当り良好な角地の整形地♪お好きなハウスメーカーで建築可です",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21414156/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区八雲2",
       "building_sqm": null,
       "built": "2011-10",
@@ -19652,38 +19540,6 @@
       "station": "東急東横線「中目黒」徒歩16分",
       "title": "◇建築条件無◇現在の家賃との比較をはじめ、各種住宅ローンのご相談承ります!",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21019115/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区中町2",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 14900.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「祐天寺」徒歩10分",
-      "title": "中町2(祐天寺駅) 1億4900万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20932904/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区南3",
-      "building_sqm": null,
-      "built": "2025-05",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": "1LDK+2S(納戸)",
-      "price_man": 14980.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「大岡山」徒歩8分",
-      "title": "『大岡山』駅徒歩8分・2025年5月築の築浅戸建",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_20295057/",
       "ward": "目黒区"
     },
     {
@@ -20055,38 +19911,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区中町1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 16480.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「祐天寺」徒歩15分",
-      "title": "■総額21980万円|大人の感性に響く街、祐天寺。洗練と静穏を愉しむ暮らし",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20939794/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区中町1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 16480.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「祐天寺」徒歩15分",
-      "title": "目黒区中町に叶える、延床175m2超・LDK約23帖のゆとりある大型邸宅",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21376122/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区碑文谷1",
       "building_sqm": null,
       "built": null,
@@ -20147,7 +19971,7 @@
       "source": "SUUMO",
       "station": "東急目黒線「武蔵小山」徒歩5分",
       "title": "◆「武蔵小山」駅まで徒歩5分◆車庫付き4LDKプラン◆北側約7.2m公道面",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21503057/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21541784/",
       "ward": "目黒区"
     },
     {
@@ -20260,6 +20084,38 @@
       "station": "JR山手線「目黒」徒歩9分",
       "title": "目黒駅徒歩9分 目黒川の潤いを感じる街で叶えるこだわりのフルオーダー邸宅",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21011452/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区南1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 17700.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急目黒線「洗足」徒歩11分",
+      "title": "― 目黒区南エリア × 2路線利用可 × 55坪超のゆとりの敷地 ―",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21094207/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区南1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 17700.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急目黒線「洗足」徒歩11分",
+      "title": "南1(洗足駅) 1億7700万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21546656/",
       "ward": "目黒区"
     },
     {
@@ -20612,6 +20468,22 @@
       "station": "東急東横線「学芸大学」徒歩10分",
       "title": "学芸大学と祐天寺を日常に 道路面より高台かつ10m弱の間口は邸宅感あります",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20916735/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区目黒本町6",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 19300.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急目黒線「西小山」徒歩8分",
+      "title": "■総額25480万円|日常に優雅さを添える、心地よき邸",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21537197/",
       "ward": "目黒区"
     },
     {
@@ -21191,6 +21063,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東京都目黒区中根1",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 21400.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「都立大学」徒歩8分",
+      "title": "自由が丘を日常の散策路。に美しい街並みに佇む土地140m2の限定プレミアム分譲",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21113299/",
+      "ward": "目黒区"
+    },
+    {
       "address": "東京都目黒区大橋2",
       "building_sqm": null,
       "built": null,
@@ -21379,23 +21267,7 @@
       "source": "SUUMO",
       "station": "東急東横線「代官山」徒歩5分",
       "title": "【先行内覧予約受付中♪】ー代官山5分×恵比寿6分×中目黒8分の築浅邸宅ー",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21501505/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区碑文谷1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 231.52,
-      "layout": null,
-      "price_man": 23000.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「西小山」徒歩16分",
-      "title": "碑文谷1(西小山駅) 2億3000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_77940476/",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21547798/",
       "ward": "目黒区"
     },
     {
@@ -21687,6 +21559,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東京都目黒区自由が丘3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 24700.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「自由が丘」徒歩11分",
+      "title": "自由が丘3(自由が丘駅) 2億4700万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21543664/",
+      "ward": "目黒区"
+    },
+    {
       "address": "東京都目黒区碑文谷6",
       "building_sqm": null,
       "built": null,
@@ -21939,7 +21827,7 @@
       "source": "SUUMO",
       "station": "東急東横線「祐天寺」徒歩10分",
       "title": "中町2(祐天寺駅) 2億7330万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21055446/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21541681/",
       "ward": "目黒区"
     },
     {
@@ -22084,22 +21972,6 @@
       "station": "東急大井町線「自由が丘」徒歩15分",
       "title": "宮前小学校 通学域≪水害ハザードリスクの低い立地≫バス便豊富な目黒通り近く",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21407428/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区自由が丘3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 27900.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「自由が丘」徒歩14分",
-      "title": "自由が丘3(自由が丘駅) 2億7900万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21418582/",
       "ward": "目黒区"
     },
     {
@@ -22260,6 +22132,22 @@
       "station": "東急東横線「中目黒」徒歩5分",
       "title": "青葉台1(中目黒駅) 2億8880万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20799990/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区上目黒2",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 28880.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「祐天寺」徒歩8分",
+      "title": "― 南西角地 × 自由設計 × 100m2超 ―想いを形にプロジェクト",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21307811/",
       "ward": "目黒区"
     },
     {
@@ -23714,22 +23602,6 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急東横線「中目黒」徒歩10分",
-      "title": "区割りご相談可能!土地100坪以上、駅まで平坦、角地、整形地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21307101/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区中目黒3",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 64800.0,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急東横線「中目黒」徒歩10分",
       "title": "中目黒3(中目黒駅) 6億4800万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21529530/",
       "ward": "目黒区"
@@ -23810,8 +23682,40 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急東横線「中目黒」徒歩10分",
+      "title": "区割りご相談可能!土地100坪以上、駅まで平坦、角地、整形地",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21307101/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区中目黒3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": 72800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「中目黒」徒歩10分",
       "title": "【弊社限定、「中目黒」徒歩10分、80坪以上、南東道路、整形地】◆目黒川徒歩",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21316707/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区三田2",
+      "building_sqm": null,
+      "built": "1993-11",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": "7LLDDKK",
+      "price_man": 74800.0,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "JR山手線「目黒」徒歩10分",
+      "title": "目黒駅・恵比寿駅が徒歩圏内 建物面積361m2超の2世帯住宅",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21543220/",
       "ward": "目黒区"
     },
     {
@@ -24135,22 +24039,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区南1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「洗足」徒歩11分",
-      "title": "南1(洗足駅) 1億7700万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_20067601/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区中根2",
       "building_sqm": null,
       "built": null,
@@ -24263,22 +24151,6 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区南1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": null,
-      "property_type": null,
-      "source": "SUUMO",
-      "station": "東急目黒線「洗足」徒歩11分",
-      "title": "― 目黒区南エリア × 2路線利用可 × 55坪超のゆとりの敷地 ―",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21094207/",
-      "ward": "目黒区"
-    },
-    {
       "address": "東京都目黒区上目黒2",
       "building_sqm": null,
       "built": null,
@@ -24322,7 +24194,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急東横線「中目黒」徒歩10分",
-      "title": "上目黒3(中目黒駅) 2億2500万円",
+      "title": "上目黒3(中目黒駅) 2億1500万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21255877/",
       "ward": "目黒区"
     },
@@ -24498,7 +24370,7 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急東横線「中目黒」徒歩10分",
-      "title": "上目黒3(中目黒駅) 2億2500万円",
+      "title": "■「中目黒」駅徒歩10分■現況:更地■建築条件:無",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21338199/",
       "ward": "目黒区"
     },
@@ -24679,7 +24551,7 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区五本木2",
+      "address": "東京都目黒区上目黒4",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -24689,7 +24561,7 @@
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急東横線「祐天寺」徒歩7分",
+      "station": "東急東横線「祐天寺」徒歩9分",
       "title": "◆整形地◆南東側道路◆陽当たり良好",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21519053/",
       "ward": "目黒区"
@@ -24711,7 +24583,7 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京都目黒区五本木2",
+      "address": "東京都目黒区上目黒4",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -24721,7 +24593,7 @@
       "price_man": null,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急東横線「祐天寺」徒歩7分",
+      "station": "東急東横線「祐天寺」徒歩9分",
       "title": "◆スーパーや小学校近く住環境良好◆前面道路幅員7.18mと広々",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21525361/",
       "ward": "目黒区"
@@ -24754,6 +24626,38 @@
       "property_type": null,
       "source": "SUUMO",
       "station": "東急東横線「中目黒」徒歩10分",
+      "title": "中目黒1(中目黒駅) 2億2500万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21541988/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区上目黒3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「中目黒」徒歩10分",
+      "title": "碑文谷1(西小山駅) 2億3000万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21546765/",
+      "ward": "目黒区"
+    },
+    {
+      "address": "東京都目黒区上目黒3",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": null,
+      "layout": null,
+      "price_man": null,
+      "property_type": null,
+      "source": "SUUMO",
+      "station": "東急東横線「中目黒」徒歩10分",
       "title": "碑文谷1(西小山駅) 2億3000万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_77939280/",
       "ward": "目黒区"
@@ -24771,7 +24675,7 @@
       "source": "SUUMO",
       "station": "東急東横線「中目黒」徒歩10分",
       "title": "碑文谷1(西小山駅) 2億3000万円",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_78756214/",
+      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_77940476/",
       "ward": "目黒区"
     },
     {
@@ -24839,5 +24743,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-23T10:42:17+00:00"
+  "observed_at": "2026-08-24T10:26:40+00:00"
 }
