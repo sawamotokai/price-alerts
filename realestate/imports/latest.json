@@ -807,17 +807,17 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区小山7丁目",
-      "building_sqm": null,
-      "built": null,
+      "address": "東急目黒線 洗足駅 徒歩3分 東京都品川区小山7丁目 建築年 (築年数) 2024年10月(築2年) 現況 居住中 主要採光面 西 掲載画像17枚",
+      "building_sqm": 95.84,
+      "built": "2024-10",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 98.0,
+      "layout": "3LDK",
       "price_man": 17980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "東急目黒線 洗足駅 徒歩3分 土地面積/間取り 98m2 3LDK",
+      "station": null,
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1130740003661/",
       "ward": "品川区"
@@ -887,18 +887,18 @@
       "ward": "品川区"
     },
     {
-      "address": "京急本線 立会川駅 徒歩13分 東京都品川区大井5丁目 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 南東 掲載画像21枚",
-      "building_sqm": 227.5,
-      "built": "2017-11",
+      "address": "東京都品川区大井5丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 132.23,
-      "layout": "5LDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 37800.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 戸建 品川区大井5丁目",
+      "station": "JR京浜東北・根岸線 大井町駅 徒歩14分 土地面積/間取り 132.23m2 5LDK",
+      "title": "戸建 品川区大井5丁目",
       "url": "https://www.homes.co.jp/kodate/b-35005020002292/",
       "ward": "品川区"
     },
@@ -24743,5 +24743,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-24T10:26:40+00:00"
+  "observed_at": "2026-08-24T10:56:37+00:00"
 }

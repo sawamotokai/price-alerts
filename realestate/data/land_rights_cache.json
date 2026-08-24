@@ -26750,6 +26750,17 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1392930000664/": {
+      "attempts": 3,
+      "checked_at": "2026-08-24T10:57:38.075704+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1392930000664/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1400020009765/": {
       "attempts": 3,
       "checked_at": "2026-08-22T11:07:20.527601+00:00",
@@ -28286,6 +28297,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1392880001628/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/visit/input/kodate/b-1392930000664/": {
+      "attempts": 3,
+      "checked_at": "2026-08-24T10:57:38.076635+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1392930000664/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -30244,6 +30266,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1392880001628/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1392930000664/": {
+      "attempts": 3,
+      "checked_at": "2026-08-24T10:57:38.076130+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1392930000664/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -32262,5 +32295,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-08-24T10:27:58.658459+00:00"
+  "updated_at": "2026-08-24T10:57:42.919257+00:00"
 }
