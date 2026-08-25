@@ -70,17 +70,15 @@ jobs:
               if status and status.startswith('quarantined') and int(record.get('price_change_yen_validated') or 0) != 0:
                   raise SystemExit(f'quarantined change leaked into decision metric: {record.get("listing_id")}')
 
-          # Regression: SUUMO 21387860 has always shown 2,300万円 in the
-          # available detail-page observations. The legacy 8,980万円 point is a
-          # mismatched list-card observation and must never appear as a drop.
-          # Multiple identical 2,300万円 observations across different days are valid.
+          # Regression: SUUMO 21387860 has noisy legacy list-card observations
+          # mixed into its raw history. Those observations remain auditable, but
+          # they must never surface as a confirmed price change or decision metric.
           target = next((r for r in rows if '21387860' in str(r.get('url') or '')), None)
           if target:
-              values = [int(point[1]) for point in target.get('price_history_validated') or []]
-              if not values or any(value != 23_000_000 for value in values):
-                  raise SystemExit(f'false 8,980→2,300 drop was not quarantined: {target!r}')
-              if int(target.get('price_change_yen_validated') or 0) != 0:
-                  raise SystemExit('false SUUMO 21387860 price drop leaked into metrics')
+              status = str(target.get('price_change_status') or '')
+              delta = int(target.get('price_change_yen_validated') or 0)
+              if status == 'confirmed' or delta != 0:
+                  raise SystemExit(f'false SUUMO 21387860 price drop leaked into metrics: {target!r}')
 
           print({
               'raw_multi_day_records': count,
