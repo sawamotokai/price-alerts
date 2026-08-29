@@ -679,18 +679,18 @@
       "ward": "品川区"
     },
     {
-      "address": "都営浅草線 高輪台駅 徒歩5分 東京都品川区東五反田1丁目 建築年 (築年数) 2005年11月(築21年) 現況 空家 主要採光面 南東 掲載画像19枚",
-      "building_sqm": 83.23,
-      "built": "2005-11",
+      "address": "東京都品川区東五反田1丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 60.02,
-      "layout": "1LDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 10300.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 品川区東五反田一丁目",
+      "station": "都営浅草線 高輪台駅 徒歩5分 土地面積/間取り 60.02m2 1LDK",
+      "title": "品川区東五反田一丁目",
       "url": "https://www.homes.co.jp/kodate/b-1514110000029/",
       "ward": "品川区"
     },
@@ -759,7 +759,7 @@
       "ward": "品川区"
     },
     {
-      "address": "東急目黒線 洗足駅 徒歩3分 東京都品川区小山7丁目 建築年 (築年数) 2024年10月(築2年) 現況 居住中 主要採光面 西 掲載画像17枚 4日前 価格更新 閲覧済",
+      "address": "東急目黒線 洗足駅 徒歩3分 東京都品川区小山7丁目 建築年 (築年数) 2024年10月(築2年) 現況 居住中 主要採光面 西 掲載画像17枚 5日前 価格更新 閲覧済",
       "building_sqm": 95.84,
       "built": "2024-10",
       "land_right": "所有権",
@@ -791,22 +791,6 @@
       "ward": "品川区"
     },
     {
-      "address": "東急大井町線 中延駅 徒歩4分 東京都品川区中延3丁目 建築年 (築年数) 1991年07月(築36年) 現況 空家 主要採光面 南 掲載画像19枚",
-      "building_sqm": 170.89,
-      "built": "1991-07",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 171.91,
-      "layout": "4SLDK",
-      "price_man": 25900.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 品川区中延3丁目",
-      "url": "https://www.homes.co.jp/kodate/b-1545940000070/",
-      "ward": "品川区"
-    },
-    {
       "address": "東急池上線 大崎広小路駅 徒歩3分 東京都品川区大崎4丁目 建築年 (築年数) 2008年08月(築19年) 現況 居住中 主要採光面 南東 掲載画像21枚",
       "building_sqm": 209.7,
       "built": "2008-08",
@@ -820,22 +804,6 @@
       "station": null,
       "title": "中古一戸建て 大崎4丁目・中古邸宅",
       "url": "https://www.homes.co.jp/kodate/b-1231900026489/",
-      "ward": "品川区"
-    },
-    {
-      "address": "湘南新宿ライン宇須 西大井駅 徒歩15分 東京都品川区大井5丁目20 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 - 掲載画像23枚",
-      "building_sqm": 227.5,
-      "built": "2017-11",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 132.23,
-      "layout": "6LDK",
-      "price_man": 37800.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "見学予約",
-      "url": "https://www.homes.co.jp/kodate/b-1463790002672/",
       "ward": "品川区"
     },
     {
@@ -17463,6 +17431,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "JR山手線 目黒駅 徒歩12分 東京都目黒区三田2丁目 建築年 (築年数) 1999年05月(築28年) 現況 空家 主要採光面 南西 掲載画像30枚",
+      "building_sqm": 42.06,
+      "built": "1999-05",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 39.42,
+      "layout": "2LDK",
+      "price_man": 10000.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 目黒区三田2丁目 中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1509610001677/",
+      "ward": "目黒区"
+    },
+    {
       "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
       "building_sqm": 79.35,
       "built": "2024-04",
@@ -17639,14 +17623,14 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京メトロ日比谷線 中目黒駅 徒歩9分 東京都目黒区上目黒2丁目 建築年 (築年数) 2016年11月(築10年) 現況 空家 主要採光面 - 掲載画像20枚",
+      "address": "東京メトロ日比谷線 中目黒駅 徒歩9分 東京都目黒区上目黒2丁目 建築年 (築年数) 2016年11月(築10年) 現況 空家 主要採光面 - 掲載画像20枚 1日前 価格更新 閲覧済",
       "building_sqm": 119.54,
       "built": "2016-11",
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": 78.49,
       "layout": "2SLDK",
-      "price_man": 23800.0,
+      "price_man": 22900.0,
       "property_type": null,
       "source": "HOME'S",
       "station": null,
@@ -17703,7 +17687,7 @@
       "ward": "目黒区"
     },
     {
-      "address": "東京メトロ日比谷線 中目黒駅 徒歩5分 東京都目黒区青葉台1丁目 建築年 (築年数) 2001年10月(築25年) 現況 居住中 主要採光面 - 掲載画像2枚 7日前 価格更新 閲覧済",
+      "address": "東京メトロ日比谷線 中目黒駅 徒歩5分 東京都目黒区青葉台1丁目 建築年 (築年数) 2001年10月(築25年) 現況 居住中 主要採光面 - 掲載画像2枚",
       "building_sqm": 82.33,
       "built": "2001-10",
       "land_right": "所有権",
@@ -24759,5 +24743,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-08-29T10:25:53+00:00"
+  "observed_at": "2026-08-29T15:06:58+00:00"
 }
