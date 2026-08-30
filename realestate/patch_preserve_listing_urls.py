@@ -50,3 +50,5 @@ if source.count(START) != 1 or source.count(LINK_START) != 1:
 
 PATH.write_text(source, encoding="utf-8")
 print(f"preserved exact outbound listing URLs in {PATH}")
+
+# run-marker: 2026-08-30T19:39:12+09:00
