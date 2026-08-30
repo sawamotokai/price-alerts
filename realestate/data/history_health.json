@@ -1,34 +1,34 @@
 {
   "active_verified_freehold_by_source": {
     "ADCAST": 130,
-    "HOME'S": 33,
+    "HOME'S": 35,
     "SUUMO": 1391,
     "fudousan.or.jp": 0
   },
-  "active_verified_freehold_count": 1554,
+  "active_verified_freehold_count": 1556,
   "canonicalization": {
     "canonical_listing_count": 2707,
     "canonicalized_group_count": 150,
     "embedded_multi_day_count": 894,
-    "history_documents_loaded": 2557,
+    "history_documents_loaded": 2593,
     "input_listing_count": 2906,
     "merged_duplicate_count": 199
   },
-  "generated_at": "2026-08-30T10:45:19+00:00",
+  "generated_at": "2026-08-30T14:57:18+00:00",
   "history_repair": {
-    "ambiguous_property_matches_skipped": 511,
+    "ambiguous_property_matches_skipped": 505,
     "direct_listing_matches": 2065,
     "ledger_files": 1,
-    "ledger_rows": 23686,
+    "ledger_rows": 23693,
     "maximum_daily_point_count": 19,
     "records_with_two_or_more_daily_points": 2414,
-    "repaired_at": "2026-08-30T10:45:19+00:00",
+    "repaired_at": "2026-08-30T14:57:18+00:00",
     "repaired_record_count": 1522,
-    "unambiguous_property_matches": 361,
-    "valid_ledger_rows": 23686
+    "unambiguous_property_matches": 364,
+    "valid_ledger_rows": 23693
   },
   "maximum_daily_point_count": 19,
-  "observed_at": "2026-08-30T10:43:41+00:00",
+  "observed_at": "2026-08-30T14:55:39+00:00",
   "records_with_two_or_more_daily_points": 2414,
   "samples": [
     {
