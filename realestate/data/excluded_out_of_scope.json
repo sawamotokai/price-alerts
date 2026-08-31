@@ -1,6 +1,6 @@
 {
-  "count": 5,
-  "generated_at": "2026-08-31T10:49:42.309855+00:00",
+  "count": 6,
+  "generated_at": "2026-08-31T17:44:45.211566+00:00",
   "items": [
     {
       "access": null,
@@ -48,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-30T10:45:19+00:00",
+        "validated_at": "2026-08-31T10:50:06+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -60,6 +60,29 @@
       "title": "祐天寺3億9800万円 新着",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21484850/",
       "ward": "大田区"
+    },
+    {
+      "access": null,
+      "active": true,
+      "address": "東京都目黒区東山1",
+      "broker": null,
+      "building_area_sqm": null,
+      "built_year_month": null,
+      "ended_at": null,
+      "first_seen": "2026-09-01T02:37:12.511045+09:00",
+      "land_area_sqm": null,
+      "last_seen": "2026-09-01T02:37:12.511045+09:00",
+      "layout": null,
+      "listing_id": "578dd9c4b1670f52a5d2",
+      "missing_runs": 0,
+      "price_text": "3億9000万円",
+      "price_yen": 390000000,
+      "property_id": "listing:578dd9c4b1670f52a5d2",
+      "source": "suumo",
+      "source_listing_id": "21502839",
+      "title": "杉並区阿佐谷北1丁目 未定 59m 2 ~64m 2 東京都杉並区阿佐谷北1 JR中央線 阿佐ケ谷 徒歩8分",
+      "url": "https://suumo.jp/tochi/tokyo/sc_suginami/nc_21502839/",
+      "ward": "目黒区"
     },
     {
       "access": null,
@@ -103,7 +126,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-30T10:45:19+00:00",
+        "validated_at": "2026-08-31T10:50:06+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -162,7 +185,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-30T10:45:19+00:00",
+        "validated_at": "2026-08-31T10:50:06+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -221,7 +244,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-30T10:45:19+00:00",
+        "validated_at": "2026-08-31T10:50:06+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -276,7 +299,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-08-30T10:45:19+00:00",
+        "validated_at": "2026-08-31T10:50:06+00:00",
         "validated_point_count": 1
       },
       "price_text": "8800万円",
