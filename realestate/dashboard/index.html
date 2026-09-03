@@ -83,6 +83,8 @@ function readFavoriteSet(key){try{let value=JSON.parse(localStorage.getItem(key)
 function writeFavoriteSet(key,value){localStorage.setItem(key,JSON.stringify([...value]))}
 function readFavoriteSet(key){try{let value=JSON.parse(localStorage.getItem(key)||'[]');return new Set(Array.isArray(value)?value.map(String):[])}catch(_){return new Set()}}
 function writeFavoriteSet(key,value){localStorage.setItem(key,JSON.stringify([...value]))}
+function readFavoriteSet(key){try{let value=JSON.parse(localStorage.getItem(key)||'[]');return new Set(Array.isArray(value)?value.map(String):[])}catch(_){return new Set()}}
+function writeFavoriteSet(key,value){localStorage.setItem(key,JSON.stringify([...value]))}
 function loadGuestFavorites(){return readFavoriteSet(GUEST_FAVORITES_KEY)}
 function saveGuestFavorites(){if(!currentUser)writeFavoriteSet(GUEST_FAVORITES_KEY,favoriteIds)}
 function loadLegacyFavorites(){return readFavoriteSet(LEGACY_FAVORITES_KEY)}
