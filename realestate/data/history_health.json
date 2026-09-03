@@ -8,27 +8,27 @@
   "active_verified_freehold_count": 1538,
   "canonicalization": {
     "canonical_listing_count": 2887,
-    "canonicalized_group_count": 154,
-    "embedded_multi_day_count": 1072,
-    "history_documents_loaded": 2746,
-    "input_listing_count": 3087,
-    "merged_duplicate_count": 200
+    "canonicalized_group_count": 150,
+    "embedded_multi_day_count": 1076,
+    "history_documents_loaded": 2770,
+    "input_listing_count": 3081,
+    "merged_duplicate_count": 194
   },
-  "generated_at": "2026-09-03T10:12:33+00:00",
+  "generated_at": "2026-09-03T14:41:44+00:00",
   "history_repair": {
-    "ambiguous_property_matches_skipped": 586,
+    "ambiguous_property_matches_skipped": 587,
     "direct_listing_matches": 2240,
     "ledger_files": 2,
-    "ledger_rows": 30503,
+    "ledger_rows": 30518,
     "maximum_daily_point_count": 23,
     "records_with_two_or_more_daily_points": 2599,
-    "repaired_at": "2026-09-03T10:12:33+00:00",
-    "repaired_record_count": 1530,
-    "unambiguous_property_matches": 358,
-    "valid_ledger_rows": 30503
+    "repaired_at": "2026-09-03T14:41:44+00:00",
+    "repaired_record_count": 1526,
+    "unambiguous_property_matches": 357,
+    "valid_ledger_rows": 30518
   },
   "maximum_daily_point_count": 23,
-  "observed_at": "2026-09-03T10:10:59+00:00",
+  "observed_at": "2026-09-03T14:37:14+00:00",
   "records_with_two_or_more_daily_points": 2599,
   "samples": [
     {
