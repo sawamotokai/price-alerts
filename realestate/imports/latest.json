@@ -551,18 +551,18 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区豊町2丁目",
-      "building_sqm": null,
-      "built": null,
+      "address": "東急大井町線 下神明駅 徒歩5分 東京都品川区豊町2丁目 建築年 (築年数) 1989年03月(築38年) 現況 空家 主要採光面 東 掲載画像5枚",
+      "building_sqm": 89.39,
+      "built": "1989-03",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 24.59,
+      "layout": "3K",
       "price_man": 4980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "東急大井町線 下神明駅 徒歩5分 土地面積/間取り 24.59m2 3K",
-      "title": "品川区豊町2丁目",
+      "station": null,
+      "title": "中古一戸建て 品川区豊町2丁目",
       "url": "https://www.homes.co.jp/kodate/b-1058900005421/",
       "ward": "品川区"
     },
@@ -599,34 +599,18 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区豊町1丁目11",
-      "building_sqm": null,
-      "built": null,
+      "address": "都営浅草線 高輪台駅 徒歩5分 東京都品川区東五反田1丁目 建築年 (築年数) 2005年11月(築21年) 現況 空家 主要採光面 南東 掲載画像19枚 5日前 価格更新 閲覧済",
+      "building_sqm": 83.23,
+      "built": "2005-11",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 9680.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": "都営浅草線 戸越駅 徒歩9分 土地面積/間取り 53.56m2 3DK",
-      "title": "見学予約",
-      "url": "https://www.homes.co.jp/kodate/b-1463790002725/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区東五反田1丁目",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 60.02,
+      "layout": "1LDK",
       "price_man": 9990.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "都営浅草線 高輪台駅 徒歩5分 土地面積/間取り 60.02m2 1LDK",
-      "title": "品川区東五反田一丁目",
+      "station": null,
+      "title": "中古一戸建て 品川区東五反田一丁目",
       "url": "https://www.homes.co.jp/kodate/b-1514110000029/",
       "ward": "品川区"
     },
@@ -727,17 +711,17 @@
       "ward": "品川区"
     },
     {
-      "address": "湘南新宿ライン宇須 西大井駅 徒歩15分 東京都品川区大井5丁目20 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 - 掲載画像23枚",
-      "building_sqm": 227.5,
-      "built": "2017-11",
+      "address": "東京都品川区大井5丁目20",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 132.23,
-      "layout": "6LDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 37800.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
+      "station": "JR京浜東北・根岸線 大井町駅 徒歩16分 土地面積/間取り 132.23m2 6LDK",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/kodate/b-1463790002672/",
       "ward": "品川区"
@@ -17047,6 +17031,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東京都目黒区中町１丁目",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 49.59,
+      "layout": null,
+      "price_man": 5780.0,
+      "property_type": "land",
+      "source": "ADCAST",
+      "station": "祐天寺駅 徒歩16分",
+      "title": "詳細を見る 詳細",
+      "url": "https://www.ad-cast.info/sch/detail.php?div=001&k_number=AMA26090402",
+      "ward": "目黒区"
+    },
+    {
       "address": "東京都目黒区柿の木坂３丁目",
       "building_sqm": null,
       "built": null,
@@ -17783,6 +17783,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東京メトロ日比谷線 中目黒駅 徒歩9分 東京都目黒区上目黒2丁目 建築年 (築年数) 2016年11月(築10年) 現況 空家 主要採光面 - 掲載画像20枚 6日前 価格更新 閲覧済",
+      "building_sqm": 119.54,
+      "built": "2016-11",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 78.49,
+      "layout": "2SLDK",
+      "price_man": 22900.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 上目黒2丁目 戸建",
+      "url": "https://www.homes.co.jp/kodate/b-35007200000063/",
+      "ward": "目黒区"
+    },
+    {
       "address": "JR山手線 目黒駅 徒歩8分 東京都目黒区下目黒2丁目21-8 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 北東 掲載画像9枚",
       "building_sqm": 164.35,
       "built": "2000-10",
@@ -17815,18 +17831,18 @@
       "ward": "目黒区"
     },
     {
-      "address": "東急東横線 学芸大学駅 徒歩7分 東京都目黒区鷹番1丁目 建築年 (築年数) 2016年05月(築11年) 現況 空家 主要採光面 - 掲載画像30枚",
-      "building_sqm": 146.33,
-      "built": "2016-05",
+      "address": "東京都目黒区鷹番1丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 130.17,
-      "layout": "1SLDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 29900.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 目黒区鷹番1丁目 中古戸建",
+      "station": "東急東横線 学芸大学駅 徒歩7分 土地面積/間取り 130.17m2 1SLDK",
+      "title": "目黒区鷹番1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007300000113/",
       "ward": "目黒区"
     },
@@ -24951,5 +24967,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-04T10:23:18+00:00"
+  "observed_at": "2026-09-04T14:24:20+00:00"
 }
