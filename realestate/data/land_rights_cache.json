@@ -32879,7 +32879,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1534560001449/": {
       "attempts": 3,
-      "checked_at": "2026-08-30T10:44:48.561959+00:00",
+      "checked_at": "2026-09-05T13:31:48.903644+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -34045,7 +34045,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1417040007513/": {
       "attempts": 3,
-      "checked_at": "2026-09-02T14:33:22.460329+00:00",
+      "checked_at": "2026-09-05T13:31:48.903054+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -34408,7 +34408,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1534560001449/": {
       "attempts": 3,
-      "checked_at": "2026-08-30T10:44:45.478970+00:00",
+      "checked_at": "2026-09-05T13:31:48.902488+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -38664,5 +38664,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-09-05T10:57:16.422206+00:00"
+  "updated_at": "2026-09-05T13:31:53.787250+00:00"
 }
