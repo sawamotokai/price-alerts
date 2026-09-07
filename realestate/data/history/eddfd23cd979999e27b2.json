@@ -1,13 +1,17 @@
 {
   "id": "eddfd23cd979999e27b2",
-  "property_id": "f8eb1435ca357b2515ff",
+  "property_id": "ddac17ab9191bdbe5411",
   "series": {
     "HOME'S": [
       {
         "date": "2026-09-07",
         "price_man": 28000.0
+      },
+      {
+        "date": "2026-09-08",
+        "price_man": 28000.0
       }
     ]
   },
-  "updated_at": "2026-09-07T11:01:44+00:00"
+  "updated_at": "2026-09-07T15:55:33+00:00"
 }
