@@ -695,23 +695,7 @@
       "ward": "品川区"
     },
     {
-      "address": "湘南新宿ライン宇須 西大井駅 徒歩15分 東京都品川区大井5丁目20 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 - 掲載画像23枚",
-      "building_sqm": 227.5,
-      "built": "2017-11",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 132.23,
-      "layout": "6LDK",
-      "price_man": 37800.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "見学予約",
-      "url": "https://www.homes.co.jp/kodate/b-1463790002672/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区大井5丁目",
+      "address": "東京都品川区大井5丁目20",
       "building_sqm": null,
       "built": null,
       "land_right": "所有権",
@@ -721,8 +705,24 @@
       "price_man": 37800.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "JR京浜東北・根岸線 大井町駅 徒歩14分 土地面積/間取り 132.23m2 5LDK",
-      "title": "戸建 品川区大井5丁目",
+      "station": "JR京浜東北・根岸線 大井町駅 徒歩16分 土地面積/間取り 132.23m2 6LDK",
+      "title": "見学予約",
+      "url": "https://www.homes.co.jp/kodate/b-1463790002672/",
+      "ward": "品川区"
+    },
+    {
+      "address": "京急本線 立会川駅 徒歩13分 東京都品川区大井5丁目 建築年 (築年数) 2017年11月(築9年) 現況 居住中 主要採光面 南東 掲載画像21枚",
+      "building_sqm": 227.5,
+      "built": "2017-11",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 132.23,
+      "layout": "5LDK",
+      "price_man": 37800.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "中古一戸建て 戸建 品川区大井5丁目",
       "url": "https://www.homes.co.jp/kodate/b-35005020002292/",
       "ward": "品川区"
     },
@@ -13681,8 +13681,8 @@
       "price_man": 12100.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "東急池上線「石川台」徒歩4分",
-      "title": "・【建築条件なし】×【駅から徒歩4分】×【更地渡し】",
+      "station": null,
+      "title": "大田区東雪谷2丁目売地 B区画 1億2100万円 100.7m 2 (30.46坪) 東京都大田区東雪谷2 東急池上線 石川台 徒歩4分",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21543662/",
       "ward": "大田区"
     },
@@ -17767,6 +17767,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
+      "building_sqm": 79.35,
+      "built": "2024-04",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 66.83,
+      "layout": "3LDK",
+      "price_man": 11500.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "見学予約",
+      "url": "https://www.homes.co.jp/kodate/b-1491230001620/",
+      "ward": "目黒区"
+    },
+    {
       "address": "京王井の頭線 駒場東大前駅 徒歩6分 東京都目黒区駒場1丁目2-17 建築年 (築年数) 2003年03月(築24年) 現況 空家 主要採光面 - 掲載画像30枚",
       "building_sqm": 80.89,
       "built": "2003-03",
@@ -17844,22 +17860,6 @@
       "station": null,
       "title": "中古一戸建て 目黒区大岡山1丁目中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-14300020288/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区大岡山1丁目26",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 19800.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": "東急目黒線 大岡山駅 徒歩10分 土地面積/間取り 180.49m2 4LDK",
-      "title": "見学予約",
-      "url": "https://www.homes.co.jp/kodate/b-1491230001620/",
       "ward": "目黒区"
     },
     {
@@ -24999,5 +24999,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-07T10:59:00+00:00"
+  "observed_at": "2026-09-07T15:54:01+00:00"
 }
