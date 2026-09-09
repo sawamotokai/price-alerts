@@ -583,18 +583,18 @@
       "ward": "品川区"
     },
     {
-      "address": "JR横須賀線 西大井駅 徒歩9分 東京都品川区大井3丁目 建築年 (築年数) 2016年07月(築11年) 現況 居住中 主要採光面 南 掲載画像30枚",
-      "building_sqm": 100.19,
-      "built": "2016-07",
+      "address": "東京都品川区大井3丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 66.19,
-      "layout": "3LDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 12200.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 品川区大井三丁目戸建",
+      "station": "JR京浜東北・根岸線 大井町駅 徒歩13分 土地面積/間取り 66.19m2 3LDK",
+      "title": "品川区大井三丁目戸建",
       "url": "https://www.homes.co.jp/kodate/b-1545940000075/",
       "ward": "品川区"
     },
@@ -615,17 +615,17 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区小山7丁目",
-      "building_sqm": null,
-      "built": null,
+      "address": "東急目黒線 洗足駅 徒歩3分 東京都品川区小山7丁目 建築年 (築年数) 2024年10月(築2年) 現況 居住中 主要採光面 西 掲載画像17枚",
+      "building_sqm": 95.84,
+      "built": "2024-10",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 98.0,
+      "layout": "3LDK",
       "price_man": 17480.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "東急目黒線 洗足駅 徒歩3分 土地面積/間取り 98m2 3LDK",
+      "station": null,
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1130740003661/",
       "ward": "品川区"
@@ -17762,22 +17762,6 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/kodate/b-1130750003162/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
-      "building_sqm": 79.35,
-      "built": "2024-04",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 66.83,
-      "layout": "3LDK",
-      "price_man": 11500.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
       "title": "中古一戸建て 目黒区中町1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-1169130024609/",
       "ward": "目黒区"
@@ -17847,35 +17831,19 @@
       "ward": "目黒区"
     },
     {
-      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2023年08月(築4年) 現況 居住中 主要採光面 - 掲載画像30枚",
-      "building_sqm": 82.6,
-      "built": "2023-08",
+      "address": "東京都目黒区東が丘1丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 70.71,
-      "layout": "1SLDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 13980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 目黒区東が丘1丁目 中古戸建",
+      "station": "東急田園都市線 駒沢大学駅 徒歩14分 土地面積/間取り 70.71m2 1SLDK",
+      "title": "目黒区東が丘1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007350000042/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東急東横線 都立大学駅 徒歩7分 東京都目黒区中根1丁目 建築年 (築年数) 2022年05月(築5年) 現況 居住中 主要採光面 西 掲載画像22枚",
-      "building_sqm": 84.86,
-      "built": "2022-05",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 84.76,
-      "layout": "2SLDK",
-      "price_man": 14780.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 都立大学駅7分「こだわりの注文住宅」",
-      "url": "https://www.homes.co.jp/kodate/b-1535080000602/",
       "ward": "目黒区"
     },
     {
@@ -24951,5 +24919,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-09T10:39:07+00:00"
+  "observed_at": "2026-09-09T14:38:54+00:00"
 }
