@@ -33440,7 +33440,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1358090022160/": {
       "attempts": 3,
-      "checked_at": "2026-09-07T11:00:48.733130+00:00",
+      "checked_at": "2026-09-10T14:30:16.279358+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -34001,7 +34001,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1431680002656/": {
       "attempts": 3,
-      "checked_at": "2026-09-04T10:24:42.726412+00:00",
+      "checked_at": "2026-09-10T14:30:16.273348+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -34573,7 +34573,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1534560001449/": {
       "attempts": 3,
-      "checked_at": "2026-09-05T13:31:48.903644+00:00",
+      "checked_at": "2026-09-10T14:30:16.278583+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -34600,6 +34600,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1534560001495/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1534560001503/": {
+      "attempts": 3,
+      "checked_at": "2026-09-10T14:30:16.280184+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1534560001503/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -35893,7 +35904,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1431680002656/": {
       "attempts": 3,
-      "checked_at": "2026-09-04T10:24:34.232473+00:00",
+      "checked_at": "2026-09-10T14:30:16.274198+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -36190,7 +36201,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1534560001449/": {
       "attempts": 3,
-      "checked_at": "2026-09-05T13:31:48.902488+00:00",
+      "checked_at": "2026-09-10T14:30:16.276894+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -36217,6 +36228,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1534560001495/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/visit/input/kodate/b-1534560001503/": {
+      "attempts": 3,
+      "checked_at": "2026-09-10T14:30:16.273891+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1534560001503/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -39455,6 +39477,17 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/kodate/b-1534560001503/": {
+      "attempts": 3,
+      "checked_at": "2026-09-10T14:30:16.277819+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1534560001503/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/kodate/b-1535080000602": {
       "attempts": 3,
       "checked_at": "2026-08-10T11:23:28.237986+00:00",
@@ -40644,5 +40677,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-09-10T10:54:33.604302+00:00"
+  "updated_at": "2026-09-10T14:30:21.216000+00:00"
 }

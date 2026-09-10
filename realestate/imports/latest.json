@@ -551,18 +551,18 @@
       "ward": "品川区"
     },
     {
-      "address": "都営浅草線 高輪台駅 徒歩5分 東京都品川区東五反田1丁目 建築年 (築年数) 2005年11月(築21年) 現況 空家 主要採光面 南東 掲載画像19枚",
-      "building_sqm": 83.23,
-      "built": "2005-11",
+      "address": "東京都品川区東五反田1丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 60.02,
-      "layout": "1LDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 9990.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 品川区東五反田一丁目",
+      "station": "都営浅草線 高輪台駅 徒歩5分 土地面積/間取り 60.02m2 1LDK",
+      "title": "品川区東五反田一丁目",
       "url": "https://www.homes.co.jp/kodate/b-1514110000029/",
       "ward": "品川区"
     },
@@ -599,18 +599,18 @@
       "ward": "品川区"
     },
     {
-      "address": "東急目黒線 西小山駅 徒歩8分 東京都品川区荏原6丁目2 建築年 (築年数) 2003年01月(築24年) 現況 空家 主要採光面 - 掲載画像16枚",
-      "building_sqm": 116.82,
-      "built": "2003-01",
+      "address": "東京都品川区荏原6丁目2",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 76.82,
-      "layout": "2SLDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 13980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 品川区荏原6丁目 一戸建て",
+      "station": "東急目黒線 西小山駅 徒歩8分 土地面積/間取り 76.82m2 2SLDK",
+      "title": "品川区荏原6丁目 一戸建て",
       "url": "https://www.homes.co.jp/kodate/b-1463790002333/",
       "ward": "品川区"
     },
@@ -11905,8 +11905,8 @@
       "price_man": 8580.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": null,
-      "title": "【ADCAST限定公開♪】南雪谷_建込1.2億円台の自由設計♪ 8580万円 95.12m 2 東京都大田区南雪谷4 東急池上線 御嶽山 徒歩6分",
+      "station": "東急池上線「御嶽山」徒歩6分",
+      "title": "長原駅のアドキャスト上池台支店へ!物件をご用意してお待ちしております♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21376248/",
       "ward": "大田区"
     },
@@ -12081,8 +12081,8 @@
       "price_man": 8680.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": null,
-      "title": "【大森&山王】駅10分×土地面積36坪 建築条件無し売地 8680万円 121.45m 2 東京都大田区山王3 JR京浜東北線 大森 徒歩10分",
+      "station": "JR京浜東北線「大森」徒歩10分",
+      "title": "◆ADCAST♪◆駅近×複数路線利用可♪ 所有権×土地121.45m2♪",
       "url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21630986/",
       "ward": "大田区"
     },
@@ -17847,18 +17847,18 @@
       "ward": "目黒区"
     },
     {
-      "address": "東急東横線 学芸大学駅 徒歩7分 東京都目黒区鷹番1丁目 建築年 (築年数) 2016年05月(築11年) 現況 空家 主要採光面 - 掲載画像30枚",
-      "building_sqm": 146.33,
-      "built": "2016-05",
+      "address": "東京都目黒区鷹番1丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 130.17,
-      "layout": "1SLDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 29900.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 目黒区鷹番1丁目 中古戸建",
+      "station": "東急東横線 学芸大学駅 徒歩7分 土地面積/間取り 130.17m2 1SLDK",
+      "title": "目黒区鷹番1丁目 中古戸建",
       "url": "https://www.homes.co.jp/kodate/b-35007300000113/",
       "ward": "目黒区"
     },
@@ -24951,5 +24951,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-10T10:53:05+00:00"
+  "observed_at": "2026-09-10T14:29:11+00:00"
 }

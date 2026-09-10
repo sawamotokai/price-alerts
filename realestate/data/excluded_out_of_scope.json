@@ -1,6 +1,6 @@
 {
   "count": 9,
-  "generated_at": "2026-09-10T10:54:33.604302+00:00",
+  "generated_at": "2026-09-10T14:30:21.216000+00:00",
   "items": [
     {
       "access": null,
@@ -48,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-09T14:41:26+00:00",
+        "validated_at": "2026-09-10T10:54:55+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -63,18 +63,43 @@
     },
     {
       "access": null,
-      "active": true,
+      "active": false,
       "address": "東京都大田区南雪谷4",
       "broker": null,
       "building_area_sqm": null,
       "built_year_month": null,
-      "ended_at": null,
+      "ended_at": "2026-09-10T10:53:05+00:00",
       "first_seen": "2026-09-10T19:49:56.662980+09:00",
       "land_area_sqm": null,
+      "land_right_status": "unknown",
       "last_seen": "2026-09-10T19:49:56.662980+09:00",
       "layout": null,
       "listing_id": "88dbd8e4a85bdd095647",
       "missing_runs": 0,
+      "price_change_status": "insufficient-history",
+      "price_change_yen": 0,
+      "price_change_yen_validated": 0,
+      "price_history": [
+        [
+          "2026-09-10",
+          98800000
+        ]
+      ],
+      "price_history_anomaly_count": 0,
+      "price_history_validated": [
+        [
+          "2026-09-10",
+          98800000
+        ]
+      ],
+      "price_history_validation": {
+        "anomaly_count": 0,
+        "max_unconfirmed_change_pct": 0.35,
+        "min_regime_observations": 2,
+        "raw_point_count": 1,
+        "validated_at": "2026-09-10T10:54:55+00:00",
+        "validated_point_count": 1
+      },
       "price_text": "9880万円",
       "price_yen": 98800000,
       "property_id": "listing:88dbd8e4a85bdd095647",
@@ -86,18 +111,43 @@
     },
     {
       "access": null,
-      "active": true,
+      "active": false,
       "address": "東京都大田区山王3",
       "broker": null,
       "building_area_sqm": null,
       "built_year_month": null,
-      "ended_at": null,
+      "ended_at": "2026-09-10T10:53:05+00:00",
       "first_seen": "2026-09-10T19:49:56.662980+09:00",
       "land_area_sqm": null,
+      "land_right_status": "unknown",
       "last_seen": "2026-09-10T19:49:56.662980+09:00",
       "layout": null,
       "listing_id": "8d4b9fc33d69adfa719e",
       "missing_runs": 0,
+      "price_change_status": "insufficient-history",
+      "price_change_yen": 0,
+      "price_change_yen_validated": 0,
+      "price_history": [
+        [
+          "2026-09-10",
+          40980000
+        ]
+      ],
+      "price_history_anomaly_count": 0,
+      "price_history_validated": [
+        [
+          "2026-09-10",
+          40980000
+        ]
+      ],
+      "price_history_validation": {
+        "anomaly_count": 0,
+        "max_unconfirmed_change_pct": 0.35,
+        "min_regime_observations": 2,
+        "raw_point_count": 1,
+        "validated_at": "2026-09-10T10:54:55+00:00",
+        "validated_point_count": 1
+      },
       "price_text": "4098万円",
       "price_yen": 40980000,
       "property_id": "listing:8d4b9fc33d69adfa719e",
@@ -109,18 +159,43 @@
     },
     {
       "access": null,
-      "active": true,
+      "active": false,
       "address": "東京都大田区南雪谷4",
       "broker": null,
       "building_area_sqm": null,
       "built_year_month": null,
-      "ended_at": null,
+      "ended_at": "2026-09-10T10:53:05+00:00",
       "first_seen": "2026-09-10T19:49:56.662980+09:00",
       "land_area_sqm": null,
+      "land_right_status": "unknown",
       "last_seen": "2026-09-10T19:49:56.662980+09:00",
       "layout": null,
       "listing_id": "9015577df3ee287dda26",
       "missing_runs": 0,
+      "price_change_status": "insufficient-history",
+      "price_change_yen": 0,
+      "price_change_yen_validated": 0,
+      "price_history": [
+        [
+          "2026-09-10",
+          98800000
+        ]
+      ],
+      "price_history_anomaly_count": 0,
+      "price_history_validated": [
+        [
+          "2026-09-10",
+          98800000
+        ]
+      ],
+      "price_history_validation": {
+        "anomaly_count": 0,
+        "max_unconfirmed_change_pct": 0.35,
+        "min_regime_observations": 2,
+        "raw_point_count": 1,
+        "validated_at": "2026-09-10T10:54:55+00:00",
+        "validated_point_count": 1
+      },
       "price_text": "9880万円",
       "price_yen": 98800000,
       "property_id": "listing:9015577df3ee287dda26",
@@ -172,7 +247,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-09T14:41:26+00:00",
+        "validated_at": "2026-09-10T10:54:55+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -231,7 +306,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-09T14:41:26+00:00",
+        "validated_at": "2026-09-10T10:54:55+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -246,18 +321,43 @@
     },
     {
       "access": null,
-      "active": true,
+      "active": false,
       "address": "東京都大田区南雪谷4",
       "broker": null,
       "building_area_sqm": null,
       "built_year_month": null,
-      "ended_at": null,
+      "ended_at": "2026-09-10T10:53:05+00:00",
       "first_seen": "2026-09-10T19:49:56.662980+09:00",
       "land_area_sqm": null,
+      "land_right_status": "unknown",
       "last_seen": "2026-09-10T19:49:56.662980+09:00",
       "layout": null,
       "listing_id": "ecd13c14bcbbf8e87b6d",
       "missing_runs": 0,
+      "price_change_status": "insufficient-history",
+      "price_change_yen": 0,
+      "price_change_yen_validated": 0,
+      "price_history": [
+        [
+          "2026-09-10",
+          98800000
+        ]
+      ],
+      "price_history_anomaly_count": 0,
+      "price_history_validated": [
+        [
+          "2026-09-10",
+          98800000
+        ]
+      ],
+      "price_history_validation": {
+        "anomaly_count": 0,
+        "max_unconfirmed_change_pct": 0.35,
+        "min_regime_observations": 2,
+        "raw_point_count": 1,
+        "validated_at": "2026-09-10T10:54:55+00:00",
+        "validated_point_count": 1
+      },
       "price_text": "9880万円",
       "price_yen": 98800000,
       "property_id": "listing:ecd13c14bcbbf8e87b6d",
@@ -313,7 +413,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-09T14:41:27+00:00",
+        "validated_at": "2026-09-10T10:54:55+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -368,7 +468,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-09T14:41:27+00:00",
+        "validated_at": "2026-09-10T10:54:55+00:00",
         "validated_point_count": 1
       },
       "price_text": "8800万円",
