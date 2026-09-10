@@ -118,4 +118,4 @@ freehold.write_text(s, encoding="utf-8")
 
 print("Ota + SUUMO land runtime scope patch applied with stable SUUMO URLs, strict ward validation and one-run stale removal")
 
-# automation-run-marker: 2026-09-09T19:34:04+09:00
+# automation-run-marker: 2026-09-10T19:47:53+09:00
