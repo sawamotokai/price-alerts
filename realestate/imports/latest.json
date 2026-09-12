@@ -599,22 +599,6 @@
       "ward": "品川区"
     },
     {
-      "address": "東急大井町線 旗の台駅 徒歩6分 東京都品川区旗の台1丁目 建築年 (築年数) 2001年12月(築25年) 現況 居住中 主要採光面 南 掲載画像14枚",
-      "building_sqm": 126.62,
-      "built": "2001-12",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 104.16,
-      "layout": "4LDK",
-      "price_man": 12000.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 品川区旗の台1丁目 戸建て",
-      "url": "https://www.homes.co.jp/kodate/b-1417040007295/",
-      "ward": "品川区"
-    },
-    {
       "address": "東急目黒線 西小山駅 徒歩8分 東京都品川区荏原6丁目2 建築年 (築年数) 2003年01月(築24年) 現況 空家 主要採光面 - 掲載画像16枚",
       "building_sqm": 116.82,
       "built": "2003-01",
@@ -17719,19 +17703,19 @@
       "ward": "目黒区"
     },
     {
-      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
-      "building_sqm": 79.35,
-      "built": "2024-04",
+      "address": null,
+      "building_sqm": 42.06,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 66.83,
-      "layout": "3LDK",
-      "price_man": 11500.0,
+      "land_sqm": 39.42,
+      "layout": "1DK",
+      "price_man": 10000.0,
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "中古一戸建て 目黒区中町1丁目 中古戸建",
-      "url": "https://www.homes.co.jp/kodate/b-1169130024609/",
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-14300020500/",
       "ward": "目黒区"
     },
     {
@@ -17746,8 +17730,8 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/kodate/b-1357690019414/",
+      "title": "中古一戸建て 目黒区中町1丁目 中古戸建",
+      "url": "https://www.homes.co.jp/kodate/b-1169130024609/",
       "ward": "目黒区"
     },
     {
@@ -17767,67 +17751,35 @@
       "ward": "目黒区"
     },
     {
-      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
-      "building_sqm": 79.35,
-      "built": "2024-04",
+      "address": "京王井の頭線 駒場東大前駅 徒歩6分 東京都目黒区駒場1丁目2-17 建築年 (築年数) 2003年03月(築24年) 現況 空家 主要採光面 - 掲載画像30枚",
+      "building_sqm": 80.89,
+      "built": "2003-03",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 66.83,
+      "land_sqm": 70.08,
       "layout": "3LDK",
-      "price_man": 11500.0,
+      "price_man": 12800.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-1357690019414/",
+      "ward": "目黒区"
+    },
+    {
+      "address": null,
+      "building_sqm": 114.68,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 180.49,
+      "layout": "4LDK",
+      "price_man": 19800.0,
       "property_type": null,
       "source": "HOME'S",
       "station": null,
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-14300020288/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東急東横線 学芸大学駅 徒歩15分 東京都目黒区中町1丁目 建築年 (築年数) 2024年04月(築3年) 現況 居住中 主要採光面 北西 掲載画像30枚",
-      "building_sqm": 79.35,
-      "built": "2024-04",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 66.83,
-      "layout": "3LDK",
-      "price_man": 11500.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/kodate/b-14300020500/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "東急田園都市線 駒沢大学駅 徒歩14分 東京都目黒区東が丘1丁目 建築年 (築年数) 2023年08月(築4年) 現況 居住中 主要採光面 - 掲載画像30枚 1日前 価格更新 閲覧済",
-      "building_sqm": 82.6,
-      "built": "2023-08",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 70.71,
-      "layout": "1SLDK",
-      "price_man": 13480.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 目黒区東が丘1丁目 中古戸建",
-      "url": "https://www.homes.co.jp/kodate/b-35007350000042/",
-      "ward": "目黒区"
-    },
-    {
-      "address": "JR山手線 目黒駅 徒歩8分 東京都目黒区下目黒2丁目21-8 建築年 (築年数) 2000年10月(築26年) 現況 空家 主要採光面 北東 掲載画像9枚",
-      "building_sqm": 164.35,
-      "built": "2000-10",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 118.83,
-      "layout": "2DK",
-      "price_man": 26800.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 下目黒2丁目賃貸併用住宅",
-      "url": "https://www.homes.co.jp/kodate/b-1445580000246/",
       "ward": "目黒区"
     },
     {
@@ -25175,5 +25127,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-12T10:53:15+00:00"
+  "observed_at": "2026-09-12T13:40:15+00:00"
 }
