@@ -1,7 +1,7 @@
 {
   "adcast_count": 133,
   "adcast_coverage": true,
-  "confirmed_leasehold_excluded_count": 103,
+  "confirmed_leasehold_excluded_count": 104,
   "coverage": {
     "ADCAST": true,
     "HOME'S": true,
@@ -10,14 +10,14 @@
   },
   "fudousan_japan_coverage": false,
   "listing_ended_candidate_count": 41,
-  "new_count": 37,
-  "observed_at": "2026-09-14T11:00:24+00:00",
+  "new_count": 35,
+  "observed_at": "2026-09-14T16:25:07+00:00",
   "out_of_scope_excluded_count": 9,
   "price_changed_count": 23,
   "price_count": 1471,
   "price_coverage_pct": 93.87,
-  "price_history_quarantined_point_count": 107,
-  "price_history_quarantined_record_count": 41,
+  "price_history_quarantined_point_count": 140,
+  "price_history_quarantined_record_count": 42,
   "record_count": 1567,
   "source_counts": {
     "ADCAST": 133,
@@ -47,7 +47,7 @@
       "目黒区": 0
     }
   },
-  "unknown_right_excluded_count": 495,
+  "unknown_right_excluded_count": 501,
   "verified_freehold_count": 2934,
   "ward_counts": {
     "品川区": 357,
