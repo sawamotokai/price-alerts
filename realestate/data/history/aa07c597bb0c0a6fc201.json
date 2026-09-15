@@ -1,6 +1,6 @@
 {
   "id": "aa07c597bb0c0a6fc201",
-  "property_id": "ffc43cabca1403fb5fa7",
+  "property_id": "4b922cd2ec685b065650",
   "series": {
     "SUUMO": [
       {
@@ -106,8 +106,12 @@
       {
         "date": "2026-09-14",
         "price_man": 25800.0
+      },
+      {
+        "date": "2026-09-15",
+        "price_man": 25800.0
       }
     ]
   },
-  "updated_at": "2026-09-14T11:06:29+00:00"
+  "updated_at": "2026-09-15T10:28:37+00:00"
 }
