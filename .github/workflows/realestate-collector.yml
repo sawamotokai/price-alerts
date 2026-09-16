@@ -130,9 +130,13 @@ jobs:
                   raise SystemExit(f'out-of-scope ward leaked into snapshot: {item!r}')
 
           counts = Counter(item['source'] for item in items)
-          for source, complete in coverage.items():
-              if complete and source != 'fudousan.or.jp' and counts[source] == 0:
-                  raise SystemExit(f'{source} says complete but exported zero verified records')
+          if coverage.get('SUUMO') and counts['SUUMO'] == 0:
+              raise SystemExit('SUUMO says complete but exported zero verified records')
+          if coverage.get('ADCAST') and counts['ADCAST'] == 0:
+              raise SystemExit('ADCAST says complete but exported zero verified records')
+          # HOME'S coverage describes raw crawl completeness. Because publication
+          # requires positive ownership verification, a complete HOME'S crawl may
+          # legitimately export zero rows. Never fabricate a row to satisfy counts.
 
           adcast_report = json.loads(Path('realestate/data/adcast_report.json').read_text(encoding='utf-8'))
           supplemental = adcast_report.get('supplemental') or {}
