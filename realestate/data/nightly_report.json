@@ -1,9 +1,9 @@
 {
   "adcast_count": 133,
-  "adcast_coverage": true,
+  "adcast_coverage": false,
   "confirmed_leasehold_excluded_count": 105,
   "coverage": {
-    "ADCAST": true,
+    "ADCAST": false,
     "HOME'S": true,
     "SUUMO": true,
     "fudousan.or.jp": false
@@ -11,7 +11,7 @@
   "fudousan_japan_coverage": false,
   "listing_ended_candidate_count": 10,
   "new_count": 15,
-  "observed_at": "2026-09-16T10:40:47+00:00",
+  "observed_at": "2026-09-16T15:01:20+00:00",
   "out_of_scope_excluded_count": 9,
   "price_changed_count": 23,
   "price_count": 1486,
@@ -47,7 +47,7 @@
       "目黒区": 0
     }
   },
-  "unknown_right_excluded_count": 496,
+  "unknown_right_excluded_count": 500,
   "verified_freehold_count": 2995,
   "ward_counts": {
     "品川区": 364,
