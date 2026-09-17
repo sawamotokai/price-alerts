@@ -1,19 +1,19 @@
 {
-  "coverage": false,
-  "listing_ended_candidate_count": 0,
+  "coverage": true,
+  "listing_ended_candidate_count": 2,
   "new_count": 0,
-  "observed_at": "2026-09-16T15:01:20+00:00",
-  "price_changed_count": 0,
-  "record_count": 133,
+  "observed_at": "2026-09-17T10:31:10+00:00",
+  "price_changed_count": 3,
+  "record_count": 131,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-09-16T15:02:11+00:00",
-    "record_count": 123,
+    "observed_at": "2026-09-17T10:31:43+00:00",
+    "record_count": 131,
     "sanno1_urls": [
       "https://www.ad-cast.info/sch/detail.php?div=015&k_number=h137260220a"
     ],
-    "success": false,
-    "updated_count": 123,
+    "success": true,
+    "updated_count": 131,
     "wards": {
       "品川区": {
         "errors": [],
@@ -29,21 +29,20 @@
         "success": true
       },
       "大田区": {
-        "errors": [
-          "page 4: HTTP 502"
-        ],
+        "errors": [],
         "page_cap_reached": false,
         "pages_expected": 7,
         "pages_fetched": [
           1,
           2,
           3,
+          4,
           5,
           6,
           7
         ],
-        "parsed_count": 53,
-        "success": false
+        "parsed_count": 62,
+        "success": true
       },
       "目黒区": {
         "errors": [],
@@ -55,7 +54,7 @@
           3,
           4
         ],
-        "parsed_count": 35,
+        "parsed_count": 34,
         "success": true
       }
     }
@@ -77,7 +76,7 @@
     },
     "大田区": {
       "errors": [],
-      "expected_count": 63,
+      "expected_count": 62,
       "page_cap_reached": false,
       "pages_expected": 7,
       "pages_fetched": [
@@ -89,12 +88,12 @@
         6,
         7
       ],
-      "parsed_count": 63,
+      "parsed_count": 62,
       "success": true
     },
     "目黒区": {
       "errors": [],
-      "expected_count": 35,
+      "expected_count": 34,
       "page_cap_reached": false,
       "pages_expected": 4,
       "pages_fetched": [
@@ -103,7 +102,7 @@
         3,
         4
       ],
-      "parsed_count": 35,
+      "parsed_count": 34,
       "success": true
     }
   }
