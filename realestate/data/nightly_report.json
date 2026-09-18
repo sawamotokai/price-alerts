@@ -11,13 +11,13 @@
   "fudousan_japan_coverage": false,
   "listing_ended_candidate_count": 43,
   "new_count": 41,
-  "observed_at": "2026-09-18T10:30:58+00:00",
+  "observed_at": "2026-09-18T14:34:27+00:00",
   "out_of_scope_excluded_count": 9,
   "price_changed_count": 25,
   "price_count": 1491,
   "price_coverage_pct": 93.71,
-  "price_history_quarantined_point_count": 143,
-  "price_history_quarantined_record_count": 44,
+  "price_history_quarantined_point_count": 110,
+  "price_history_quarantined_record_count": 43,
   "record_count": 1591,
   "source_counts": {
     "ADCAST": 130,
@@ -47,7 +47,7 @@
       "目黒区": 0
     }
   },
-  "unknown_right_excluded_count": 512,
+  "unknown_right_excluded_count": 517,
   "verified_freehold_count": 3059,
   "ward_counts": {
     "品川区": 364,

@@ -24795,7 +24795,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21484494/": {
       "attempts": 3,
-      "checked_at": "2026-09-16T10:43:24.323064+00:00",
+      "checked_at": "2026-09-18T14:35:34.373460+00:00",
       "classifier_version": 4,
       "error": "HTTP 200: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -35739,7 +35739,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1062640000712/": {
       "attempts": 3,
-      "checked_at": "2026-09-16T10:43:10.158987+00:00",
+      "checked_at": "2026-09-18T14:35:34.371610+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -35838,7 +35838,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1130750003149/": {
       "attempts": 3,
-      "checked_at": "2026-09-12T10:54:27.405830+00:00",
+      "checked_at": "2026-09-18T14:35:34.376532+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -35849,7 +35849,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1130750003162/": {
       "attempts": 3,
-      "checked_at": "2026-09-14T11:02:59.749809+00:00",
+      "checked_at": "2026-09-18T14:35:34.371097+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -37433,7 +37433,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1431680002656/": {
       "attempts": 3,
-      "checked_at": "2026-09-13T10:16:04.575760+00:00",
+      "checked_at": "2026-09-18T14:35:34.375112+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -39534,7 +39534,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1431680002656/": {
       "attempts": 3,
-      "checked_at": "2026-09-13T10:16:06.401535+00:00",
+      "checked_at": "2026-09-18T14:35:34.371955+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -44769,5 +44769,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-09-18T10:32:29.102832+00:00"
+  "updated_at": "2026-09-18T14:35:42.042453+00:00"
 }
