@@ -1985,22 +1985,6 @@
       "price_man": 9550.0,
       "property_type": null,
       "source": "SUUMO",
-      "station": "JR山手線「大崎」徒歩11分",
-      "title": "【本日のご案内可能です】営業時間 8時~23時 時間柔軟に対応いたします。",
-      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21525918/",
-      "ward": "品川区"
-    },
-    {
-      "address": "東京都品川区戸越1",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
-      "price_man": 9550.0,
-      "property_type": null,
-      "source": "SUUMO",
       "station": "JR山手線「大崎」徒歩12分",
       "title": "東南側道路に面す陽当り良好な立地。自由設計可能な建築条件無しの分譲地です。",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21650967/",
@@ -6839,7 +6823,7 @@
       "ward": "大田区"
     },
     {
-      "address": "京急空港線 糀谷駅 徒歩14分 東京都大田区本羽田1丁目 建築年 (築年数) 2010年02月(築17年) 現況 居住中 主要採光面 - 掲載画像29枚 7日前 公開 閲覧済",
+      "address": "京急空港線 糀谷駅 徒歩14分 東京都大田区本羽田1丁目 建築年 (築年数) 2010年02月(築17年) 現況 居住中 主要採光面 - 掲載画像29枚",
       "building_sqm": 77.97,
       "built": "2010-02",
       "land_right": "所有権",
@@ -6871,14 +6855,14 @@
       "ward": "大田区"
     },
     {
-      "address": "東急池上線 石川台駅 徒歩6分 東京都大田区東雪谷3丁目 建築年 (築年数) 2011年05月(築16年) 現況 居住中 主要採光面 - 掲載画像21枚",
+      "address": "東急池上線 石川台駅 徒歩6分 東京都大田区東雪谷3丁目 建築年 (築年数) 2011年05月(築16年) 現況 居住中 主要採光面 - 掲載画像21枚 本日 価格更新 閲覧済",
       "building_sqm": 76.36,
       "built": "2011-05",
       "land_right": "所有権",
       "land_right_status": "freehold",
       "land_sqm": 40.43,
       "layout": "2SLDK",
-      "price_man": 7350.0,
+      "price_man": 6980.0,
       "property_type": null,
       "source": "HOME'S",
       "station": null,
@@ -25655,5 +25639,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-21T10:55:33+00:00"
+  "observed_at": "2026-09-21T16:31:36+00:00"
 }
