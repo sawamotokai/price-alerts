@@ -6615,7 +6615,7 @@
       "ward": "大田区"
     },
     {
-      "address": "東急池上線 石川台駅 徒歩6分 東京都大田区東雪谷3丁目 建築年 (築年数) 2011年05月(築16年) 現況 居住中 主要採光面 - 掲載画像22枚 3日前 価格更新 閲覧済",
+      "address": "東急池上線 石川台駅 徒歩6分 東京都大田区東雪谷3丁目 建築年 (築年数) 2011年05月(築16年) 現況 居住中 主要採光面 - 掲載画像22枚 4日前 価格更新 閲覧済",
       "building_sqm": 76.36,
       "built": "2011-05",
       "land_right": "所有権",
@@ -17719,6 +17719,22 @@
       "ward": "目黒区"
     },
     {
+      "address": "東京都目黒区大橋２丁目",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 132.61,
+      "layout": null,
+      "price_man": 42700.0,
+      "property_type": "land",
+      "source": "ADCAST",
+      "station": "池尻大橋駅 徒歩9分",
+      "title": "詳細を見る 詳細",
+      "url": "https://www.ad-cast.info/sch/detail.php?div=016&k_number=20260806341a",
+      "ward": "目黒区"
+    },
+    {
       "address": "東京都目黒区八雲１丁目",
       "building_sqm": null,
       "built": null,
@@ -25223,5 +25239,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-25T10:18:00+00:00"
+  "observed_at": "2026-09-25T15:18:53+00:00"
 }
