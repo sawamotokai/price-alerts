@@ -375,22 +375,6 @@
       "ward": "品川区"
     },
     {
-      "address": "東京都品川区大井５丁目",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 106.32,
-      "layout": null,
-      "price_man": 13200.0,
-      "property_type": "land",
-      "source": "ADCAST",
-      "station": "西大井駅 徒歩12分",
-      "title": "詳細を見る 詳細",
-      "url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=2500820a",
-      "ward": "品川区"
-    },
-    {
       "address": "東京都品川区東五反田４丁目",
       "building_sqm": null,
       "built": null,
@@ -404,6 +388,22 @@
       "station": "五反田駅 徒歩8分",
       "title": "詳細を見る 詳細",
       "url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20260821z",
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区大井５丁目",
+      "building_sqm": null,
+      "built": null,
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 81.04,
+      "layout": null,
+      "price_man": 13500.0,
+      "property_type": "land",
+      "source": "ADCAST",
+      "station": "西大井駅 徒歩12分",
+      "title": "詳細を見る 詳細",
+      "url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=25020260926a",
       "ward": "品川区"
     },
     {
@@ -6567,6 +6567,22 @@
       "ward": "大田区"
     },
     {
+      "address": "東急池上線 蓮沼駅 徒歩11分 東京都大田区新蒲田1丁目 建築年 (築年数) 1999年09月(築28年) 現況 居住中 主要採光面 南 掲載画像30枚",
+      "building_sqm": 96.32,
+      "built": "1999-09",
+      "land_right": "所有権",
+      "land_right_status": "freehold",
+      "land_sqm": 50.2,
+      "layout": "3SLDK",
+      "price_man": 6180.0,
+      "property_type": null,
+      "source": "HOME'S",
+      "station": null,
+      "title": "資料請求",
+      "url": "https://www.homes.co.jp/kodate/b-1420500000626/",
+      "ward": "大田区"
+    },
+    {
       "address": "都営浅草線 西馬込駅 徒歩8分 東京都大田区南馬込1丁目 建築年 (築年数) 2008年10月(築18年) 現況 居住中 主要採光面 - 掲載画像5枚",
       "building_sqm": 101.0,
       "built": "2008-10",
@@ -6578,22 +6594,22 @@
       "property_type": null,
       "source": "HOME'S",
       "station": null,
-      "title": "資料請求",
+      "title": "中古一戸建て 始発「西馬込」8分・平成新耐震戸建",
       "url": "https://www.homes.co.jp/kodate/b-1571480000006/",
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区東雪谷3丁目",
-      "building_sqm": null,
-      "built": null,
+      "address": "東急池上線 石川台駅 徒歩6分 東京都大田区東雪谷3丁目 建築年 (築年数) 2011年05月(築16年) 現況 居住中 主要採光面 - 掲載画像22枚 4日前 価格更新 閲覧済",
+      "building_sqm": 76.36,
+      "built": "2011-05",
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": null,
-      "layout": null,
+      "land_sqm": 40.43,
+      "layout": "2SLDK",
       "price_man": 6980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": "東急池上線 石川台駅 徒歩6分 土地面積/間取り 40.43m2 2SLDK",
+      "station": null,
       "title": "見学予約",
       "url": "https://www.homes.co.jp/kodate/b-1491230002242/",
       "ward": "大田区"
@@ -25255,5 +25271,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-26T10:15:40+00:00"
+  "observed_at": "2026-09-26T14:32:54+00:00"
 }
