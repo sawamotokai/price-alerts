@@ -6631,33 +6631,17 @@
       "ward": "大田区"
     },
     {
-      "address": "都営浅草線 西馬込駅 徒歩8分 東京都大田区南馬込1丁目 建築年 (築年数) 2008年10月(築18年) 現況 居住中 主要採光面 - 掲載画像5枚",
-      "building_sqm": 101.0,
-      "built": "2008-10",
+      "address": "東京都大田区東雪谷3丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 76.95,
-      "layout": "3SLDK",
-      "price_man": 6480.0,
-      "property_type": null,
-      "source": "HOME'S",
-      "station": null,
-      "title": "資料請求",
-      "url": "https://www.homes.co.jp/kodate/b-1571480000006/",
-      "ward": "大田区"
-    },
-    {
-      "address": "東急池上線 石川台駅 徒歩6分 東京都大田区東雪谷3丁目 建築年 (築年数) 2011年05月(築16年) 現況 居住中 主要採光面 - 掲載画像22枚 5日前 価格更新 閲覧済",
-      "building_sqm": 76.36,
-      "built": "2011-05",
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 40.43,
-      "layout": "2SLDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 6980.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
+      "station": "東急池上線 石川台駅 徒歩6分 土地面積/間取り 40.43m2 2SLDK",
       "title": "見学予約",
       "url": "https://www.homes.co.jp/kodate/b-1491230002242/",
       "ward": "大田区"
@@ -25399,5 +25383,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-09-27T10:15:11+00:00"
+  "observed_at": "2026-09-27T15:13:09+00:00"
 }
