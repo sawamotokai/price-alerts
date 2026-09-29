@@ -1,6 +1,6 @@
 {
   "id": "1495e13d42207bbf6864",
-  "property_id": "d38c6256a5841920c97f",
+  "property_id": "listing:1495e13d42207bbf6864",
   "series": {
     "SUUMO": [
       {
@@ -93,9 +93,13 @@
       },
       {
         "date": "2026-09-29",
-        "price_man": 7000.0
+        "price_man": 5530.0
+      },
+      {
+        "date": "2026-09-30",
+        "price_man": 5530.0
       }
     ]
   },
-  "updated_at": "2026-09-28T18:15:21+00:00"
+  "updated_at": "2026-09-29T16:40:25+00:00"
 }
