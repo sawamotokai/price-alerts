@@ -1,19 +1,19 @@
 {
   "coverage": true,
-  "listing_ended_candidate_count": 0,
-  "new_count": 0,
-  "observed_at": "2026-09-30T16:27:30+00:00",
-  "price_changed_count": 0,
-  "record_count": 121,
+  "listing_ended_candidate_count": 4,
+  "new_count": 7,
+  "observed_at": "2026-10-01T17:04:46+00:00",
+  "price_changed_count": 3,
+  "record_count": 124,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-09-30T16:28:02+00:00",
-    "record_count": 121,
+    "observed_at": "2026-10-01T17:05:21+00:00",
+    "record_count": 124,
     "sanno1_urls": [
       "https://www.ad-cast.info/sch/detail.php?div=015&k_number=h137260220a"
     ],
     "success": true,
-    "updated_count": 121,
+    "updated_count": 124,
     "wards": {
       "品川区": {
         "errors": [],
@@ -25,21 +25,22 @@
           3,
           4
         ],
-        "parsed_count": 38,
+        "parsed_count": 37,
         "success": true
       },
       "大田区": {
         "errors": [],
         "page_cap_reached": false,
-        "pages_expected": 5,
+        "pages_expected": 6,
         "pages_fetched": [
           1,
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
-        "parsed_count": 50,
+        "parsed_count": 55,
         "success": true
       },
       "目黒区": {
@@ -52,7 +53,7 @@
           3,
           4
         ],
-        "parsed_count": 33,
+        "parsed_count": 32,
         "success": true
       }
     }
@@ -60,7 +61,7 @@
   "wards": {
     "品川区": {
       "errors": [],
-      "expected_count": 38,
+      "expected_count": 37,
       "page_cap_reached": false,
       "pages_expected": 4,
       "pages_fetched": [
@@ -69,27 +70,28 @@
         3,
         4
       ],
-      "parsed_count": 38,
+      "parsed_count": 37,
       "success": true
     },
     "大田区": {
       "errors": [],
-      "expected_count": 50,
+      "expected_count": 55,
       "page_cap_reached": false,
-      "pages_expected": 5,
+      "pages_expected": 6,
       "pages_fetched": [
         1,
         2,
         3,
         4,
-        5
+        5,
+        6
       ],
-      "parsed_count": 50,
+      "parsed_count": 55,
       "success": true
     },
     "目黒区": {
       "errors": [],
-      "expected_count": 33,
+      "expected_count": 32,
       "page_cap_reached": false,
       "pages_expected": 4,
       "pages_fetched": [
@@ -98,7 +100,7 @@
         3,
         4
       ],
-      "parsed_count": 33,
+      "parsed_count": 32,
       "success": true
     }
   }
