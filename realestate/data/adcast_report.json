@@ -1,19 +1,19 @@
 {
   "coverage": true,
-  "listing_ended_candidate_count": 4,
-  "new_count": 7,
-  "observed_at": "2026-10-01T17:04:46+00:00",
-  "price_changed_count": 3,
-  "record_count": 124,
+  "listing_ended_candidate_count": 0,
+  "new_count": 2,
+  "observed_at": "2026-10-02T16:19:15+00:00",
+  "price_changed_count": 6,
+  "record_count": 126,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-10-01T17:05:21+00:00",
-    "record_count": 124,
+    "observed_at": "2026-10-02T16:19:47+00:00",
+    "record_count": 126,
     "sanno1_urls": [
       "https://www.ad-cast.info/sch/detail.php?div=015&k_number=h137260220a"
     ],
     "success": true,
-    "updated_count": 124,
+    "updated_count": 126,
     "wards": {
       "品川区": {
         "errors": [],
@@ -25,7 +25,7 @@
           3,
           4
         ],
-        "parsed_count": 37,
+        "parsed_count": 38,
         "success": true
       },
       "大田区": {
@@ -53,7 +53,7 @@
           3,
           4
         ],
-        "parsed_count": 32,
+        "parsed_count": 33,
         "success": true
       }
     }
@@ -61,7 +61,7 @@
   "wards": {
     "品川区": {
       "errors": [],
-      "expected_count": 37,
+      "expected_count": 38,
       "page_cap_reached": false,
       "pages_expected": 4,
       "pages_fetched": [
@@ -70,7 +70,7 @@
         3,
         4
       ],
-      "parsed_count": 37,
+      "parsed_count": 38,
       "success": true
     },
     "大田区": {
@@ -91,7 +91,7 @@
     },
     "目黒区": {
       "errors": [],
-      "expected_count": 32,
+      "expected_count": 33,
       "page_cap_reached": false,
       "pages_expected": 4,
       "pages_fetched": [
@@ -100,7 +100,7 @@
         3,
         4
       ],
-      "parsed_count": 32,
+      "parsed_count": 33,
       "success": true
     }
   }

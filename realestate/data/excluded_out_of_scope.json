@@ -1,6 +1,6 @@
 {
-  "count": 9,
-  "generated_at": "2026-10-01T17:11:28.507006+00:00",
+  "count": 10,
+  "generated_at": "2026-10-02T16:20:45.166212+00:00",
   "items": [
     {
       "access": null,
@@ -48,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -97,7 +97,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -145,7 +145,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 1
       },
       "price_text": "4098万円",
@@ -193,7 +193,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -247,7 +247,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -306,7 +306,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -317,6 +317,29 @@
       "source_listing_id": "21474654",
       "title": "祐天寺1億4000万円 建築条件付土地",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21474654/",
+      "ward": "大田区"
+    },
+    {
+      "access": null,
+      "active": true,
+      "address": "東京都大田区久が原3",
+      "broker": null,
+      "building_area_sqm": null,
+      "built_year_month": null,
+      "ended_at": null,
+      "first_seen": "2026-10-03T01:16:04.123232+09:00",
+      "land_area_sqm": null,
+      "last_seen": "2026-10-03T01:16:04.123232+09:00",
+      "layout": null,
+      "listing_id": "ae39443fd4153a3fe0b4",
+      "missing_runs": 0,
+      "price_text": "2600万円",
+      "price_yen": 26000000,
+      "property_id": "listing:ae39443fd4153a3fe0b4",
+      "source": "suumo",
+      "source_listing_id": "79166750",
+      "title": "府中市緑町の宅地 2600万円 39.58m 2 東京都府中市緑町3 京王線 東府中 徒歩6分",
+      "url": "https://suumo.jp/tochi/tokyo/sc_fuchu/nc_79166750/",
       "ward": "大田区"
     },
     {
@@ -355,7 +378,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -413,7 +436,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -468,7 +491,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-09-30T16:29:28+00:00",
+        "validated_at": "2026-10-01T17:12:05+00:00",
         "validated_point_count": 1
       },
       "price_text": "8800万円",
