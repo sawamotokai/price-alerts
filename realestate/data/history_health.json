@@ -1,35 +1,35 @@
 {
   "active_verified_freehold_by_source": {
     "ADCAST": 121,
-    "HOME'S": 12,
+    "HOME'S": 11,
     "SUUMO": 1434,
     "fudousan.or.jp": 0
   },
-  "active_verified_freehold_count": 1567,
+  "active_verified_freehold_count": 1566,
   "canonicalization": {
-    "canonical_listing_count": 4131,
-    "canonicalized_group_count": 166,
-    "embedded_multi_day_count": 2204,
-    "history_documents_loaded": 3892,
-    "input_listing_count": 4349,
-    "merged_duplicate_count": 218
+    "canonical_listing_count": 4132,
+    "canonicalized_group_count": 132,
+    "embedded_multi_day_count": 2231,
+    "history_documents_loaded": 3994,
+    "input_listing_count": 4313,
+    "merged_duplicate_count": 181
   },
-  "generated_at": "2026-10-04T11:00:05+00:00",
+  "generated_at": "2026-10-04T15:26:26+00:00",
   "history_repair": {
     "ambiguous_property_matches_skipped": 1043,
-    "direct_listing_matches": 3412,
+    "direct_listing_matches": 3413,
     "ledger_files": 3,
-    "ledger_rows": 85488,
-    "maximum_daily_point_count": 54,
-    "records_with_two_or_more_daily_points": 3723,
-    "repaired_at": "2026-10-04T11:00:05+00:00",
-    "repaired_record_count": 1519,
-    "unambiguous_property_matches": 384,
-    "valid_ledger_rows": 85488
+    "ledger_rows": 87197,
+    "maximum_daily_point_count": 55,
+    "records_with_two_or_more_daily_points": 3816,
+    "repaired_at": "2026-10-04T15:26:26+00:00",
+    "repaired_record_count": 1502,
+    "unambiguous_property_matches": 383,
+    "valid_ledger_rows": 87197
   },
-  "maximum_daily_point_count": 54,
-  "observed_at": "2026-10-04T10:52:43+00:00",
-  "records_with_two_or_more_daily_points": 3723,
+  "maximum_daily_point_count": 55,
+  "observed_at": "2026-10-04T15:24:46+00:00",
+  "records_with_two_or_more_daily_points": 3816,
   "samples": [
     {
       "dates": [
@@ -97,11 +97,12 @@
       "dates": [
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "00dc009b237493176619",
       "matched_by_property": false,
-      "point_count": 3,
+      "point_count": 4,
       "source": "SUUMO",
       "title": "目黒本町6(武蔵小山駅) 1億9300万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21830900/"
@@ -153,11 +154,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "00efcacc0a44b98ff4b4",
       "matched_by_property": false,
-      "point_count": 46,
+      "point_count": 47,
       "source": "SUUMO",
       "title": "【住友不動産の分譲宅地】シティガーデン八雲",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21039826/"
@@ -200,11 +202,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "011bad00252ac172187f",
       "matched_by_property": true,
-      "point_count": 37,
+      "point_count": 38,
       "source": "HOME'S",
       "title": "資料請求",
       "url": "https://www.homes.co.jp/kodate/b-1535110000021/"
@@ -250,11 +253,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "01528c4d18e10003b245",
       "matched_by_property": false,
-      "point_count": 40,
+      "point_count": 41,
       "source": "SUUMO",
       "title": "弊社限定物件♪◆◆新規分譲地 中目黒8分の立地 ◆◆",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21401644/"
@@ -312,11 +316,12 @@
         "2026-09-29",
         "2026-09-30",
         "2026-10-01",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "0156fa9a3271eb27b9b9",
       "matched_by_property": true,
-      "point_count": 52,
+      "point_count": 53,
       "source": "SUUMO",
       "title": "【即内見可能】【弊社近隣物件】/投資・賃貸併用・店舗併用住宅として◎",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20535020/"
@@ -376,11 +381,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "015c5dd125d7dcfb30c4",
       "matched_by_property": true,
-      "point_count": 54,
+      "point_count": 55,
       "source": "SUUMO",
       "title": "西大井4(馬込駅) 1億5000万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_78594193/"
@@ -420,11 +426,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "01abd93f9496a6d4231c",
       "matched_by_property": true,
-      "point_count": 34,
+      "point_count": 35,
       "source": "SUUMO",
       "title": "平塚2(戸越銀座駅) 9500万円",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21602342/"
@@ -476,11 +483,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "01febfd688efc81e4b52",
       "matched_by_property": false,
-      "point_count": 46,
+      "point_count": 47,
       "source": "SUUMO",
       "title": "◆中延駅4分!中延商店街至近の好立地!◆",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21120404/"
@@ -528,25 +536,39 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "0314df6a60b2d2c4bd13",
       "matched_by_property": true,
-      "point_count": 6,
+      "point_count": 7,
       "source": "SUUMO",
       "title": "上大崎3(目黒駅) 1億1000万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21815921/"
     },
     {
       "dates": [
+        "2026-10-04",
+        "2026-10-05"
+      ],
+      "listing_id": "0361c43c4712b6b6c7c4",
+      "matched_by_property": false,
+      "point_count": 2,
+      "source": "SUUMO",
+      "title": "中延4(中延駅) 1億500万円",
+      "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21842575/"
+    },
+    {
+      "dates": [
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "03680a1793c1953c9c30",
       "matched_by_property": false,
-      "point_count": 4,
+      "point_count": 5,
       "source": "SUUMO",
       "title": "下目黒5(武蔵小山駅) 9980万円",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21823651/"
@@ -556,11 +578,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "0384cd2f53e7581ad0e6",
       "matched_by_property": false,
-      "point_count": 4,
+      "point_count": 5,
       "source": "SUUMO",
       "title": "◆◇今すぐ知りたい!にお応えします◇◆どこよりもスピーディーかつ正確に♪",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21827380/"
@@ -620,11 +643,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "039307ff92c7a80e48b5",
       "matched_by_property": true,
-      "point_count": 54,
+      "point_count": 55,
       "source": "SUUMO",
       "title": "【大崎駅徒歩15分】品川区豊町一丁目アドレス・シャッター付地下車庫のある整形",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21309143/"
@@ -640,11 +664,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "04c08064e9b3a75285e7",
       "matched_by_property": false,
-      "point_count": 10,
+      "point_count": 11,
       "source": "SUUMO",
       "title": "■総額24180万円|『学芸大学』駅で叶える、洗練と静穏を愉しむ暮らし",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21775721/"
@@ -688,11 +713,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "04ce2d6878735737b39b",
       "matched_by_property": false,
-      "point_count": 38,
+      "point_count": 39,
       "source": "SUUMO",
       "title": "◆東横線中目黒駅徒歩10分◆建築条件無し◆生活利便性◎",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21316693/"
@@ -726,11 +752,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "05987cc8d7be6e15f1bd",
       "matched_by_property": false,
-      "point_count": 28,
+      "point_count": 29,
       "source": "SUUMO",
       "title": "大井町6分、駅までフラットアクセス、高台(安全立地)、130m2以上4LDK+P",
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21654744/"
@@ -745,11 +772,12 @@
         "2026-10-01",
         "2026-10-02",
         "2026-10-03",
-        "2026-10-04"
+        "2026-10-04",
+        "2026-10-05"
       ],
       "listing_id": "05ad2daf1d1a42f81c96",
       "matched_by_property": true,
-      "point_count": 9,
+      "point_count": 10,
       "source": "SUUMO",
       "title": "洗足駅徒歩5分×吹抜けのある23帖超LDK!2019年築、カースペース付",
       "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21791126/"
@@ -815,31 +843,6 @@
       "source": "ADCAST",
       "title": "詳細を見る 詳細",
       "url": "https://www.ad-cast.info/sch/detail.php?div=001&k_number=136260616a"
-    },
-    {
-      "dates": [
-        "2026-09-14",
-        "2026-09-15",
-        "2026-09-16",
-        "2026-09-17",
-        "2026-09-18",
-        "2026-09-19",
-        "2026-09-20",
-        "2026-09-21",
-        "2026-09-22",
-        "2026-09-23",
-        "2026-09-24",
-        "2026-09-25",
-        "2026-09-26",
-        "2026-09-27",
-        "2026-09-28"
-      ],
-      "listing_id": "064d2239cdd0a088d06d",
-      "matched_by_property": false,
-      "point_count": 15,
-      "source": "SUUMO",
-      "title": "五本木2(祐天寺駅) 1億3799万円",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21703044/"
     }
   ]
 }
