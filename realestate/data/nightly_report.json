@@ -1,7 +1,7 @@
 {
   "adcast_count": 121,
   "adcast_coverage": true,
-  "confirmed_leasehold_excluded_count": 126,
+  "confirmed_leasehold_excluded_count": 131,
   "coverage": {
     "ADCAST": true,
     "HOME'S": true,
@@ -9,37 +9,37 @@
     "fudousan.or.jp": false
   },
   "fudousan_japan_coverage": false,
-  "listing_ended_candidate_count": 103,
-  "new_count": 84,
-  "observed_at": "2026-10-04T15:24:46+00:00",
+  "listing_ended_candidate_count": 2,
+  "new_count": 1,
+  "observed_at": "2026-10-05T19:20:56+00:00",
   "out_of_scope_excluded_count": 10,
-  "price_changed_count": 31,
-  "price_count": 1474,
-  "price_coverage_pct": 94.13,
-  "price_history_quarantined_point_count": 161,
-  "price_history_quarantined_record_count": 51,
-  "record_count": 1566,
+  "price_changed_count": 30,
+  "price_count": 1480,
+  "price_coverage_pct": 93.49,
+  "price_history_quarantined_point_count": 167,
+  "price_history_quarantined_record_count": 53,
+  "record_count": 1583,
   "source_counts": {
     "ADCAST": 121,
-    "HOME'S": 11,
-    "SUUMO": 1434,
+    "HOME'S": 10,
+    "SUUMO": 1452,
     "fudousan.or.jp": 0
   },
   "source_ward_counts": {
     "ADCAST": {
       "品川区": 37,
-      "大田区": 54,
-      "目黒区": 30
+      "大田区": 53,
+      "目黒区": 31
     },
     "HOME'S": {
       "品川区": 4,
-      "大田区": 3,
+      "大田区": 2,
       "目黒区": 4
     },
     "SUUMO": {
       "品川区": 328,
-      "大田区": 629,
-      "目黒区": 477
+      "大田区": 637,
+      "目黒区": 487
     },
     "fudousan.or.jp": {
       "品川区": 0,
@@ -47,11 +47,11 @@
       "目黒区": 0
     }
   },
-  "unknown_right_excluded_count": 564,
-  "verified_freehold_count": 3613,
+  "unknown_right_excluded_count": 577,
+  "verified_freehold_count": 3689,
   "ward_counts": {
     "品川区": 369,
-    "大田区": 686,
-    "目黒区": 511
+    "大田区": 692,
+    "目黒区": 522
   }
 }

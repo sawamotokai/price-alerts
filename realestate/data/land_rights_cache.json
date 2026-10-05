@@ -3329,7 +3329,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21603786/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:59.290825+00:00",
+      "checked_at": "2026-10-05T19:22:20.259937+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
@@ -3439,7 +3439,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21634672/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:55.210501+00:00",
+      "checked_at": "2026-10-05T19:22:09.449577+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
@@ -3450,7 +3450,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21638271/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:34.156586+00:00",
+      "checked_at": "2026-10-05T19:22:11.330023+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階地下1階建",
@@ -4423,6 +4423,72 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建一部RC",
       "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21857658/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21860107/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:00.359274+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年、◆本物件の取引は借地権（賃借権）の権利譲渡取引です。（借地期限：譲渡時新規契約／非堅固20年・堅固30年）◆地主：祐天寺◆既存建物を建て替える際には、新築更新料がかかります。◆融資を利用する場合には、担保設定承諾料がかかり、金融機関が限られます。◆借地権譲渡には、地主による審査があり、期間を要します。◆地主による譲渡承諾取得後の売買取引となります。 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21860107/",
+      "http_status": 200,
+      "label": "賃借権",
+      "status": "leasehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21861472/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:20.383097+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21861472/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21862644/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:06.557063+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間新規20年 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21862644/",
+      "http_status": 200,
+      "label": "賃借権",
+      "status": "leasehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21864420/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:32.592097+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21864420/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21866975/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:18.807611+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21866975/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21869125/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:17.411088+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 軽量鉄骨2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_meguro/nc_21869125/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -9235,7 +9301,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21630853/": {
       "attempts": 1,
-      "checked_at": "2026-09-04T10:24:29.005527+00:00",
+      "checked_at": "2026-10-05T19:22:06.039055+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階地下1階建一部RC",
@@ -9246,7 +9312,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21632459/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:49.415987+00:00",
+      "checked_at": "2026-10-05T19:22:30.639518+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
@@ -9257,7 +9323,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21632720/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:49.497896+00:00",
+      "checked_at": "2026-10-05T19:22:17.769377+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
@@ -9279,7 +9345,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21636045/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:57:05.479020+00:00",
+      "checked_at": "2026-10-05T19:22:03.913819+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント RC3階建",
@@ -9290,7 +9356,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21639834/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:40.477635+00:00",
+      "checked_at": "2026-10-05T19:22:00.396408+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階地下1階建一部RC",
@@ -10795,6 +10861,17 @@
       "label": "所有権",
       "status": "freehold"
     },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21823598/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:31.862449+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建一部鉄骨",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21823598/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21823693/": {
       "attempts": 1,
       "checked_at": "2026-10-01T17:07:15.655104+00:00",
@@ -10971,6 +11048,17 @@
       "label": "所有権",
       "status": "freehold"
     },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21842972/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:00.361413+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21842972/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
     "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21843139/": {
       "attempts": 1,
       "checked_at": "2026-10-04T10:54:14.444364+00:00",
@@ -11077,6 +11165,171 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 鉄骨3階地下1階建",
       "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21857162/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21858170/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:09.687202+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 鉄骨3階地下1階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21858170/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21860058/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:13.475227+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21860058/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21861004/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:08.778390+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建（軸組工法）",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21861004/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21861064/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:33.286957+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21861064/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21864656/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:05.825341+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21864656/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21866266/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:28.518072+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21866266/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21866773/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:36.351338+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21866773/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21866948/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:23.755784+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21866948/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21867848/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:20.033670+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21867848/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868137/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:10.281603+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868137/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868215/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:24.415023+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868215/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868769/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:21.168523+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868769/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868777/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:18.119449+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 鉄骨3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21868777/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21870401/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:23.716773+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 鉄骨2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21870401/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21873103/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:27.120403+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 軽量鉄骨2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21873103/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -14488,7 +14741,7 @@
     },
     "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21524073/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:46.078554+00:00",
+      "checked_at": "2026-10-05T19:22:14.659726+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 軽量鉄骨3階建（ユニット工法）",
@@ -15307,6 +15560,50 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
       "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21854177/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21863134/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:24.488199+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21863134/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21864323/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:11.062303+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階地下1階建一部RC",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21864323/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21866834/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:22.657776+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造3階建",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21866834/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21867334/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:19.758864+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 構造・工法 ヒント 木造2階建一部木造",
+      "final_url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21867334/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -20967,7 +21264,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21620996/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:43.332591+00:00",
+      "checked_at": "2026-10-05T19:22:19.726375+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -21055,7 +21352,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21631125/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:48.858962+00:00",
+      "checked_at": "2026-10-05T19:22:30.855708+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -21143,7 +21440,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21633555/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:48.001032+00:00",
+      "checked_at": "2026-10-05T19:22:17.025475+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -21154,10 +21451,10 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21634761/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:33.121510+00:00",
+      "checked_at": "2026-10-05T19:22:15.038839+00:00",
       "classifier_version": 4,
       "error": null,
-      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存1年5ヶ月 建築条件 ヒント -",
+      "evidence": "土地の権利形態 ヒント 賃借権（旧）、借地期間残存1年4ヶ月 建築条件 ヒント -",
       "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21634761/",
       "http_status": 200,
       "label": "賃借権",
@@ -21165,7 +21462,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21635184/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:43.887522+00:00",
+      "checked_at": "2026-10-05T19:22:27.833264+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -23546,6 +23843,204 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
       "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21857128/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21857566/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:32.085297+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21857566/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21859212/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:02.295819+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21859212/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21859861/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:03.342769+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21859861/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21862782/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:14.451250+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21862782/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864035/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:19.510716+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864035/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864173/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:19.195485+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864173/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864345/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:01.648344+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864345/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864384/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:35.001455+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864384/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864837/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:16.367696+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864837/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864888/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:13.666835+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21864888/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21865614/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:28.849618+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21865614/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21865691/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:22.265682+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21865691/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21866480/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:28.848063+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21866480/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21867104/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:02.921208+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21867104/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21870550/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:21.022716+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21870550/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21870563/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:01.357166+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21870563/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21871373/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:35.600356+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21871373/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21871815/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:22.735702+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21871815/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -26791,6 +27286,17 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
       "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21365616/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21367082/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:33.460347+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21367082/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -30537,7 +31043,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21630986/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:48.778383+00:00",
+      "checked_at": "2026-10-05T19:22:05.042925+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30548,7 +31054,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21631354/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:47.326219+00:00",
+      "checked_at": "2026-10-05T19:22:29.646994+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30581,7 +31087,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21631974/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:48.722624+00:00",
+      "checked_at": "2026-10-05T19:22:03.879837+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30625,7 +31131,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21633108/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:48.693975+00:00",
+      "checked_at": "2026-10-05T19:22:02.717231+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30636,7 +31142,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21633299/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:41.802964+00:00",
+      "checked_at": "2026-10-05T19:22:23.618176+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30680,7 +31186,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21634915/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:32.070586+00:00",
+      "checked_at": "2026-10-05T19:22:26.583631+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
@@ -30691,7 +31197,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21634962/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:32.068822+00:00",
+      "checked_at": "2026-10-05T19:22:30.131493+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30702,7 +31208,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21635647/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:32.728580+00:00",
+      "checked_at": "2026-10-05T19:22:18.970699+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30724,7 +31230,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21637450/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:32.069884+00:00",
+      "checked_at": "2026-10-05T19:22:12.405680+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -30757,7 +31263,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21638860/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:57:00.108702+00:00",
+      "checked_at": "2026-10-05T19:22:30.523874+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -32350,6 +32856,17 @@
       "label": "所有権",
       "status": "freehold"
     },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21731099/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:25.444366+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21731099/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21735732/": {
       "attempts": 1,
       "checked_at": "2026-09-18T10:32:22.022877+00:00",
@@ -33780,6 +34297,17 @@
       "label": "所有権",
       "status": "freehold"
     },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21843835/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:33.981780+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21843835/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
     "https://suumo.jp/tochi/tokyo/sc_ota/nc_21844388/": {
       "attempts": 1,
       "checked_at": "2026-10-04T10:57:07.183344+00:00",
@@ -33985,6 +34513,226 @@
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
       "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21858437/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21858803/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:10.164591+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21858803/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21858936/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:35.227376+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21858936/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21859077/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:29.285595+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21859077/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21859247/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:04.596439+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21859247/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21859919/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:34.251049+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21859919/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21860370/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:35.947141+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21860370/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21861011/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:18.452510+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21861011/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21861103/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:04.582423+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21861103/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21862042/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:32.785899+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21862042/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21862160/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:16.682705+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21862160/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21863592/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:12.875412+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21863592/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21865221/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:34.490902+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21865221/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21866849/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:24.431468+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21866849/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867060/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:27.359367+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867060/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867621/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:00.398144+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867621/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867808/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:25.439882+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867808/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867864/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:07.871198+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21867864/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21868702/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:21.299150+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21868702/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21870574/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:05.030953+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21870574/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_ota/nc_21870822/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:03.239087+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_ota/nc_21870822/",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -38028,7 +38776,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21630951/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:59.812018+00:00",
+      "checked_at": "2026-10-05T19:22:21.258269+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -38072,7 +38820,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21634388/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:57:03.432165+00:00",
+      "checked_at": "2026-10-05T19:22:29.623415+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
@@ -38094,7 +38842,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21638589/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:33.538121+00:00",
+      "checked_at": "2026-10-05T19:22:20.988888+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -38105,7 +38853,7 @@
     },
     "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21638891/": {
       "attempts": 1,
-      "checked_at": "2026-09-05T10:56:42.159279+00:00",
+      "checked_at": "2026-10-05T19:22:15.423249+00:00",
       "classifier_version": 4,
       "error": null,
       "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
@@ -39390,6 +40138,105 @@
       "label": "所有権",
       "status": "freehold"
     },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21861073/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:22.685242+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21861073/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21862457/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:15.041103+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21862457/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21863845/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:21.015322+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21863845/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21866339/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:15.809390+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21866339/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21867336/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:28.067703+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21867336/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21870505/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:25.296427+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21870505/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21870518/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:26.405841+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21870518/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21870541/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:11.726271+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント 付",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21870541/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21871382/": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:00.398980+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "土地の権利形態 ヒント 所有権 建築条件 ヒント -",
+      "final_url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21871382/",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
     "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_76272922/": {
       "attempts": 1,
       "checked_at": "2026-09-16T10:43:47.842013+00:00",
@@ -39910,6 +40757,17 @@
       "error": null,
       "evidence": "地目 宅地 土地権利関連 土地権利：所有権",
       "final_url": "https://www.ad-cast.info/sch/detail.php?div=001&k_number=AMA26091307",
+      "http_status": 200,
+      "label": "所有権",
+      "status": "freehold"
+    },
+    "https://www.ad-cast.info/sch/detail.php?div=001&k_number=AMA26100401": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:34.931825+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "地目 宅地 土地権利関連 土地権利：所有権",
+      "final_url": "https://www.ad-cast.info/sch/detail.php?div=001&k_number=AMA26100401",
       "http_status": 200,
       "label": "所有権",
       "status": "freehold"
@@ -40491,6 +41349,39 @@
       "error": null,
       "evidence": "地目 宅地 土地権利関連 土地権利：旧法賃借・借地料：282,330円・借地期間：20年(新規)",
       "final_url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261002y",
+      "http_status": 200,
+      "label": "借地料",
+      "status": "leasehold"
+    },
+    "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261005ya": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:00.395435+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "地目 宅地 土地権利関連 土地権利：普通賃借・借地料：0円・借地期間：20年(新規)",
+      "final_url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261005ya",
+      "http_status": 200,
+      "label": "借地料",
+      "status": "leasehold"
+    },
+    "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261005yb": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:09.520852+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "地目 宅地 土地権利関連 土地権利：普通賃借・借地料：0円・借地期間：20年(新規)",
+      "final_url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261005yb",
+      "http_status": 200,
+      "label": "借地料",
+      "status": "leasehold"
+    },
+    "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261005yc": {
+      "attempts": 1,
+      "checked_at": "2026-10-05T19:22:07.461289+00:00",
+      "classifier_version": 4,
+      "error": null,
+      "evidence": "地目 宅地 土地権利関連 土地権利：普通賃借・借地料：0円・借地期間：20年(新規)",
+      "final_url": "https://www.ad-cast.info/sch/detail.php?div=005&k_number=20261005yc",
       "http_status": 200,
       "label": "借地料",
       "status": "leasehold"
@@ -42064,7 +42955,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1130750003149/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:30.752418+00:00",
+      "checked_at": "2026-10-05T19:22:35.038653+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -42130,7 +43021,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130024962/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:40.164943+00:00",
+      "checked_at": "2026-10-05T19:22:24.312031+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -42152,7 +43043,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1169130025025/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:38.082768+00:00",
+      "checked_at": "2026-10-05T19:22:30.395809+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -42262,7 +43153,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1209170000109/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:36.225957+00:00",
+      "checked_at": "2026-10-05T19:22:22.821318+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -42372,7 +43263,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1242100008654/": {
       "attempts": 3,
-      "checked_at": "2026-09-30T16:28:35.062226+00:00",
+      "checked_at": "2026-10-05T19:22:00.397287+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -42773,6 +43664,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1282360005592/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1282360005690/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:03.290754+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1282360005690/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -43472,7 +44374,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1358090022903/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:19.604567+00:00",
+      "checked_at": "2026-10-05T19:22:10.885910+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -43657,6 +44559,39 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1375350001985/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:31.815737+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1375350001985/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1375350001989/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:27.325455+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1375350001989/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1375350002007/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:19.904559+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1375350002007/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1383890000181/": {
       "attempts": 3,
       "checked_at": "2026-10-04T10:55:45.470175+00:00",
@@ -43703,7 +44638,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1392850001693/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:24.646192+00:00",
+      "checked_at": "2026-10-05T19:22:14.435846+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -43912,7 +44847,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1417040007455/": {
       "attempts": 3,
-      "checked_at": "2026-10-01T17:09:20.884869+00:00",
+      "checked_at": "2026-10-05T19:22:12.156499+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -44275,7 +45210,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1431680002839/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:18.398707+00:00",
+      "checked_at": "2026-10-05T19:22:30.436836+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -44286,7 +45221,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1431680002849/": {
       "attempts": 3,
-      "checked_at": "2026-09-25T10:19:52.017580+00:00",
+      "checked_at": "2026-10-05T19:22:16.491667+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -44456,6 +45391,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1463790002915/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-1463790002953/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:05.462309+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1463790002953/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -44792,7 +45738,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1491230002328/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:33.447998+00:00",
+      "checked_at": "2026-10-05T19:22:27.560430+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -44946,7 +45892,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1515320000527/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:24.308089+00:00",
+      "checked_at": "2026-10-05T19:22:10.436733+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -45221,7 +46167,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1548200002968/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:18.400154+00:00",
+      "checked_at": "2026-10-05T19:22:21.949321+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -45243,7 +46189,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-1552210005881/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:28.891079+00:00",
+      "checked_at": "2026-10-05T19:22:16.639475+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -45527,6 +46473,17 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/inquire/bukken/kodate/b-35006200000126/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:10.395388+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-35006200000126/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-35006210000069/": {
       "attempts": 3,
       "checked_at": "2026-10-04T10:54:20.524747+00:00",
@@ -45540,7 +46497,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-35006240000123/": {
       "attempts": 3,
-      "checked_at": "2026-09-28T18:14:28.355681+00:00",
+      "checked_at": "2026-10-05T19:22:31.903573+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -46134,7 +47091,7 @@
     },
     "https://www.homes.co.jp/inquire/bukken/kodate/b-80590005201/": {
       "attempts": 3,
-      "checked_at": "2026-09-28T18:14:40.785410+00:00",
+      "checked_at": "2026-10-05T19:22:10.135101+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -46585,7 +47542,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1392850001693/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:25.708081+00:00",
+      "checked_at": "2026-10-05T19:22:00.359929+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -46772,7 +47729,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1417040007455/": {
       "attempts": 3,
-      "checked_at": "2026-09-30T16:28:30.312946+00:00",
+      "checked_at": "2026-10-05T19:22:23.032888+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -46948,7 +47905,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1431680002839/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:26.797592+00:00",
+      "checked_at": "2026-10-05T19:22:08.233201+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -46959,7 +47916,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1431680002849/": {
       "attempts": 3,
-      "checked_at": "2026-09-25T10:19:10.089023+00:00",
+      "checked_at": "2026-10-05T19:22:12.037917+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -47052,6 +48009,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1463790002915/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/inquire/visit/input/kodate/b-1463790002953/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:20.810972+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1463790002953/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -47267,7 +48235,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1491230002328/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:35.335291+00:00",
+      "checked_at": "2026-10-05T19:22:29.964877+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -47289,7 +48257,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-1491230002332/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:23.056324+00:00",
+      "checked_at": "2026-10-05T19:22:35.800596+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -47553,7 +48521,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-35005610001590/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:21.137872+00:00",
+      "checked_at": "2026-10-05T19:22:15.499820+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -47564,7 +48532,7 @@
     },
     "https://www.homes.co.jp/inquire/visit/input/kodate/b-35006240000123/": {
       "attempts": 3,
-      "checked_at": "2026-09-28T18:14:31.692956+00:00",
+      "checked_at": "2026-10-05T19:22:07.512166+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -48433,7 +49401,7 @@
     },
     "https://www.homes.co.jp/kodate/b-1209170000109/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:35.612100+00:00",
+      "checked_at": "2026-10-05T19:22:05.051946+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -49120,6 +50088,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-1282360005592/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1282360005690/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:04.971532+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1282360005690/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -49885,7 +50864,7 @@
     },
     "https://www.homes.co.jp/kodate/b-1358090022903/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:24.626289+00:00",
+      "checked_at": "2026-10-05T19:22:25.424685+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -50081,6 +51060,39 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/kodate/b-1375350001985/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:06.694654+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1375350001985/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1375350001989/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:15.853859+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1375350001989/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-1375350002007/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:02.852562+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1375350002007/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/kodate/b-1383890000181": {
       "attempts": 3,
       "checked_at": "2026-08-10T04:10:08.303768+00:00",
@@ -50149,7 +51161,7 @@
     },
     "https://www.homes.co.jp/kodate/b-1392850001693/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:33.520368+00:00",
+      "checked_at": "2026-10-05T19:22:26.113500+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -50556,7 +51568,7 @@
     },
     "https://www.homes.co.jp/kodate/b-1420500000629/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:18.373099+00:00",
+      "checked_at": "2026-10-05T19:22:05.619999+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -51071,6 +52083,17 @@
       "label": null,
       "status": "unknown"
     },
+    "https://www.homes.co.jp/kodate/b-1463790002953/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:15.154416+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-1463790002953/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
     "https://www.homes.co.jp/kodate/b-1464970000446/": {
       "attempts": 3,
       "checked_at": "2026-10-04T10:54:02.772159+00:00",
@@ -51216,7 +52239,7 @@
     },
     "https://www.homes.co.jp/kodate/b-1485820000059/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:31.643549+00:00",
+      "checked_at": "2026-10-05T19:22:32.063658+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -51975,7 +52998,7 @@
     },
     "https://www.homes.co.jp/kodate/b-1552210005881/": {
       "attempts": 3,
-      "checked_at": "2026-10-02T16:20:22.480314+00:00",
+      "checked_at": "2026-10-05T19:22:25.999314+00:00",
       "classifier_version": 4,
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
@@ -52299,6 +53322,17 @@
       "error": "HTTP 202: property-right-label-not-found",
       "evidence": "property-right-label-not-found",
       "final_url": "https://www.homes.co.jp/kodate/b-35005610001590/",
+      "http_status": 202,
+      "label": null,
+      "status": "unknown"
+    },
+    "https://www.homes.co.jp/kodate/b-35006200000126/": {
+      "attempts": 3,
+      "checked_at": "2026-10-05T19:22:34.684879+00:00",
+      "classifier_version": 4,
+      "error": "HTTP 202: property-right-label-not-found",
+      "evidence": "property-right-label-not-found",
+      "final_url": "https://www.homes.co.jp/kodate/b-35006200000126/",
       "http_status": 202,
       "label": null,
       "status": "unknown"
@@ -53261,5 +54295,5 @@
       "status": "unknown"
     }
   },
-  "updated_at": "2026-10-04T15:25:54.942461+00:00"
+  "updated_at": "2026-10-05T19:22:40.745154+00:00"
 }
