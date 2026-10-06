@@ -6007,22 +6007,6 @@
       "ward": "大田区"
     },
     {
-      "address": "東京都大田区多摩川２丁目",
-      "building_sqm": null,
-      "built": null,
-      "land_right": "所有権",
-      "land_right_status": "freehold",
-      "land_sqm": 49.51,
-      "layout": null,
-      "price_man": 5280.0,
-      "property_type": "land",
-      "source": "ADCAST",
-      "station": "矢口渡駅 徒歩9分",
-      "title": "詳細を見る 詳細",
-      "url": "https://www.ad-cast.info/sch/detail.php?div=015&k_number=s137260919a",
-      "ward": "大田区"
-    },
-    {
       "address": "東京都大田区大森東３丁目",
       "building_sqm": null,
       "built": null,
@@ -6727,18 +6711,18 @@
       "ward": "大田区"
     },
     {
-      "address": "都営浅草線 西馬込駅 徒歩8分 東京都大田区南馬込1丁目 建築年 (築年数) 2008年10月(築19年) 現況 居住中 主要採光面 - 掲載画像14枚",
-      "building_sqm": 101.29,
-      "built": "2008-10",
+      "address": "東京都大田区南馬込1丁目",
+      "building_sqm": null,
+      "built": null,
       "land_right": "所有権",
       "land_right_status": "freehold",
-      "land_sqm": 76.95,
-      "layout": "3SLDK",
+      "land_sqm": null,
+      "layout": null,
       "price_man": 6480.0,
       "property_type": null,
       "source": "HOME'S",
-      "station": null,
-      "title": "中古一戸建て 大田区南馬込1丁目 一戸建て",
+      "station": "都営浅草線 西馬込駅 徒歩8分 土地面積/間取り 76.95m2 3SLDK",
+      "title": "大田区南馬込1丁目 一戸建て",
       "url": "https://www.homes.co.jp/kodate/b-1491230002298/",
       "ward": "大田区"
     },
@@ -6759,7 +6743,7 @@
       "ward": "大田区"
     },
     {
-      "address": "東急多摩川線 矢口渡駅 徒歩7分 東京都大田区池上7丁目 建築年 (築年数) 2024年08月(築3年) 現況 居住中 主要採光面 - 掲載画像20枚 5日前 公開 閲覧済",
+      "address": "東急多摩川線 矢口渡駅 徒歩7分 東京都大田区池上7丁目 建築年 (築年数) 2024年08月(築3年) 現況 居住中 主要採光面 - 掲載画像20枚 6日前 公開 閲覧済",
       "building_sqm": 76.17,
       "built": "2024-08",
       "land_right": "所有権",
@@ -25319,5 +25303,5 @@
       "ward": "目黒区"
     }
   ],
-  "observed_at": "2026-10-06T11:00:16+00:00"
+  "observed_at": "2026-10-06T16:51:41+00:00"
 }
