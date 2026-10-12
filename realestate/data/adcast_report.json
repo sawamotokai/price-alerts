@@ -1,17 +1,17 @@
 {
   "coverage": true,
-  "listing_ended_candidate_count": 0,
-  "new_count": 0,
-  "observed_at": "2026-10-11T16:22:28+00:00",
+  "listing_ended_candidate_count": 3,
+  "new_count": 1,
+  "observed_at": "2026-10-12T19:51:19+00:00",
   "price_changed_count": 0,
-  "record_count": 120,
+  "record_count": 118,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-10-11T16:22:58+00:00",
-    "record_count": 120,
+    "observed_at": "2026-10-12T19:51:46+00:00",
+    "record_count": 118,
     "sanno1_urls": [],
     "success": true,
-    "updated_count": 120,
+    "updated_count": 118,
     "wards": {
       "品川区": {
         "errors": [],
@@ -29,16 +29,15 @@
       "大田区": {
         "errors": [],
         "page_cap_reached": false,
-        "pages_expected": 6,
+        "pages_expected": 5,
         "pages_fetched": [
           1,
           2,
           3,
           4,
-          5,
-          6
+          5
         ],
-        "parsed_count": 51,
+        "parsed_count": 49,
         "success": true
       },
       "目黒区": {
@@ -72,18 +71,17 @@
     },
     "大田区": {
       "errors": [],
-      "expected_count": 51,
+      "expected_count": 49,
       "page_cap_reached": false,
-      "pages_expected": 6,
+      "pages_expected": 5,
       "pages_fetched": [
         1,
         2,
         3,
         4,
-        5,
-        6
+        5
       ],
-      "parsed_count": 51,
+      "parsed_count": 49,
       "success": true
     },
     "目黒区": {
