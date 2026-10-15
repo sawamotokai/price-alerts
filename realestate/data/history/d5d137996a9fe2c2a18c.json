@@ -1,6 +1,6 @@
 {
   "id": "d5d137996a9fe2c2a18c",
-  "property_id": "d529d0e01dfbac0b56ae",
+  "property_id": "12182ef4df6ed2ed99ed",
   "series": {
     "SUUMO": [
       {
@@ -193,13 +193,17 @@
       },
       {
         "date": "2026-10-14",
-        "price_man": 20500.0
+        "price_man": 22000.0
       },
       {
         "date": "2026-10-15",
-        "price_man": 20500.0
+        "price_man": 22000.0
+      },
+      {
+        "date": "2026-10-16",
+        "price_man": 22000.0
       }
     ]
   },
-  "updated_at": "2026-10-14T15:13:01+00:00"
+  "updated_at": "2026-10-15T15:06:14+00:00"
 }
