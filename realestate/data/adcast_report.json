@@ -1,13 +1,13 @@
 {
   "coverage": true,
-  "listing_ended_candidate_count": 0,
+  "listing_ended_candidate_count": 1,
   "new_count": 0,
-  "observed_at": "2026-10-16T14:53:56+00:00",
-  "price_changed_count": 0,
+  "observed_at": "2026-10-17T13:45:59+00:00",
+  "price_changed_count": 2,
   "record_count": 118,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-10-16T14:54:24+00:00",
+    "observed_at": "2026-10-17T13:46:26+00:00",
     "record_count": 118,
     "sanno1_urls": [],
     "success": true,
@@ -37,7 +37,7 @@
           4,
           5
         ],
-        "parsed_count": 49,
+        "parsed_count": 50,
         "success": true
       },
       "目黒区": {
@@ -49,7 +49,7 @@
           2,
           3
         ],
-        "parsed_count": 30,
+        "parsed_count": 29,
         "success": true
       }
     }
@@ -71,7 +71,7 @@
     },
     "大田区": {
       "errors": [],
-      "expected_count": 49,
+      "expected_count": 50,
       "page_cap_reached": false,
       "pages_expected": 5,
       "pages_fetched": [
@@ -81,12 +81,12 @@
         4,
         5
       ],
-      "parsed_count": 49,
+      "parsed_count": 50,
       "success": true
     },
     "目黒区": {
       "errors": [],
-      "expected_count": 30,
+      "expected_count": 29,
       "page_cap_reached": false,
       "pages_expected": 3,
       "pages_fetched": [
@@ -94,7 +94,7 @@
         2,
         3
       ],
-      "parsed_count": 30,
+      "parsed_count": 29,
       "success": true
     }
   }
