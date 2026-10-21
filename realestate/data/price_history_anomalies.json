@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T15:15:20+00:00",
+  "generated_at": "2026-10-21T15:15:56+00:00",
   "items": [
     {
       "address": "東京都品川区西中延1",
@@ -821,7 +821,7 @@
     },
     {
       "address": "東京都目黒区三田2",
-      "current_price_yen": null,
+      "current_price_yen": 398000000,
       "excluded_points": [
         {
           "boundary_change_pct": 563.67,
@@ -950,6 +950,10 @@
         {
           "date": "2026-08-22",
           "price_yen": 398000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 398000000
         }
       ],
       "source": "SUUMO",
@@ -959,6 +963,10 @@
       "validated_points": [
         {
           "date": "2026-08-22",
+          "price_yen": 398000000
+        },
+        {
+          "date": "2026-10-21",
           "price_yen": 398000000
         }
       ],
@@ -16622,7 +16630,7 @@
         },
         {
           "date": "2026-10-20",
-          "price_yen": 250000000
+          "price_yen": 338000000
         },
         {
           "date": "2026-10-21",
@@ -16712,7 +16720,7 @@
         },
         {
           "date": "2026-10-20",
-          "price_yen": 250000000
+          "price_yen": 338000000
         },
         {
           "date": "2026-10-21",
@@ -28074,6 +28082,6 @@
     "neighbour_similarity_pct": 0.12
   },
   "quarantined_point_count": 497,
-  "record_count": 4697,
+  "record_count": 4696,
   "records_with_quarantined_points": 93
 }
