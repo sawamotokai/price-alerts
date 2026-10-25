@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:30:14+00:00",
+  "generated_at": "2026-10-25T14:30:41+00:00",
   "items": [
     {
       "address": "東京都品川区西中延1",
@@ -821,7 +821,7 @@
     },
     {
       "address": "東京都目黒区三田2",
-      "current_price_yen": null,
+      "current_price_yen": 398000000,
       "excluded_points": [
         {
           "boundary_change_pct": 563.67,
@@ -954,6 +954,10 @@
         {
           "date": "2026-10-21",
           "price_yen": 398000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 398000000
         }
       ],
       "source": "SUUMO",
@@ -967,6 +971,10 @@
         },
         {
           "date": "2026-10-21",
+          "price_yen": 398000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 398000000
         }
       ],
@@ -2078,6 +2086,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 229000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 229000000
         }
       ],
       "source": "SUUMO",
@@ -2320,6 +2332,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 229000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 229000000
         }
       ],
       "ward": "目黒区"
@@ -2519,405 +2535,6 @@
       "current_price_yen": 1150000000,
       "excluded_points": [
         {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-17",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-18",
-          "price_yen": 355000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-19",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-20",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-21",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-22",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-23",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "001f0d53622061a75b32",
-      "property_id": "listing:001f0d53622061a75b32",
-      "raw_points": [
-        {
-          "date": "2026-10-17",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-18",
-          "price_yen": 355000000
-        },
-        {
-          "date": "2026-10-19",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-20",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-21",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-22",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-23",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-24",
-          "price_yen": 1150000000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "◆先行公開情報◆建物190m2超!LDK35帖の参考プランあり",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21952269/",
-      "validated_points": [
-        {
-          "date": "2026-10-24",
-          "price_yen": 1150000000
-        }
-      ],
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区青葉台2",
-      "current_price_yen": 1150000000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-17",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-18",
-          "price_yen": 355000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-19",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-20",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-21",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-22",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-23",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "997f6e6f9b9d1cdff513",
-      "property_id": "listing:997f6e6f9b9d1cdff513",
-      "raw_points": [
-        {
-          "date": "2026-10-17",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-18",
-          "price_yen": 355000000
-        },
-        {
-          "date": "2026-10-19",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-20",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-21",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-22",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-23",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-24",
-          "price_yen": 1150000000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "◆整形地◆建築条件無し◆参考プラン有◆駅近好立地",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21951919/",
-      "validated_points": [
-        {
-          "date": "2026-10-24",
-          "price_yen": 1150000000
-        }
-      ],
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区青葉台2",
-      "current_price_yen": 1150000000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-11",
-          "price_yen": 355000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-12",
-          "price_yen": 355000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-13",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-14",
-          "price_yen": 339600000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-15",
-          "price_yen": 355000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-16",
-          "price_yen": 369000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-17",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-18",
-          "price_yen": 355000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-19",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-20",
-          "price_yen": 342000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-21",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-22",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 219.44,
-          "boundary_new_price_yen": 1150000000,
-          "boundary_old_price_yen": 360000000,
-          "date": "2026-10-23",
-          "price_yen": 360000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "e5a0d73c6bbd4bf9e9a6",
-      "property_id": "listing:e5a0d73c6bbd4bf9e9a6",
-      "raw_points": [
-        {
-          "date": "2026-10-11",
-          "price_yen": 355000000
-        },
-        {
-          "date": "2026-10-12",
-          "price_yen": 355000000
-        },
-        {
-          "date": "2026-10-13",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-14",
-          "price_yen": 339600000
-        },
-        {
-          "date": "2026-10-15",
-          "price_yen": 355000000
-        },
-        {
-          "date": "2026-10-16",
-          "price_yen": 369000000
-        },
-        {
-          "date": "2026-10-17",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-18",
-          "price_yen": 355000000
-        },
-        {
-          "date": "2026-10-19",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-20",
-          "price_yen": 342000000
-        },
-        {
-          "date": "2026-10-21",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-22",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-23",
-          "price_yen": 360000000
-        },
-        {
-          "date": "2026-10-24",
-          "price_yen": 1150000000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "目黒区緑が丘、洗練と格式を纏う143m2のゆとりある新邸が実現。",
-      "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21897475/",
-      "validated_points": [
-        {
-          "date": "2026-10-24",
-          "price_yen": 1150000000
-        }
-      ],
-      "ward": "目黒区"
-    },
-    {
-      "address": "東京都目黒区青葉台2",
-      "current_price_yen": 1150000000,
-      "excluded_points": [
-        {
           "boundary_change_pct": 211.65,
           "boundary_new_price_yen": 1150000000,
           "boundary_old_price_yen": 369000000,
@@ -2936,6 +2553,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 1150000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 1150000000
         }
       ],
       "source": "SUUMO",
@@ -2945,6 +2566,10 @@
       "validated_points": [
         {
           "date": "2026-10-24",
+          "price_yen": 1150000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 1150000000
         }
       ],
@@ -2973,6 +2598,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 1150000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 1150000000
         }
       ],
       "source": "SUUMO",
@@ -2982,6 +2611,10 @@
       "validated_points": [
         {
           "date": "2026-10-24",
+          "price_yen": 1150000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 1150000000
         }
       ],
@@ -3521,6 +3154,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 516000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 516000000
         }
       ],
       "source": "SUUMO",
@@ -3758,6 +3395,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 516000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 516000000
         }
       ],
@@ -4311,6 +3952,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 249500000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 249500000
         }
       ],
       "source": "SUUMO",
@@ -4596,6 +4241,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 249500000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 249500000
         }
       ],
@@ -4917,6 +4566,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 314000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 314000000
         }
       ],
       "source": "SUUMO",
@@ -5150,6 +4803,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 314000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 314000000
         }
       ],
@@ -6283,6 +5940,634 @@
         {
           "date": "2026-08-31",
           "price_yen": 39800000
+        }
+      ],
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区東雪谷1",
+      "current_price_yen": 108000000,
+      "excluded_points": [
+        {
+          "date": "2026-08-10",
+          "next_price_yen": 65800000,
+          "previous_price_yen": 72000000,
+          "price_yen": 101800000,
+          "reason": "isolated-middle-price-spike"
+        },
+        {
+          "boundary_change_pct": 72.86,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 398000000,
+          "date": "2026-08-09",
+          "price_yen": 72000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 72.86,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 398000000,
+          "date": "2026-08-12",
+          "price_yen": 65800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 72.86,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 398000000,
+          "date": "2026-08-13",
+          "price_yen": 338000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 72.86,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 398000000,
+          "date": "2026-08-14",
+          "price_yen": 79800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 72.86,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 398000000,
+          "date": "2026-08-15",
+          "price_yen": 49800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 72.86,
+          "boundary_new_price_yen": 108000000,
+          "boundary_old_price_yen": 398000000,
+          "date": "2026-08-17",
+          "price_yen": 398000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "79225fdcc4e423134b32",
+      "property_id": "3cf28ae526c107cf1d21",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 72000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 101800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 65800000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 338000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 79800000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 49800000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 398000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 108000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "■建物面積130m2超■池上線「洗足池」駅徒歩4分■平置き駐車場、屋上有",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_20615752/",
+      "validated_points": [
+        {
+          "date": "2026-08-18",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 108000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 108000000
         }
       ],
       "ward": "大田区"
@@ -7895,7 +8180,7 @@
     },
     {
       "address": "東京都品川区中延6",
-      "current_price_yen": null,
+      "current_price_yen": 89900000,
       "excluded_points": [
         {
           "boundary_change_pct": 67.06,
@@ -8156,6 +8441,10 @@
         {
           "date": "2026-10-23",
           "price_yen": 89900000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 89900000
         }
       ],
       "source": "SUUMO",
@@ -8393,6 +8682,10 @@
         },
         {
           "date": "2026-10-23",
+          "price_yen": 89900000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 89900000
         }
       ],
@@ -8879,6 +9172,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 110000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 110000000
         }
       ],
       "source": "SUUMO",
@@ -9065,9 +9362,626 @@
         {
           "date": "2026-10-24",
           "price_yen": 110000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 110000000
         }
       ],
       "ward": "品川区"
+    },
+    {
+      "address": "東京都大田区南蒲田1",
+      "current_price_yen": null,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-09",
+          "price_yen": 748000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-10",
+          "price_yen": 290000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-11",
+          "price_yen": 155000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-13",
+          "price_yen": 23000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-14",
+          "price_yen": 80100000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-16",
+          "price_yen": 59970000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 55.49,
+          "boundary_new_price_yen": 80100000,
+          "boundary_old_price_yen": 179970000,
+          "date": "2026-08-17",
+          "price_yen": 179970000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "c7bf82d7da8c4267ad88",
+      "property_id": "9b257e6770a53f8ee87f",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 748000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 290000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 155000000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 59970000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 179970000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 80100000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "【現在空室】京急蒲田駅徒歩5分!南向き2016年築・広々駐車場付き中古戸建",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21395289/",
+      "validated_points": [
+        {
+          "date": "2026-08-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 80100000
+        }
+      ],
+      "ward": "大田区"
     },
     {
       "address": "東京都大田区北千束2",
@@ -9664,6 +10578,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 118000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 118000000
         }
       ],
       "source": "SUUMO",
@@ -9757,6 +10675,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 118000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 118000000
         }
       ],
@@ -10415,7 +11337,7 @@
     },
     {
       "address": "東京都大田区田園調布3",
-      "current_price_yen": null,
+      "current_price_yen": 388800000,
       "excluded_points": [
         {
           "date": "2026-09-18",
@@ -10787,6 +11709,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 388800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 388800000
         }
       ],
       "source": "SUUMO",
@@ -10933,13 +11859,17 @@
         {
           "date": "2026-10-24",
           "price_yen": 388800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 388800000
         }
       ],
       "ward": "大田区"
     },
     {
       "address": "東京都大田区田園調布3",
-      "current_price_yen": null,
+      "current_price_yen": 388800000,
       "excluded_points": [
         {
           "date": "2026-09-18",
@@ -11315,6 +12245,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 388800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 388800000
         }
       ],
       "source": "SUUMO",
@@ -11464,6 +12398,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 388800000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 388800000
         }
       ],
@@ -12241,6 +13179,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 55300000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 55300000
         }
       ],
       "source": "SUUMO",
@@ -12506,6 +13448,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 55300000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 55300000
         }
       ],
@@ -13024,6 +13970,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 79800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 79800000
         }
       ],
       "source": "SUUMO",
@@ -13257,6 +14207,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 79800000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 79800000
         }
       ],
@@ -13922,6 +14876,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 112000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 112000000
         }
       ],
       "source": "SUUMO",
@@ -14015,6 +14973,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 112000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 112000000
         }
       ],
@@ -15013,6 +15975,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 106800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 106800000
         }
       ],
       "source": "SUUMO",
@@ -15107,6 +16073,699 @@
         {
           "date": "2026-10-24",
           "price_yen": 106800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 106800000
+        }
+      ],
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都品川区南大井1",
+      "current_price_yen": 21500000,
+      "excluded_points": [
+        {
+          "date": "2026-08-15",
+          "next_price_yen": 23000000,
+          "previous_price_yen": 23000000,
+          "price_yen": 94900000,
+          "reason": "isolated-middle-price-spike"
+        },
+        {
+          "boundary_change_pct": 40.31,
+          "boundary_new_price_yen": 126000000,
+          "boundary_old_price_yen": 89800000,
+          "date": "2026-08-09",
+          "price_yen": 89800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "731fb6ef24306931ded1",
+      "property_id": "264b3ed62ae730a0c340",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 89800000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 126000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 94900000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 99800000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 94900000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 67800000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 21500000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "■鉄骨造・3LDK+納戸■ルーフバルコニー付き♪■南4.6m公道面",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21387860/",
+      "validated_points": [
+        {
+          "date": "2026-08-10",
+          "price_yen": 126000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 94900000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 99800000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 67800000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 80100000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 23000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 21500000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 21500000
+        }
+      ],
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都大田区池上6",
+      "current_price_yen": 61800000,
+      "excluded_points": [
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-09",
+          "price_yen": 49800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-10",
+          "price_yen": 62990000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-11",
+          "price_yen": 61800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-12",
+          "price_yen": 94900000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-14",
+          "price_yen": 179970000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-15",
+          "price_yen": 498000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-16",
+          "price_yen": 148000000,
+          "reason": "unconfirmed-extreme-price-regime"
+        },
+        {
+          "boundary_change_pct": 39.29,
+          "boundary_new_price_yen": 61800000,
+          "boundary_old_price_yen": 101800000,
+          "date": "2026-08-17",
+          "price_yen": 101800000,
+          "reason": "unconfirmed-extreme-price-regime"
+        }
+      ],
+      "listing_id": "b371e3166aa8b13ec897",
+      "property_id": "009f3299ecc08969fe5f",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 49800000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 62990000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 61800000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 94900000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 179970000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 498000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 148000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 101800000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 61800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-unconfirmed-large-change",
+      "title": "「池上」駅徒歩約5分!建物106.69平米LDK18.1帖♪4部屋+車庫",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21260950/",
+      "validated_points": [
+        {
+          "date": "2026-08-18",
+          "price_yen": 61800000
         }
       ],
       "ward": "大田区"
@@ -15116,459 +16775,275 @@
       "current_price_yen": 170000000,
       "excluded_points": [
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-17",
           "price_yen": 550000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-18",
           "price_yen": 550000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-22",
           "price_yen": 250000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-23",
           "price_yen": 250000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-27",
           "price_yen": 380600000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-28",
           "price_yen": 380600000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-29",
           "price_yen": 550000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-30",
           "price_yen": 380600000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-08-31",
           "price_yen": 313500000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-01",
           "price_yen": 550000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-02",
           "price_yen": 550000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-03",
           "price_yen": 568000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-04",
           "price_yen": 255000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-05",
           "price_yen": 250000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-06",
           "price_yen": 313500000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-07",
           "price_yen": 255000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-08",
           "price_yen": 250000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-09",
           "price_yen": 250000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-10",
           "price_yen": 280000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-13",
           "price_yen": 280000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-14",
           "price_yen": 349000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-15",
           "price_yen": 313500000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-16",
           "price_yen": 313500000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-17",
           "price_yen": 349000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-18",
           "price_yen": 349000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-19",
           "price_yen": 349000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-20",
           "price_yen": 313500000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-22",
           "price_yen": 280000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-23",
           "price_yen": 313500000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-24",
           "price_yen": 358000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-26",
           "price_yen": 185000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-28",
           "price_yen": 185000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-29",
           "price_yen": 185000000,
           "reason": "unconfirmed-extreme-price-regime"
         },
         {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
+          "boundary_change_pct": 37.78,
+          "boundary_new_price_yen": 280000000,
+          "boundary_old_price_yen": 450000000,
           "date": "2026-09-30",
           "price_yen": 450000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-01",
-          "price_yen": 280000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-02",
-          "price_yen": 358000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-03",
-          "price_yen": 358000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-04",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-05",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-06",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-07",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-08",
-          "price_yen": 219000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-09",
-          "price_yen": 219000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-10",
-          "price_yen": 218000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-11",
-          "price_yen": 225000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-12",
-          "price_yen": 280000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-13",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-14",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-15",
-          "price_yen": 218000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-16",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-17",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-18",
-          "price_yen": 280000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-19",
-          "price_yen": 338000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-20",
-          "price_yen": 338000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-21",
-          "price_yen": 250000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-22",
-          "price_yen": 280000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 170000000,
-          "boundary_old_price_yen": 280000000,
-          "date": "2026-10-23",
-          "price_yen": 280000000,
           "reason": "unconfirmed-extreme-price-regime"
         }
       ],
@@ -15806,6 +17281,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 170000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 170000000
         }
       ],
       "source": "SUUMO",
@@ -15814,132 +17293,107 @@
       "url": "https://suumo.jp/tochi/tokyo/sc_shinagawa/nc_21051640/",
       "validated_points": [
         {
+          "date": "2026-10-01",
+          "price_yen": 280000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 358000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 358000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 219000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 219000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 218000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 225000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 280000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 218000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 280000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 338000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 338000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 250000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 280000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 280000000
+        },
+        {
           "date": "2026-10-24",
+          "price_yen": 170000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 170000000
         }
       ],
       "ward": "品川区"
-    },
-    {
-      "address": "東京都大田区池上6",
-      "current_price_yen": 61800000,
-      "excluded_points": [
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-09",
-          "price_yen": 49800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-10",
-          "price_yen": 62990000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-11",
-          "price_yen": 61800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-12",
-          "price_yen": 94900000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-14",
-          "price_yen": 179970000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-15",
-          "price_yen": 498000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-16",
-          "price_yen": 148000000,
-          "reason": "unconfirmed-extreme-price-regime"
-        },
-        {
-          "boundary_change_pct": 39.29,
-          "boundary_new_price_yen": 61800000,
-          "boundary_old_price_yen": 101800000,
-          "date": "2026-08-17",
-          "price_yen": 101800000,
-          "reason": "unconfirmed-extreme-price-regime"
-        }
-      ],
-      "listing_id": "b371e3166aa8b13ec897",
-      "property_id": "009f3299ecc08969fe5f",
-      "raw_points": [
-        {
-          "date": "2026-08-09",
-          "price_yen": 49800000
-        },
-        {
-          "date": "2026-08-10",
-          "price_yen": 62990000
-        },
-        {
-          "date": "2026-08-11",
-          "price_yen": 61800000
-        },
-        {
-          "date": "2026-08-12",
-          "price_yen": 94900000
-        },
-        {
-          "date": "2026-08-14",
-          "price_yen": 179970000
-        },
-        {
-          "date": "2026-08-15",
-          "price_yen": 498000000
-        },
-        {
-          "date": "2026-08-16",
-          "price_yen": 148000000
-        },
-        {
-          "date": "2026-08-17",
-          "price_yen": 101800000
-        },
-        {
-          "date": "2026-08-18",
-          "price_yen": 61800000
-        }
-      ],
-      "source": "SUUMO",
-      "status": "quarantined-unconfirmed-large-change",
-      "title": "「池上」駅徒歩約5分!建物106.69平米LDK18.1帖♪4部屋+車庫",
-      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21260950/",
-      "validated_points": [
-        {
-          "date": "2026-08-18",
-          "price_yen": 61800000
-        }
-      ],
-      "ward": "大田区"
     },
     {
       "address": "東京都品川区北品川6",
@@ -17406,6 +18860,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 29800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 29800000
         }
       ],
       "source": "SUUMO",
@@ -17671,6 +19129,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 29800000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 29800000
         }
       ],
@@ -17961,6 +19423,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 16800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 16800000
         }
       ],
       "source": "SUUMO",
@@ -18223,6 +19689,553 @@
         {
           "date": "2026-10-24",
           "price_yen": 16800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 16800000
+        }
+      ],
+      "ward": "大田区"
+    },
+    {
+      "address": "東京都大田区東雪谷1",
+      "current_price_yen": 109800000,
+      "excluded_points": [
+        {
+          "date": "2026-08-10",
+          "next_price_yen": 111000000,
+          "previous_price_yen": 111000000,
+          "price_yen": 249500000,
+          "reason": "isolated-middle-price-spike"
+        },
+        {
+          "date": "2026-08-15",
+          "next_price_yen": 138000000,
+          "previous_price_yen": 130000000,
+          "price_yen": 598000000,
+          "reason": "isolated-middle-price-spike"
+        }
+      ],
+      "listing_id": "40324e309d586924590f",
+      "property_id": "495f9bcc76858cf2352e",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 249500000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 130000000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 598000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 138000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 109800000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-isolated-spike",
+      "title": "東京タワーをリビングから望む贅沢。日常を格別にする高級タワーレジデンス。",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21032087/",
+      "validated_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 130000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 138000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 111000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 109800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 109800000
         }
       ],
       "ward": "大田区"
@@ -18397,6 +20410,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 27800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 27800000
         }
       ],
       "source": "SUUMO",
@@ -18554,6 +20571,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 27800000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 27800000
         }
       ],
@@ -19368,6 +21389,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 159900000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 159900000
         }
       ],
       "source": "SUUMO",
@@ -19633,6 +21658,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 159900000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 159900000
         }
       ],
@@ -20911,6 +22940,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 129800000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 129800000
         }
       ],
       "source": "SUUMO",
@@ -21176,6 +23209,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 129800000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 129800000
         }
       ],
@@ -21887,6 +23924,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 28000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 28000000
         }
       ],
       "source": "SUUMO",
@@ -22152,6 +24193,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 28000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 28000000
         }
       ],
@@ -23092,6 +25137,562 @@
         }
       ],
       "ward": "目黒区"
+    },
+    {
+      "address": "東京都大田区山王2",
+      "current_price_yen": 235000000,
+      "excluded_points": [
+        {
+          "date": "2026-09-06",
+          "next_price_yen": 235000000,
+          "previous_price_yen": 235000000,
+          "price_yen": 135000000,
+          "reason": "isolated-middle-price-spike"
+        }
+      ],
+      "listing_id": "a564631f8072cd130c78",
+      "property_id": "0be9b5d2cb285db5cf29",
+      "raw_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 235000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-isolated-spike",
+      "title": "店舗、事務所利用も可能な一棟ビル〇●並列3台駐車可能!(車種によります)",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_ota/nc_21176379/",
+      "validated_points": [
+        {
+          "date": "2026-08-17",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 135000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 235000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 235000000
+        }
+      ],
+      "ward": "大田区"
     },
     {
       "address": "東京都目黒区中町2",
@@ -24090,6 +26691,1137 @@
       "ward": "目黒区"
     },
     {
+      "address": "東京都品川区大井5",
+      "current_price_yen": 378000000,
+      "excluded_points": [
+        {
+          "date": "2026-08-16",
+          "next_price_yen": 378000000,
+          "previous_price_yen": 378000000,
+          "price_yen": 148000000,
+          "reason": "isolated-middle-price-spike"
+        },
+        {
+          "date": "2026-08-18",
+          "next_price_yen": 378000000,
+          "previous_price_yen": 378000000,
+          "price_yen": 62990000,
+          "reason": "isolated-middle-price-spike"
+        }
+      ],
+      "listing_id": "bbfd4a422c4d89568659",
+      "property_id": "df607d32475ba2f04a42",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 148000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 62990000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 378000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-isolated-spike",
+      "title": "2017年築鉄骨造店舗併用住宅4駅4路線利用可能なマルチアクセス",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_21349659/",
+      "validated_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-23",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-24",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-25",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-26",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-27",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-28",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-29",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-09",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-10",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-11",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-12",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-13",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-14",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 378000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 378000000
+        }
+      ],
+      "ward": "品川区"
+    },
+    {
+      "address": "東京都品川区北品川2",
+      "current_price_yen": 140000000,
+      "excluded_points": [
+        {
+          "date": "2026-08-18",
+          "next_price_yen": 159000000,
+          "previous_price_yen": 159000000,
+          "price_yen": 32600000,
+          "reason": "isolated-middle-price-spike"
+        }
+      ],
+      "listing_id": "bf2b3189dcc7a56ce4b0",
+      "property_id": "578bd131a139fe949a52",
+      "raw_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-18",
+          "price_yen": 32600000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 140000000
+        }
+      ],
+      "source": "SUUMO",
+      "status": "quarantined-isolated-spike",
+      "title": "◆\\諸費用欄もお見逃しなく/◆詳細は物件概要『諸費用欄』をご確認ください",
+      "url": "https://suumo.jp/chukoikkodate/tokyo/sc_shinagawa/nc_20695036/",
+      "validated_points": [
+        {
+          "date": "2026-08-09",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-10",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-11",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-12",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-13",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-14",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-15",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-16",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-17",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-22",
+          "price_yen": 159000000
+        },
+        {
+          "date": "2026-08-30",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-08-31",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-01",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-02",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-03",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-04",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-05",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-06",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-07",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-08",
+          "price_yen": 150000000
+        },
+        {
+          "date": "2026-09-15",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-16",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-17",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-18",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-19",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-20",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-21",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-22",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-23",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-24",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-25",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-26",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-27",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-28",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-29",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-09-30",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-01",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-02",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-03",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-04",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-05",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-06",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-07",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-08",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-09",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-10",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-11",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-12",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-13",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-14",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-15",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-16",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-17",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-18",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-19",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-20",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-21",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-22",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-23",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-24",
+          "price_yen": 140000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 140000000
+        }
+      ],
+      "ward": "品川区"
+    },
+    {
       "address": "東京都品川区東大井3",
       "current_price_yen": 225000000,
       "excluded_points": [
@@ -24495,6 +28227,10 @@
         {
           "date": "2026-10-24",
           "price_yen": 242000000
+        },
+        {
+          "date": "2026-10-25",
+          "price_yen": 242000000
         }
       ],
       "source": "SUUMO",
@@ -24760,6 +28496,10 @@
         },
         {
           "date": "2026-10-24",
+          "price_yen": 242000000
+        },
+        {
+          "date": "2026-10-25",
           "price_yen": 242000000
         }
       ],
@@ -25375,7 +29115,7 @@
     "min_regime_observations": 2,
     "neighbour_similarity_pct": 0.12
   },
-  "quarantined_point_count": 527,
-  "record_count": 5033,
-  "records_with_quarantined_points": 91
+  "quarantined_point_count": 499,
+  "record_count": 4824,
+  "records_with_quarantined_points": 95
 }
