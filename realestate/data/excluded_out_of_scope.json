@@ -1,6 +1,6 @@
 {
-  "count": 10,
-  "generated_at": "2026-10-29T17:06:59.722067+00:00",
+  "count": 11,
+  "generated_at": "2026-10-30T16:47:09.442274+00:00",
   "items": [
     {
       "access": null,
@@ -48,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -59,6 +59,29 @@
       "source_listing_id": "21484850",
       "title": "祐天寺3億9800万円 新着",
       "url": "https://suumo.jp/tochi/tokyo/sc_meguro/nc_21484850/",
+      "ward": "大田区"
+    },
+    {
+      "access": null,
+      "active": true,
+      "address": "東京都大田区下丸子3",
+      "broker": null,
+      "building_area_sqm": null,
+      "built_year_month": null,
+      "ended_at": null,
+      "first_seen": "2026-10-31T01:41:53.636782+09:00",
+      "land_area_sqm": null,
+      "last_seen": "2026-10-31T01:41:53.636782+09:00",
+      "layout": null,
+      "listing_id": "5bc203b24361ab0da213",
+      "missing_runs": 0,
+      "price_text": "5700万円",
+      "price_yen": 57000000,
+      "property_id": "listing:5bc203b24361ab0da213",
+      "source": "suumo",
+      "source_listing_id": "22054227",
+      "title": "住環境良好な浜田山2丁目、参考プラン付きの土地。お早めにお問い合わせ下さい。 未定 116.22m 2 (35.15坪) 東京都杉並区浜田山2 京王井の頭線 浜田山 徒歩7分",
+      "url": "https://suumo.jp/tochi/tokyo/sc_suginami/nc_22054227/",
       "ward": "大田区"
     },
     {
@@ -97,7 +120,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -145,7 +168,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "4098万円",
@@ -193,7 +216,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -247,7 +270,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -306,7 +329,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -355,7 +378,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-28T16:42:07+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "2600万円",
@@ -403,7 +426,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-28T16:42:08+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -461,7 +484,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-28T16:42:08+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -516,7 +539,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-28T16:42:08+00:00",
+        "validated_at": "2026-10-29T17:07:45+00:00",
         "validated_point_count": 1
       },
       "price_text": "8800万円",
