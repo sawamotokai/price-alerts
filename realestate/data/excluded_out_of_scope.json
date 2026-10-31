@@ -1,6 +1,6 @@
 {
-  "count": 11,
-  "generated_at": "2026-10-30T16:47:09.442274+00:00",
+  "count": 12,
+  "generated_at": "2026-10-31T15:48:58.246913+00:00",
   "items": [
     {
       "access": null,
@@ -48,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -63,18 +63,43 @@
     },
     {
       "access": null,
-      "active": true,
+      "active": false,
       "address": "東京都大田区下丸子3",
       "broker": null,
       "building_area_sqm": null,
       "built_year_month": null,
-      "ended_at": null,
+      "ended_at": "2026-10-30T16:45:22+00:00",
       "first_seen": "2026-10-31T01:41:53.636782+09:00",
       "land_area_sqm": null,
+      "land_right_status": "unknown",
       "last_seen": "2026-10-31T01:41:53.636782+09:00",
       "layout": null,
       "listing_id": "5bc203b24361ab0da213",
       "missing_runs": 0,
+      "price_change_status": "insufficient-history",
+      "price_change_yen": 0,
+      "price_change_yen_validated": 0,
+      "price_history": [
+        [
+          "2026-10-31",
+          57000000
+        ]
+      ],
+      "price_history_anomaly_count": 0,
+      "price_history_validated": [
+        [
+          "2026-10-31",
+          57000000
+        ]
+      ],
+      "price_history_validation": {
+        "anomaly_count": 0,
+        "max_unconfirmed_change_pct": 0.35,
+        "min_regime_observations": 2,
+        "raw_point_count": 1,
+        "validated_at": "2026-10-30T16:47:49+00:00",
+        "validated_point_count": 1
+      },
       "price_text": "5700万円",
       "price_yen": 57000000,
       "property_id": "listing:5bc203b24361ab0da213",
@@ -120,7 +145,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -168,7 +193,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "4098万円",
@@ -216,7 +241,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -270,7 +295,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -329,7 +354,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -378,7 +403,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "2600万円",
@@ -389,6 +414,29 @@
       "title": "府中市緑町の宅地 2600万円 39.58m 2 東京都府中市緑町3 京王線 東府中 徒歩6分",
       "url": "https://suumo.jp/tochi/tokyo/sc_fuchu/nc_79166750/",
       "ward": "大田区"
+    },
+    {
+      "access": null,
+      "active": true,
+      "address": "東京都目黒区南1",
+      "broker": null,
+      "building_area_sqm": null,
+      "built_year_month": null,
+      "ended_at": null,
+      "first_seen": "2026-11-01T00:44:02.076844+09:00",
+      "land_area_sqm": null,
+      "last_seen": "2026-11-01T00:44:02.076844+09:00",
+      "layout": null,
+      "listing_id": "cc085e63b571f66f21ad",
+      "missing_runs": 0,
+      "price_text": "1億5454万円",
+      "price_yen": 154540000,
+      "property_id": "listing:cc085e63b571f66f21ad",
+      "source": "suumo",
+      "source_listing_id": "21725888",
+      "title": "中野区中野 土地 未定 88m 2 ~100m 2 東京都中野区中野1 JR中央線 東中野 徒歩11分",
+      "url": "https://suumo.jp/tochi/tokyo/sc_nakano/nc_21725888/",
+      "ward": "目黒区"
     },
     {
       "access": null,
@@ -426,7 +474,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -484,7 +532,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -539,7 +587,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-10-29T17:07:45+00:00",
+        "validated_at": "2026-10-30T16:47:49+00:00",
         "validated_point_count": 1
       },
       "price_text": "8800万円",
