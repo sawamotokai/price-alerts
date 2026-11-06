@@ -1,17 +1,17 @@
 {
   "coverage": true,
-  "listing_ended_candidate_count": 3,
+  "listing_ended_candidate_count": 1,
   "new_count": 0,
-  "observed_at": "2026-11-05T18:03:31+00:00",
-  "price_changed_count": 1,
-  "record_count": 132,
+  "observed_at": "2026-11-06T17:32:33+00:00",
+  "price_changed_count": 3,
+  "record_count": 131,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-11-05T18:04:12+00:00",
-    "record_count": 132,
+    "observed_at": "2026-11-06T17:33:09+00:00",
+    "record_count": 131,
     "sanno1_urls": [],
     "success": true,
-    "updated_count": 132,
+    "updated_count": 131,
     "wards": {
       "品川区": {
         "errors": [],
@@ -24,7 +24,7 @@
           4,
           5
         ],
-        "parsed_count": 42,
+        "parsed_count": 41,
         "success": true
       },
       "大田区": {
@@ -60,7 +60,7 @@
   "wards": {
     "品川区": {
       "errors": [],
-      "expected_count": 42,
+      "expected_count": 41,
       "page_cap_reached": false,
       "pages_expected": 5,
       "pages_fetched": [
@@ -70,7 +70,7 @@
         4,
         5
       ],
-      "parsed_count": 42,
+      "parsed_count": 41,
       "success": true
     },
     "大田区": {
