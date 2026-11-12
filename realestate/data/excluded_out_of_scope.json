@@ -1,6 +1,6 @@
 {
   "count": 13,
-  "generated_at": "2026-11-11T17:58:23.620113+00:00",
+  "generated_at": "2026-11-12T18:30:21.037921+00:00",
   "items": [
     {
       "access": null,
@@ -48,7 +48,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:07+00:00",
         "validated_point_count": 2
       },
       "price_text": "5980万円",
@@ -97,7 +97,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "5700万円",
@@ -111,18 +111,43 @@
     },
     {
       "access": null,
-      "active": true,
+      "active": false,
       "address": "東京都目黒区平町2",
       "broker": null,
       "building_area_sqm": null,
       "built_year_month": null,
-      "ended_at": null,
+      "ended_at": "2026-11-11T17:56:51+00:00",
       "first_seen": "2026-11-12T02:53:06.705841+09:00",
       "land_area_sqm": null,
+      "land_right_status": "unknown",
       "last_seen": "2026-11-12T02:53:06.705841+09:00",
       "layout": null,
       "listing_id": "75de36ff163c0de39b94",
       "missing_runs": 0,
+      "price_change_status": "insufficient-history",
+      "price_change_yen": 0,
+      "price_change_yen_validated": 0,
+      "price_history": [
+        [
+          "2026-11-12",
+          228000000
+        ]
+      ],
+      "price_history_anomaly_count": 0,
+      "price_history_validated": [
+        [
+          "2026-11-12",
+          228000000
+        ]
+      ],
+      "price_history_validation": {
+        "anomaly_count": 0,
+        "max_unconfirmed_change_pct": 0.35,
+        "min_regime_observations": 2,
+        "raw_point_count": 1,
+        "validated_at": "2026-11-11T17:59:08+00:00",
+        "validated_point_count": 1
+      },
       "price_text": "2億2800万円",
       "price_yen": 228000000,
       "property_id": "listing:75de36ff163c0de39b94",
@@ -168,7 +193,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -216,7 +241,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "4098万円",
@@ -264,7 +289,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -318,7 +343,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "28500万円",
@@ -377,7 +402,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 2
       },
       "price_text": "11500万円",
@@ -426,7 +451,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "2600万円",
@@ -474,7 +499,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "1億5454万円",
@@ -522,7 +547,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 1,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "9880万円",
@@ -580,7 +605,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 2
       },
       "price_text": "3670万円",
@@ -635,7 +660,7 @@
         "max_unconfirmed_change_pct": 0.35,
         "min_regime_observations": 2,
         "raw_point_count": 2,
-        "validated_at": "2026-11-10T18:01:10+00:00",
+        "validated_at": "2026-11-11T17:59:08+00:00",
         "validated_point_count": 1
       },
       "price_text": "8800万円",
