@@ -1,78 +1,78 @@
 {
-  "coverage": true,
-  "listing_ended_candidate_count": 0,
+  "coverage": false,
+  "listing_ended_candidate_count": 1,
   "new_count": 0,
-  "observed_at": "2026-11-18T18:54:17+00:00",
-  "price_changed_count": 0,
-  "record_count": 145,
+  "observed_at": "2026-11-19T19:02:20+00:00",
+  "price_changed_count": 2,
+  "record_count": 144,
   "supplemental": {
     "added_count": 0,
-    "observed_at": "2026-11-18T18:54:53+00:00",
-    "record_count": 145,
+    "observed_at": "2026-11-19T19:03:04+00:00",
+    "record_count": 106,
     "sanno1_urls": [],
-    "success": true,
-    "updated_count": 145,
+    "success": false,
+    "updated_count": 106,
     "wards": {
       "品川区": {
         "errors": [],
         "page_cap_reached": false,
-        "pages_expected": 6,
+        "pages_expected": 5,
         "pages_fetched": [
           1,
           2,
           3,
           4,
-          5,
-          6
+          5
         ],
-        "parsed_count": 51,
+        "parsed_count": 50,
         "success": true
       },
       "大田区": {
-        "errors": [],
+        "errors": [
+          "page 3: HTTP 502",
+          "page 4: HTTP 502",
+          "page 5: HTTP 502"
+        ],
         "page_cap_reached": false,
         "pages_expected": 6,
         "pages_fetched": [
           1,
           2,
-          3,
-          4,
-          5,
           6
         ],
-        "parsed_count": 56,
-        "success": true
+        "parsed_count": 26,
+        "success": false
       },
       "目黒区": {
-        "errors": [],
+        "errors": [
+          "page 4: HTTP 502"
+        ],
         "page_cap_reached": false,
         "pages_expected": 4,
         "pages_fetched": [
           1,
           2,
-          3,
-          4
+          3
         ],
-        "parsed_count": 38,
-        "success": true
+        "parsed_count": 30,
+        "success": false
       }
     }
   },
   "wards": {
     "品川区": {
       "errors": [],
-      "expected_count": 51,
+      "expected_count": 50,
       "page_cap_reached": false,
-      "pages_expected": 6,
+      "pages_expected": 5,
       "pages_fetched": [
         1,
         2,
         3,
         4,
-        5,
-        6
+        5
       ],
-      "parsed_count": 51,
+      "parsed_count": 50,
       "success": true
     },
     "大田区": {
